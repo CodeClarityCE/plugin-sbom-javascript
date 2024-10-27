@@ -1,0 +1,15 @@
+{
+    "name": "@packages/server",
+    "version": "1.0.0",
+    "main": ".dist/server.js",
+    "dependencies": {
+        "@example/example-1": "workspace:*",
+        "@example/example-2": "workspace:*",
+        "@packages/common": "workspace:*"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "ts-node src/server.ts",
+        "start": "node .dist/server.js"
+    }
+}

@@ -1,0 +1,1537 @@
+{
+  "workspaces": {
+    ".": {
+      "dependencies": {
+        "accepts": {
+          "1.2.13": {
+            "Key": "accepts@1.2.13",
+            "Requires": {
+              "mime-types": "~2.1.6",
+              "negotiator": "0.5.3"
+            },
+            "Dependencies": {
+              "mime-types": "2.1.35",
+              "negotiator": "0.5.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "array-flatten": {
+          "1.1.1": {
+            "Key": "array-flatten@1.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "basic-auth": {
+          "1.0.4": {
+            "Key": "basic-auth@1.0.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "body-parser": {
+          "1.13.3": {
+            "Key": "body-parser@1.13.3",
+            "Requires": {
+              "bytes": "2.1.0",
+              "content-type": "~1.0.1",
+              "debug": "~2.2.0",
+              "depd": "~1.0.1",
+              "http-errors": "~1.3.1",
+              "iconv-lite": "0.4.11",
+              "on-finished": "~2.3.0",
+              "qs": "4.0.0",
+              "raw-body": "~2.1.2",
+              "type-is": "~1.6.6"
+            },
+            "Dependencies": {
+              "bytes": "2.1.0",
+              "content-type": "1.0.5",
+              "debug": "2.2.0",
+              "depd": "1.0.1",
+              "http-errors": "1.3.1",
+              "iconv-lite": "0.4.11",
+              "on-finished": "2.3.0",
+              "qs": "4.0.0",
+              "raw-body": "2.1.7",
+              "type-is": "1.6.18"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "buffer-writer": {
+          "1.0.1": {
+            "Key": "buffer-writer@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "bytes": {
+          "2.1.0": {
+            "Key": "bytes@2.1.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "2.4.0": {
+            "Key": "bytes@2.4.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "content-disposition": {
+          "0.5.1": {
+            "Key": "content-disposition@0.5.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "content-type": {
+          "1.0.5": {
+            "Key": "content-type@1.0.5",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "cookie": {
+          "0.1.3": {
+            "Key": "cookie@0.1.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "0.1.5": {
+            "Key": "cookie@0.1.5",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "0.4.2": {
+            "Key": "cookie@0.4.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "cookie-parser": {
+          "1.3.5": {
+            "Key": "cookie-parser@1.3.5",
+            "Requires": {
+              "cookie": "0.1.3",
+              "cookie-signature": "1.0.6"
+            },
+            "Dependencies": {
+              "cookie": "0.1.3",
+              "cookie-signature": "1.0.6"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "cookie-signature": {
+          "1.0.6": {
+            "Key": "cookie-signature@1.0.6",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "core-util-is": {
+          "1.0.3": {
+            "Key": "core-util-is@1.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "debug": {
+          "2.2.0": {
+            "Key": "debug@2.2.0",
+            "Requires": {
+              "ms": "0.7.1"
+            },
+            "Dependencies": {
+              "ms": "0.7.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "2.6.9": {
+            "Key": "debug@2.6.9",
+            "Requires": {
+              "ms": "2.0.0"
+            },
+            "Dependencies": {
+              "ms": "2.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "depd": {
+          "1.0.1": {
+            "Key": "depd@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "1.1.2": {
+            "Key": "depd@1.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "2.0.0": {
+            "Key": "depd@2.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "destroy": {
+          "1.0.4": {
+            "Key": "destroy@1.0.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ee-first": {
+          "1.1.1": {
+            "Key": "ee-first@1.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ejs": {
+          "0.8.8": {
+            "Key": "ejs@0.8.8",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "2.7.4": {
+            "Key": "ejs@2.7.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ejs-locals": {
+          "1.0.2": {
+            "Key": "ejs-locals@1.0.2",
+            "Requires": {
+              "ejs": "0.8.x"
+            },
+            "Dependencies": {
+              "ejs": "0.8.8"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "escape-html": {
+          "1.0.3": {
+            "Key": "escape-html@1.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "etag": {
+          "1.7.0": {
+            "Key": "etag@1.7.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "express": {
+          "4.13.4": {
+            "Key": "express@4.13.4",
+            "Requires": {
+              "accepts": "~1.2.12",
+              "array-flatten": "1.1.1",
+              "content-disposition": "0.5.1",
+              "content-type": "~1.0.1",
+              "cookie": "0.1.5",
+              "cookie-signature": "1.0.6",
+              "debug": "~2.2.0",
+              "depd": "~1.1.0",
+              "escape-html": "~1.0.3",
+              "etag": "~1.7.0",
+              "finalhandler": "0.4.1",
+              "fresh": "0.3.0",
+              "merge-descriptors": "1.0.1",
+              "methods": "~1.1.2",
+              "on-finished": "~2.3.0",
+              "parseurl": "~1.3.1",
+              "path-to-regexp": "0.1.7",
+              "proxy-addr": "~1.0.10",
+              "qs": "4.0.0",
+              "range-parser": "~1.0.3",
+              "send": "0.13.1",
+              "serve-static": "~1.10.2",
+              "type-is": "~1.6.6",
+              "utils-merge": "1.0.0",
+              "vary": "~1.0.1"
+            },
+            "Dependencies": {
+              "accepts": "1.2.13",
+              "array-flatten": "1.1.1",
+              "content-disposition": "0.5.1",
+              "content-type": "1.0.5",
+              "cookie": "0.1.5",
+              "cookie-signature": "1.0.6",
+              "debug": "2.2.0",
+              "depd": "1.1.2",
+              "escape-html": "1.0.3",
+              "etag": "1.7.0",
+              "finalhandler": "0.4.1",
+              "fresh": "0.3.0",
+              "merge-descriptors": "1.0.1",
+              "methods": "1.1.2",
+              "on-finished": "2.3.0",
+              "parseurl": "1.3.3",
+              "path-to-regexp": "0.1.7",
+              "proxy-addr": "1.0.10",
+              "qs": "4.0.0",
+              "range-parser": "1.0.3",
+              "send": "0.13.1",
+              "serve-static": "1.10.3",
+              "type-is": "1.6.18",
+              "utils-merge": "1.0.0",
+              "vary": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "express-session": {
+          "1.17.3": {
+            "Key": "express-session@1.17.3",
+            "Requires": {
+              "cookie": "0.4.2",
+              "cookie-signature": "1.0.6",
+              "debug": "2.6.9",
+              "depd": "~2.0.0",
+              "on-headers": "~1.0.2",
+              "parseurl": "~1.3.3",
+              "safe-buffer": "5.2.1",
+              "uid-safe": "~2.1.5"
+            },
+            "Dependencies": {
+              "cookie": "0.4.2",
+              "cookie-signature": "1.0.6",
+              "debug": "2.6.9",
+              "depd": "2.0.0",
+              "on-headers": "1.0.2",
+              "parseurl": "1.3.3",
+              "safe-buffer": "5.2.1",
+              "uid-safe": "2.1.5"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "finalhandler": {
+          "0.4.1": {
+            "Key": "finalhandler@0.4.1",
+            "Requires": {
+              "debug": "~2.2.0",
+              "escape-html": "~1.0.3",
+              "on-finished": "~2.3.0",
+              "unpipe": "~1.0.0"
+            },
+            "Dependencies": {
+              "debug": "2.2.0",
+              "escape-html": "1.0.3",
+              "on-finished": "2.3.0",
+              "unpipe": "1.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "forwarded": {
+          "0.1.2": {
+            "Key": "forwarded@0.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "fresh": {
+          "0.3.0": {
+            "Key": "fresh@0.3.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "generic-pool": {
+          "2.4.2": {
+            "Key": "generic-pool@2.4.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "http-errors": {
+          "1.3.1": {
+            "Key": "http-errors@1.3.1",
+            "Requires": {
+              "inherits": "~2.0.1",
+              "statuses": "1"
+            },
+            "Dependencies": {
+              "inherits": "2.0.4",
+              "statuses": "1.2.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "iconv-lite": {
+          "0.4.11": {
+            "Key": "iconv-lite@0.4.11",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "0.4.13": {
+            "Key": "iconv-lite@0.4.13",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "inherits": {
+          "2.0.4": {
+            "Key": "inherits@2.0.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ipaddr.js": {
+          "1.0.5": {
+            "Key": "ipaddr.js@1.0.5",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "isarray": {
+          "0.0.1": {
+            "Key": "isarray@0.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "log4js": {
+          "0.6.38": {
+            "Key": "log4js@0.6.38",
+            "Requires": {
+              "readable-stream": "~1.0.2",
+              "semver": "~4.3.3"
+            },
+            "Dependencies": {
+              "readable-stream": "1.0.34",
+              "semver": "4.3.6"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "manakin": {
+          "0.3.0": {
+            "Key": "manakin@0.3.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "media-typer": {
+          "0.3.0": {
+            "Key": "media-typer@0.3.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "merge-descriptors": {
+          "1.0.1": {
+            "Key": "merge-descriptors@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "methods": {
+          "1.1.2": {
+            "Key": "methods@1.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "mime": {
+          "1.3.4": {
+            "Key": "mime@1.3.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "mime-db": {
+          "1.52.0": {
+            "Key": "mime-db@1.52.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "mime-types": {
+          "2.1.35": {
+            "Key": "mime-types@2.1.35",
+            "Requires": {
+              "mime-db": "1.52.0"
+            },
+            "Dependencies": {
+              "mime-db": "1.52.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "morgan": {
+          "1.6.1": {
+            "Key": "morgan@1.6.1",
+            "Requires": {
+              "basic-auth": "~1.0.3",
+              "debug": "~2.2.0",
+              "depd": "~1.0.1",
+              "on-finished": "~2.3.0",
+              "on-headers": "~1.0.0"
+            },
+            "Dependencies": {
+              "basic-auth": "1.0.4",
+              "debug": "2.2.0",
+              "depd": "1.0.1",
+              "on-finished": "2.3.0",
+              "on-headers": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ms": {
+          "0.7.1": {
+            "Key": "ms@0.7.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "0.7.2": {
+            "Key": "ms@0.7.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "2.0.0": {
+            "Key": "ms@2.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "negotiator": {
+          "0.5.3": {
+            "Key": "negotiator@0.5.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "on-finished": {
+          "2.3.0": {
+            "Key": "on-finished@2.3.0",
+            "Requires": {
+              "ee-first": "1.1.1"
+            },
+            "Dependencies": {
+              "ee-first": "1.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "on-headers": {
+          "1.0.2": {
+            "Key": "on-headers@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "packet-reader": {
+          "0.2.0": {
+            "Key": "packet-reader@0.2.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "parseurl": {
+          "1.3.3": {
+            "Key": "parseurl@1.3.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "path-to-regexp": {
+          "0.1.7": {
+            "Key": "path-to-regexp@0.1.7",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "pg": {
+          "5.1.0": {
+            "Key": "pg@5.1.0",
+            "Requires": {
+              "buffer-writer": "1.0.1",
+              "generic-pool": "2.4.2",
+              "packet-reader": "0.2.0",
+              "pg-connection-string": "0.1.3",
+              "pg-types": "1.*",
+              "pgpass": "0.0.6",
+              "semver": "4.3.2"
+            },
+            "Dependencies": {
+              "buffer-writer": "1.0.1",
+              "generic-pool": "2.4.2",
+              "packet-reader": "0.2.0",
+              "pg-connection-string": "0.1.3",
+              "pg-types": "1.13.0",
+              "pgpass": "0.0.6",
+              "semver": "4.3.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "pg-connection-string": {
+          "0.1.3": {
+            "Key": "pg-connection-string@0.1.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "pg-int8": {
+          "1.0.1": {
+            "Key": "pg-int8@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "pg-minify": {
+          "0.3.5": {
+            "Key": "pg-minify@0.3.5",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "pg-promise": {
+          "4.8.1": {
+            "Key": "pg-promise@4.8.1",
+            "Requires": {
+              "manakin": "0.3",
+              "pg": "5.1",
+              "pg-minify": "0.3",
+              "spex": "0.4"
+            },
+            "Dependencies": {
+              "manakin": "0.3.0",
+              "pg": "5.1.0",
+              "pg-minify": "0.3.5",
+              "spex": "0.4.6"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "pg-types": {
+          "1.13.0": {
+            "Key": "pg-types@1.13.0",
+            "Requires": {
+              "pg-int8": "1.0.1",
+              "postgres-array": "~1.0.0",
+              "postgres-bytea": "~1.0.0",
+              "postgres-date": "~1.0.0",
+              "postgres-interval": "^1.1.0"
+            },
+            "Dependencies": {
+              "pg-int8": "1.0.1",
+              "postgres-array": "1.0.3",
+              "postgres-bytea": "1.0.0",
+              "postgres-date": "1.0.7",
+              "postgres-interval": "1.2.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "pgpass": {
+          "0.0.6": {
+            "Key": "pgpass@0.0.6",
+            "Requires": {
+              "split": "^1.0.0"
+            },
+            "Dependencies": {
+              "split": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "postgres-array": {
+          "1.0.3": {
+            "Key": "postgres-array@1.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "postgres-bytea": {
+          "1.0.0": {
+            "Key": "postgres-bytea@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "postgres-date": {
+          "1.0.7": {
+            "Key": "postgres-date@1.0.7",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "postgres-interval": {
+          "1.2.0": {
+            "Key": "postgres-interval@1.2.0",
+            "Requires": {
+              "xtend": "^4.0.0"
+            },
+            "Dependencies": {
+              "xtend": "4.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "proxy-addr": {
+          "1.0.10": {
+            "Key": "proxy-addr@1.0.10",
+            "Requires": {
+              "forwarded": "~0.1.0",
+              "ipaddr.js": "1.0.5"
+            },
+            "Dependencies": {
+              "forwarded": "0.1.2",
+              "ipaddr.js": "1.0.5"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "qs": {
+          "4.0.0": {
+            "Key": "qs@4.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "random-bytes": {
+          "1.0.0": {
+            "Key": "random-bytes@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "range-parser": {
+          "1.0.3": {
+            "Key": "range-parser@1.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "raw-body": {
+          "2.1.7": {
+            "Key": "raw-body@2.1.7",
+            "Requires": {
+              "bytes": "2.4.0",
+              "iconv-lite": "0.4.13",
+              "unpipe": "1.0.0"
+            },
+            "Dependencies": {
+              "bytes": "2.4.0",
+              "iconv-lite": "0.4.13",
+              "unpipe": "1.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "readable-stream": {
+          "1.0.34": {
+            "Key": "readable-stream@1.0.34",
+            "Requires": {
+              "core-util-is": "~1.0.0",
+              "inherits": "~2.0.1",
+              "isarray": "0.0.1",
+              "string_decoder": "~0.10.x"
+            },
+            "Dependencies": {
+              "core-util-is": "1.0.3",
+              "inherits": "2.0.4",
+              "isarray": "0.0.1",
+              "string_decoder": "0.10.31"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "safe-buffer": {
+          "5.2.1": {
+            "Key": "safe-buffer@5.2.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "semver": {
+          "4.3.2": {
+            "Key": "semver@4.3.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "4.3.6": {
+            "Key": "semver@4.3.6",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "send": {
+          "0.13.1": {
+            "Key": "send@0.13.1",
+            "Requires": {
+              "debug": "~2.2.0",
+              "depd": "~1.1.0",
+              "destroy": "~1.0.4",
+              "escape-html": "~1.0.3",
+              "etag": "~1.7.0",
+              "fresh": "0.3.0",
+              "http-errors": "~1.3.1",
+              "mime": "1.3.4",
+              "ms": "0.7.1",
+              "on-finished": "~2.3.0",
+              "range-parser": "~1.0.3",
+              "statuses": "~1.2.1"
+            },
+            "Dependencies": {
+              "debug": "2.2.0",
+              "depd": "1.1.2",
+              "destroy": "1.0.4",
+              "escape-html": "1.0.3",
+              "etag": "1.7.0",
+              "fresh": "0.3.0",
+              "http-errors": "1.3.1",
+              "mime": "1.3.4",
+              "ms": "0.7.1",
+              "on-finished": "2.3.0",
+              "range-parser": "1.0.3",
+              "statuses": "1.2.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "0.13.2": {
+            "Key": "send@0.13.2",
+            "Requires": {
+              "debug": "~2.2.0",
+              "depd": "~1.1.0",
+              "destroy": "~1.0.4",
+              "escape-html": "~1.0.3",
+              "etag": "~1.7.0",
+              "fresh": "0.3.0",
+              "http-errors": "~1.3.1",
+              "mime": "1.3.4",
+              "ms": "0.7.1",
+              "on-finished": "~2.3.0",
+              "range-parser": "~1.0.3",
+              "statuses": "~1.2.1"
+            },
+            "Dependencies": {
+              "debug": "2.2.0",
+              "depd": "1.1.2",
+              "destroy": "1.0.4",
+              "escape-html": "1.0.3",
+              "etag": "1.7.0",
+              "fresh": "0.3.0",
+              "http-errors": "1.3.1",
+              "mime": "1.3.4",
+              "ms": "0.7.1",
+              "on-finished": "2.3.0",
+              "range-parser": "1.0.3",
+              "statuses": "1.2.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "serve-favicon": {
+          "2.3.2": {
+            "Key": "serve-favicon@2.3.2",
+            "Requires": {
+              "etag": "~1.7.0",
+              "fresh": "0.3.0",
+              "ms": "0.7.2",
+              "parseurl": "~1.3.1"
+            },
+            "Dependencies": {
+              "etag": "1.7.0",
+              "fresh": "0.3.0",
+              "ms": "0.7.2",
+              "parseurl": "1.3.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "serve-static": {
+          "1.10.3": {
+            "Key": "serve-static@1.10.3",
+            "Requires": {
+              "escape-html": "~1.0.3",
+              "parseurl": "~1.3.1",
+              "send": "0.13.2"
+            },
+            "Dependencies": {
+              "escape-html": "1.0.3",
+              "parseurl": "1.3.3",
+              "send": "0.13.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "spex": {
+          "0.4.6": {
+            "Key": "spex@0.4.6",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "split": {
+          "1.0.1": {
+            "Key": "split@1.0.1",
+            "Requires": {
+              "through": "2"
+            },
+            "Dependencies": {
+              "through": "2.3.8"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "statuses": {
+          "1.2.1": {
+            "Key": "statuses@1.2.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          },
+          "1.5.0": {
+            "Key": "statuses@1.5.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "string_decoder": {
+          "0.10.31": {
+            "Key": "string_decoder@0.10.31",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "through": {
+          "2.3.8": {
+            "Key": "through@2.3.8",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "type-is": {
+          "1.6.18": {
+            "Key": "type-is@1.6.18",
+            "Requires": {
+              "media-typer": "0.3.0",
+              "mime-types": "~2.1.24"
+            },
+            "Dependencies": {
+              "media-typer": "0.3.0",
+              "mime-types": "2.1.35"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "uid-safe": {
+          "2.1.5": {
+            "Key": "uid-safe@2.1.5",
+            "Requires": {
+              "random-bytes": "~1.0.0"
+            },
+            "Dependencies": {
+              "random-bytes": "1.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "unpipe": {
+          "1.0.0": {
+            "Key": "unpipe@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "utils-merge": {
+          "1.0.0": {
+            "Key": "utils-merge@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "vary": {
+          "1.0.1": {
+            "Key": "vary@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "vulnerable-node-source": {
+          "0.0.0-use.local": {
+            "Key": "vulnerable-node-source@0.0.0-use.local",
+            "Requires": {
+              "body-parser": "~1.13.2",
+              "cookie-parser": "~1.3.5",
+              "debug": "~2.2.0",
+              "ejs": "^2.4.2",
+              "ejs-locals": "^1.0.2",
+              "express": "~4.13.1",
+              "express-session": "^1.13.0",
+              "log4js": "^0.6.36",
+              "morgan": "~1.6.1",
+              "pg-promise": "^4.4.6",
+              "serve-favicon": "~2.3.0"
+            },
+            "Dependencies": {
+              "body-parser": "1.13.3",
+              "cookie-parser": "1.3.5",
+              "debug": "2.2.0",
+              "ejs": "2.7.4",
+              "ejs-locals": "1.0.2",
+              "express": "4.13.4",
+              "express-session": "1.17.3",
+              "log4js": "0.6.38",
+              "morgan": "1.6.1",
+              "pg-promise": "4.8.1",
+              "serve-favicon": "2.3.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "xtend": {
+          "4.0.2": {
+            "Key": "xtend@4.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        }
+      },
+      "start": {
+        "dependencies": [
+          {
+            "name": "ejs-locals",
+            "version": "1.0.2",
+            "constraint": "^1.0.2"
+          },
+          {
+            "name": "express",
+            "version": "4.13.4",
+            "constraint": "~4.13.1"
+          },
+          {
+            "name": "serve-favicon",
+            "version": "2.3.2",
+            "constraint": "~2.3.0"
+          },
+          {
+            "name": "body-parser",
+            "version": "1.13.3",
+            "constraint": "~1.13.2"
+          },
+          {
+            "name": "debug",
+            "version": "2.2.0",
+            "constraint": "~2.2.0"
+          },
+          {
+            "name": "ejs",
+            "version": "2.7.4",
+            "constraint": "^2.4.2"
+          },
+          {
+            "name": "morgan",
+            "version": "1.6.1",
+            "constraint": "~1.6.1"
+          },
+          {
+            "name": "pg-promise",
+            "version": "4.8.1",
+            "constraint": "^4.4.6"
+          },
+          {
+            "name": "cookie-parser",
+            "version": "1.3.5",
+            "constraint": "~1.3.5"
+          },
+          {
+            "name": "express-session",
+            "version": "1.17.3",
+            "constraint": "^1.13.0"
+          },
+          {
+            "name": "log4js",
+            "version": "0.6.38",
+            "constraint": "^0.6.36"
+          }
+        ],
+        "dev_dependencies": null
+      }
+    }
+  },
+  "analysis_info": {
+    "status": "success",
+    "project_name": "vulnerable-node-source",
+    "working_directory": "yarnv3",
+    "package_manager": "YARN",
+    "time": {
+      "analysis_start_time": "2024-09-11 15:35:42.094555 +0200 CEST",
+      "analysis_end_time": "2024-09-11 15:35:42.107115 +0200 CEST",
+      "analysis_delta_time": 0.012559666
+    },
+    "errors": [],
+    "paths": {
+      "lock_file_path": "yarnv3/yarn.lock",
+      "package_file_path": "yarnv3/package.json",
+      "work_space_package_file_paths": {
+        ".": "yarnv3/package.json"
+      },
+      "relative_lock_file_path": "yarnv3/yarn.lock",
+      "relative_package_file_path": "yarnv3/package.json"
+    },
+    "workspaces": {
+      "default_workspace_name": ".",
+      "self_managed_workspace_name": "..",
+      "work_spaces_used": false
+    },
+    "extra": {
+      "version_seperator": "@",
+      "import_path_seperator": " \u003e ",
+      "lock_file_version": 1
+    }
+  }
+}

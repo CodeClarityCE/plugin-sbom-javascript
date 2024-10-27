@@ -1,0 +1,3929 @@
+{
+  "workspaces": {
+    ".": {
+      "dependencies": {
+        "@babel/code-frame": {
+          "7.16.7": {
+            "Key": "@babel/code-frame@7.16.7",
+            "Requires": {
+              "@babel/highlight": "^7.16.7"
+            },
+            "Dependencies": {
+              "@babel/highlight": "7.17.9"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@babel/helper-validator-identifier": {
+          "7.16.7": {
+            "Key": "@babel/helper-validator-identifier@7.16.7",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@babel/highlight": {
+          "7.17.9": {
+            "Key": "@babel/highlight@7.17.9",
+            "Requires": {
+              "@babel/helper-validator-identifier": "^7.16.7",
+              "chalk": "^2.0.0",
+              "js-tokens": "^4.0.0"
+            },
+            "Dependencies": {
+              "@babel/helper-validator-identifier": "7.16.7",
+              "js-tokens": "4.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@babel/runtime": {
+          "7.24.0": {
+            "Key": "@babel/runtime@7.24.0",
+            "Requires": {
+              "regenerator-runtime": "^0.14.0"
+            },
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@babel/runtime-corejs3": {
+          "7.24.0": {
+            "Key": "@babel/runtime-corejs3@7.24.0",
+            "Requires": {
+              "core-js-pure": "^3.30.2",
+              "regenerator-runtime": "^0.14.0"
+            },
+            "Dependencies": {
+              "core-js-pure": "3.36.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@icons/material": {
+          "0.2.4": {
+            "Key": "@icons/material@0.2.4",
+            "Requires": {},
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@nodelib/fs.scandir": {
+          "2.1.5": {
+            "Key": "@nodelib/fs.scandir@2.1.5",
+            "Requires": {
+              "@nodelib/fs.stat": "2.0.5",
+              "run-parallel": "^1.1.9"
+            },
+            "Dependencies": {
+              "@nodelib/fs.stat": "2.0.5",
+              "run-parallel": "1.2.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@nodelib/fs.stat": {
+          "2.0.5": {
+            "Key": "@nodelib/fs.stat@2.0.5",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@nodelib/fs.walk": {
+          "1.2.8": {
+            "Key": "@nodelib/fs.walk@1.2.8",
+            "Requires": {
+              "@nodelib/fs.scandir": "2.1.5",
+              "fastq": "^1.6.0"
+            },
+            "Dependencies": {
+              "@nodelib/fs.scandir": "2.1.5",
+              "fastq": "1.15.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "@yarnpkg/parsers": {
+          "3.0.0": {
+            "Key": "@yarnpkg/parsers@3.0.0",
+            "Requires": {
+              "js-yaml": "^3.10.0",
+              "tslib": "^2.4.0"
+            },
+            "Dependencies": {
+              "js-yaml": "3.14.1",
+              "tslib": "2.6.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "abbrev": {
+          "1.1.1": {
+            "Key": "abbrev@1.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ansi-regex": {
+          "2.1.1": {
+            "Key": "ansi-regex@2.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ansi-styles": {
+          "2.2.1": {
+            "Key": "ansi-styles@2.2.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "argparse": {
+          "1.0.10": {
+            "Key": "argparse@1.0.10",
+            "Requires": {
+              "sprintf-js": "~1.0.2"
+            },
+            "Dependencies": {
+              "sprintf-js": "1.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "array-each": {
+          "1.0.1": {
+            "Key": "array-each@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "array-slice": {
+          "1.1.0": {
+            "Key": "array-slice@1.1.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "asn1.js": {
+          "5.4.1": {
+            "Key": "asn1.js@5.4.1",
+            "Requires": {
+              "bn.js": "^4.0.0",
+              "inherits": "^2.0.1",
+              "minimalistic-assert": "^1.0.0",
+              "safer-buffer": "^2.1.0"
+            },
+            "Dependencies": {
+              "bn.js": "4.12.0",
+              "inherits": "2.0.4",
+              "minimalistic-assert": "1.0.1",
+              "safer-buffer": "2.1.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "async": {
+          "2.6.4": {
+            "Key": "async@2.6.4",
+            "Requires": {
+              "lodash": "^4.17.14"
+            },
+            "Dependencies": {
+              "lodash": "4.17.21"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "babel-polyfill": {
+          "6.26.0": {
+            "Key": "babel-polyfill@6.26.0",
+            "Requires": {
+              "babel-runtime": "^6.26.0",
+              "core-js": "^2.5.0",
+              "regenerator-runtime": "^0.10.5"
+            },
+            "Dependencies": {
+              "babel-runtime": "6.26.0",
+              "core-js": "2.6.12",
+              "regenerator-runtime": "0.10.5"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "babel-runtime": {
+          "6.26.0": {
+            "Key": "babel-runtime@6.26.0",
+            "Requires": {
+              "core-js": "^2.4.0",
+              "regenerator-runtime": "^0.11.0"
+            },
+            "Dependencies": {
+              "core-js": "2.6.12"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "balanced-match": {
+          "1.0.2": {
+            "Key": "balanced-match@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "bn.js": {
+          "4.12.0": {
+            "Key": "bn.js@4.12.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "body": {
+          "5.1.0": {
+            "Key": "body@5.1.0",
+            "Requires": {
+              "continuable-cache": "^0.3.1",
+              "error": "^7.0.0",
+              "raw-body": "~1.1.0",
+              "safe-json-parse": "~1.0.1"
+            },
+            "Dependencies": {
+              "continuable-cache": "0.3.1",
+              "error": "7.2.1",
+              "raw-body": "1.1.7",
+              "safe-json-parse": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "brace-expansion": {
+          "1.1.11": {
+            "Key": "brace-expansion@1.1.11",
+            "Requires": {
+              "balanced-match": "^1.0.0",
+              "concat-map": "0.0.1"
+            },
+            "Dependencies": {
+              "balanced-match": "1.0.2",
+              "concat-map": "0.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "braces": {
+          "3.0.2": {
+            "Key": "braces@3.0.2",
+            "Requires": {
+              "fill-range": "^7.0.1"
+            },
+            "Dependencies": {
+              "fill-range": "7.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "bytes": {
+          "1.0.0": {
+            "Key": "bytes@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "call-bind": {
+          "1.0.2": {
+            "Key": "call-bind@1.0.2",
+            "Requires": {
+              "function-bind": "^1.1.1",
+              "get-intrinsic": "^1.0.2"
+            },
+            "Dependencies": {
+              "function-bind": "1.1.1",
+              "get-intrinsic": "1.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "callsites": {
+          "3.1.0": {
+            "Key": "callsites@3.1.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "camelcase": {
+          "5.3.1": {
+            "Key": "camelcase@5.3.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "chalk": {
+          "1.1.3": {
+            "Key": "chalk@1.1.3",
+            "Requires": {
+              "ansi-styles": "^2.2.1",
+              "escape-string-regexp": "^1.0.2",
+              "has-ansi": "^2.0.0",
+              "strip-ansi": "^3.0.0",
+              "supports-color": "^2.0.0"
+            },
+            "Dependencies": {
+              "ansi-styles": "2.2.1",
+              "escape-string-regexp": "1.0.5",
+              "has-ansi": "2.0.0",
+              "strip-ansi": "3.0.1",
+              "supports-color": "2.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "cliui": {
+          "6.0.0": {
+            "Key": "cliui@6.0.0",
+            "Requires": {
+              "string-width": "^4.2.0",
+              "strip-ansi": "^6.0.0",
+              "wrap-ansi": "^6.2.0"
+            },
+            "Dependencies": {
+              "string-width": "4.2.3",
+              "wrap-ansi": "6.2.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "color-convert": {
+          "1.9.3": {
+            "Key": "color-convert@1.9.3",
+            "Requires": {
+              "color-name": "1.1.3"
+            },
+            "Dependencies": {
+              "color-name": "1.1.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "color-name": {
+          "1.1.3": {
+            "Key": "color-name@1.1.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "colors": {
+          "1.1.2": {
+            "Key": "colors@1.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "concat-map": {
+          "0.0.1": {
+            "Key": "concat-map@0.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "continuable-cache": {
+          "0.3.1": {
+            "Key": "continuable-cache@0.3.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "core-js": {
+          "2.6.12": {
+            "Key": "core-js@2.6.12",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "core-js-pure": {
+          "3.36.0": {
+            "Key": "core-js-pure@3.36.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "cosmiconfig": {
+          "8.3.6": {
+            "Key": "cosmiconfig@8.3.6",
+            "Requires": {
+              "import-fresh": "^3.3.0",
+              "js-yaml": "^4.1.0",
+              "parse-json": "^5.2.0",
+              "path-type": "^4.0.0"
+            },
+            "Dependencies": {
+              "import-fresh": "3.3.0",
+              "parse-json": "5.2.0",
+              "path-type": "4.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "cross-fetch": {
+          "4.0.0": {
+            "Key": "cross-fetch@4.0.0",
+            "Requires": {
+              "node-fetch": "^2.6.12"
+            },
+            "Dependencies": {
+              "node-fetch": "2.7.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "csstype": {
+          "3.0.11": {
+            "Key": "csstype@3.0.11",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "dateformat": {
+          "3.0.3": {
+            "Key": "dateformat@3.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "debounce-promise": {
+          "3.1.2": {
+            "Key": "debounce-promise@3.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "debug": {
+          "3.2.7": {
+            "Key": "debug@3.2.7",
+            "Requires": {
+              "ms": "^2.1.1"
+            },
+            "Dependencies": {
+              "ms": "2.1.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "decamelize": {
+          "1.2.0": {
+            "Key": "decamelize@1.2.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "detect-file": {
+          "1.0.0": {
+            "Key": "detect-file@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "dijkstrajs": {
+          "1.0.2": {
+            "Key": "dijkstrajs@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "dom-helpers": {
+          "5.2.1": {
+            "Key": "dom-helpers@5.2.1",
+            "Requires": {
+              "@babel/runtime": "^7.8.7",
+              "csstype": "^3.0.2"
+            },
+            "Dependencies": {
+              "@babel/runtime": "7.24.0",
+              "csstype": "3.0.11"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "emoji-regex": {
+          "8.0.0": {
+            "Key": "emoji-regex@8.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "encode-utf8": {
+          "1.0.3": {
+            "Key": "encode-utf8@1.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "error": {
+          "7.2.1": {
+            "Key": "error@7.2.1",
+            "Requires": {
+              "string-template": "~0.2.1"
+            },
+            "Dependencies": {
+              "string-template": "0.2.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "error-ex": {
+          "1.3.2": {
+            "Key": "error-ex@1.3.2",
+            "Requires": {
+              "is-arrayish": "^0.2.1"
+            },
+            "Dependencies": {
+              "is-arrayish": "0.2.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "escalade": {
+          "3.1.1": {
+            "Key": "escalade@3.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "escape-string-regexp": {
+          "1.0.5": {
+            "Key": "escape-string-regexp@1.0.5",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "esprima": {
+          "4.0.1": {
+            "Key": "esprima@4.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "eventemitter2": {
+          "0.4.14": {
+            "Key": "eventemitter2@0.4.14",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "exit": {
+          "0.1.2": {
+            "Key": "exit@0.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "expand-tilde": {
+          "2.0.2": {
+            "Key": "expand-tilde@2.0.2",
+            "Requires": {
+              "homedir-polyfill": "^1.0.1"
+            },
+            "Dependencies": {
+              "homedir-polyfill": "1.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "extend": {
+          "3.0.2": {
+            "Key": "extend@3.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "fast-glob": {
+          "3.3.2": {
+            "Key": "fast-glob@3.3.2",
+            "Requires": {
+              "@nodelib/fs.stat": "^2.0.2",
+              "@nodelib/fs.walk": "^1.2.3",
+              "glob-parent": "^5.1.2",
+              "merge2": "^1.3.0",
+              "micromatch": "^4.0.4"
+            },
+            "Dependencies": {
+              "@nodelib/fs.stat": "2.0.5",
+              "@nodelib/fs.walk": "1.2.8",
+              "glob-parent": "5.1.2",
+              "merge2": "1.4.1",
+              "micromatch": "4.0.5"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "fastq": {
+          "1.15.0": {
+            "Key": "fastq@1.15.0",
+            "Requires": {
+              "reusify": "^1.0.4"
+            },
+            "Dependencies": {
+              "reusify": "1.0.4"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "faye-websocket": {
+          "0.10.0": {
+            "Key": "faye-websocket@0.10.0",
+            "Requires": {
+              "websocket-driver": "\u003e=0.5.1"
+            },
+            "Dependencies": {
+              "websocket-driver": "0.7.4"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "file-sync-cmp": {
+          "0.1.1": {
+            "Key": "file-sync-cmp@0.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "fill-range": {
+          "7.0.1": {
+            "Key": "fill-range@7.0.1",
+            "Requires": {
+              "to-regex-range": "^5.0.1"
+            },
+            "Dependencies": {
+              "to-regex-range": "5.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "find-up": {
+          "4.1.0": {
+            "Key": "find-up@4.1.0",
+            "Requires": {
+              "locate-path": "^5.0.0",
+              "path-exists": "^4.0.0"
+            },
+            "Dependencies": {
+              "locate-path": "5.0.0",
+              "path-exists": "4.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "findup-sync": {
+          "0.3.0": {
+            "Key": "findup-sync@0.3.0",
+            "Requires": {
+              "glob": "~5.0.0"
+            },
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "fined": {
+          "1.2.0": {
+            "Key": "fined@1.2.0",
+            "Requires": {
+              "expand-tilde": "^2.0.2",
+              "is-plain-object": "^2.0.3",
+              "object.defaults": "^1.1.0",
+              "object.pick": "^1.2.0",
+              "parse-filepath": "^1.0.1"
+            },
+            "Dependencies": {
+              "expand-tilde": "2.0.2",
+              "is-plain-object": "2.0.4",
+              "object.defaults": "1.1.0",
+              "object.pick": "1.3.0",
+              "parse-filepath": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "flagged-respawn": {
+          "1.0.1": {
+            "Key": "flagged-respawn@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "for-in": {
+          "1.0.2": {
+            "Key": "for-in@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "for-own": {
+          "1.0.0": {
+            "Key": "for-own@1.0.0",
+            "Requires": {
+              "for-in": "^1.0.1"
+            },
+            "Dependencies": {
+              "for-in": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "fs.realpath": {
+          "1.0.0": {
+            "Key": "fs.realpath@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "function-bind": {
+          "1.1.1": {
+            "Key": "function-bind@1.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "gaze": {
+          "1.1.3": {
+            "Key": "gaze@1.1.3",
+            "Requires": {
+              "globule": "^1.0.0"
+            },
+            "Dependencies": {
+              "globule": "1.3.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "get-caller-file": {
+          "2.0.5": {
+            "Key": "get-caller-file@2.0.5",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "get-intrinsic": {
+          "1.1.1": {
+            "Key": "get-intrinsic@1.1.1",
+            "Requires": {
+              "function-bind": "^1.1.1",
+              "has": "^1.0.3",
+              "has-symbols": "^1.0.1"
+            },
+            "Dependencies": {
+              "function-bind": "1.1.1",
+              "has": "1.0.3",
+              "has-symbols": "1.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "getobject": {
+          "1.0.2": {
+            "Key": "getobject@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "glob": {
+          "7.1.7": {
+            "Key": "glob@7.1.7",
+            "Requires": {
+              "fs.realpath": "^1.0.0",
+              "inflight": "^1.0.4",
+              "inherits": "2",
+              "minimatch": "^3.0.4",
+              "once": "^1.3.0",
+              "path-is-absolute": "^1.0.0"
+            },
+            "Dependencies": {
+              "fs.realpath": "1.0.0",
+              "inflight": "1.0.6",
+              "inherits": "2.0.4",
+              "minimatch": "3.0.8",
+              "once": "1.4.0",
+              "path-is-absolute": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "glob-parent": {
+          "5.1.2": {
+            "Key": "glob-parent@5.1.2",
+            "Requires": {
+              "is-glob": "^4.0.1"
+            },
+            "Dependencies": {
+              "is-glob": "4.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "global-modules": {
+          "1.0.0": {
+            "Key": "global-modules@1.0.0",
+            "Requires": {
+              "global-prefix": "^1.0.1",
+              "is-windows": "^1.0.1",
+              "resolve-dir": "^1.0.0"
+            },
+            "Dependencies": {
+              "global-prefix": "1.0.2",
+              "is-windows": "1.0.2",
+              "resolve-dir": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "global-prefix": {
+          "1.0.2": {
+            "Key": "global-prefix@1.0.2",
+            "Requires": {
+              "expand-tilde": "^2.0.2",
+              "homedir-polyfill": "^1.0.1",
+              "ini": "^1.3.4",
+              "is-windows": "^1.0.1",
+              "which": "^1.2.14"
+            },
+            "Dependencies": {
+              "expand-tilde": "2.0.2",
+              "homedir-polyfill": "1.0.3",
+              "ini": "1.3.8",
+              "is-windows": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "globule": {
+          "1.3.3": {
+            "Key": "globule@1.3.3",
+            "Requires": {
+              "glob": "~7.1.1",
+              "lodash": "~4.17.10",
+              "minimatch": "~3.0.2"
+            },
+            "Dependencies": {
+              "glob": "7.1.7",
+              "lodash": "4.17.21",
+              "minimatch": "3.0.8"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grapheme-splitter": {
+          "1.0.4": {
+            "Key": "grapheme-splitter@1.0.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grunt": {
+          "1.5.3": {
+            "Key": "grunt@1.5.3",
+            "Requires": {
+              "dateformat": "~3.0.3",
+              "eventemitter2": "~0.4.13",
+              "exit": "~0.1.2",
+              "findup-sync": "~0.3.0",
+              "glob": "~7.1.6",
+              "grunt-cli": "~1.4.3",
+              "grunt-known-options": "~2.0.0",
+              "grunt-legacy-log": "~3.0.0",
+              "grunt-legacy-util": "~2.0.1",
+              "iconv-lite": "~0.4.13",
+              "js-yaml": "~3.14.0",
+              "minimatch": "~3.0.4",
+              "mkdirp": "~1.0.4",
+              "nopt": "~3.0.6",
+              "rimraf": "~3.0.2"
+            },
+            "Dependencies": {
+              "dateformat": "3.0.3",
+              "eventemitter2": "0.4.14",
+              "exit": "0.1.2",
+              "findup-sync": "0.3.0",
+              "glob": "7.1.7",
+              "grunt-cli": "1.4.3",
+              "grunt-known-options": "2.0.0",
+              "grunt-legacy-log": "3.0.0",
+              "grunt-legacy-util": "2.0.1",
+              "iconv-lite": "0.4.24",
+              "js-yaml": "3.14.1",
+              "minimatch": "3.0.8",
+              "mkdirp": "1.0.4",
+              "nopt": "3.0.6",
+              "rimraf": "3.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grunt-cli": {
+          "1.4.3": {
+            "Key": "grunt-cli@1.4.3",
+            "Requires": {
+              "grunt-known-options": "~2.0.0",
+              "interpret": "~1.1.0",
+              "liftup": "~3.0.1",
+              "nopt": "~4.0.1",
+              "v8flags": "~3.2.0"
+            },
+            "Dependencies": {
+              "grunt-known-options": "2.0.0",
+              "interpret": "1.1.0",
+              "liftup": "3.0.1",
+              "v8flags": "3.2.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grunt-contrib-copy": {
+          "1.0.0": {
+            "Key": "grunt-contrib-copy@1.0.0",
+            "Requires": {
+              "chalk": "^1.1.1",
+              "file-sync-cmp": "^0.1.0"
+            },
+            "Dependencies": {
+              "chalk": "1.1.3",
+              "file-sync-cmp": "0.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grunt-contrib-watch": {
+          "1.1.0": {
+            "Key": "grunt-contrib-watch@1.1.0",
+            "Requires": {
+              "async": "^2.6.0",
+              "gaze": "^1.1.0",
+              "lodash": "^4.17.10",
+              "tiny-lr": "^1.1.1"
+            },
+            "Dependencies": {
+              "async": "2.6.4",
+              "gaze": "1.1.3",
+              "lodash": "4.17.21",
+              "tiny-lr": "1.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grunt-known-options": {
+          "2.0.0": {
+            "Key": "grunt-known-options@2.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grunt-legacy-log": {
+          "3.0.0": {
+            "Key": "grunt-legacy-log@3.0.0",
+            "Requires": {
+              "colors": "~1.1.2",
+              "grunt-legacy-log-utils": "~2.1.0",
+              "hooker": "~0.2.3",
+              "lodash": "~4.17.19"
+            },
+            "Dependencies": {
+              "colors": "1.1.2",
+              "grunt-legacy-log-utils": "2.1.0",
+              "hooker": "0.2.3",
+              "lodash": "4.17.21"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grunt-legacy-log-utils": {
+          "2.1.0": {
+            "Key": "grunt-legacy-log-utils@2.1.0",
+            "Requires": {
+              "chalk": "~4.1.0",
+              "lodash": "~4.17.19"
+            },
+            "Dependencies": {
+              "lodash": "4.17.21"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "grunt-legacy-util": {
+          "2.0.1": {
+            "Key": "grunt-legacy-util@2.0.1",
+            "Requires": {
+              "async": "~3.2.0",
+              "exit": "~0.1.2",
+              "getobject": "~1.0.0",
+              "hooker": "~0.2.3",
+              "lodash": "~4.17.21",
+              "underscore.string": "~3.3.5",
+              "which": "~2.0.2"
+            },
+            "Dependencies": {
+              "exit": "0.1.2",
+              "getobject": "1.0.2",
+              "hooker": "0.2.3",
+              "lodash": "4.17.21",
+              "underscore.string": "3.3.6",
+              "which": "2.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "has": {
+          "1.0.3": {
+            "Key": "has@1.0.3",
+            "Requires": {
+              "function-bind": "^1.1.1"
+            },
+            "Dependencies": {
+              "function-bind": "1.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "has-ansi": {
+          "2.0.0": {
+            "Key": "has-ansi@2.0.0",
+            "Requires": {
+              "ansi-regex": "^2.0.0"
+            },
+            "Dependencies": {
+              "ansi-regex": "2.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "has-flag": {
+          "3.0.0": {
+            "Key": "has-flag@3.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "has-symbols": {
+          "1.0.3": {
+            "Key": "has-symbols@1.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "history": {
+          "4.10.1": {
+            "Key": "history@4.10.1",
+            "Requires": {
+              "@babel/runtime": "^7.1.2",
+              "loose-envify": "^1.2.0",
+              "resolve-pathname": "^3.0.0",
+              "tiny-invariant": "^1.0.2",
+              "tiny-warning": "^1.0.0",
+              "value-equal": "^1.0.1"
+            },
+            "Dependencies": {
+              "@babel/runtime": "7.24.0",
+              "loose-envify": "1.4.0",
+              "resolve-pathname": "3.0.0",
+              "tiny-invariant": "1.2.0",
+              "tiny-warning": "1.0.3",
+              "value-equal": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "hoist-non-react-statics": {
+          "3.3.2": {
+            "Key": "hoist-non-react-statics@3.3.2",
+            "Requires": {
+              "react-is": "^16.7.0"
+            },
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "homedir-polyfill": {
+          "1.0.3": {
+            "Key": "homedir-polyfill@1.0.3",
+            "Requires": {
+              "parse-passwd": "^1.0.0"
+            },
+            "Dependencies": {
+              "parse-passwd": "1.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "hooker": {
+          "0.2.3": {
+            "Key": "hooker@0.2.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "html-parse-stringify": {
+          "3.0.1": {
+            "Key": "html-parse-stringify@3.0.1",
+            "Requires": {
+              "void-elements": "3.1.0"
+            },
+            "Dependencies": {
+              "void-elements": "3.1.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "html5-qrcode": {
+          "2.3.8": {
+            "Key": "html5-qrcode@2.3.8",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "http-parser-js": {
+          "0.5.6": {
+            "Key": "http-parser-js@0.5.6",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "i18next": {
+          "23.10.0": {
+            "Key": "i18next@23.10.0",
+            "Requires": {
+              "@babel/runtime": "^7.23.2"
+            },
+            "Dependencies": {
+              "@babel/runtime": "7.24.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "i18next-http-backend": {
+          "2.5.0": {
+            "Key": "i18next-http-backend@2.5.0",
+            "Requires": {
+              "cross-fetch": "4.0.0"
+            },
+            "Dependencies": {
+              "cross-fetch": "4.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "iconv-lite": {
+          "0.4.24": {
+            "Key": "iconv-lite@0.4.24",
+            "Requires": {
+              "safer-buffer": "\u003e= 2.1.2 \u003c 3"
+            },
+            "Dependencies": {
+              "safer-buffer": "2.1.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "import-fresh": {
+          "3.3.0": {
+            "Key": "import-fresh@3.3.0",
+            "Requires": {
+              "parent-module": "^1.0.0",
+              "resolve-from": "^4.0.0"
+            },
+            "Dependencies": {
+              "parent-module": "1.0.1",
+              "resolve-from": "4.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "inflight": {
+          "1.0.6": {
+            "Key": "inflight@1.0.6",
+            "Requires": {
+              "once": "^1.3.0",
+              "wrappy": "1"
+            },
+            "Dependencies": {
+              "once": "1.4.0",
+              "wrappy": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "inherits": {
+          "2.0.4": {
+            "Key": "inherits@2.0.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ini": {
+          "1.3.8": {
+            "Key": "ini@1.3.8",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "interpret": {
+          "1.1.0": {
+            "Key": "interpret@1.1.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ip-regex": {
+          "5.0.0": {
+            "Key": "ip-regex@5.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-absolute": {
+          "1.0.0": {
+            "Key": "is-absolute@1.0.0",
+            "Requires": {
+              "is-relative": "^1.0.0",
+              "is-windows": "^1.0.1"
+            },
+            "Dependencies": {
+              "is-relative": "1.0.0",
+              "is-windows": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-arrayish": {
+          "0.2.1": {
+            "Key": "is-arrayish@0.2.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-core-module": {
+          "2.8.1": {
+            "Key": "is-core-module@2.8.1",
+            "Requires": {
+              "has": "^1.0.3"
+            },
+            "Dependencies": {
+              "has": "1.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-extglob": {
+          "2.1.1": {
+            "Key": "is-extglob@2.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-fullwidth-code-point": {
+          "3.0.0": {
+            "Key": "is-fullwidth-code-point@3.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-glob": {
+          "4.0.3": {
+            "Key": "is-glob@4.0.3",
+            "Requires": {
+              "is-extglob": "^2.1.1"
+            },
+            "Dependencies": {
+              "is-extglob": "2.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-number": {
+          "7.0.0": {
+            "Key": "is-number@7.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-plain-object": {
+          "2.0.4": {
+            "Key": "is-plain-object@2.0.4",
+            "Requires": {
+              "isobject": "^3.0.1"
+            },
+            "Dependencies": {
+              "isobject": "3.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-relative": {
+          "1.0.0": {
+            "Key": "is-relative@1.0.0",
+            "Requires": {
+              "is-unc-path": "^1.0.0"
+            },
+            "Dependencies": {
+              "is-unc-path": "1.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-unc-path": {
+          "1.0.0": {
+            "Key": "is-unc-path@1.0.0",
+            "Requires": {
+              "unc-path-regex": "^0.1.2"
+            },
+            "Dependencies": {
+              "unc-path-regex": "0.1.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "is-windows": {
+          "1.0.2": {
+            "Key": "is-windows@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "isarray": {
+          "0.0.1": {
+            "Key": "isarray@0.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "isexe": {
+          "2.0.0": {
+            "Key": "isexe@2.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "isobject": {
+          "3.0.1": {
+            "Key": "isobject@3.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "jquery": {
+          "3.6.0": {
+            "Key": "jquery@3.6.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "js-tokens": {
+          "4.0.0": {
+            "Key": "js-tokens@4.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "js-yaml": {
+          "3.14.1": {
+            "Key": "js-yaml@3.14.1",
+            "Requires": {
+              "argparse": "^1.0.7",
+              "esprima": "^4.0.0"
+            },
+            "Dependencies": {
+              "argparse": "1.0.10",
+              "esprima": "4.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "json-parse-even-better-errors": {
+          "2.3.1": {
+            "Key": "json-parse-even-better-errors@2.3.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "jssha": {
+          "3.3.1": {
+            "Key": "jssha@3.3.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "kind-of": {
+          "6.0.3": {
+            "Key": "kind-of@6.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "liftup": {
+          "3.0.1": {
+            "Key": "liftup@3.0.1",
+            "Requires": {
+              "extend": "^3.0.2",
+              "findup-sync": "^4.0.0",
+              "fined": "^1.2.0",
+              "flagged-respawn": "^1.0.1",
+              "is-plain-object": "^2.0.4",
+              "object.map": "^1.0.1",
+              "rechoir": "^0.7.0",
+              "resolve": "^1.19.0"
+            },
+            "Dependencies": {
+              "extend": "3.0.2",
+              "fined": "1.2.0",
+              "flagged-respawn": "1.0.1",
+              "is-plain-object": "2.0.4",
+              "object.map": "1.0.1",
+              "rechoir": "0.7.1",
+              "resolve": "1.22.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "lines-and-columns": {
+          "1.2.4": {
+            "Key": "lines-and-columns@1.2.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "livereload-js": {
+          "2.4.0": {
+            "Key": "livereload-js@2.4.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "locate-path": {
+          "5.0.0": {
+            "Key": "locate-path@5.0.0",
+            "Requires": {
+              "p-locate": "^4.1.0"
+            },
+            "Dependencies": {
+              "p-locate": "4.1.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "lockfile-lint": {
+          "4.12.1": {
+            "Key": "lockfile-lint@4.12.1",
+            "Requires": {
+              "cosmiconfig": "^8.2.0",
+              "debug": "^4.3.4",
+              "fast-glob": "^3.3.1",
+              "lockfile-lint-api": "^5.8.0",
+              "yargs": "^17.7.2"
+            },
+            "Dependencies": {
+              "cosmiconfig": "8.3.6",
+              "fast-glob": "3.3.2",
+              "lockfile-lint-api": "5.8.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "lockfile-lint-api": {
+          "5.8.0": {
+            "Key": "lockfile-lint-api@5.8.0",
+            "Requires": {
+              "@yarnpkg/parsers": "^3.0.0-rc.32",
+              "debug": "^4.3.4",
+              "object-hash": "^3.0.0"
+            },
+            "Dependencies": {
+              "@yarnpkg/parsers": "3.0.0",
+              "object-hash": "3.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "lodash": {
+          "4.17.21": {
+            "Key": "lodash@4.17.21",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "lodash-es": {
+          "4.17.21": {
+            "Key": "lodash-es@4.17.21",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "loose-envify": {
+          "1.4.0": {
+            "Key": "loose-envify@1.4.0",
+            "Requires": {
+              "js-tokens": "^3.0.0 || ^4.0.0"
+            },
+            "Dependencies": {
+              "js-tokens": "4.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "luxon": {
+          "3.4.4": {
+            "Key": "luxon@3.4.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "make-iterator": {
+          "1.0.1": {
+            "Key": "make-iterator@1.0.1",
+            "Requires": {
+              "kind-of": "^6.0.2"
+            },
+            "Dependencies": {
+              "kind-of": "6.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "map-cache": {
+          "0.2.2": {
+            "Key": "map-cache@0.2.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "material-colors": {
+          "1.2.6": {
+            "Key": "material-colors@1.2.6",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "merge2": {
+          "1.4.1": {
+            "Key": "merge2@1.4.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "micromatch": {
+          "4.0.5": {
+            "Key": "micromatch@4.0.5",
+            "Requires": {
+              "braces": "^3.0.2",
+              "picomatch": "^2.3.1"
+            },
+            "Dependencies": {
+              "braces": "3.0.2",
+              "picomatch": "2.3.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "mini-create-react-context": {
+          "0.4.1": {
+            "Key": "mini-create-react-context@0.4.1",
+            "Requires": {
+              "@babel/runtime": "^7.12.1",
+              "tiny-warning": "^1.0.3"
+            },
+            "Dependencies": {
+              "@babel/runtime": "7.24.0",
+              "tiny-warning": "1.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "minimalistic-assert": {
+          "1.0.1": {
+            "Key": "minimalistic-assert@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "minimatch": {
+          "3.0.8": {
+            "Key": "minimatch@3.0.8",
+            "Requires": {
+              "brace-expansion": "^1.1.7"
+            },
+            "Dependencies": {
+              "brace-expansion": "1.1.11"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "mkdirp": {
+          "1.0.4": {
+            "Key": "mkdirp@1.0.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "ms": {
+          "2.1.3": {
+            "Key": "ms@2.1.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "node-fetch": {
+          "2.7.0": {
+            "Key": "node-fetch@2.7.0",
+            "Requires": {
+              "whatwg-url": "^5.0.0"
+            },
+            "Dependencies": {
+              "whatwg-url": "5.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "nopt": {
+          "3.0.6": {
+            "Key": "nopt@3.0.6",
+            "Requires": {
+              "abbrev": "1"
+            },
+            "Dependencies": {
+              "abbrev": "1.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "object-assign": {
+          "4.1.1": {
+            "Key": "object-assign@4.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "object-hash": {
+          "3.0.0": {
+            "Key": "object-hash@3.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "object-inspect": {
+          "1.12.0": {
+            "Key": "object-inspect@1.12.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "object.defaults": {
+          "1.1.0": {
+            "Key": "object.defaults@1.1.0",
+            "Requires": {
+              "array-each": "^1.0.1",
+              "array-slice": "^1.0.0",
+              "for-own": "^1.0.0",
+              "isobject": "^3.0.0"
+            },
+            "Dependencies": {
+              "array-each": "1.0.1",
+              "array-slice": "1.1.0",
+              "for-own": "1.0.0",
+              "isobject": "3.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "object.map": {
+          "1.0.1": {
+            "Key": "object.map@1.0.1",
+            "Requires": {
+              "for-own": "^1.0.0",
+              "make-iterator": "^1.0.0"
+            },
+            "Dependencies": {
+              "for-own": "1.0.0",
+              "make-iterator": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "object.pick": {
+          "1.3.0": {
+            "Key": "object.pick@1.3.0",
+            "Requires": {
+              "isobject": "^3.0.1"
+            },
+            "Dependencies": {
+              "isobject": "3.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "once": {
+          "1.4.0": {
+            "Key": "once@1.4.0",
+            "Requires": {
+              "wrappy": "1"
+            },
+            "Dependencies": {
+              "wrappy": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "openpgp": {
+          "5.2.1": {
+            "Key": "openpgp@5.2.1",
+            "Requires": {
+              "asn1.js": "^5.0.0"
+            },
+            "Dependencies": {
+              "asn1.js": "5.4.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "os-homedir": {
+          "1.0.2": {
+            "Key": "os-homedir@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "os-tmpdir": {
+          "1.0.2": {
+            "Key": "os-tmpdir@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "osenv": {
+          "0.1.5": {
+            "Key": "osenv@0.1.5",
+            "Requires": {
+              "os-homedir": "^1.0.0",
+              "os-tmpdir": "^1.0.0"
+            },
+            "Dependencies": {
+              "os-homedir": "1.0.2",
+              "os-tmpdir": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "otpauth": {
+          "9.1.4": {
+            "Key": "otpauth@9.1.4",
+            "Requires": {
+              "jssha": "~3.3.0"
+            },
+            "Dependencies": {
+              "jssha": "3.3.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "p-limit": {
+          "2.3.0": {
+            "Key": "p-limit@2.3.0",
+            "Requires": {
+              "p-try": "^2.0.0"
+            },
+            "Dependencies": {
+              "p-try": "2.2.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "p-locate": {
+          "4.1.0": {
+            "Key": "p-locate@4.1.0",
+            "Requires": {
+              "p-limit": "^2.2.0"
+            },
+            "Dependencies": {
+              "p-limit": "2.3.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "p-try": {
+          "2.2.0": {
+            "Key": "p-try@2.2.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "parent-module": {
+          "1.0.1": {
+            "Key": "parent-module@1.0.1",
+            "Requires": {
+              "callsites": "^3.0.0"
+            },
+            "Dependencies": {
+              "callsites": "3.1.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "parse-filepath": {
+          "1.0.2": {
+            "Key": "parse-filepath@1.0.2",
+            "Requires": {
+              "is-absolute": "^1.0.0",
+              "map-cache": "^0.2.0",
+              "path-root": "^0.1.1"
+            },
+            "Dependencies": {
+              "is-absolute": "1.0.0",
+              "map-cache": "0.2.2",
+              "path-root": "0.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "parse-json": {
+          "5.2.0": {
+            "Key": "parse-json@5.2.0",
+            "Requires": {
+              "@babel/code-frame": "^7.0.0",
+              "error-ex": "^1.3.1",
+              "json-parse-even-better-errors": "^2.3.0",
+              "lines-and-columns": "^1.1.6"
+            },
+            "Dependencies": {
+              "@babel/code-frame": "7.16.7",
+              "error-ex": "1.3.2",
+              "json-parse-even-better-errors": "2.3.1",
+              "lines-and-columns": "1.2.4"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "parse-passwd": {
+          "1.0.0": {
+            "Key": "parse-passwd@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "passbolt-styleguide": {
+          "4.9.2": {
+            "Key": "passbolt-styleguide@4.9.2",
+            "Requires": {
+              "debounce-promise": "^3.1.2",
+              "grapheme-splitter": "^1.0.4",
+              "html5-qrcode": "^2.3.8",
+              "i18next": "^23.7.16",
+              "i18next-http-backend": "^2.4.2",
+              "ip-regex": "^5.0.0",
+              "jssha": "^3.2.0",
+              "luxon": "^3.4.4",
+              "otpauth": "^9.1.4",
+              "prop-types": "^15.7.2",
+              "qrcode": "^1.5.0",
+              "react": "17.0.2",
+              "react-color": "^2.19.3",
+              "react-dom": "17.0.2",
+              "react-i18next": "^14.0.0",
+              "react-list": "^0.8.15",
+              "react-router-dom": "^5.2.0",
+              "react-transition-group": "^4.4.1",
+              "uuid": "^8.3.0",
+              "validator": "^13.9.0",
+              "webextension-polyfill": "^0.10.0",
+              "xregexp": "^5.1.1"
+            },
+            "Dependencies": {
+              "debounce-promise": "3.1.2",
+              "grapheme-splitter": "1.0.4",
+              "html5-qrcode": "2.3.8",
+              "i18next": "23.10.0",
+              "i18next-http-backend": "2.5.0",
+              "ip-regex": "5.0.0",
+              "jssha": "3.3.1",
+              "luxon": "3.4.4",
+              "otpauth": "9.1.4",
+              "prop-types": "15.8.1",
+              "qrcode": "1.5.0",
+              "react-color": "2.19.3",
+              "react-i18next": "14.0.7",
+              "react-list": "0.8.17",
+              "react-router-dom": "5.3.1",
+              "react-transition-group": "4.4.2",
+              "uuid": "8.3.2",
+              "validator": "13.9.0",
+              "webextension-polyfill": "0.10.0",
+              "xregexp": "5.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "path-exists": {
+          "4.0.0": {
+            "Key": "path-exists@4.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "path-is-absolute": {
+          "1.0.1": {
+            "Key": "path-is-absolute@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "path-parse": {
+          "1.0.7": {
+            "Key": "path-parse@1.0.7",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "path-root": {
+          "0.1.1": {
+            "Key": "path-root@0.1.1",
+            "Requires": {
+              "path-root-regex": "^0.1.0"
+            },
+            "Dependencies": {
+              "path-root-regex": "0.1.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "path-root-regex": {
+          "0.1.2": {
+            "Key": "path-root-regex@0.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "path-to-regexp": {
+          "1.8.0": {
+            "Key": "path-to-regexp@1.8.0",
+            "Requires": {
+              "isarray": "0.0.1"
+            },
+            "Dependencies": {
+              "isarray": "0.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "path-type": {
+          "4.0.0": {
+            "Key": "path-type@4.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "picomatch": {
+          "2.3.1": {
+            "Key": "picomatch@2.3.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "pngjs": {
+          "5.0.0": {
+            "Key": "pngjs@5.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "prop-types": {
+          "15.8.1": {
+            "Key": "prop-types@15.8.1",
+            "Requires": {
+              "loose-envify": "^1.4.0",
+              "object-assign": "^4.1.1",
+              "react-is": "^16.13.1"
+            },
+            "Dependencies": {
+              "loose-envify": "1.4.0",
+              "object-assign": "4.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "qrcode": {
+          "1.5.0": {
+            "Key": "qrcode@1.5.0",
+            "Requires": {
+              "dijkstrajs": "^1.0.1",
+              "encode-utf8": "^1.0.3",
+              "pngjs": "^5.0.0",
+              "yargs": "^15.3.1"
+            },
+            "Dependencies": {
+              "dijkstrajs": "1.0.2",
+              "encode-utf8": "1.0.3",
+              "pngjs": "5.0.0",
+              "yargs": "15.4.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "qs": {
+          "6.10.3": {
+            "Key": "qs@6.10.3",
+            "Requires": {
+              "side-channel": "^1.0.4"
+            },
+            "Dependencies": {
+              "side-channel": "1.0.4"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "queue-microtask": {
+          "1.2.3": {
+            "Key": "queue-microtask@1.2.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "raw-body": {
+          "1.1.7": {
+            "Key": "raw-body@1.1.7",
+            "Requires": {
+              "bytes": "1",
+              "string_decoder": "0.10"
+            },
+            "Dependencies": {
+              "bytes": "1.0.0",
+              "string_decoder": "0.10.31"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "react": {
+          "16.14.0": {
+            "Key": "react@16.14.0",
+            "Requires": {
+              "loose-envify": "^1.1.0",
+              "object-assign": "^4.1.1",
+              "prop-types": "^15.6.2"
+            },
+            "Dependencies": {
+              "loose-envify": "1.4.0",
+              "object-assign": "4.1.1",
+              "prop-types": "15.8.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "react-color": {
+          "2.19.3": {
+            "Key": "react-color@2.19.3",
+            "Requires": {
+              "@icons/material": "^0.2.4",
+              "lodash": "^4.17.15",
+              "lodash-es": "^4.17.15",
+              "material-colors": "^1.2.1",
+              "prop-types": "^15.5.10",
+              "reactcss": "^1.2.0",
+              "tinycolor2": "^1.4.1"
+            },
+            "Dependencies": {
+              "@icons/material": "0.2.4",
+              "lodash": "4.17.21",
+              "lodash-es": "4.17.21",
+              "material-colors": "1.2.6",
+              "prop-types": "15.8.1",
+              "reactcss": "1.2.3",
+              "tinycolor2": "1.4.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "react-dom": {
+          "16.14.0": {
+            "Key": "react-dom@16.14.0",
+            "Requires": {
+              "loose-envify": "^1.1.0",
+              "object-assign": "^4.1.1",
+              "prop-types": "^15.6.2",
+              "scheduler": "^0.19.1"
+            },
+            "Dependencies": {
+              "loose-envify": "1.4.0",
+              "object-assign": "4.1.1",
+              "prop-types": "15.8.1",
+              "scheduler": "0.19.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "react-i18next": {
+          "14.0.7": {
+            "Key": "react-i18next@14.0.7",
+            "Requires": {
+              "@babel/runtime": "^7.23.9",
+              "html-parse-stringify": "^3.0.1"
+            },
+            "Dependencies": {
+              "@babel/runtime": "7.24.0",
+              "html-parse-stringify": "3.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "react-list": {
+          "0.8.17": {
+            "Key": "react-list@0.8.17",
+            "Requires": {
+              "prop-types": "15"
+            },
+            "Dependencies": {
+              "prop-types": "15.8.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "react-router": {
+          "5.3.1": {
+            "Key": "react-router@5.3.1",
+            "Requires": {
+              "@babel/runtime": "^7.12.13",
+              "history": "^4.9.0",
+              "hoist-non-react-statics": "^3.1.0",
+              "loose-envify": "^1.3.1",
+              "mini-create-react-context": "^0.4.0",
+              "path-to-regexp": "^1.7.0",
+              "prop-types": "^15.6.2",
+              "react-is": "^16.6.0",
+              "tiny-invariant": "^1.0.2",
+              "tiny-warning": "^1.0.0"
+            },
+            "Dependencies": {
+              "@babel/runtime": "7.24.0",
+              "history": "4.10.1",
+              "hoist-non-react-statics": "3.3.2",
+              "loose-envify": "1.4.0",
+              "mini-create-react-context": "0.4.1",
+              "path-to-regexp": "1.8.0",
+              "prop-types": "15.8.1",
+              "tiny-invariant": "1.2.0",
+              "tiny-warning": "1.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "react-router-dom": {
+          "5.3.1": {
+            "Key": "react-router-dom@5.3.1",
+            "Requires": {
+              "@babel/runtime": "^7.12.13",
+              "history": "^4.9.0",
+              "loose-envify": "^1.3.1",
+              "prop-types": "^15.6.2",
+              "react-router": "5.3.1",
+              "tiny-invariant": "^1.0.2",
+              "tiny-warning": "^1.0.0"
+            },
+            "Dependencies": {
+              "@babel/runtime": "7.24.0",
+              "history": "4.10.1",
+              "loose-envify": "1.4.0",
+              "prop-types": "15.8.1",
+              "react-router": "5.3.1",
+              "tiny-invariant": "1.2.0",
+              "tiny-warning": "1.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "react-transition-group": {
+          "4.4.2": {
+            "Key": "react-transition-group@4.4.2",
+            "Requires": {
+              "@babel/runtime": "^7.5.5",
+              "dom-helpers": "^5.0.1",
+              "loose-envify": "^1.4.0",
+              "prop-types": "^15.6.2"
+            },
+            "Dependencies": {
+              "@babel/runtime": "7.24.0",
+              "dom-helpers": "5.2.1",
+              "loose-envify": "1.4.0",
+              "prop-types": "15.8.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "reactcss": {
+          "1.2.3": {
+            "Key": "reactcss@1.2.3",
+            "Requires": {
+              "lodash": "^4.0.1"
+            },
+            "Dependencies": {
+              "lodash": "4.17.21"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "rechoir": {
+          "0.7.1": {
+            "Key": "rechoir@0.7.1",
+            "Requires": {
+              "resolve": "^1.9.0"
+            },
+            "Dependencies": {
+              "resolve": "1.22.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "regenerator-runtime": {
+          "0.10.5": {
+            "Key": "regenerator-runtime@0.10.5",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "require-directory": {
+          "2.1.1": {
+            "Key": "require-directory@2.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "require-main-filename": {
+          "2.0.0": {
+            "Key": "require-main-filename@2.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "resolve": {
+          "1.22.0": {
+            "Key": "resolve@1.22.0",
+            "Requires": {
+              "is-core-module": "^2.8.1",
+              "path-parse": "^1.0.7",
+              "supports-preserve-symlinks-flag": "^1.0.0"
+            },
+            "Dependencies": {
+              "is-core-module": "2.8.1",
+              "path-parse": "1.0.7",
+              "supports-preserve-symlinks-flag": "1.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "resolve-dir": {
+          "1.0.1": {
+            "Key": "resolve-dir@1.0.1",
+            "Requires": {
+              "expand-tilde": "^2.0.0",
+              "global-modules": "^1.0.0"
+            },
+            "Dependencies": {
+              "expand-tilde": "2.0.2",
+              "global-modules": "1.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "resolve-from": {
+          "4.0.0": {
+            "Key": "resolve-from@4.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "resolve-pathname": {
+          "3.0.0": {
+            "Key": "resolve-pathname@3.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "reusify": {
+          "1.0.4": {
+            "Key": "reusify@1.0.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "rimraf": {
+          "3.0.2": {
+            "Key": "rimraf@3.0.2",
+            "Requires": {
+              "glob": "^7.1.3"
+            },
+            "Dependencies": {
+              "glob": "7.1.7"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "run-parallel": {
+          "1.2.0": {
+            "Key": "run-parallel@1.2.0",
+            "Requires": {
+              "queue-microtask": "^1.2.2"
+            },
+            "Dependencies": {
+              "queue-microtask": "1.2.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "safe-buffer": {
+          "5.2.1": {
+            "Key": "safe-buffer@5.2.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "safe-json-parse": {
+          "1.0.1": {
+            "Key": "safe-json-parse@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "safer-buffer": {
+          "2.1.2": {
+            "Key": "safer-buffer@2.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "scheduler": {
+          "0.19.1": {
+            "Key": "scheduler@0.19.1",
+            "Requires": {
+              "loose-envify": "^1.1.0",
+              "object-assign": "^4.1.1"
+            },
+            "Dependencies": {
+              "loose-envify": "1.4.0",
+              "object-assign": "4.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "set-blocking": {
+          "2.0.0": {
+            "Key": "set-blocking@2.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "side-channel": {
+          "1.0.4": {
+            "Key": "side-channel@1.0.4",
+            "Requires": {
+              "call-bind": "^1.0.0",
+              "get-intrinsic": "^1.0.2",
+              "object-inspect": "^1.9.0"
+            },
+            "Dependencies": {
+              "call-bind": "1.0.2",
+              "get-intrinsic": "1.1.1",
+              "object-inspect": "1.12.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "sprintf-js": {
+          "1.0.3": {
+            "Key": "sprintf-js@1.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "string-template": {
+          "0.2.1": {
+            "Key": "string-template@0.2.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "string-width": {
+          "4.2.3": {
+            "Key": "string-width@4.2.3",
+            "Requires": {
+              "emoji-regex": "^8.0.0",
+              "is-fullwidth-code-point": "^3.0.0",
+              "strip-ansi": "^6.0.1"
+            },
+            "Dependencies": {
+              "emoji-regex": "8.0.0",
+              "is-fullwidth-code-point": "3.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "string_decoder": {
+          "0.10.31": {
+            "Key": "string_decoder@0.10.31",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "strip-ansi": {
+          "3.0.1": {
+            "Key": "strip-ansi@3.0.1",
+            "Requires": {
+              "ansi-regex": "^2.0.0"
+            },
+            "Dependencies": {
+              "ansi-regex": "2.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "supports-color": {
+          "2.0.0": {
+            "Key": "supports-color@2.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "supports-preserve-symlinks-flag": {
+          "1.0.0": {
+            "Key": "supports-preserve-symlinks-flag@1.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "tiny-invariant": {
+          "1.2.0": {
+            "Key": "tiny-invariant@1.2.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "tiny-lr": {
+          "1.1.1": {
+            "Key": "tiny-lr@1.1.1",
+            "Requires": {
+              "body": "^5.1.0",
+              "debug": "^3.1.0",
+              "faye-websocket": "~0.10.0",
+              "livereload-js": "^2.3.0",
+              "object-assign": "^4.1.0",
+              "qs": "^6.4.0"
+            },
+            "Dependencies": {
+              "body": "5.1.0",
+              "debug": "3.2.7",
+              "faye-websocket": "0.10.0",
+              "livereload-js": "2.4.0",
+              "object-assign": "4.1.1",
+              "qs": "6.10.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "tiny-warning": {
+          "1.0.3": {
+            "Key": "tiny-warning@1.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "tinycolor2": {
+          "1.4.2": {
+            "Key": "tinycolor2@1.4.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "to-regex-range": {
+          "5.0.1": {
+            "Key": "to-regex-range@5.0.1",
+            "Requires": {
+              "is-number": "^7.0.0"
+            },
+            "Dependencies": {
+              "is-number": "7.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "tr46": {
+          "0.0.3": {
+            "Key": "tr46@0.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "tslib": {
+          "2.6.2": {
+            "Key": "tslib@2.6.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "unc-path-regex": {
+          "0.1.2": {
+            "Key": "unc-path-regex@0.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "underscore.string": {
+          "3.3.6": {
+            "Key": "underscore.string@3.3.6",
+            "Requires": {
+              "sprintf-js": "^1.1.1",
+              "util-deprecate": "^1.0.2"
+            },
+            "Dependencies": {
+              "util-deprecate": "1.0.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "util-deprecate": {
+          "1.0.2": {
+            "Key": "util-deprecate@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "uuid": {
+          "8.3.2": {
+            "Key": "uuid@8.3.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "v8flags": {
+          "3.2.0": {
+            "Key": "v8flags@3.2.0",
+            "Requires": {
+              "homedir-polyfill": "^1.0.1"
+            },
+            "Dependencies": {
+              "homedir-polyfill": "1.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "validator": {
+          "13.9.0": {
+            "Key": "validator@13.9.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "value-equal": {
+          "1.0.1": {
+            "Key": "value-equal@1.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "void-elements": {
+          "3.1.0": {
+            "Key": "void-elements@3.1.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "webextension-polyfill": {
+          "0.10.0": {
+            "Key": "webextension-polyfill@0.10.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "webidl-conversions": {
+          "3.0.1": {
+            "Key": "webidl-conversions@3.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "websocket-driver": {
+          "0.7.4": {
+            "Key": "websocket-driver@0.7.4",
+            "Requires": {
+              "http-parser-js": "\u003e=0.5.1",
+              "safe-buffer": "\u003e=5.1.0",
+              "websocket-extensions": "\u003e=0.1.1"
+            },
+            "Dependencies": {
+              "http-parser-js": "0.5.6",
+              "safe-buffer": "5.2.1",
+              "websocket-extensions": "0.1.4"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "websocket-extensions": {
+          "0.1.4": {
+            "Key": "websocket-extensions@0.1.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "whatwg-url": {
+          "5.0.0": {
+            "Key": "whatwg-url@5.0.0",
+            "Requires": {
+              "tr46": "~0.0.3",
+              "webidl-conversions": "^3.0.0"
+            },
+            "Dependencies": {
+              "tr46": "0.0.3",
+              "webidl-conversions": "3.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "which": {
+          "2.0.2": {
+            "Key": "which@2.0.2",
+            "Requires": {
+              "isexe": "^2.0.0"
+            },
+            "Dependencies": {
+              "isexe": "2.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "which-module": {
+          "2.0.0": {
+            "Key": "which-module@2.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "wrap-ansi": {
+          "6.2.0": {
+            "Key": "wrap-ansi@6.2.0",
+            "Requires": {
+              "ansi-styles": "^4.0.0",
+              "string-width": "^4.1.0",
+              "strip-ansi": "^6.0.0"
+            },
+            "Dependencies": {
+              "string-width": "4.2.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "wrappy": {
+          "1.0.2": {
+            "Key": "wrappy@1.0.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "xregexp": {
+          "5.1.1": {
+            "Key": "xregexp@5.1.1",
+            "Requires": {
+              "@babel/runtime-corejs3": "^7.16.5"
+            },
+            "Dependencies": {
+              "@babel/runtime-corejs3": "7.24.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "y18n": {
+          "4.0.3": {
+            "Key": "y18n@4.0.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "yargs": {
+          "15.4.1": {
+            "Key": "yargs@15.4.1",
+            "Requires": {
+              "cliui": "^6.0.0",
+              "decamelize": "^1.2.0",
+              "find-up": "^4.1.0",
+              "get-caller-file": "^2.0.1",
+              "require-directory": "^2.1.1",
+              "require-main-filename": "^2.0.0",
+              "set-blocking": "^2.0.0",
+              "string-width": "^4.2.0",
+              "which-module": "^2.0.0",
+              "y18n": "^4.0.0",
+              "yargs-parser": "^18.1.2"
+            },
+            "Dependencies": {
+              "cliui": "6.0.0",
+              "decamelize": "1.2.0",
+              "find-up": "4.1.0",
+              "get-caller-file": "2.0.5",
+              "require-directory": "2.1.1",
+              "require-main-filename": "2.0.0",
+              "set-blocking": "2.0.0",
+              "string-width": "4.2.3",
+              "which-module": "2.0.0",
+              "y18n": "4.0.3",
+              "yargs-parser": "18.1.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "yargs-parser": {
+          "18.1.3": {
+            "Key": "yargs-parser@18.1.3",
+            "Requires": {
+              "camelcase": "^5.0.0",
+              "decamelize": "^1.2.0"
+            },
+            "Dependencies": {
+              "camelcase": "5.3.1",
+              "decamelize": "1.2.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Transitive": false,
+            "Licenses": null
+          }
+        }
+      },
+      "start": {
+        "dependencies": null,
+        "dev_dependencies": [
+          {
+            "name": "passbolt-styleguide",
+            "version": "4.9.2",
+            "constraint": "^4.9.2"
+          },
+          {
+            "name": "babel-polyfill",
+            "version": "6.26.0",
+            "constraint": "^6.26.0"
+          },
+          {
+            "name": "grunt",
+            "version": "1.5.3",
+            "constraint": "^1.5.3"
+          },
+          {
+            "name": "grunt-contrib-copy",
+            "version": "1.0.0",
+            "constraint": "^1.0.0"
+          },
+          {
+            "name": "grunt-contrib-watch",
+            "version": "1.1.0",
+            "constraint": "^1.1.0"
+          },
+          {
+            "name": "jquery",
+            "version": "3.6.0",
+            "constraint": "^3.5.1"
+          },
+          {
+            "name": "lockfile-lint",
+            "version": "4.12.1",
+            "constraint": "^4.12.1"
+          },
+          {
+            "name": "openpgp",
+            "version": "5.2.1",
+            "constraint": "5.2.1"
+          }
+        ]
+      }
+    }
+  },
+  "analysis_info": {
+    "status": "success",
+    "project_name": "passbolt_api",
+    "working_directory": "npmv2",
+    "package_manager": "NPM",
+    "time": {
+      "analysis_start_time": "2024-09-11 13:58:02.205712 +0200 CEST",
+      "analysis_end_time": "2024-09-11 13:58:02.221406 +0200 CEST",
+      "analysis_delta_time": 0.015693708
+    },
+    "errors": [],
+    "paths": {
+      "lock_file_path": "npmv2/package-lock.json",
+      "package_file_path": "npmv2/package.json",
+      "work_space_package_file_paths": {
+        ".": "npmv2/package.json"
+      },
+      "relative_lock_file_path": "npmv2/package-lock.json",
+      "relative_package_file_path": "npmv2/package.json"
+    },
+    "workspaces": {
+      "default_workspace_name": ".",
+      "self_managed_workspace_name": "..",
+      "work_spaces_used": false
+    },
+    "extra": {
+      "version_seperator": "@",
+      "import_path_seperator": " \u003e ",
+      "lock_file_version": 2
+    }
+  }
+}

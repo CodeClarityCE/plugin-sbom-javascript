@@ -1,0 +1,22 @@
+{
+    "name": "js-sbom",
+    "version": "v0.0.2",
+    "image_name": "ceherzog/plugin-js-sbom",
+    "image_version": "0.0.2",
+    "depends_on": [],
+    "description": "A plugin to generate a software bill of materials for a JavaScript project",
+    "config": {
+        "branch": {
+            "name": "branch",
+            "type": "string",
+            "description": "The branch you want to analyze",
+            "required": true
+        },
+        "commit_id": {
+            "name": "commit_id",
+            "type": "string",
+            "description": "An optional commit id to analyze",
+            "required": false
+        }
+    }
+}

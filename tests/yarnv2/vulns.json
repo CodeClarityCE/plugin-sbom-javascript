@@ -1,0 +1,25 @@
+{
+  "workspaces": {},
+  "analysis_info": {
+    "status": "failure",
+    "errors": [
+      {
+        "private_error": {
+          "description": "Execution of the previous stage was unsuccessful, upon which the current stage relies",
+          "key": "PreviousStageFailed"
+        },
+        "public_error": {
+          "description": "Execution of the previous stage was unsuccessful, upon which the current stage relies",
+          "key": "PreviousStageFailed"
+        }
+      }
+    ],
+    "analysis_start_time": "2024-08-07 15:43:00.199898 +0200 CEST",
+    "analysis_end_time": "2024-08-07 15:43:00.199996 +0200 CEST",
+    "analysis_delta_time": 0.000098542,
+    "version_seperator": "",
+    "import_path_seperator": "",
+    "default_workspace_name": "",
+    "self_managed_workspace_name": ""
+  }
+}

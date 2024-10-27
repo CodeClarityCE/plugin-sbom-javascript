@@ -1,0 +1,9 @@
+package packageManager
+
+type PACKAGE_MANAGER string
+
+const (
+	NPM  PACKAGE_MANAGER = "NPM"
+	YARN PACKAGE_MANAGER = "YARN"
+	NONE PACKAGE_MANAGER = "NONE"
+)

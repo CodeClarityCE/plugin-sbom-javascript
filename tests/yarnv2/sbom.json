@@ -1,0 +1,43 @@
+{
+  "workspaces": null,
+  "analysis_info": {
+    "status": "failure",
+    "project_name": "",
+    "working_directory": "",
+    "package_manager": "",
+    "time": {
+      "analysis_start_time": "2024-08-07 10:24:56.814013 +0200 CEST",
+      "analysis_end_time": "2024-08-07 10:24:56.815462 +0200 CEST",
+      "analysis_delta_time": 0.001449542
+    },
+    "errors": [
+      {
+        "private_error": {
+          "description": "Unable to parse package file, error: open yarnv2/examples/*/package.json: no such file or directory",
+          "key": "PackageFileParsingException"
+        },
+        "public_error": {
+          "description": "Unable to parse package file, is it a valid package.json?",
+          "key": "PackageFileParsingException"
+        }
+      }
+    ],
+    "paths": {
+      "lock_file_path": "",
+      "package_file_path": "",
+      "work_space_package_file_paths": null,
+      "relative_lock_file_path": "",
+      "relative_package_file_path": ""
+    },
+    "workspaces": {
+      "default_workspace_name": "",
+      "self_managed_workspace_name": "",
+      "work_spaces_used": false
+    },
+    "extra": {
+      "version_seperator": "",
+      "import_path_seperator": "",
+      "lock_file_version": 0
+    }
+  }
+}
