@@ -6,7 +6,7 @@ services:
       target: plugin-dev
       args:
         - PLUGINNAME=js-sbom
-    image: ceherzog/js-sbom-dev:latest
+    image: codeclarityce/js-sbom-dev:latest
     restart: always
     volumes:
       - ../../backend:/codeclarity
