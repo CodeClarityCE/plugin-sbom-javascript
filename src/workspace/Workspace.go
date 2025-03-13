@@ -42,7 +42,7 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 				Optional:     versionInfo.Optional,
 				Bundled:      versionInfo.Bundled,
 				Dev:          versionInfo.Dev,
-				Transitive:   false,
+				Transitive:   isTransitive(lockFile.Dependencies, dependency_name, version),
 			}
 
 			if dep, dependency_already_present := workSpace.Dependencies[dependency_name]; dependency_already_present {
