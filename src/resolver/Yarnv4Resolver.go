@@ -53,7 +53,7 @@ func ResolveYarnv4(lockFile schemas.YarnV4LockFile) (types.LockFileInformation, 
 	for _, dependency := range lockFileInformation.Dependencies {
 		for _, version := range dependency {
 			for requiredName, requiredConstraint := range version.Requires {
-				requiredConstraintSemver, err := semver.ParseConstraint(requiredConstraint)
+				requiredConstraintSemver, err := semver.ParseConstraint(strings.Replace(requiredConstraint, "npm:", "", 1))
 				if err != nil {
 					continue
 				}
