@@ -40,6 +40,17 @@ func TestCreateNPMv2(t *testing.T) {
 	writeJSON(out, "./npmv2/sbom.json")
 }
 
+func TestCreateNPMv3(t *testing.T) {
+	out := plugin.Start("./npmv3", uuid.UUID{})
+
+	// Assert the expected values
+	assert.NotNil(t, out)
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	assert.NotEmpty(t, out.WorkSpaces)
+
+	writeJSON(out, "./npmv3/sbom.json")
+}
+
 func TestCreateYarnv1(t *testing.T) {
 	out := plugin.Start("./yarnv1", uuid.UUID{})
 
