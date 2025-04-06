@@ -1,6 +1,8 @@
 package resolver
 
 import (
+	"strings"
+
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	packageManager "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/schemas"
@@ -14,7 +16,11 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		LockFileVersion: 2,
 	}
 
-	for dependency_name, dependency := range lockFile.Dependencies {
+	for dependency_name, dependency := range lockFile.Packages {
+		if dependency_name == "" {
+			continue
+		}
+		dependency_name = strings.Replace(dependency_name, "node_modules/", "", 1)
 		resolvedFilePackage := types.Versions{
 			Requires:     dependency.Requires,
 			Dependencies: make(map[string]string),
