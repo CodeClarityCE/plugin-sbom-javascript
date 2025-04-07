@@ -22,11 +22,11 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		}
 		dependency_name = strings.Replace(dependency_name, "node_modules/", "", 1)
 		resolvedFilePackage := types.Versions{
-			Requires:     dependency.Requires,
+			Requires:     dependency.Dependencies,
 			Dependencies: make(map[string]string),
 			Optional:     dependency.Optional,
-			Bundled:      false,
-			Dev:          false,
+			Bundled:      dependency.InBundle,
+			Dev:          dependency.Dev,
 			Scoped:       false,
 		}
 		if dep, dependency_already_present := LockFileInformation.Dependencies[dependency_name]; dependency_already_present {
