@@ -108,6 +108,10 @@ func findProjects(directory string) map[string]types.ProjectInformation {
 			project := all_projects[dir]
 			project.PackageManager = packageManager.NPM
 			all_projects[dir] = project
+		case "pnpm-lock.yaml":
+			project := all_projects[dir]
+			project.PackageManager = packageManager.PNPM
+			all_projects[dir] = project
 		}
 
 		return nil
