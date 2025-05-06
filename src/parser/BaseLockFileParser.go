@@ -34,6 +34,8 @@ func ParseLockFile(projectInformation types.ProjectInformation) (types.LockFileI
 			}
 		}
 		return parsed, err
+	case packageManager.PNPM:
+		return parsePNPM(lockFileData)
 	default:
 		return types.LockFileInformation{}, errors.New("unknown lock file type")
 	}

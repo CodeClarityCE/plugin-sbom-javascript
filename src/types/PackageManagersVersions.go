@@ -16,3 +16,18 @@ const (
 	NPMV2 NPMLockFileVersion = "NPMV2"
 	NPMV3 NPMLockFileVersion = "NPMV3"
 )
+
+type PNPMLockFileVersion string
+
+const (
+	PNPM1  NPMLockFileVersion = "PNPMV1"
+	PNPM2  NPMLockFileVersion = "PNPMV2"
+	PNPM3  NPMLockFileVersion = "PNPMV3"
+	PNPM4  NPMLockFileVersion = "PNPMV4"
+	PNPM5  NPMLockFileVersion = "PNPMV5"
+	PNPM6  NPMLockFileVersion = "PNPMV6"
+	PNPM7  NPMLockFileVersion = "PNPMV7"
+	PNPM8  NPMLockFileVersion = "PNPMV8"
+	PNPM9  NPMLockFileVersion = "PNPMV9"
+	PNPM10 NPMLockFileVersion = "PNPMV10"
+)

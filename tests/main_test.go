@@ -95,6 +95,17 @@ func TestCreateYarnv4(t *testing.T) {
 	writeJSON(out, "./yarnv4/sbom.json")
 }
 
+func TestCreatePNPMv10_10(t *testing.T) {
+	out := plugin.Start("./pnpmv10.10", uuid.UUID{})
+
+	// Assert the expected values
+	assert.NotNil(t, out)
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	assert.NotEmpty(t, out.WorkSpaces)
+
+	writeJSON(out, "./pnpmv10.10/sbom.json")
+}
+
 // func BenchmarkCreate(b *testing.B) {
 // 	// Get DB
 // 	db, err := dbhelper.GetDatabase(dbhelper.Config.Database.Knowledge)
