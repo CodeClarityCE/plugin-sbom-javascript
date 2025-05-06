@@ -31,7 +31,7 @@ func getPNPMLockfileVersion(lockFileData []byte) (types.NPMLockFileVersion, erro
 
 	err := yaml.Unmarshal(lockFileData, &data)
 	if err != nil {
-		return types.NPMV1, errors.New("unsupported npm lock file version")
+		return types.PNPM1, errors.New("unsupported npm lock file version")
 	}
 
 	switch data.LockfileVersion {

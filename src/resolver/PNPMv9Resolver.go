@@ -20,13 +20,11 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 		if dependency_name == "" {
 			continue
 		}
-		dependency_name = strings.Replace(dependency_name, "node_modules/", "", 1)
-		dependency_name_version := strings.Split(dependency_name, "(")[0]
-		dependency_name_version_splitted := strings.Split(dependency_name_version, "@")
-		dependency_version := dependency_name_version_splitted[len(dependency_name_version_splitted)-1]
-		dependency_name = strings.Replace(dependency_name_version, "@"+dependency_version, "", -1)
+
+		name, dependency_version := cleanName(dependency_name)
+
 		resolvedFilePackage := types.Versions{
-			Requires:     dependency.Dependencies,
+			Requires:     dependency.Dependencies, // TODO clean this
 			Dependencies: make(map[string]string),
 			Optional:     false,
 			Bundled:      false,
@@ -34,13 +32,13 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 			Scoped:       false,
 		}
 
-		if dep, dependency_already_present := LockFileInformation.Dependencies[dependency_name]; dependency_already_present {
+		if dep, dependency_already_present := LockFileInformation.Dependencies[name]; dependency_already_present {
 			if _, versiondependency_already_present := dep[dependency_version]; !versiondependency_already_present {
-				LockFileInformation.Dependencies[dependency_name][dependency_version] = resolvedFilePackage
+				LockFileInformation.Dependencies[name][dependency_version] = resolvedFilePackage
 			}
 		} else {
-			LockFileInformation.Dependencies[dependency_name] = map[string]types.Versions{
-				dependency.Version: resolvedFilePackage,
+			LockFileInformation.Dependencies[name] = map[string]types.Versions{
+				dependency_version: resolvedFilePackage,
 			}
 		}
 	}
@@ -68,4 +66,13 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 	}
 
 	return LockFileInformation, nil
+}
+
+func cleanName(key string) (string, string) {
+	dependency_name := strings.Replace(key, "node_modules/", "", 1)
+	dependency_name_version := strings.Split(dependency_name, "(")[0]
+	dependency_name_version_splitted := strings.Split(dependency_name_version, "@")
+	dependency_version := dependency_name_version_splitted[len(dependency_name_version_splitted)-1]
+	dependency_name = strings.Replace(dependency_name_version, "@"+dependency_version, "", -1)
+	return dependency_name, dependency_version
 }
