@@ -13,14 +13,15 @@ func Build(lockFile types.LockFileInformation, projectInformation types.ProjectI
 	packageFile := projectInformation.PackageFileData
 	results := map[string]sbomTypes.WorkSpace{}
 
-	// If no workspaces, build graph for default workspace
+	results[properties.DEFAULT_WORKSPACE_CHARACTER] = buildWorkspace(lockFile, packageFile)
+
+	// If no workspaces then return
 	if len(packageFile.WorkSpaces) == 0 {
-		results[properties.DEFAULT_WORKSPACE_CHARACTER] = buildWorkspace(lockFile, packageFile)
 		return results
 	}
 
 	// Build graph for each workspace
-	for name := range projectInformation.WorkSpaces {
+	for name := range projectInformation.WorkSpacesPackageFileData {
 		workspacePackageFile := projectInformation.WorkSpacesPackageFileData[name]
 		results[name] = buildWorkspace(lockFile, workspacePackageFile)
 	}

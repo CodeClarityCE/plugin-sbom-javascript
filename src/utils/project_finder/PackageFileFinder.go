@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	packageManager "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
@@ -41,19 +42,42 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 	// If lockfile contains workspaces
 	for _, workspace := range packageFile.WorkSpaces {
 		// Find and read the lockfiles
-		path := filepath.Join(directory, workspace, "package.json")
-		packageFileData, err := os.ReadFile(path)
-		if err != nil {
-			return project, err
+		if strings.Contains(workspace, "*") {
+			root := filepath.Join(directory, strings.ReplaceAll(workspace, "*", ""))
+			for workspace_found := range all_projects {
+				if strings.Contains(workspace_found, root) {
+					path := filepath.Join(workspace_found, "package.json")
+					packageFileData, err := os.ReadFile(path)
+					if err != nil {
+						return project, err
+					}
+					// Parse the package file
+					var workspacePackageFile types.PackageFile
+					err = json.Unmarshal(packageFileData, &workspacePackageFile)
+					if err != nil {
+						return project, err
+					}
+					// Add the workspace package file to the package manifest
+					workspace_name := strings.ReplaceAll(workspace_found, directory+"/", "")
+					project.WorkSpacesPackageFileData[workspace_name] = workspacePackageFile
+				}
+			}
+
+		} else {
+			path := filepath.Join(directory, workspace, "package.json")
+			packageFileData, err := os.ReadFile(path)
+			if err != nil {
+				return project, err
+			}
+			// Parse the package file
+			var workspacePackageFile types.PackageFile
+			err = json.Unmarshal(packageFileData, &workspacePackageFile)
+			if err != nil {
+				return project, err
+			}
+			// Add the workspace package file to the package manifest
+			project.WorkSpacesPackageFileData[workspace] = workspacePackageFile
 		}
-		// Parse the package file
-		var workspacePackageFile types.PackageFile
-		err = json.Unmarshal(packageFileData, &workspacePackageFile)
-		if err != nil {
-			return project, err
-		}
-		// Add the workspace package file to the package manifest
-		project.WorkSpacesPackageFileData[workspace] = workspacePackageFile
 	}
 
 	return project, nil
