@@ -162,7 +162,7 @@ func recursivelytagDev(currentDependency sbomTypes.Versions, workspace sbomTypes
 		// If child has already been analyzed (loop)
 		// then do not recurse
 		if child.Dev == true {
-			return workspace
+			continue
 		}
 
 		child.Dev = true
@@ -179,7 +179,7 @@ func recursivelytagProd(currentDependency sbomTypes.Versions, workspace sbomType
 		// If child has already been analyzed (loop)
 		// then do not recurse
 		if child.Prod == true {
-			return workspace
+			continue
 		}
 
 		child.Prod = true
