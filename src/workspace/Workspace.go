@@ -45,7 +45,9 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 				Optional:     versionInfo.Optional, // Already present in NPM but not YARN
 				Bundled:      versionInfo.Bundled,  // Already present in NPM but not YARN
 				Dev:          versionInfo.Dev,      // Already present in NPM but not YARN
-				Transitive:   isTransitive(lockFile.Dependencies, dependency_name, version),
+				Prod:         false,                // will be filled later
+				Direct:       false,                // will be filled later
+				Transitive:   false,                // will be filled later
 			}
 
 			if _, ok := workspace.Dependencies[dependency_name]; !ok {
