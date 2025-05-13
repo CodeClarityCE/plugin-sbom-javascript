@@ -6,6 +6,7 @@ import (
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/properties"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	sbomTypes "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js"
+	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 	semver "github.com/CodeClarityCE/utility-node-semver"
 )
 
@@ -29,31 +30,31 @@ func Build(lockFile types.LockFileInformation, projectInformation types.ProjectI
 }
 
 func buildWorkspace(lockFile types.LockFileInformation, packageFile types.PackageFile) sbomTypes.WorkSpace {
-	workSpace := sbomTypes.WorkSpace{
+	// Init workspace structure
+	workspace := sbomTypes.WorkSpace{
 		Dependencies: make(map[string]map[string]sbomTypes.Versions),
 		Start:        sbomTypes.Start{},
 	}
 
+	// Fill the information in workspace.Dependencies
 	for dependency_name, dependency := range lockFile.Dependencies {
 		for version, versionInfo := range dependency {
 			resolvedFilePackage := sbomTypes.Versions{
 				Key:          dependency_name + properties.VERSION_SEPERATOR + version,
 				Requires:     versionInfo.Requires,
 				Dependencies: versionInfo.Dependencies,
-				Optional:     versionInfo.Optional,
-				Bundled:      versionInfo.Bundled,
-				Dev:          versionInfo.Dev,
+				Optional:     versionInfo.Optional, // Already present in NPM but not YARN
+				Bundled:      versionInfo.Bundled,  // Already present in NPM but not YARN
+				Dev:          versionInfo.Dev,      // Already present in NPM but not YARN
 				Transitive:   isTransitive(lockFile.Dependencies, dependency_name, version),
 			}
 
-			if dep, dependency_already_present := workSpace.Dependencies[dependency_name]; dependency_already_present {
-				if _, versiondependency_already_present := dep[version]; !versiondependency_already_present {
-					workSpace.Dependencies[dependency_name][version] = resolvedFilePackage
-				}
-			} else {
-				workSpace.Dependencies[dependency_name] = map[string]sbomTypes.Versions{
+			if _, ok := workspace.Dependencies[dependency_name]; !ok {
+				workspace.Dependencies[dependency_name] = map[string]sbomTypes.Versions{
 					version: resolvedFilePackage,
 				}
+			} else {
+				workspace.Dependencies[dependency_name][version] = resolvedFilePackage
 			}
 		}
 	}
@@ -86,12 +87,9 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 						Version:    version,
 						Constraint: constraint,
 					}
-					// dep := workSpace.Dependencies[name][version]
-					// dep.Dev = true
-					// workSpace.Dependencies[name][version] = dep
 
 					// Append the startDep to the DevDependencies in the workSpace
-					workSpace.Start.DevDependencies = append(workSpace.Start.DevDependencies, startDep)
+					workspace.Start.DevDependencies = append(workspace.Start.DevDependencies, startDep)
 				}
 			}
 		}
@@ -125,11 +123,46 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 						Constraint: constraint,
 					}
 
-					// Append the startDep to the DevDependencies in the workSpace
-					workSpace.Start.Dependencies = append(workSpace.Start.Dependencies, startDep)
+					// Append the startDep to the Dependencies in the workSpace
+					workspace.Start.Dependencies = append(workspace.Start.Dependencies, startDep)
 				}
 			}
 		}
 	}
-	return workSpace
+
+	workspace = tagDevDependencies(lockFile, workspace)
+
+	return workspace
+}
+
+func tagDevDependencies(lockFile types.LockFileInformation, workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
+	// NPM dev tags are already correct
+	if lockFile.PackageManager == packageManager.NPM {
+		return workspace
+	}
+
+	// Iterate over the devDependencies in the packageFile
+	for _, startDevDependency := range workspace.Start.DevDependencies {
+		dependencyInformation := workspace.Dependencies[startDevDependency.Name][startDevDependency.Version]
+		workspace = recursivelytagDev(dependencyInformation, workspace)
+	}
+
+	return workspace
+}
+
+func recursivelytagDev(currentDependency sbomTypes.Versions, workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
+	for childName, childVersion := range currentDependency.Dependencies {
+		child := workspace.Dependencies[childName][childVersion]
+
+		// If child has already been analyzed (loop)
+		// then do not recurse
+		if child.Dev == true {
+			return workspace
+		}
+
+		child.Dev = true
+		workspace.Dependencies[childName][childVersion] = child
+		workspace = recursivelytagDev(child, workspace)
+	}
+	return workspace
 }
