@@ -6,7 +6,6 @@ import (
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/properties"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	sbomTypes "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js"
-	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 	semver "github.com/CodeClarityCE/utility-node-semver"
 )
 
@@ -130,21 +129,27 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 		}
 	}
 
-	workspace = tagDevDependencies(lockFile, workspace)
+	workspace = tagDevDependencies(workspace)
 
 	return workspace
 }
 
-func tagDevDependencies(lockFile types.LockFileInformation, workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
-	// NPM dev tags are already correct
-	if lockFile.PackageManager == packageManager.NPM {
-		return workspace
-	}
+func tagDevDependencies(workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
 
 	// Iterate over the devDependencies in the packageFile
 	for _, startDevDependency := range workspace.Start.DevDependencies {
 		dependencyInformation := workspace.Dependencies[startDevDependency.Name][startDevDependency.Version]
+		dependencyInformation.Dev = true
+		workspace.Dependencies[startDevDependency.Name][startDevDependency.Version] = dependencyInformation
 		workspace = recursivelytagDev(dependencyInformation, workspace)
+	}
+
+	// Iterate over the dependencies in the packageFile
+	for _, startDependency := range workspace.Start.Dependencies {
+		dependencyInformation := workspace.Dependencies[startDependency.Name][startDependency.Version]
+		dependencyInformation.Prod = true
+		workspace.Dependencies[startDependency.Name][startDependency.Version] = dependencyInformation
+		workspace = recursivelytagProd(dependencyInformation, workspace)
 	}
 
 	return workspace
@@ -163,6 +168,23 @@ func recursivelytagDev(currentDependency sbomTypes.Versions, workspace sbomTypes
 		child.Dev = true
 		workspace.Dependencies[childName][childVersion] = child
 		workspace = recursivelytagDev(child, workspace)
+	}
+	return workspace
+}
+
+func recursivelytagProd(currentDependency sbomTypes.Versions, workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
+	for childName, childVersion := range currentDependency.Dependencies {
+		child := workspace.Dependencies[childName][childVersion]
+
+		// If child has already been analyzed (loop)
+		// then do not recurse
+		if child.Prod == true {
+			return workspace
+		}
+
+		child.Prod = true
+		workspace.Dependencies[childName][childVersion] = child
+		workspace = recursivelytagProd(child, workspace)
 	}
 	return workspace
 }
