@@ -142,6 +142,7 @@ func tagDevDependencies(workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
 	for _, startDevDependency := range workspace.Start.DevDependencies {
 		dependencyInformation := workspace.Dependencies[startDevDependency.Name][startDevDependency.Version]
 		dependencyInformation.Dev = true
+		dependencyInformation.Direct = true
 		workspace.Dependencies[startDevDependency.Name][startDevDependency.Version] = dependencyInformation
 		workspace = recursivelytagDev(dependencyInformation, workspace)
 	}
@@ -150,6 +151,7 @@ func tagDevDependencies(workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
 	for _, startDependency := range workspace.Start.Dependencies {
 		dependencyInformation := workspace.Dependencies[startDependency.Name][startDependency.Version]
 		dependencyInformation.Prod = true
+		dependencyInformation.Direct = true
 		workspace.Dependencies[startDependency.Name][startDependency.Version] = dependencyInformation
 		workspace = recursivelytagProd(dependencyInformation, workspace)
 	}
@@ -163,11 +165,12 @@ func recursivelytagDev(currentDependency sbomTypes.Versions, workspace sbomTypes
 
 		// If child has already been analyzed (loop)
 		// then do not recurse
-		if child.Dev == true {
+		if child.Transitive == true {
 			continue
 		}
 
 		child.Dev = true
+		child.Transitive = true
 		workspace.Dependencies[childName][childVersion] = child
 		workspace = recursivelytagDev(child, workspace)
 	}
@@ -180,11 +183,12 @@ func recursivelytagProd(currentDependency sbomTypes.Versions, workspace sbomType
 
 		// If child has already been analyzed (loop)
 		// then do not recurse
-		if child.Prod == true {
+		if child.Transitive == true {
 			continue
 		}
 
 		child.Prod = true
+		child.Transitive = true
 		workspace.Dependencies[childName][childVersion] = child
 		workspace = recursivelytagProd(child, workspace)
 	}
