@@ -17,6 +17,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -38,6 +39,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -51,6 +53,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -96,6 +99,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -121,6 +125,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -146,6 +151,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -165,6 +171,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -186,6 +193,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -199,6 +207,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -212,6 +221,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -225,6 +235,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -238,6 +249,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -257,6 +269,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -274,6 +287,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -291,6 +305,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -308,6 +323,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -329,6 +345,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -357,6 +374,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -370,6 +388,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -389,6 +408,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -402,6 +422,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -415,6 +436,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -428,6 +450,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -441,6 +464,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -454,6 +478,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -467,6 +492,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -480,6 +506,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -493,6 +520,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -506,6 +534,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -519,6 +548,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -532,6 +562,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -545,6 +576,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -558,6 +590,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -571,6 +604,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -584,6 +618,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -597,6 +632,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -610,6 +646,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -623,6 +660,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -636,6 +674,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -649,6 +688,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -662,6 +702,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -675,6 +716,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -688,6 +730,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -701,6 +744,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -714,6 +758,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -729,6 +774,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -742,6 +788,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -755,6 +802,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -776,6 +824,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -789,6 +838,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -806,6 +856,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -838,6 +889,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -851,6 +903,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -864,6 +917,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": true,
             "Licenses": null
           }
@@ -877,6 +931,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -896,6 +951,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -913,6 +969,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -932,6 +989,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -953,6 +1011,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -970,6 +1029,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -983,6 +1043,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1006,6 +1067,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -1019,6 +1081,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -1032,6 +1095,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1050,6 +1114,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1063,6 +1128,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1076,6 +1142,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1089,6 +1156,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1110,6 +1178,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1123,6 +1192,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1136,6 +1206,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1149,6 +1220,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1168,6 +1240,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1187,6 +1260,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1200,6 +1274,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1219,6 +1294,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1244,6 +1320,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1269,6 +1346,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1286,6 +1364,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1313,6 +1392,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1330,6 +1410,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1347,6 +1428,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1360,6 +1442,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1373,6 +1456,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1386,6 +1470,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1399,6 +1484,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1412,6 +1498,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1425,6 +1512,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1438,6 +1526,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1451,6 +1540,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1464,6 +1554,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1477,6 +1568,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1490,6 +1582,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1503,6 +1596,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1516,6 +1610,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1529,6 +1624,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1542,6 +1638,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1555,6 +1652,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1568,6 +1666,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1581,6 +1680,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1594,6 +1694,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1607,6 +1708,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1624,6 +1726,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1645,6 +1748,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1658,6 +1762,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1671,6 +1776,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1684,6 +1790,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1697,6 +1804,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1710,6 +1818,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1723,6 +1832,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1736,6 +1846,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1749,6 +1860,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1762,6 +1874,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1775,6 +1888,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1788,6 +1902,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1801,6 +1916,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -1824,6 +1940,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -1837,6 +1954,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1854,6 +1972,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -1871,6 +1990,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1884,6 +2004,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1909,6 +2030,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1926,6 +2048,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1945,6 +2068,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1962,6 +2086,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1975,6 +2100,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -1988,6 +2114,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2001,6 +2128,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -2014,6 +2142,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2031,6 +2160,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -2044,6 +2174,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -2077,6 +2208,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2102,6 +2234,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2121,6 +2254,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2144,6 +2278,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2157,6 +2292,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2186,6 +2322,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2203,6 +2340,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -2218,6 +2356,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -2231,6 +2370,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -2254,6 +2394,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2273,6 +2414,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2298,6 +2440,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -2311,6 +2454,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2324,6 +2468,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2347,6 +2492,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2364,6 +2510,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2377,6 +2524,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2390,6 +2538,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2411,6 +2560,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -2424,6 +2574,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2443,6 +2594,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2460,6 +2612,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2483,6 +2636,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2502,6 +2656,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2515,6 +2670,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2528,6 +2684,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2547,6 +2704,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2560,6 +2718,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2577,6 +2736,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2590,6 +2750,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2607,6 +2768,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2620,6 +2782,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2633,6 +2796,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2646,6 +2810,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2659,6 +2824,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2680,6 +2846,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2693,6 +2860,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2710,6 +2878,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2723,6 +2892,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2736,6 +2906,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2749,6 +2920,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2770,6 +2942,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2783,6 +2956,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2802,6 +2976,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2815,6 +2990,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2828,6 +3004,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2845,6 +3022,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2868,6 +3046,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2881,6 +3060,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2894,6 +3074,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2907,6 +3088,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -2992,6 +3174,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -3005,6 +3188,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -3018,6 +3202,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -3037,6 +3222,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3050,6 +3236,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3071,6 +3258,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3088,6 +3276,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3105,6 +3294,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3118,6 +3308,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3131,6 +3322,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3144,6 +3336,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3168,6 +3361,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3185,6 +3379,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -3198,6 +3393,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3211,6 +3407,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3228,6 +3425,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3245,6 +3443,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3258,6 +3457,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -3275,6 +3475,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3294,6 +3495,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3313,6 +3515,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3326,6 +3529,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3339,6 +3543,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3362,6 +3567,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3375,6 +3581,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -3388,6 +3595,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3401,6 +3609,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3436,6 +3645,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3455,6 +3665,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3472,6 +3683,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3485,6 +3697,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -3498,6 +3711,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3511,6 +3725,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3524,6 +3739,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3537,6 +3753,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3550,6 +3767,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3567,6 +3785,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3584,6 +3803,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3597,6 +3817,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3610,6 +3831,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3629,6 +3851,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3642,6 +3865,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3655,6 +3879,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3668,6 +3893,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3685,6 +3911,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3698,6 +3925,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3711,6 +3939,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3724,6 +3953,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3737,6 +3967,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3750,6 +3981,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3767,6 +3999,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3780,6 +4013,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3793,6 +4027,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3806,6 +4041,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3819,6 +4055,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3832,6 +4069,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3855,6 +4093,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -3872,6 +4111,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3891,6 +4131,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3908,6 +4149,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3925,6 +4167,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -3938,6 +4181,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -3951,6 +4195,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -3964,6 +4209,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -3977,6 +4223,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -3990,6 +4237,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -4003,6 +4251,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -4016,6 +4265,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -4029,6 +4279,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -4042,6 +4293,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -4055,6 +4307,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": false,
+            "Direct": false,
             "Transitive": false,
             "Licenses": null
           }
@@ -4072,6 +4325,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4085,6 +4339,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4102,6 +4357,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4115,6 +4371,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4128,6 +4385,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4147,6 +4405,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4160,6 +4419,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4177,6 +4437,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4194,6 +4455,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4207,6 +4469,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4220,6 +4483,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4233,6 +4497,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4246,6 +4511,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4273,6 +4539,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4290,6 +4557,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4307,6 +4575,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4320,6 +4589,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4337,6 +4607,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4350,6 +4621,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4363,6 +4635,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4376,6 +4649,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4389,6 +4663,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4410,6 +4685,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4423,6 +4699,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4436,6 +4713,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4449,6 +4727,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4462,6 +4741,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4475,6 +4755,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4488,6 +4769,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -4505,6 +4787,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -4518,6 +4801,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4541,6 +4825,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4558,6 +4843,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -4575,6 +4861,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -4604,6 +4891,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4617,6 +4905,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4630,6 +4919,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4647,6 +4937,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4664,6 +4955,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4677,6 +4969,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4690,6 +4983,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4703,6 +4997,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4716,6 +5011,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4729,6 +5025,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4746,6 +5043,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4759,6 +5057,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4772,6 +5071,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4789,6 +5089,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4802,6 +5103,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4819,6 +5121,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4832,6 +5135,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4845,6 +5149,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": true,
             "Licenses": null
           }
@@ -4858,6 +5163,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4875,6 +5181,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4888,6 +5195,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4901,6 +5209,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4914,6 +5223,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4931,6 +5241,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -4944,6 +5255,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -4965,6 +5277,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -4984,6 +5297,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -5001,6 +5315,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -5014,6 +5329,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -5027,6 +5343,7 @@
             "Bundled": false,
             "Dev": false,
             "Prod": true,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -5048,6 +5365,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": true,
             "Transitive": false,
             "Licenses": null
           }
@@ -5065,6 +5383,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -5078,6 +5397,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -5091,6 +5411,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -5104,6 +5425,7 @@
             "Bundled": false,
             "Dev": true,
             "Prod": false,
+            "Direct": false,
             "Transitive": true,
             "Licenses": null
           }
@@ -5112,24 +5434,24 @@
       "start": {
         "dependencies": [
           {
+            "name": "@tailwindcss/vite",
+            "version": "4.0.14",
+            "constraint": "^4.0.14"
+          },
+          {
+            "name": "axios",
+            "version": "1.8.4",
+            "constraint": "^1.8.4"
+          },
+          {
             "name": "file-saver",
             "version": "2.0.5",
             "constraint": "^2.0.5"
           },
           {
-            "name": "jszip",
-            "version": "3.10.1",
-            "constraint": "^3.10.1"
-          },
-          {
-            "name": "tailwindcss",
-            "version": "4.0.14",
-            "constraint": "^4.0.14"
-          },
-          {
-            "name": "uuid",
-            "version": "11.1.0",
-            "constraint": "^11.1.0"
+            "name": "react-toastify",
+            "version": "11.0.5",
+            "constraint": "^11.0.5"
           },
           {
             "name": "@headlessui/react",
@@ -5137,19 +5459,14 @@
             "constraint": "^2.2.0"
           },
           {
-            "name": "@tailwindcss/vite",
-            "version": "4.0.14",
-            "constraint": "^4.0.14"
-          },
-          {
             "name": "@tanstack/react-query",
             "version": "5.68.0",
             "constraint": "^5.68.0"
           },
           {
-            "name": "axios",
-            "version": "1.8.4",
-            "constraint": "^1.8.4"
+            "name": "jszip",
+            "version": "3.10.1",
+            "constraint": "^3.10.1"
           },
           {
             "name": "react",
@@ -5167,9 +5484,14 @@
             "constraint": "^7.3.0"
           },
           {
-            "name": "react-toastify",
-            "version": "11.0.5",
-            "constraint": "^11.0.5"
+            "name": "tailwindcss",
+            "version": "4.0.14",
+            "constraint": "^4.0.14"
+          },
+          {
+            "name": "uuid",
+            "version": "11.1.0",
+            "constraint": "^11.1.0"
           },
           {
             "name": "@heroicons/react",
@@ -5178,6 +5500,21 @@
           }
         ],
         "dev_dependencies": [
+          {
+            "name": "@types/file-saver",
+            "version": "2.0.7",
+            "constraint": "^2.0.7"
+          },
+          {
+            "name": "@types/react",
+            "version": "19.0.10",
+            "constraint": "^19.0.10"
+          },
+          {
+            "name": "@types/react-dom",
+            "version": "19.0.4",
+            "constraint": "^19.0.4"
+          },
           {
             "name": "@vitejs/plugin-react",
             "version": "4.3.4",
@@ -5189,21 +5526,6 @@
             "constraint": "^5.1.0"
           },
           {
-            "name": "typescript",
-            "version": "5.7.3",
-            "constraint": "~5.7.2"
-          },
-          {
-            "name": "@types/react-dom",
-            "version": "19.0.4",
-            "constraint": "^19.0.4"
-          },
-          {
-            "name": "eslint",
-            "version": "9.22.0",
-            "constraint": "^9.21.0"
-          },
-          {
             "name": "eslint-plugin-react-refresh",
             "version": "0.4.19",
             "constraint": "^0.4.19"
@@ -5212,6 +5534,16 @@
             "name": "globals",
             "version": "15.15.0",
             "constraint": "^15.15.0"
+          },
+          {
+            "name": "eslint",
+            "version": "9.22.0",
+            "constraint": "^9.21.0"
+          },
+          {
+            "name": "typescript",
+            "version": "5.7.3",
+            "constraint": "~5.7.2"
           },
           {
             "name": "typescript-eslint",
@@ -5227,16 +5559,6 @@
             "name": "@eslint/js",
             "version": "9.22.0",
             "constraint": "^9.21.0"
-          },
-          {
-            "name": "@types/file-saver",
-            "version": "2.0.7",
-            "constraint": "^2.0.7"
-          },
-          {
-            "name": "@types/react",
-            "version": "19.0.10",
-            "constraint": "^19.0.10"
           }
         ]
       }
@@ -5248,9 +5570,9 @@
     "working_directory": "npmv3",
     "package_manager": "NPM",
     "time": {
-      "analysis_start_time": "2025-05-13 15:02:03.65003 +0200 CEST",
-      "analysis_end_time": "2025-05-13 15:02:03.663203 +0200 CEST",
-      "analysis_delta_time": 0.013173041
+      "analysis_start_time": "2025-05-13 17:10:35.388453 +0200 CEST",
+      "analysis_end_time": "2025-05-13 17:10:35.396391 +0200 CEST",
+      "analysis_delta_time": 0.007938584
     },
     "errors": [],
     "paths": {
