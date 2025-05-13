@@ -5153,21 +5153,6 @@
         "dependencies": null,
         "dev_dependencies": [
           {
-            "name": "jquery",
-            "version": "3.6.0",
-            "constraint": "^3.5.1"
-          },
-          {
-            "name": "lockfile-lint",
-            "version": "4.12.1",
-            "constraint": "^4.12.1"
-          },
-          {
-            "name": "openpgp",
-            "version": "5.2.1",
-            "constraint": "5.2.1"
-          },
-          {
             "name": "passbolt-styleguide",
             "version": "4.9.2",
             "constraint": "^4.9.2"
@@ -5191,6 +5176,21 @@
             "name": "grunt-contrib-watch",
             "version": "1.1.0",
             "constraint": "^1.1.0"
+          },
+          {
+            "name": "jquery",
+            "version": "3.6.0",
+            "constraint": "^3.5.1"
+          },
+          {
+            "name": "lockfile-lint",
+            "version": "4.12.1",
+            "constraint": "^4.12.1"
+          },
+          {
+            "name": "openpgp",
+            "version": "5.2.1",
+            "constraint": "5.2.1"
           }
         ]
       }
@@ -5202,9 +5202,9 @@
     "working_directory": "npmv2",
     "package_manager": "NPM",
     "time": {
-      "analysis_start_time": "2025-05-13 17:10:35.379326 +0200 CEST",
-      "analysis_end_time": "2025-05-13 17:10:35.387622 +0200 CEST",
-      "analysis_delta_time": 0.008296583
+      "analysis_start_time": "2025-05-13 18:58:02.894748 +0200 CEST",
+      "analysis_end_time": "2025-05-13 18:58:02.90099 +0200 CEST",
+      "analysis_delta_time": 0.00624175
     },
     "errors": [],
     "paths": {

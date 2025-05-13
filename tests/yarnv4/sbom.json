@@ -12,7 +12,7 @@
             },
             "Dependencies": {
               "buffer-more-ints": "1.0.0",
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "safe-buffer": "5.1.2"
             },
             "Optional": false,
@@ -292,7 +292,7 @@
               "@babel/traverse": "7.26.10",
               "@babel/types": "7.26.10",
               "convert-source-map": "2.0.0",
-              "debug": "4.3.6",
+              "debug": "4.4.0",
               "gensync": "1.0.0-beta.2",
               "json5": "2.2.3",
               "semver": "6.3.1"
@@ -858,7 +858,7 @@
               "@babel/parser": "7.26.10",
               "@babel/template": "7.26.9",
               "@babel/types": "7.26.10",
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "globals": "11.12.0"
             },
             "Optional": false,
@@ -1154,7 +1154,7 @@
             },
             "Dependencies": {
               "@eslint/object-schema": "2.1.6",
-              "debug": "4.3.7",
+              "debug": "4.4.0",
               "minimatch": "3.1.2"
             },
             "Optional": false,
@@ -1303,7 +1303,7 @@
               "fast-uri": "npm:^3.0.0"
             },
             "Dependencies": {
-              "ajv": "8.12.0",
+              "ajv": "8.17.1",
               "ajv-formats": "3.0.1",
               "fast-uri": "3.0.6"
             },
@@ -1362,7 +1362,7 @@
             "Dependencies": {
               "@fastify/accept-negotiator": "2.0.1",
               "fastify-plugin": "5.0.1",
-              "mime-db": "1.52.0",
+              "mime-db": "1.53.0",
               "minipass": "7.1.2",
               "peek-stream": "1.1.3",
               "pump": "3.0.2",
@@ -1712,8 +1712,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -1730,10 +1730,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -1790,7 +1790,7 @@
             },
             "Dependencies": {
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "chalk": "4.1.2",
               "jest-message-util": "29.7.0",
               "jest-util": "29.7.0",
@@ -1888,7 +1888,7 @@
             "Dependencies": {
               "@jest/fake-timers": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "jest-mock": "29.7.0"
             },
             "Optional": false,
@@ -2202,7 +2202,7 @@
               "@jest/schemas": "29.6.3",
               "@types/istanbul-lib-coverage": "2.0.6",
               "@types/istanbul-reports": "3.0.4",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "@types/yargs": "17.0.33",
               "chalk": "4.1.2"
             },
@@ -2946,10 +2946,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -2964,10 +2964,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -3542,8 +3542,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -3852,7 +3852,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -3890,7 +3890,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -3922,7 +3922,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -4049,7 +4049,7 @@
               "@types/send": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "@types/qs": "6.9.18",
               "@types/range-parser": "1.2.7",
               "@types/send": "0.17.4"
@@ -4186,7 +4186,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -4204,7 +4204,7 @@
             },
             "Dependencies": {
               "@types/ms": "2.1.0",
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -4345,7 +4345,7 @@
               "form-data": "npm:^4.0.0"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "form-data": "4.0.2"
             },
             "Optional": false,
@@ -4400,7 +4400,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -4550,7 +4550,7 @@
               "pg-types": "npm:^4.0.1"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "pg-protocol": "1.8.0",
               "pg-types": "4.0.2"
             },
@@ -4687,7 +4687,7 @@
             "Dependencies": {
               "@types/cookiejar": "2.1.5",
               "@types/methods": "1.1.4",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "form-data": "4.0.2"
             },
             "Optional": false,
@@ -4842,7 +4842,7 @@
               "@typescript-eslint/types": "8.26.1",
               "@typescript-eslint/typescript-estree": "8.26.1",
               "@typescript-eslint/visitor-keys": "8.26.1",
-              "debug": "4.3.6"
+              "debug": "4.3.7"
             },
             "Optional": false,
             "Bundled": false,
@@ -4885,7 +4885,7 @@
             "Dependencies": {
               "@typescript-eslint/typescript-estree": "8.26.1",
               "@typescript-eslint/utils": "8.26.1",
-              "debug": "4.4.0",
+              "debug": "4.3.7",
               "ts-api-utils": "2.0.1"
             },
             "Optional": false,
@@ -5348,10 +5348,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -5504,7 +5504,7 @@
               "debug": "npm:4"
             },
             "Dependencies": {
-              "debug": "4.4.0"
+              "debug": "4.3.7"
             },
             "Optional": false,
             "Bundled": false,
@@ -5520,10 +5520,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -5620,7 +5620,7 @@
               "ajv": "npm:^8.0.0"
             },
             "Dependencies": {
-              "ajv": "8.12.0"
+              "ajv": "8.17.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -5770,8 +5770,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -5812,8 +5812,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -6714,10 +6714,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -7057,9 +7057,9 @@
             "Optional": false,
             "Bundled": false,
             "Dev": false,
-            "Prod": false,
+            "Prod": true,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -7082,10 +7082,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -8575,8 +8575,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -8589,7 +8589,7 @@
               "safe-buffer": "npm:^5.0.1"
             },
             "Dependencies": {
-              "safe-buffer": "5.1.2"
+              "safe-buffer": "5.2.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -8703,8 +8703,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -8735,10 +8735,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -8875,10 +8875,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -8889,10 +8889,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -9149,7 +9149,7 @@
               "ajv": "6.12.6",
               "chalk": "4.1.2",
               "cross-spawn": "7.0.6",
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "escape-string-regexp": "4.0.0",
               "eslint-scope": "8.3.0",
               "eslint-visitor-keys": "4.2.0",
@@ -9593,10 +9593,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -9811,7 +9811,7 @@
             },
             "Dependencies": {
               "@fastify/merge-json-schemas": "0.2.1",
-              "ajv": "8.12.0",
+              "ajv": "8.17.1",
               "ajv-formats": "3.0.1",
               "fast-uri": "3.0.6",
               "json-schema-ref-resolver": "2.0.1",
@@ -10331,8 +10331,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -10565,10 +10565,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -10606,7 +10606,9 @@
             "Requires": {
               "node-gyp": "npm:latest"
             },
-            "Dependencies": {},
+            "Dependencies": {
+              "node-gyp": "11.1.0"
+            },
             "Optional": false,
             "Bundled": false,
             "Dev": true,
@@ -10829,14 +10831,14 @@
             "Dependencies": {
               "foreground-child": "3.3.1",
               "jackspeak": "2.3.6",
-              "minimatch": "9.0.5",
+              "minimatch": "9.0.1",
               "minipass": "7.1.2",
               "path-scurry": "1.11.1"
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -11391,10 +11393,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -11433,14 +11435,14 @@
             },
             "Dependencies": {
               "agent-base": "7.1.3",
-              "debug": "4.4.0"
+              "debug": "4.3.6"
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -11471,14 +11473,14 @@
             },
             "Dependencies": {
               "agent-base": "7.1.3",
-              "debug": "4.3.6"
+              "debug": "4.4.0"
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -11515,7 +11517,7 @@
               "ms": "npm:^2.0.0"
             },
             "Dependencies": {
-              "ms": "2.1.2"
+              "ms": "2.1.3"
             },
             "Optional": false,
             "Bundled": false,
@@ -11569,8 +11571,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -11778,7 +11780,7 @@
               "mute-stream": "0.0.8",
               "ora": "5.4.1",
               "run-async": "2.4.1",
-              "rxjs": "7.8.2",
+              "rxjs": "7.8.1",
               "through": "2.3.8"
             },
             "Optional": false,
@@ -11817,10 +11819,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -12239,10 +12241,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -12341,7 +12343,7 @@
               "source-map": "npm:^0.6.1"
             },
             "Dependencies": {
-              "debug": "4.3.6",
+              "debug": "4.4.0",
               "istanbul-lib-coverage": "3.2.2",
               "source-map": "0.6.1"
             },
@@ -12401,8 +12403,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -12542,7 +12544,7 @@
               "@jest/expect": "29.7.0",
               "@jest/test-result": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "chalk": "4.1.2",
               "co": "4.6.0",
               "dedent": "1.5.3",
@@ -12796,7 +12798,7 @@
             "Dependencies": {
               "@jest/types": "29.6.3",
               "@types/graceful-fs": "4.1.9",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "anymatch": "3.1.3",
               "fb-watchman": "2.0.2",
               "fsevents": "2.3.3",
@@ -12904,7 +12906,7 @@
             },
             "Dependencies": {
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "jest-util": "29.7.0"
             },
             "Optional": false,
@@ -13030,7 +13032,7 @@
               "@jest/test-result": "29.7.0",
               "@jest/transform": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "chalk": "4.1.2",
               "emittery": "0.13.1",
               "graceful-fs": "4.2.11",
@@ -13244,7 +13246,7 @@
             "Dependencies": {
               "@jest/test-result": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "ansi-escapes": "4.3.2",
               "chalk": "4.1.2",
               "emittery": "0.13.1",
@@ -13290,7 +13292,7 @@
               "supports-color": "npm:^8.0.0"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "jest-util": "29.7.0",
               "merge-stream": "2.0.0",
               "supports-color": "8.1.1"
@@ -13415,10 +13417,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13618,7 +13620,7 @@
               "lodash.isplainobject": "4.0.6",
               "lodash.isstring": "4.0.1",
               "lodash.once": "4.1.1",
-              "ms": "2.1.2",
+              "ms": "2.1.3",
               "semver": "7.7.1"
             },
             "Optional": false,
@@ -13707,7 +13709,7 @@
             },
             "Dependencies": {
               "jwa": "1.4.1",
-              "safe-buffer": "5.1.2"
+              "safe-buffer": "5.2.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -14415,10 +14417,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -14763,8 +14765,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -14811,8 +14813,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -14835,8 +14837,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -14847,8 +14849,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -14865,10 +14867,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -14889,10 +14891,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -14907,10 +14909,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -14925,10 +14927,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -14943,10 +14945,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -14981,10 +14983,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -15123,8 +15125,8 @@
             },
             "Dependencies": {
               "@babel/runtime": "7.26.10",
-              "chokidar": "3.5.3",
-              "glob": "10.4.5",
+              "chokidar": "3.6.0",
+              "glob": "10.3.12",
               "html-minifier": "4.0.0",
               "js-beautify": "1.15.4",
               "lodash": "4.17.21",
@@ -15817,10 +15819,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -15959,8 +15961,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -16032,7 +16034,9 @@
             "Requires": {
               "node-gyp": "npm:latest"
             },
-            "Dependencies": {},
+            "Dependencies": {
+              "node-gyp": "11.1.0"
+            },
             "Optional": false,
             "Bundled": false,
             "Dev": false,
@@ -16141,10 +16145,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -16245,10 +16249,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -16782,10 +16786,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -17158,7 +17162,7 @@
             },
             "Dependencies": {
               "lru-cache": "10.4.3",
-              "minipass": "5.0.0"
+              "minipass": "7.1.2"
             },
             "Optional": false,
             "Bundled": false,
@@ -17852,10 +17856,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -17932,10 +17936,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -18356,8 +18360,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -18372,8 +18376,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -18858,10 +18862,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -18936,10 +18940,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -19418,7 +19422,7 @@
             },
             "Dependencies": {
               "inherits": "2.0.4",
-              "safe-buffer": "5.1.2"
+              "safe-buffer": "5.2.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -19626,8 +19630,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -19682,10 +19686,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -19705,7 +19709,7 @@
               "accepts": "1.3.8",
               "base64id": "2.0.0",
               "cors": "2.8.5",
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "engine.io": "6.6.4",
               "socket.io-adapter": "2.5.5",
               "socket.io-parser": "4.2.4"
@@ -19727,7 +19731,7 @@
               "ws": "npm:~8.17.1"
             },
             "Dependencies": {
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "ws": "8.17.1"
             },
             "Optional": false,
@@ -19748,7 +19752,7 @@
             },
             "Dependencies": {
               "@socket.io/component-emitter": "3.1.2",
-              "debug": "4.3.6"
+              "debug": "4.3.7"
             },
             "Optional": false,
             "Bundled": false,
@@ -19772,10 +19776,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -19789,15 +19793,15 @@
             },
             "Dependencies": {
               "agent-base": "7.1.3",
-              "debug": "4.3.6",
+              "debug": "4.4.0",
               "socks": "2.8.4"
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -19916,10 +19920,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -19948,10 +19952,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -20049,8 +20053,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -20122,8 +20126,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -20244,13 +20248,13 @@
             "Dependencies": {
               "component-emitter": "1.3.1",
               "cookiejar": "2.1.4",
-              "debug": "4.3.6",
+              "debug": "4.4.0",
               "fast-safe-stringify": "2.1.1",
               "form-data": "4.0.2",
               "formidable": "3.5.2",
               "methods": "1.1.2",
               "mime": "2.6.0",
-              "qs": "6.14.0"
+              "qs": "6.13.0"
             },
             "Optional": false,
             "Bundled": false,
@@ -20422,10 +20426,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -20999,7 +21003,7 @@
               "app-root-path": "3.1.0",
               "buffer": "6.0.3",
               "dayjs": "1.11.13",
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "dotenv": "16.4.7",
               "glob": "10.4.5",
               "sha.js": "2.4.11",
@@ -21162,10 +21166,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -21180,10 +21184,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -21826,10 +21830,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -21964,8 +21968,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -22086,8 +22090,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -22098,10 +22102,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -22194,6 +22198,121 @@
       "start": {
         "dependencies": [
           {
+            "name": "fastify",
+            "version": "5.2.1",
+            "constraint": "5.2.1"
+          },
+          {
+            "name": "magic-bytes.js",
+            "version": "1.10.0",
+            "constraint": "1.10.0"
+          },
+          {
+            "name": "pg",
+            "version": "8.14.0",
+            "constraint": "8.14.0"
+          },
+          {
+            "name": "@nestjs/platform-fastify",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "@nest-lab/fastify-multer",
+            "version": "1.3.0",
+            "constraint": "1.3.0"
+          },
+          {
+            "name": "bcrypt",
+            "version": "5.1.1",
+            "constraint": "5.1.1"
+          },
+          {
+            "name": "compare-versions",
+            "version": "6.1.1",
+            "constraint": "6.1.1"
+          },
+          {
+            "name": "jsonwebtoken",
+            "version": "9.0.2",
+            "constraint": "9.0.2"
+          },
+          {
+            "name": "pako",
+            "version": "2.1.0",
+            "constraint": "2.1.0"
+          },
+          {
+            "name": "passport",
+            "version": "0.7.0",
+            "constraint": "0.7.0"
+          },
+          {
+            "name": "passport-jwt",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+          },
+          {
+            "name": "@nestjs/core",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "ms",
+            "version": "2.1.3",
+            "constraint": "2.1.3"
+          },
+          {
+            "name": "openai",
+            "version": "4.87.3",
+            "constraint": "4.87.3"
+          },
+          {
+            "name": "reflect-metadata",
+            "version": "0.2.2",
+            "constraint": "0.2.2"
+          },
+          {
+            "name": "typeorm",
+            "version": "0.3.21",
+            "constraint": "0.3.21"
+          },
+          {
+            "name": "@fastify/multipart",
+            "version": "9.0.3",
+            "constraint": "9.0.3"
+          },
+          {
+            "name": "@nestjs-modules/mailer",
+            "version": "2.0.2",
+            "constraint": "2.0.2"
+          },
+          {
+            "name": "@nestjs/config",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+          },
+          {
+            "name": "@nestjs/platform-express",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "nodemailer",
+            "version": "6.10.0",
+            "constraint": "6.10.0"
+          },
+          {
+            "name": "util",
+            "version": "0.12.5",
+            "constraint": "0.12.5"
+          },
+          {
+            "name": "uuid",
+            "version": "11.1.0",
+            "constraint": "11.1.0"
+          },
+          {
             "name": "@nestjs/common",
             "version": "11.0.11",
             "constraint": "11.0.11"
@@ -22204,69 +22323,14 @@
             "constraint": "11.0.0"
           },
           {
-            "name": "class-transformer",
-            "version": "0.5.1",
-            "constraint": "0.5.1"
+            "name": "passport-oauth2",
+            "version": "1.8.0",
+            "constraint": "1.8.0"
           },
           {
-            "name": "moment",
-            "version": "2.30.1",
-            "constraint": "2.30.1"
-          },
-          {
-            "name": "util",
-            "version": "0.12.5",
-            "constraint": "0.12.5"
-          },
-          {
-            "name": "fastify",
-            "version": "5.2.1",
-            "constraint": "5.2.1"
-          },
-          {
-            "name": "jsonwebtoken",
-            "version": "9.0.2",
-            "constraint": "9.0.2"
-          },
-          {
-            "name": "openai",
-            "version": "4.87.3",
-            "constraint": "4.87.3"
-          },
-          {
-            "name": "rxjs",
-            "version": "7.8.2",
-            "constraint": "7.8.2"
-          },
-          {
-            "name": "semver",
-            "version": "7.7.1",
-            "constraint": "7.7.1"
-          },
-          {
-            "name": "@fastify/compress",
-            "version": "8.0.1",
-            "constraint": "8.0.1"
-          },
-          {
-            "name": "@nestjs/config",
-            "version": "4.0.1",
-            "constraint": "4.0.1"
-          },
-          {
-            "name": "axios",
-            "version": "1.8.3",
-            "constraint": "1.8.3"
-          },
-          {
-            "name": "bcrypt",
-            "version": "5.1.1",
-            "constraint": "5.1.1"
-          },
-          {
-            "name": "@nestjs-modules/mailer",
-            "version": "2.0.2",
-            "constraint": "2.0.2"
+            "name": "@fastify/static",
+            "version": "8.1.1",
+            "constraint": "8.1.1"
           },
           {
             "name": "@nestjs/passport",
@@ -22274,9 +22338,14 @@
             "constraint": "11.0.5"
           },
           {
-            "name": "compare-versions",
-            "version": "6.1.1",
-            "constraint": "6.1.1"
+            "name": "@nestjs/swagger",
+            "version": "11.0.6",
+            "constraint": "11.0.6"
+          },
+          {
+            "name": "class-transformer",
+            "version": "0.5.1",
+            "constraint": "0.5.1"
           },
           {
             "name": "handlebars",
@@ -22284,49 +22353,34 @@
             "constraint": "4.7.8"
           },
           {
-            "name": "pako",
-            "version": "2.1.0",
-            "constraint": "2.1.0"
+            "name": "lodash",
+            "version": "4.17.21",
+            "constraint": "4.17.21"
           },
           {
-            "name": "passport-oauth2",
-            "version": "1.8.0",
-            "constraint": "1.8.0"
+            "name": "moment",
+            "version": "2.30.1",
+            "constraint": "2.30.1"
           },
           {
-            "name": "pg",
-            "version": "8.14.0",
-            "constraint": "8.14.0"
+            "name": "semver",
+            "version": "7.7.1",
+            "constraint": "7.7.1"
           },
           {
-            "name": "reflect-metadata",
-            "version": "0.2.2",
-            "constraint": "0.2.2"
+            "name": "@nestjs/axios",
+            "version": "4.0.0",
+            "constraint": "4.0.0"
           },
           {
-            "name": "dotenv",
-            "version": "16.4.7",
-            "constraint": "16.4.7"
-          },
-          {
-            "name": "@nest-lab/fastify-multer",
-            "version": "1.3.0",
-            "constraint": "1.3.0"
-          },
-          {
-            "name": "@nestjs/swagger",
-            "version": "11.0.6",
-            "constraint": "11.0.6"
+            "name": "amqplib",
+            "version": "0.10.5",
+            "constraint": "0.10.5"
           },
           {
             "name": "class-validator",
             "version": "0.14.1",
             "constraint": "0.14.1"
-          },
-          {
-            "name": "nodemailer",
-            "version": "6.10.0",
-            "constraint": "6.10.0"
           },
           {
             "name": "octokit",
@@ -22339,79 +22393,9 @@
             "constraint": "2.8.1"
           },
           {
-            "name": "typeorm",
-            "version": "0.3.21",
-            "constraint": "0.3.21"
-          },
-          {
-            "name": "@nestjs/jwt",
-            "version": "11.0.0",
-            "constraint": "11.0.0"
-          },
-          {
-            "name": "@types/passport-oauth2",
-            "version": "1.4.17",
-            "constraint": "1.4.17"
-          },
-          {
-            "name": "amqplib",
-            "version": "0.10.5",
-            "constraint": "0.10.5"
-          },
-          {
-            "name": "ms",
-            "version": "2.1.3",
-            "constraint": "2.1.3"
-          },
-          {
-            "name": "node-fetch",
-            "version": "3.3.2",
-            "constraint": "3.3.2"
-          },
-          {
-            "name": "uuid",
-            "version": "11.1.0",
-            "constraint": "11.1.0"
-          },
-          {
-            "name": "@nestjs/platform-fastify",
-            "version": "11.0.11",
-            "constraint": "11.0.11"
-          },
-          {
-            "name": "@fastify/multipart",
-            "version": "9.0.3",
-            "constraint": "9.0.3"
-          },
-          {
-            "name": "@nestjs/core",
-            "version": "11.0.11",
-            "constraint": "11.0.11"
-          },
-          {
-            "name": "@nestjs/websockets",
-            "version": "11.0.11",
-            "constraint": "11.0.11"
-          },
-          {
-            "name": "lodash",
-            "version": "4.17.21",
-            "constraint": "4.17.21"
-          },
-          {
-            "name": "passport",
-            "version": "0.7.0",
-            "constraint": "0.7.0"
-          },
-          {
-            "name": "socket.io",
-            "version": "4.8.1",
-            "constraint": "4.8.1"
-          },
-          {
-            "name": "@nestjs/platform-express",
-            "version": "11.0.11",
-            "constraint": "11.0.11"
+            "name": "dotenv",
+            "version": "16.4.7",
+            "constraint": "16.4.7"
           },
           {
             "name": "@nestjs/platform-socket.io",
@@ -22419,156 +22403,61 @@
             "constraint": "11.0.11"
           },
           {
-            "name": "magic-bytes.js",
-            "version": "1.10.0",
-            "constraint": "1.10.0"
+            "name": "@nestjs/jwt",
+            "version": "11.0.0",
+            "constraint": "11.0.0"
           },
           {
-            "name": "passport-jwt",
-            "version": "4.0.1",
-            "constraint": "4.0.1"
+            "name": "@nestjs/websockets",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
           },
           {
-            "name": "@fastify/static",
-            "version": "8.1.1",
-            "constraint": "8.1.1"
+            "name": "node-fetch",
+            "version": "3.3.2",
+            "constraint": "3.3.2"
           },
           {
-            "name": "@nestjs/axios",
-            "version": "4.0.0",
-            "constraint": "4.0.0"
+            "name": "rxjs",
+            "version": "7.8.2",
+            "constraint": "7.8.2"
+          },
+          {
+            "name": "socket.io",
+            "version": "4.8.1",
+            "constraint": "4.8.1"
+          },
+          {
+            "name": "@fastify/compress",
+            "version": "8.0.1",
+            "constraint": "8.0.1"
+          },
+          {
+            "name": "@types/passport-oauth2",
+            "version": "1.4.17",
+            "constraint": "1.4.17"
+          },
+          {
+            "name": "axios",
+            "version": "1.8.3",
+            "constraint": "1.8.3"
           }
         ],
         "dev_dependencies": [
-          {
-            "name": "@rushstack/eslint-patch",
-            "version": "1.11.0",
-            "constraint": "1.11.0"
-          },
-          {
-            "name": "@types/amqplib",
-            "version": "0.10.7",
-            "constraint": "0.10.7"
-          },
-          {
-            "name": "@types/bcrypt",
-            "version": "5.0.2",
-            "constraint": "5.0.2"
-          },
-          {
-            "name": "@types/jest",
-            "version": "29.5.14",
-            "constraint": "29.5.14"
-          },
-          {
-            "name": "@types/uuid",
-            "version": "10.0.0",
-            "constraint": "10.0.0"
-          },
-          {
-            "name": "ts-jest",
-            "version": "29.2.6",
-            "constraint": "29.2.6"
-          },
-          {
-            "name": "@octokit/types",
-            "version": "13.8.0",
-            "constraint": "13.8.0"
-          },
-          {
-            "name": "typescript-eslint",
-            "version": "8.26.1",
-            "constraint": "8.26.1"
-          },
-          {
-            "name": "@types/lodash",
-            "version": "4.17.16",
-            "constraint": "4.17.16"
-          },
-          {
-            "name": "@nestjs/schematics",
-            "version": "11.0.2",
-            "constraint": "11.0.2"
-          },
-          {
-            "name": "@types/express",
-            "version": "5.0.0",
-            "constraint": "5.0.0"
-          },
-          {
-            "name": "@types/pg",
-            "version": "8.11.11",
-            "constraint": "8.11.11"
-          },
-          {
-            "name": "@types/passport-github2",
-            "version": "1.2.9",
-            "constraint": "1.2.9"
-          },
-          {
-            "name": "@types/semver",
-            "version": "7.5.8",
-            "constraint": "7.5.8"
-          },
-          {
-            "name": "eslint-plugin-cypress",
-            "version": "4.2.0",
-            "constraint": "4.2.0"
-          },
           {
             "name": "@types/ms",
             "version": "2.1.0",
             "constraint": "2.1.0"
           },
           {
+            "name": "@types/pako",
+            "version": "2.0.3",
+            "constraint": "2.0.3"
+          },
+          {
             "name": "@types/supertest",
             "version": "6.0.2",
             "constraint": "6.0.2"
-          },
-          {
-            "name": "globals",
-            "version": "16.0.0",
-            "constraint": "16.0.0"
-          },
-          {
-            "name": "ts-loader",
-            "version": "9.5.2",
-            "constraint": "9.5.2"
-          },
-          {
-            "name": "ts-node",
-            "version": "10.9.2",
-            "constraint": "10.9.2"
-          },
-          {
-            "name": "tsconfig-paths",
-            "version": "4.2.0",
-            "constraint": "4.2.0"
-          },
-          {
-            "name": "@types/jsonwebtoken",
-            "version": "9.0.9",
-            "constraint": "9.0.9"
-          },
-          {
-            "name": "@types/webcrypto",
-            "version": "0.0.30",
-            "constraint": "0.0.30"
-          },
-          {
-            "name": "source-map-support",
-            "version": "0.5.21",
-            "constraint": "0.5.21"
-          },
-          {
-            "name": "supertest",
-            "version": "7.0.0",
-            "constraint": "7.0.0"
-          },
-          {
-            "name": "webpack",
-            "version": "5.98.0",
-            "constraint": "5.98.0"
           },
           {
             "name": "@eslint/js",
@@ -22581,34 +22470,24 @@
             "constraint": "10.0.5"
           },
           {
-            "name": "@types/node",
-            "version": "22.13.10",
-            "constraint": "22.13.10"
+            "name": "@rushstack/eslint-patch",
+            "version": "1.11.0",
+            "constraint": "1.11.0"
           },
           {
-            "name": "@types/pako",
-            "version": "2.0.3",
-            "constraint": "2.0.3"
+            "name": "@types/passport-github2",
+            "version": "1.2.9",
+            "constraint": "1.2.9"
           },
           {
-            "name": "jest",
-            "version": "29.7.0",
-            "constraint": "29.7.0"
+            "name": "@types/pg",
+            "version": "8.11.11",
+            "constraint": "8.11.11"
           },
           {
-            "name": "@nestjs/testing",
-            "version": "11.0.11",
-            "constraint": "11.0.11"
-          },
-          {
-            "name": "@types/nodemailer",
-            "version": "6.4.17",
-            "constraint": "6.4.17"
-          },
-          {
-            "name": "@types/nodemailer-sendgrid",
-            "version": "1.0.3",
-            "constraint": "1.0.3"
+            "name": "@types/express",
+            "version": "5.0.0",
+            "constraint": "5.0.0"
           },
           {
             "name": "@types/passport-jwt",
@@ -22616,9 +22495,99 @@
             "constraint": "4.0.1"
           },
           {
+            "name": "@types/semver",
+            "version": "7.5.8",
+            "constraint": "7.5.8"
+          },
+          {
+            "name": "@types/webcrypto",
+            "version": "0.0.30",
+            "constraint": "0.0.30"
+          },
+          {
+            "name": "globals",
+            "version": "16.0.0",
+            "constraint": "16.0.0"
+          },
+          {
+            "name": "typescript-eslint",
+            "version": "8.26.1",
+            "constraint": "8.26.1"
+          },
+          {
+            "name": "webpack",
+            "version": "5.98.0",
+            "constraint": "5.98.0"
+          },
+          {
+            "name": "@nestjs/testing",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "@octokit/types",
+            "version": "13.8.0",
+            "constraint": "13.8.0"
+          },
+          {
+            "name": "@types/bcrypt",
+            "version": "5.0.2",
+            "constraint": "5.0.2"
+          },
+          {
+            "name": "@types/node",
+            "version": "22.13.10",
+            "constraint": "22.13.10"
+          },
+          {
+            "name": "@types/nodemailer-sendgrid",
+            "version": "1.0.3",
+            "constraint": "1.0.3"
+          },
+          {
+            "name": "eslint-plugin-cypress",
+            "version": "4.2.0",
+            "constraint": "4.2.0"
+          },
+          {
+            "name": "ts-jest",
+            "version": "29.2.6",
+            "constraint": "29.2.6"
+          },
+          {
+            "name": "@types/nodemailer",
+            "version": "6.4.17",
+            "constraint": "6.4.17"
+          },
+          {
+            "name": "@types/uuid",
+            "version": "10.0.0",
+            "constraint": "10.0.0"
+          },
+          {
             "name": "eslint",
             "version": "9.22.0",
             "constraint": "9.22.0"
+          },
+          {
+            "name": "source-map-support",
+            "version": "0.5.21",
+            "constraint": "0.5.21"
+          },
+          {
+            "name": "tsconfig-paths",
+            "version": "4.2.0",
+            "constraint": "4.2.0"
+          },
+          {
+            "name": "typescript",
+            "version": "5.8.2",
+            "constraint": "5.8.2"
+          },
+          {
+            "name": "@types/jsonwebtoken",
+            "version": "9.0.9",
+            "constraint": "9.0.9"
           },
           {
             "name": "eslint-config-prettier",
@@ -22626,14 +22595,49 @@
             "constraint": "10.1.1"
           },
           {
+            "name": "ts-node",
+            "version": "10.9.2",
+            "constraint": "10.9.2"
+          },
+          {
+            "name": "@types/amqplib",
+            "version": "0.10.7",
+            "constraint": "0.10.7"
+          },
+          {
+            "name": "@types/jest",
+            "version": "29.5.14",
+            "constraint": "29.5.14"
+          },
+          {
+            "name": "jest",
+            "version": "29.7.0",
+            "constraint": "29.7.0"
+          },
+          {
             "name": "prettier",
             "version": "3.5.3",
             "constraint": "3.5.3"
           },
           {
-            "name": "typescript",
-            "version": "5.8.2",
-            "constraint": "5.8.2"
+            "name": "@types/lodash",
+            "version": "4.17.16",
+            "constraint": "4.17.16"
+          },
+          {
+            "name": "@nestjs/schematics",
+            "version": "11.0.2",
+            "constraint": "11.0.2"
+          },
+          {
+            "name": "supertest",
+            "version": "7.0.0",
+            "constraint": "7.0.0"
+          },
+          {
+            "name": "ts-loader",
+            "version": "9.5.2",
+            "constraint": "9.5.2"
           }
         ]
       }
@@ -22645,9 +22649,9 @@
     "working_directory": "yarnv4",
     "package_manager": "YARN",
     "time": {
-      "analysis_start_time": "2025-05-13 17:10:35.429398 +0200 CEST",
-      "analysis_end_time": "2025-05-13 17:10:35.451658 +0200 CEST",
-      "analysis_delta_time": 0.022259916
+      "analysis_start_time": "2025-05-13 18:58:02.943727 +0200 CEST",
+      "analysis_end_time": "2025-05-13 18:58:02.9676 +0200 CEST",
+      "analysis_delta_time": 0.023872792
     },
     "errors": [],
     "paths": {

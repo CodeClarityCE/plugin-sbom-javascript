@@ -1862,10 +1862,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -2212,10 +2212,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -2230,10 +2230,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -2291,7 +2291,8 @@
               "detect-libc": "1.0.3",
               "is-glob": "4.0.3",
               "micromatch": "4.0.8",
-              "node-addon-api": "7.1.1"
+              "node-addon-api": "7.1.1",
+              "node-gyp": "11.2.0"
             },
             "Optional": false,
             "Bundled": false,
@@ -5293,10 +5294,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -6243,10 +6244,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -6551,10 +6552,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -7457,7 +7458,7 @@
               "d3-path": "npm:1 - 3"
             },
             "Dependencies": {
-              "d3-path": "3.1.0"
+              "d3-path": "1.0.9"
             },
             "Optional": false,
             "Bundled": false,
@@ -7841,7 +7842,7 @@
               "d3-time-format": "npm:2 - 4"
             },
             "Dependencies": {
-              "d3-array": "2.12.1",
+              "d3-array": "3.2.4",
               "d3-format": "3.1.0",
               "d3-interpolate": "3.0.1",
               "d3-time": "3.1.0",
@@ -8673,10 +8674,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -8762,10 +8763,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -8776,10 +8777,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -9724,10 +9725,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -9872,10 +9873,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -10378,10 +10379,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -10391,7 +10392,9 @@
             "Requires": {
               "node-gyp": "npm:latest"
             },
-            "Dependencies": {},
+            "Dependencies": {
+              "node-gyp": "11.2.0"
+            },
             "Optional": false,
             "Bundled": false,
             "Dev": true,
@@ -11082,10 +11085,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -11424,10 +11427,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -12180,10 +12183,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -12352,10 +12355,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13047,10 +13050,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13425,10 +13428,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           },
           "7.1.2": {
@@ -13455,10 +13458,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13479,10 +13482,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13497,10 +13500,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13515,10 +13518,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13533,10 +13536,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13551,10 +13554,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13579,10 +13582,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13752,7 +13755,9 @@
             "Requires": {
               "node-gyp": "npm:latest"
             },
-            "Dependencies": {},
+            "Dependencies": {
+              "node-gyp": "11.2.0"
+            },
             "Optional": false,
             "Bundled": false,
             "Dev": true,
@@ -13791,10 +13796,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -13839,10 +13844,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -14299,10 +14304,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -15065,10 +15070,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -15099,10 +15104,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -15609,10 +15614,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -16429,10 +16434,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -16449,10 +16454,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -16471,10 +16476,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -16613,10 +16618,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -16665,10 +16670,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -17298,10 +17303,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -18096,10 +18101,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -18114,10 +18119,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -18336,7 +18341,7 @@
             "Dependencies": {
               "assert-plus": "1.0.0",
               "core-util-is": "1.0.2",
-              "extsprintf": "1.3.0"
+              "extsprintf": "1.4.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -19006,10 +19011,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -19316,10 +19321,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           },
           "5.0.0": {
@@ -19328,10 +19333,10 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -19465,19 +19470,9 @@
       "start": {
         "dependencies": [
           {
-            "name": "@unovis/ts",
-            "version": "1.5.1",
-            "constraint": "1.5.1"
-          },
-          {
-            "name": "tailwindcss-animate",
-            "version": "1.0.7",
-            "constraint": "1.0.7"
-          },
-          {
-            "name": "clsx",
-            "version": "2.1.1",
-            "constraint": "2.1.1"
+            "name": "@internationalized/date",
+            "version": "3.8.0",
+            "constraint": "3.8.0"
           },
           {
             "name": "reflect-metadata",
@@ -19485,24 +19480,14 @@
             "constraint": "0.2.2"
           },
           {
-            "name": "reka-ui",
-            "version": "2.2.1",
-            "constraint": "2.2.1"
+            "name": "vee-validate",
+            "version": "4.15.0",
+            "constraint": "4.15.0"
           },
           {
-            "name": "vue",
-            "version": "3.5.13",
-            "constraint": "3.5.13"
-          },
-          {
-            "name": "class-validator",
-            "version": "0.14.2",
-            "constraint": "0.14.2"
-          },
-          {
-            "name": "d3",
-            "version": "7.9.0",
-            "constraint": "7.9.0"
+            "name": "clsx",
+            "version": "2.1.1",
+            "constraint": "2.1.1"
           },
           {
             "name": "lucide-vue-next",
@@ -19510,69 +19495,14 @@
             "constraint": "0.509.0"
           },
           {
-            "name": "vue-router",
-            "version": "4.5.1",
-            "constraint": "4.5.1"
+            "name": "vite-plugin-environment",
+            "version": "1.1.3",
+            "constraint": "1.1.3"
           },
           {
-            "name": "zod",
-            "version": "3.24.4",
-            "constraint": "3.24.4"
-          },
-          {
-            "name": "v-calendar",
-            "version": "3.1.2",
-            "constraint": "3.1.2"
-          },
-          {
-            "name": "@internationalized/date",
-            "version": "3.8.0",
-            "constraint": "3.8.0"
-          },
-          {
-            "name": "@popperjs/core",
-            "version": "2.11.8",
-            "constraint": "2.11.8"
-          },
-          {
-            "name": "@tanstack/vue-table",
-            "version": "8.21.3",
-            "constraint": "8.21.3"
-          },
-          {
-            "name": "moment",
-            "version": "2.30.1",
-            "constraint": "2.30.1"
-          },
-          {
-            "name": "date-fns",
-            "version": "4.1.0",
-            "constraint": "4.1.0"
-          },
-          {
-            "name": "litegraph.js",
-            "version": "0.7.18",
-            "constraint": "0.7.18"
-          },
-          {
-            "name": "vue-chartjs",
-            "version": "5.3.2",
-            "constraint": "5.3.2"
-          },
-          {
-            "name": "vue-cookies",
-            "version": "1.8.6",
-            "constraint": "1.8.6"
-          },
-          {
-            "name": "vue-toast-notification",
-            "version": "3.1.3",
-            "constraint": "3.1.3"
-          },
-          {
-            "name": "yup",
-            "version": "1.6.1",
-            "constraint": "1.6.1"
+            "name": "@unovis/vue",
+            "version": "1.5.1",
+            "constraint": "1.5.1"
           },
           {
             "name": "@vee-validate/zod",
@@ -19585,44 +19515,29 @@
             "constraint": "13.1.0"
           },
           {
-            "name": "chart.js",
-            "version": "4.4.9",
-            "constraint": "4.4.9"
+            "name": "moment",
+            "version": "2.30.1",
+            "constraint": "2.30.1"
           },
           {
-            "name": "vue-markdown-render",
+            "name": "reka-ui",
             "version": "2.2.1",
             "constraint": "2.2.1"
           },
           {
-            "name": "class-variance-authority",
-            "version": "0.7.1",
-            "constraint": "0.7.1"
+            "name": "tailwindcss-animate",
+            "version": "1.0.7",
+            "constraint": "1.0.7"
           },
           {
-            "name": "tailwind-merge",
-            "version": "3.2.0",
-            "constraint": "3.2.0"
+            "name": "vue",
+            "version": "3.5.13",
+            "constraint": "3.5.13"
           },
           {
-            "name": "validator",
-            "version": "13.15.0",
-            "constraint": "13.15.0"
-          },
-          {
-            "name": "vee-validate",
-            "version": "4.15.0",
-            "constraint": "4.15.0"
-          },
-          {
-            "name": "vite-plugin-environment",
-            "version": "1.1.3",
-            "constraint": "1.1.3"
-          },
-          {
-            "name": "class-transformer",
-            "version": "0.5.1",
-            "constraint": "0.5.1"
+            "name": "vue-chartjs",
+            "version": "5.3.2",
+            "constraint": "5.3.2"
           },
           {
             "name": "@formkit/auto-animate",
@@ -19630,14 +19545,19 @@
             "constraint": "0.8.2"
           },
           {
-            "name": "@unovis/vue",
-            "version": "1.5.1",
-            "constraint": "1.5.1"
+            "name": "@tanstack/vue-table",
+            "version": "8.21.3",
+            "constraint": "8.21.3"
           },
           {
-            "name": "pinia",
-            "version": "3.0.2",
-            "constraint": "3.0.2"
+            "name": "vue-cookies",
+            "version": "1.8.6",
+            "constraint": "1.8.6"
+          },
+          {
+            "name": "vue-markdown-render",
+            "version": "2.2.1",
+            "constraint": "2.2.1"
           },
           {
             "name": "vue-matomo",
@@ -19648,48 +19568,98 @@
             "name": "vue-tippy",
             "version": "6.7.0",
             "constraint": "6.7.0"
+          },
+          {
+            "name": "class-transformer",
+            "version": "0.5.1",
+            "constraint": "0.5.1"
+          },
+          {
+            "name": "d3",
+            "version": "7.9.0",
+            "constraint": "7.9.0"
+          },
+          {
+            "name": "date-fns",
+            "version": "4.1.0",
+            "constraint": "4.1.0"
+          },
+          {
+            "name": "tailwind-merge",
+            "version": "3.2.0",
+            "constraint": "3.2.0"
+          },
+          {
+            "name": "v-calendar",
+            "version": "3.1.2",
+            "constraint": "3.1.2"
+          },
+          {
+            "name": "vue-router",
+            "version": "4.5.1",
+            "constraint": "4.5.1"
+          },
+          {
+            "name": "zod",
+            "version": "3.24.4",
+            "constraint": "3.24.4"
+          },
+          {
+            "name": "@unovis/ts",
+            "version": "1.5.1",
+            "constraint": "1.5.1"
+          },
+          {
+            "name": "class-validator",
+            "version": "0.14.2",
+            "constraint": "0.14.2"
+          },
+          {
+            "name": "class-variance-authority",
+            "version": "0.7.1",
+            "constraint": "0.7.1"
+          },
+          {
+            "name": "pinia",
+            "version": "3.0.2",
+            "constraint": "3.0.2"
+          },
+          {
+            "name": "validator",
+            "version": "13.15.0",
+            "constraint": "13.15.0"
+          },
+          {
+            "name": "@popperjs/core",
+            "version": "2.11.8",
+            "constraint": "2.11.8"
+          },
+          {
+            "name": "yup",
+            "version": "1.6.1",
+            "constraint": "1.6.1"
+          },
+          {
+            "name": "chart.js",
+            "version": "4.4.9",
+            "constraint": "4.4.9"
+          },
+          {
+            "name": "litegraph.js",
+            "version": "0.7.18",
+            "constraint": "0.7.18"
+          },
+          {
+            "name": "vue-toast-notification",
+            "version": "3.1.3",
+            "constraint": "3.1.3"
           }
         ],
         "dev_dependencies": [
           {
-            "name": "eslint-plugin-vue",
-            "version": "10.1.0",
-            "constraint": "10.1.0"
-          },
-          {
-            "name": "sass",
-            "version": "1.88.0",
-            "constraint": "1.88.0"
-          },
-          {
-            "name": "@iconify/vue",
-            "version": "4.3.0",
-            "constraint": "4.3.0"
-          },
-          {
-            "name": "@vitejs/plugin-vue",
-            "version": "5.2.4",
-            "constraint": "5.2.4"
-          },
-          {
-            "name": "cypress",
-            "version": "14.3.3",
-            "constraint": "14.3.3"
-          },
-          {
-            "name": "npm-run-all",
-            "version": "4.1.5",
-            "constraint": "4.1.5"
-          },
-          {
-            "name": "@eslint/js",
-            "version": "9.26.0",
-            "constraint": "9.26.0"
-          },
-          {
-            "name": "@types/validator",
-            "version": "13.15.0",
-            "constraint": "13.15.0"
+            "name": "@rushstack/eslint-patch",
+            "version": "1.11.0",
+            "constraint": "1.11.0"
           },
           {
             "name": "@vue/eslint-config-prettier",
@@ -19697,9 +19667,34 @@
             "constraint": "10.2.0"
           },
           {
-            "name": "@vue/tsconfig",
-            "version": "0.7.0",
-            "constraint": "0.7.0"
+            "name": "autoprefixer",
+            "version": "10.4.21",
+            "constraint": "10.4.21"
+          },
+          {
+            "name": "eslint-config-prettier",
+            "version": "10.1.5",
+            "constraint": "10.1.5"
+          },
+          {
+            "name": "prettier",
+            "version": "3.5.3",
+            "constraint": "3.5.3"
+          },
+          {
+            "name": "sass",
+            "version": "1.88.0",
+            "constraint": "1.88.0"
+          },
+          {
+            "name": "@vitejs/plugin-vue",
+            "version": "5.2.4",
+            "constraint": "5.2.4"
+          },
+          {
+            "name": "eslint",
+            "version": "9.26.0",
+            "constraint": "9.26.0"
           },
           {
             "name": "eslint-plugin-cypress",
@@ -19707,19 +19702,14 @@
             "constraint": "4.3.0"
           },
           {
-            "name": "globals",
-            "version": "16.1.0",
-            "constraint": "16.1.0"
+            "name": "npm-run-all",
+            "version": "4.1.5",
+            "constraint": "4.1.5"
           },
           {
-            "name": "jsdom",
-            "version": "26.1.0",
-            "constraint": "26.1.0"
-          },
-          {
-            "name": "vite",
-            "version": "6.3.5",
-            "constraint": "6.3.5"
+            "name": "typescript",
+            "version": "5.8.3",
+            "constraint": "5.8.3"
           },
           {
             "name": "vitest",
@@ -19732,12 +19722,17 @@
             "constraint": "10.1.3"
           },
           {
-            "name": "@types/jquery",
-            "version": "3.5.32",
-            "constraint": "3.5.32"
+            "name": "@iconify/vue",
+            "version": "4.3.0",
+            "constraint": "4.3.0"
           },
           {
-            "name": "eslint",
+            "name": "vite-plugin-vue-devtools",
+            "version": "7.7.6",
+            "constraint": "7.7.6"
+          },
+          {
+            "name": "@eslint/js",
             "version": "9.26.0",
             "constraint": "9.26.0"
           },
@@ -19747,24 +19742,9 @@
             "constraint": "8.5.3"
           },
           {
-            "name": "start-server-and-test",
-            "version": "2.0.11",
-            "constraint": "2.0.11"
-          },
-          {
             "name": "tailwindcss",
             "version": "3.4.17",
             "constraint": "3.4.17"
-          },
-          {
-            "name": "typescript-eslint",
-            "version": "8.32.0",
-            "constraint": "8.32.0"
-          },
-          {
-            "name": "@types/node",
-            "version": "22.15.17",
-            "constraint": "22.15.17"
           },
           {
             "name": "@vue/eslint-config-typescript",
@@ -19777,14 +19757,19 @@
             "constraint": "2.4.6"
           },
           {
-            "name": "prettier",
-            "version": "3.5.3",
-            "constraint": "3.5.3"
+            "name": "cypress",
+            "version": "14.3.3",
+            "constraint": "14.3.3"
           },
           {
-            "name": "typescript",
-            "version": "5.8.3",
-            "constraint": "5.8.3"
+            "name": "typescript-eslint",
+            "version": "8.32.0",
+            "constraint": "8.32.0"
+          },
+          {
+            "name": "vite",
+            "version": "6.3.5",
+            "constraint": "6.3.5"
           },
           {
             "name": "@tsconfig/node18",
@@ -19797,24 +19782,9 @@
             "constraint": "7.4.3"
           },
           {
-            "name": "eslint-config-prettier",
-            "version": "10.1.5",
-            "constraint": "10.1.5"
-          },
-          {
-            "name": "vue-tsc",
-            "version": "2.1.10",
-            "constraint": "2.1.10"
-          },
-          {
-            "name": "@rushstack/eslint-patch",
-            "version": "1.11.0",
-            "constraint": "1.11.0"
-          },
-          {
-            "name": "vite-plugin-vue-devtools",
-            "version": "7.7.6",
-            "constraint": "7.7.6"
+            "name": "@types/jquery",
+            "version": "3.5.32",
+            "constraint": "3.5.32"
           },
           {
             "name": "@types/jsdom",
@@ -19822,9 +19792,44 @@
             "constraint": "21.1.7"
           },
           {
-            "name": "autoprefixer",
-            "version": "10.4.21",
-            "constraint": "10.4.21"
+            "name": "@types/node",
+            "version": "22.15.17",
+            "constraint": "22.15.17"
+          },
+          {
+            "name": "jsdom",
+            "version": "26.1.0",
+            "constraint": "26.1.0"
+          },
+          {
+            "name": "@types/validator",
+            "version": "13.15.0",
+            "constraint": "13.15.0"
+          },
+          {
+            "name": "@vue/tsconfig",
+            "version": "0.7.0",
+            "constraint": "0.7.0"
+          },
+          {
+            "name": "eslint-plugin-vue",
+            "version": "10.1.0",
+            "constraint": "10.1.0"
+          },
+          {
+            "name": "globals",
+            "version": "16.1.0",
+            "constraint": "16.1.0"
+          },
+          {
+            "name": "start-server-and-test",
+            "version": "2.0.11",
+            "constraint": "2.0.11"
+          },
+          {
+            "name": "vue-tsc",
+            "version": "2.1.10",
+            "constraint": "2.1.10"
           }
         ]
       }
@@ -19836,9 +19841,9 @@
     "working_directory": "test",
     "package_manager": "YARN",
     "time": {
-      "analysis_start_time": "2025-05-13 17:10:35.783257 +0200 CEST",
-      "analysis_end_time": "2025-05-13 17:10:35.806411 +0200 CEST",
-      "analysis_delta_time": 0.0231545
+      "analysis_start_time": "2025-05-13 18:58:03.262202 +0200 CEST",
+      "analysis_end_time": "2025-05-13 18:58:03.280706 +0200 CEST",
+      "analysis_delta_time": 0.018503958
     },
     "errors": [],
     "paths": {

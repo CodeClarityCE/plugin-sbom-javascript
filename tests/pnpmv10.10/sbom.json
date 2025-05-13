@@ -22566,16 +22566,6 @@
         ],
         "dev_dependencies": [
           {
-            "name": "@docusaurus/module-type-aliases",
-            "version": "3.7.0",
-            "constraint": "3.7.0"
-          },
-          {
-            "name": "@docusaurus/tsconfig",
-            "version": "3.7.0",
-            "constraint": "3.7.0"
-          },
-          {
             "name": "@docusaurus/types",
             "version": "3.7.0",
             "constraint": "3.7.0"
@@ -22584,6 +22574,16 @@
             "name": "typescript",
             "version": "5.6.3",
             "constraint": "~5.6.2"
+          },
+          {
+            "name": "@docusaurus/module-type-aliases",
+            "version": "3.7.0",
+            "constraint": "3.7.0"
+          },
+          {
+            "name": "@docusaurus/tsconfig",
+            "version": "3.7.0",
+            "constraint": "3.7.0"
           }
         ]
       }
@@ -22595,9 +22595,9 @@
     "working_directory": "pnpmv10.10",
     "package_manager": "PNPM",
     "time": {
-      "analysis_start_time": "2025-05-13 17:10:35.734107 +0200 CEST",
-      "analysis_end_time": "2025-05-13 17:10:35.780206 +0200 CEST",
-      "analysis_delta_time": 0.0460995
+      "analysis_start_time": "2025-05-13 18:58:03.225279 +0200 CEST",
+      "analysis_end_time": "2025-05-13 18:58:03.259486 +0200 CEST",
+      "analysis_delta_time": 0.034206167
     },
     "errors": [],
     "paths": {
