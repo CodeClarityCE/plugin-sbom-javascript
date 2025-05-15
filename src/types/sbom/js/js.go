@@ -36,6 +36,8 @@ type Versions struct {
 	Optional     bool
 	Bundled      bool
 	Dev          bool
+	Prod         bool
+	Direct       bool
 	Transitive   bool
 	Licenses     []string
 }

@@ -117,6 +117,18 @@ func TestCreatePNPMv10_10(t *testing.T) {
 	writeJSON(out, "./pnpmv10.10/sbom.json")
 }
 
+// You can adapt this test to your needs
+func TestCreateTest(t *testing.T) {
+	out := plugin.Start("./test", uuid.UUID{})
+
+	// Assert the expected values
+	assert.NotNil(t, out)
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	assert.NotEmpty(t, out.WorkSpaces)
+
+	writeJSON(out, "./test/sbom.json")
+}
+
 // func BenchmarkCreate(b *testing.B) {
 // 	// Get DB
 // 	db, err := dbhelper.GetDatabase(dbhelper.Config.Database.Knowledge)
