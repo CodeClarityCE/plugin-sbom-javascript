@@ -1,0 +1,2419 @@
+{
+  "workspaces": {
+    ".": {
+      "Vulnerabilities": [
+        {
+          "Sources": [],
+          "AffectedDependency": "jsdom",
+          "AffectedVersion": "26.1.0",
+          "VulnerabilityId": "CVE-2021-20066",
+          "OSVMatch": {
+            "Vulnerability": {
+              "Id": "00000000-0000-0000-0000-000000000000",
+              "id": "",
+              "schema_version": "",
+              "modified": "",
+              "published": "",
+              "withdrawn": "",
+              "aliases": null,
+              "related": null,
+              "summary": "",
+              "details": "",
+              "severity": null,
+              "affected": null,
+              "references": null,
+              "credits": null,
+              "database_specific": null,
+              "cwes": null,
+              "cve": ""
+            },
+            "Dependency": {
+              "Name": "",
+              "VersionInfo": {
+                "Key": "",
+                "Requires": null,
+                "Dependencies": null,
+                "Optional": false,
+                "Bundled": false,
+                "Dev": false,
+                "Prod": false,
+                "Direct": false,
+                "Transitive": false,
+                "Licenses": null
+              },
+              "Semver": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "AffectedInfo": null,
+            "VulnerableEvidenceRange": {
+              "Vulnerable": {
+                "IntroducedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "FixedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              },
+              "OpenEnd": false
+            },
+            "VulnerableEvidenceExact": {
+              "Vulnerable": {
+                "VersionString": "",
+                "VersionSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceUniversal": {
+              "Vulnerable": {
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceType": "",
+            "Vulnerable": false,
+            "ConflictFlag": "",
+            "Severity": 0,
+            "SeverityType": ""
+          },
+          "NVDMatch": {
+            "Vulnerability": {
+              "Id": "a3d80c38-7036-44e7-9786-016a59cad3d6",
+              "id": "CVE-2021-20066",
+              "SourceIdentifier": "vulnreport@tenable.com",
+              "Published": "2021-02-16T20:15:15.767",
+              "LastModified": "2022-10-27T21:14:10.473",
+              "VulnStatus": "Analyzed",
+              "Descriptions": [
+                {
+                  "lang": "en",
+                  "value": "JSDom improperly allows the loading of local resources, which allows for local files to be manipulated by a malicious web page when script execution is enabled."
+                },
+                {
+                  "lang": "es",
+                  "value": "JSDom permite inapropiadamente la carga de recursos locales, lo que permite que los archivos locales sean manipulados por una página web maliciosa cuando la ejecución de script está habilitada"
+                }
+              ],
+              "Metrics": {
+                "cvssMetricV2": [
+                  {
+                    "acInsufInfo": false,
+                    "baseSeverity": "MEDIUM",
+                    "cvssData": {
+                      "accessComplexity": "MEDIUM",
+                      "accessVector": "NETWORK",
+                      "authentication": "NONE",
+                      "availabilityImpact": "PARTIAL",
+                      "baseScore": 6.8,
+                      "confidentialityImpact": "PARTIAL",
+                      "integrityImpact": "PARTIAL",
+                      "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                      "version": "2.0"
+                    },
+                    "exploitabilityScore": 8.6,
+                    "impactScore": 6.4,
+                    "obtainAllPrivilege": false,
+                    "obtainOtherPrivilege": false,
+                    "obtainUserPrivilege": false,
+                    "source": "nvd@nist.gov",
+                    "type": "Primary",
+                    "userInteractionRequired": false
+                  }
+                ],
+                "cvssMetricV30": null,
+                "cvssMetricV31": [
+                  {
+                    "cvssData": {
+                      "attackComplexity": "HIGH",
+                      "attackVector": "NETWORK",
+                      "availabilityImpact": "LOW",
+                      "baseScore": 5.6,
+                      "baseSeverity": "MEDIUM",
+                      "confidentialityImpact": "LOW",
+                      "integrityImpact": "LOW",
+                      "privilegesRequired": "NONE",
+                      "scope": "UNCHANGED",
+                      "userInteraction": "NONE",
+                      "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                      "version": "3.1"
+                    },
+                    "exploitabilityScore": 2.2,
+                    "impactScore": 3.4,
+                    "source": "nvd@nist.gov",
+                    "type": "Primary"
+                  }
+                ]
+              },
+              "Weaknesses": [
+                {
+                  "source": "nvd@nist.gov",
+                  "type": "Primary",
+                  "descriptions": null
+                }
+              ],
+              "Configurations": null,
+              "AffectedFlattened": [
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:jsdom_project:jsdom:-:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "C10B28FE-6B6A-461E-98FF-B4B1894F7302",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "jsdom_project",
+                    "product": "jsdom",
+                    "version": "-",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                }
+              ],
+              "Affected": [
+                {
+                  "sources": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:jsdom_project:jsdom:-:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "C10B28FE-6B6A-461E-98FF-B4B1894F7302",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "",
+                      "versionStartIncluding": "",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "jsdom_project",
+                        "product": "jsdom",
+                        "version": "-",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    }
+                  ],
+                  "running-on": [],
+                  "running-on-applications-only": []
+                }
+              ],
+              "References": [
+                {
+                  "url": "https://github.com/jsdom/jsdom/issues/3124#issuecomment-783502951",
+                  "source": "vulnreport@tenable.com",
+                  "tags": [
+                    "Exploit",
+                    "Issue Tracking",
+                    "Third Party Advisory"
+                  ]
+                },
+                {
+                  "url": "https://www.tenable.com/security/research/tra-2021-05",
+                  "source": "vulnreport@tenable.com",
+                  "tags": [
+                    "Exploit",
+                    "Third Party Advisory"
+                  ]
+                }
+              ]
+            },
+            "Dependency": {
+              "Name": "jsdom",
+              "VersionInfo": {
+                "Key": "jsdom@26.1.0",
+                "Requires": {
+                  "cssstyle": "npm:^4.2.1",
+                  "data-urls": "npm:^5.0.0",
+                  "decimal.js": "npm:^10.5.0",
+                  "html-encoding-sniffer": "npm:^4.0.0",
+                  "http-proxy-agent": "npm:^7.0.2",
+                  "https-proxy-agent": "npm:^7.0.6",
+                  "is-potential-custom-element-name": "npm:^1.0.1",
+                  "nwsapi": "npm:^2.2.16",
+                  "parse5": "npm:^7.2.1",
+                  "rrweb-cssom": "npm:^0.8.0",
+                  "saxes": "npm:^6.0.0",
+                  "symbol-tree": "npm:^3.2.4",
+                  "tough-cookie": "npm:^5.1.1",
+                  "w3c-xmlserializer": "npm:^5.0.0",
+                  "webidl-conversions": "npm:^7.0.0",
+                  "whatwg-encoding": "npm:^3.1.1",
+                  "whatwg-mimetype": "npm:^4.0.0",
+                  "whatwg-url": "npm:^14.1.1",
+                  "ws": "npm:^8.18.0",
+                  "xml-name-validator": "npm:^5.0.0"
+                },
+                "Dependencies": {
+                  "cssstyle": "4.3.1",
+                  "data-urls": "5.0.0",
+                  "decimal.js": "10.5.0",
+                  "html-encoding-sniffer": "4.0.0",
+                  "http-proxy-agent": "7.0.2",
+                  "https-proxy-agent": "7.0.6",
+                  "is-potential-custom-element-name": "1.0.1",
+                  "nwsapi": "2.2.20",
+                  "parse5": "7.3.0",
+                  "rrweb-cssom": "0.8.0",
+                  "saxes": "6.0.0",
+                  "symbol-tree": "3.2.4",
+                  "tough-cookie": "5.1.2",
+                  "w3c-xmlserializer": "5.0.0",
+                  "webidl-conversions": "7.0.0",
+                  "whatwg-encoding": "3.1.1",
+                  "whatwg-mimetype": "4.0.0",
+                  "whatwg-url": "14.2.0",
+                  "ws": "8.18.2",
+                  "xml-name-validator": "5.0.0"
+                },
+                "Optional": false,
+                "Bundled": false,
+                "Dev": true,
+                "Prod": false,
+                "Direct": true,
+                "Transitive": false,
+                "Licenses": null
+              },
+              "Semver": {
+                "Major": 26,
+                "Minor": 1,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "AffectedInfo": [
+              {
+                "Exact": null,
+                "Ranges": null,
+                "Universal": {
+                  "CPEInfo": {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:jsdom_project:jsdom:-:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "C10B28FE-6B6A-461E-98FF-B4B1894F7302",
+                    "versionEndIncluding": "",
+                    "versionEndExcluding": "",
+                    "versionStartIncluding": "",
+                    "versionStartExcluding": "",
+                    "criteriaDict": {
+                      "part": "a",
+                      "vendor": "jsdom_project",
+                      "product": "jsdom",
+                      "version": "-",
+                      "update": "*",
+                      "edition": "*",
+                      "language": "*",
+                      "sw_edition": "*",
+                      "target_sw": "*",
+                      "target_hw": "*",
+                      "other": "*"
+                    }
+                  }
+                }
+              }
+            ],
+            "VulnerableEvidenceRange": {
+              "Vulnerable": {
+                "IntroducedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "FixedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              },
+              "OpenEnd": false
+            },
+            "VulnerableEvidenceExact": {
+              "Vulnerable": {
+                "VersionString": "",
+                "VersionSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceUniversal": {
+              "Vulnerable": {
+                "CPEInfo": {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:jsdom_project:jsdom:-:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "C10B28FE-6B6A-461E-98FF-B4B1894F7302",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "jsdom_project",
+                    "product": "jsdom",
+                    "version": "-",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 26,
+                "Minor": 1,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceType": "VULNERABLE_EVIDENCE_UNIVERSAL",
+            "Vulnerable": true,
+            "ConflictFlag": "",
+            "Severity": 0,
+            "SeverityType": ""
+          },
+          "Severity": {
+            "SeverityClass": "MEDIUM",
+            "Severity": 5.6,
+            "SeverityType": "CVSS_V31",
+            "Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "Impact": 3.4,
+            "Exploitability": 2.2,
+            "ConfidentialityImpact": "LOW",
+            "IntegrityImpact": "LOW",
+            "AvailabilityImpact": "LOW",
+            "ConfidentialityImpactNumerical": 0.5,
+            "IntegrityImpactNumerical": 0.5,
+            "AvailabilityImpactNumerical": 0.5
+          },
+          "Weaknesses": []
+        },
+        {
+          "Sources": [],
+          "AffectedDependency": "typescript",
+          "AffectedVersion": "5.8.3",
+          "VulnerabilityId": "CVE-2020-1416",
+          "OSVMatch": {
+            "Vulnerability": {
+              "Id": "00000000-0000-0000-0000-000000000000",
+              "id": "",
+              "schema_version": "",
+              "modified": "",
+              "published": "",
+              "withdrawn": "",
+              "aliases": null,
+              "related": null,
+              "summary": "",
+              "details": "",
+              "severity": null,
+              "affected": null,
+              "references": null,
+              "credits": null,
+              "database_specific": null,
+              "cwes": null,
+              "cve": ""
+            },
+            "Dependency": {
+              "Name": "",
+              "VersionInfo": {
+                "Key": "",
+                "Requires": null,
+                "Dependencies": null,
+                "Optional": false,
+                "Bundled": false,
+                "Dev": false,
+                "Prod": false,
+                "Direct": false,
+                "Transitive": false,
+                "Licenses": null
+              },
+              "Semver": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "AffectedInfo": null,
+            "VulnerableEvidenceRange": {
+              "Vulnerable": {
+                "IntroducedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "FixedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              },
+              "OpenEnd": false
+            },
+            "VulnerableEvidenceExact": {
+              "Vulnerable": {
+                "VersionString": "",
+                "VersionSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceUniversal": {
+              "Vulnerable": {
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceType": "",
+            "Vulnerable": false,
+            "ConflictFlag": "",
+            "Severity": 0,
+            "SeverityType": ""
+          },
+          "NVDMatch": {
+            "Vulnerability": {
+              "Id": "0fc28856-67d8-42fe-bf5c-c99330bdaf1b",
+              "id": "CVE-2020-1416",
+              "SourceIdentifier": "secure@microsoft.com",
+              "Published": "2020-07-14T23:15:17.760",
+              "LastModified": "2023-03-09T18:02:29.547",
+              "VulnStatus": "Analyzed",
+              "Descriptions": [
+                {
+                  "lang": "en",
+                  "value": "An elevation of privilege vulnerability exists in Visual Studio and Visual Studio Code when they load software dependencies, aka 'Visual Studio and Visual Studio Code Elevation of Privilege Vulnerability'."
+                },
+                {
+                  "lang": "es",
+                  "value": "Se presenta una vulnerabilidad de elevación de privilegios en Visual Studio y Visual Studio Code cuando cargan dependencias de software, también se conoce como \"Visual Studio and Visual Studio Code Elevation of Privilege Vulnerability'"
+                }
+              ],
+              "Metrics": {
+                "cvssMetricV2": [
+                  {
+                    "acInsufInfo": false,
+                    "baseSeverity": "HIGH",
+                    "cvssData": {
+                      "accessComplexity": "MEDIUM",
+                      "accessVector": "NETWORK",
+                      "authentication": "NONE",
+                      "availabilityImpact": "COMPLETE",
+                      "baseScore": 9.3,
+                      "confidentialityImpact": "COMPLETE",
+                      "integrityImpact": "COMPLETE",
+                      "vectorString": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+                      "version": "2.0"
+                    },
+                    "exploitabilityScore": 8.6,
+                    "impactScore": 10,
+                    "obtainAllPrivilege": false,
+                    "obtainOtherPrivilege": false,
+                    "obtainUserPrivilege": false,
+                    "source": "nvd@nist.gov",
+                    "type": "Primary",
+                    "userInteractionRequired": true
+                  }
+                ],
+                "cvssMetricV30": null,
+                "cvssMetricV31": [
+                  {
+                    "cvssData": {
+                      "attackComplexity": "LOW",
+                      "attackVector": "NETWORK",
+                      "availabilityImpact": "HIGH",
+                      "baseScore": 8.8,
+                      "baseSeverity": "HIGH",
+                      "confidentialityImpact": "HIGH",
+                      "integrityImpact": "HIGH",
+                      "privilegesRequired": "NONE",
+                      "scope": "UNCHANGED",
+                      "userInteraction": "REQUIRED",
+                      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                      "version": "3.1"
+                    },
+                    "exploitabilityScore": 2.8,
+                    "impactScore": 5.9,
+                    "source": "nvd@nist.gov",
+                    "type": "Primary"
+                  }
+                ]
+              },
+              "Weaknesses": [
+                {
+                  "source": "nvd@nist.gov",
+                  "type": "Primary",
+                  "descriptions": null
+                }
+              ],
+              "Configurations": null,
+              "AffectedFlattened": [
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:microsoft:azure_storage_explorer:-:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "334D89E1-AD97-4FB3-A6F1-15DCCFDBE633",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "microsoft",
+                    "product": "azure_storage_explorer",
+                    "version": "-",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                },
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:microsoft:typescript:-:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "BA277009-E2BA-4587-A128-B3945124B804",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "microsoft",
+                    "product": "typescript",
+                    "version": "-",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                },
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:microsoft:visual_studio_2017:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "A73D1417-E2B9-4ECD-B637-46D22B21F229",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "15.9.25",
+                  "versionStartIncluding": "15.0",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "microsoft",
+                    "product": "visual_studio_2017",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                },
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:microsoft:visual_studio_2019:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "E94E13B1-8CE6-4B86-AB58-19FAB3F92E05",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "16.0.16",
+                  "versionStartIncluding": "16.0",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "microsoft",
+                    "product": "visual_studio_2019",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                },
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:microsoft:visual_studio_2019:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "0646F955-A55C-4DA7-A73A-0A23B51FB47C",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "16.4.11",
+                  "versionStartIncluding": "16.1",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "microsoft",
+                    "product": "visual_studio_2019",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                },
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:microsoft:visual_studio_2019:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "F639AE14-5A14-4CFC-B2AF-AC0B458F2F14",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "16.6.4",
+                  "versionStartIncluding": "16.5",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "microsoft",
+                    "product": "visual_studio_2019",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                },
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:microsoft:visual_studio_code:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "39A9B2C7-91A5-4720-98E5-33A633E7EAB2",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "1.47.1",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "microsoft",
+                    "product": "visual_studio_code",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                }
+              ],
+              "Affected": [
+                {
+                  "sources": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:microsoft:azure_storage_explorer:-:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "334D89E1-AD97-4FB3-A6F1-15DCCFDBE633",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "",
+                      "versionStartIncluding": "",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "microsoft",
+                        "product": "azure_storage_explorer",
+                        "version": "-",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:microsoft:typescript:-:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "BA277009-E2BA-4587-A128-B3945124B804",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "",
+                      "versionStartIncluding": "",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "microsoft",
+                        "product": "typescript",
+                        "version": "-",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:microsoft:visual_studio_2017:*:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "A73D1417-E2B9-4ECD-B637-46D22B21F229",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "15.9.25",
+                      "versionStartIncluding": "15.0",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "microsoft",
+                        "product": "visual_studio_2017",
+                        "version": "*",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:microsoft:visual_studio_2019:*:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "E94E13B1-8CE6-4B86-AB58-19FAB3F92E05",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "16.0.16",
+                      "versionStartIncluding": "16.0",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "microsoft",
+                        "product": "visual_studio_2019",
+                        "version": "*",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:microsoft:visual_studio_2019:*:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "0646F955-A55C-4DA7-A73A-0A23B51FB47C",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "16.4.11",
+                      "versionStartIncluding": "16.1",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "microsoft",
+                        "product": "visual_studio_2019",
+                        "version": "*",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:microsoft:visual_studio_2019:*:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "F639AE14-5A14-4CFC-B2AF-AC0B458F2F14",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "16.6.4",
+                      "versionStartIncluding": "16.5",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "microsoft",
+                        "product": "visual_studio_2019",
+                        "version": "*",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:microsoft:visual_studio_code:*:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "39A9B2C7-91A5-4720-98E5-33A633E7EAB2",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "1.47.1",
+                      "versionStartIncluding": "",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "microsoft",
+                        "product": "visual_studio_code",
+                        "version": "*",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    }
+                  ],
+                  "running-on": [],
+                  "running-on-applications-only": []
+                }
+              ],
+              "References": [
+                {
+                  "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1416",
+                  "source": "secure@microsoft.com",
+                  "tags": [
+                    "Patch",
+                    "Vendor Advisory"
+                  ]
+                }
+              ]
+            },
+            "Dependency": {
+              "Name": "typescript",
+              "VersionInfo": {
+                "Key": "typescript@5.8.3",
+                "Requires": null,
+                "Dependencies": {},
+                "Optional": false,
+                "Bundled": false,
+                "Dev": true,
+                "Prod": false,
+                "Direct": true,
+                "Transitive": false,
+                "Licenses": null
+              },
+              "Semver": {
+                "Major": 5,
+                "Minor": 8,
+                "Patch": 3,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "AffectedInfo": [
+              {
+                "Exact": null,
+                "Ranges": null,
+                "Universal": {
+                  "CPEInfo": {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:microsoft:typescript:-:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "BA277009-E2BA-4587-A128-B3945124B804",
+                    "versionEndIncluding": "",
+                    "versionEndExcluding": "",
+                    "versionStartIncluding": "",
+                    "versionStartExcluding": "",
+                    "criteriaDict": {
+                      "part": "a",
+                      "vendor": "microsoft",
+                      "product": "typescript",
+                      "version": "-",
+                      "update": "*",
+                      "edition": "*",
+                      "language": "*",
+                      "sw_edition": "*",
+                      "target_sw": "*",
+                      "target_hw": "*",
+                      "other": "*"
+                    }
+                  }
+                }
+              }
+            ],
+            "VulnerableEvidenceRange": {
+              "Vulnerable": {
+                "IntroducedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "FixedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              },
+              "OpenEnd": false
+            },
+            "VulnerableEvidenceExact": {
+              "Vulnerable": {
+                "VersionString": "",
+                "VersionSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceUniversal": {
+              "Vulnerable": {
+                "CPEInfo": {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:microsoft:typescript:-:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "BA277009-E2BA-4587-A128-B3945124B804",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "microsoft",
+                    "product": "typescript",
+                    "version": "-",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 5,
+                "Minor": 8,
+                "Patch": 3,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceType": "VULNERABLE_EVIDENCE_UNIVERSAL",
+            "Vulnerable": true,
+            "ConflictFlag": "",
+            "Severity": 0,
+            "SeverityType": ""
+          },
+          "Severity": {
+            "SeverityClass": "HIGH",
+            "Severity": 8.8,
+            "SeverityType": "CVSS_V31",
+            "Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "Impact": 5.9,
+            "Exploitability": 2.8,
+            "ConfidentialityImpact": "HIGH",
+            "IntegrityImpact": "HIGH",
+            "AvailabilityImpact": "HIGH",
+            "ConfidentialityImpactNumerical": 1,
+            "IntegrityImpactNumerical": 1,
+            "AvailabilityImpactNumerical": 1
+          },
+          "Weaknesses": []
+        },
+        {
+          "Sources": [],
+          "AffectedDependency": "cookie",
+          "AffectedVersion": "0.7.2",
+          "VulnerabilityId": "CVE-2017-18589",
+          "OSVMatch": {
+            "Vulnerability": {
+              "Id": "00000000-0000-0000-0000-000000000000",
+              "id": "",
+              "schema_version": "",
+              "modified": "",
+              "published": "",
+              "withdrawn": "",
+              "aliases": null,
+              "related": null,
+              "summary": "",
+              "details": "",
+              "severity": null,
+              "affected": null,
+              "references": null,
+              "credits": null,
+              "database_specific": null,
+              "cwes": null,
+              "cve": ""
+            },
+            "Dependency": {
+              "Name": "",
+              "VersionInfo": {
+                "Key": "",
+                "Requires": null,
+                "Dependencies": null,
+                "Optional": false,
+                "Bundled": false,
+                "Dev": false,
+                "Prod": false,
+                "Direct": false,
+                "Transitive": false,
+                "Licenses": null
+              },
+              "Semver": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "AffectedInfo": null,
+            "VulnerableEvidenceRange": {
+              "Vulnerable": {
+                "IntroducedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "FixedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              },
+              "OpenEnd": false
+            },
+            "VulnerableEvidenceExact": {
+              "Vulnerable": {
+                "VersionString": "",
+                "VersionSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceUniversal": {
+              "Vulnerable": {
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceType": "",
+            "Vulnerable": false,
+            "ConflictFlag": "",
+            "Severity": 0,
+            "SeverityType": ""
+          },
+          "NVDMatch": {
+            "Vulnerability": {
+              "Id": "51a82d48-9bca-4e01-bd3b-84e09db3cc17",
+              "id": "CVE-2017-18589",
+              "SourceIdentifier": "cve@mitre.org",
+              "Published": "2019-08-26T18:15:11.267",
+              "LastModified": "2019-08-30T13:21:28.437",
+              "VulnStatus": "Analyzed",
+              "Descriptions": [
+                {
+                  "lang": "en",
+                  "value": "An issue was discovered in the cookie crate before 0.7.6 for Rust. Large integers in the Max-Age of a cookie cause a panic."
+                },
+                {
+                  "lang": "es",
+                  "value": "Se descubrió un problema en el paquete (crate) cookie versiones anteriores a 0.7.6 para Rust. Enteros grandes en la Edad Máxima de una cookie causa un pánico."
+                }
+              ],
+              "Metrics": {
+                "cvssMetricV2": [
+                  {
+                    "acInsufInfo": false,
+                    "baseSeverity": "MEDIUM",
+                    "cvssData": {
+                      "accessComplexity": "LOW",
+                      "accessVector": "NETWORK",
+                      "authentication": "NONE",
+                      "availabilityImpact": "PARTIAL",
+                      "baseScore": 5,
+                      "confidentialityImpact": "NONE",
+                      "integrityImpact": "NONE",
+                      "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                      "version": "2.0"
+                    },
+                    "exploitabilityScore": 10,
+                    "impactScore": 2.9,
+                    "obtainAllPrivilege": false,
+                    "obtainOtherPrivilege": false,
+                    "obtainUserPrivilege": false,
+                    "source": "nvd@nist.gov",
+                    "type": "Primary",
+                    "userInteractionRequired": false
+                  }
+                ],
+                "cvssMetricV30": [
+                  {
+                    "cvssData": {
+                      "attackComplexity": "LOW",
+                      "attackVector": "NETWORK",
+                      "availabilityImpact": "HIGH",
+                      "baseScore": 7.5,
+                      "baseSeverity": "HIGH",
+                      "confidentialityImpact": "NONE",
+                      "integrityImpact": "NONE",
+                      "privilegesRequired": "NONE",
+                      "scope": "UNCHANGED",
+                      "userInteraction": "NONE",
+                      "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                      "version": "3.0"
+                    },
+                    "exploitabilityScore": 3.9,
+                    "impactScore": 3.6,
+                    "source": "nvd@nist.gov",
+                    "type": "Primary"
+                  }
+                ],
+                "cvssMetricV31": null
+              },
+              "Weaknesses": [
+                {
+                  "source": "nvd@nist.gov",
+                  "type": "Primary",
+                  "descriptions": null
+                }
+              ],
+              "Configurations": null,
+              "AffectedFlattened": [
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:cookie_project:cookie:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "40389E47-C3B7-4E79-903D-C5ECB9AA9D3D",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "0.7.6",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "cookie_project",
+                    "product": "cookie",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                }
+              ],
+              "Affected": [
+                {
+                  "sources": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:cookie_project:cookie:*:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "40389E47-C3B7-4E79-903D-C5ECB9AA9D3D",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "0.7.6",
+                      "versionStartIncluding": "",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "cookie_project",
+                        "product": "cookie",
+                        "version": "*",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    }
+                  ],
+                  "running-on": [],
+                  "running-on-applications-only": []
+                }
+              ],
+              "References": [
+                {
+                  "url": "https://rustsec.org/advisories/RUSTSEC-2017-0005.html",
+                  "source": "cve@mitre.org",
+                  "tags": [
+                    "Third Party Advisory"
+                  ]
+                }
+              ]
+            },
+            "Dependency": {
+              "Name": "cookie",
+              "VersionInfo": {
+                "Key": "cookie@0.7.2",
+                "Requires": null,
+                "Dependencies": {},
+                "Optional": false,
+                "Bundled": false,
+                "Dev": true,
+                "Prod": false,
+                "Direct": false,
+                "Transitive": true,
+                "Licenses": null
+              },
+              "Semver": {
+                "Major": 0,
+                "Minor": 7,
+                "Patch": 2,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "AffectedInfo": [
+              {
+                "Exact": null,
+                "Ranges": [
+                  {
+                    "IntroducedSemver": {
+                      "Major": 0,
+                      "Minor": 0,
+                      "Patch": 0,
+                      "PreReleaseTag": "",
+                      "MetaData": ""
+                    },
+                    "FixedSemver": {
+                      "Major": 0,
+                      "Minor": 7,
+                      "Patch": 6,
+                      "PreReleaseTag": "",
+                      "MetaData": ""
+                    },
+                    "CPEInfo": {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:cookie_project:cookie:*:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "40389E47-C3B7-4E79-903D-C5ECB9AA9D3D",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "0.7.6",
+                      "versionStartIncluding": "",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "cookie_project",
+                        "product": "cookie",
+                        "version": "*",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    }
+                  }
+                ],
+                "Universal": {
+                  "CPEInfo": {
+                    "vulnerable": false,
+                    "criteria": "",
+                    "matchCriteriaId": "",
+                    "versionEndIncluding": "",
+                    "versionEndExcluding": "",
+                    "versionStartIncluding": "",
+                    "versionStartExcluding": "",
+                    "criteriaDict": {
+                      "part": "",
+                      "vendor": "",
+                      "product": "",
+                      "version": "",
+                      "update": "",
+                      "edition": "",
+                      "language": "",
+                      "sw_edition": "",
+                      "target_sw": "",
+                      "target_hw": "",
+                      "other": ""
+                    }
+                  }
+                }
+              }
+            ],
+            "VulnerableEvidenceRange": {
+              "Vulnerable": {
+                "IntroducedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "FixedSemver": {
+                  "Major": 0,
+                  "Minor": 7,
+                  "Patch": 6,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:cookie_project:cookie:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "40389E47-C3B7-4E79-903D-C5ECB9AA9D3D",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "0.7.6",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "cookie_project",
+                    "product": "cookie",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 7,
+                "Patch": 2,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              },
+              "OpenEnd": false
+            },
+            "VulnerableEvidenceExact": {
+              "Vulnerable": {
+                "VersionString": "",
+                "VersionSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceUniversal": {
+              "Vulnerable": {
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceType": "VULNERABLE_EVIDENCE_RANGE",
+            "Vulnerable": true,
+            "ConflictFlag": "",
+            "Severity": 0,
+            "SeverityType": ""
+          },
+          "Severity": {
+            "SeverityClass": "HIGH",
+            "Severity": 7.5,
+            "SeverityType": "CVSS_V3",
+            "Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "Impact": 3.6,
+            "Exploitability": 3.9,
+            "ConfidentialityImpact": "NONE",
+            "IntegrityImpact": "NONE",
+            "AvailabilityImpact": "HIGH",
+            "ConfidentialityImpactNumerical": 0,
+            "IntegrityImpactNumerical": 0,
+            "AvailabilityImpactNumerical": 1
+          },
+          "Weaknesses": []
+        },
+        {
+          "Sources": [],
+          "AffectedDependency": "router",
+          "AffectedVersion": "2.2.0",
+          "VulnerabilityId": "CVE-2008-2173",
+          "OSVMatch": {
+            "Vulnerability": {
+              "Id": "00000000-0000-0000-0000-000000000000",
+              "id": "",
+              "schema_version": "",
+              "modified": "",
+              "published": "",
+              "withdrawn": "",
+              "aliases": null,
+              "related": null,
+              "summary": "",
+              "details": "",
+              "severity": null,
+              "affected": null,
+              "references": null,
+              "credits": null,
+              "database_specific": null,
+              "cwes": null,
+              "cve": ""
+            },
+            "Dependency": {
+              "Name": "",
+              "VersionInfo": {
+                "Key": "",
+                "Requires": null,
+                "Dependencies": null,
+                "Optional": false,
+                "Bundled": false,
+                "Dev": false,
+                "Prod": false,
+                "Direct": false,
+                "Transitive": false,
+                "Licenses": null
+              },
+              "Semver": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "AffectedInfo": null,
+            "VulnerableEvidenceRange": {
+              "Vulnerable": {
+                "IntroducedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "FixedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              },
+              "OpenEnd": false
+            },
+            "VulnerableEvidenceExact": {
+              "Vulnerable": {
+                "VersionString": "",
+                "VersionSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceUniversal": {
+              "Vulnerable": {
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceType": "",
+            "Vulnerable": false,
+            "ConflictFlag": "",
+            "Severity": 0,
+            "SeverityType": ""
+          },
+          "NVDMatch": {
+            "Vulnerability": {
+              "Id": "94340fb7-78d5-4d0e-a4e6-f61f8f353750",
+              "id": "CVE-2008-2173",
+              "SourceIdentifier": "cve@mitre.org",
+              "Published": "2008-05-13T22:20:00.000",
+              "LastModified": "2008-09-05T04:00:00.000",
+              "VulnStatus": "Analyzed",
+              "Descriptions": [
+                {
+                  "lang": "en",
+                  "value": "Unspecified vulnerability in Yamaha routers allows remote attackers to cause a denial of service (dropped session) via crafted BGP UPDATE messages, leading to route flapping, possibly a related issue to CVE-2007-6372."
+                },
+                {
+                  "lang": "es",
+                  "value": "Vulnerabilidad sin especificar en los routers Yamaha permite a atacantes remotos provocar una denegación de servicio (abandono de sesión) a través de mensajes BGP UPDATE manipulados, principalmente cambiando continuamente de ruta, posiblemente en relación con CVE-2007-6372."
+                }
+              ],
+              "Metrics": {
+                "cvssMetricV2": [
+                  {
+                    "acInsufInfo": false,
+                    "baseSeverity": "HIGH",
+                    "cvssData": {
+                      "accessComplexity": "MEDIUM",
+                      "accessVector": "NETWORK",
+                      "authentication": "NONE",
+                      "availabilityImpact": "COMPLETE",
+                      "baseScore": 7.1,
+                      "confidentialityImpact": "NONE",
+                      "integrityImpact": "NONE",
+                      "vectorString": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+                      "version": "2.0"
+                    },
+                    "exploitabilityScore": 8.6,
+                    "impactScore": 6.9,
+                    "obtainAllPrivilege": false,
+                    "obtainOtherPrivilege": false,
+                    "obtainUserPrivilege": false,
+                    "source": "nvd@nist.gov",
+                    "type": "Primary",
+                    "userInteractionRequired": false
+                  }
+                ],
+                "cvssMetricV30": null,
+                "cvssMetricV31": null
+              },
+              "Weaknesses": [
+                {
+                  "source": "nvd@nist.gov",
+                  "type": "Primary",
+                  "descriptions": null
+                }
+              ],
+              "Configurations": null,
+              "AffectedFlattened": [
+                {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:yamaha:router:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "0B49AF70-C2DC-4987-8093-EA224E2C02BA",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "yamaha",
+                    "product": "router",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                }
+              ],
+              "Affected": [
+                {
+                  "sources": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:yamaha:router:*:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "0B49AF70-C2DC-4987-8093-EA224E2C02BA",
+                      "versionEndIncluding": "",
+                      "versionEndExcluding": "",
+                      "versionStartIncluding": "",
+                      "versionStartExcluding": "",
+                      "criteriaDict": {
+                        "part": "a",
+                        "vendor": "yamaha",
+                        "product": "router",
+                        "version": "*",
+                        "update": "*",
+                        "edition": "*",
+                        "language": "*",
+                        "sw_edition": "*",
+                        "target_sw": "*",
+                        "target_hw": "*",
+                        "other": "*"
+                      }
+                    }
+                  ],
+                  "running-on": [],
+                  "running-on-applications-only": []
+                }
+              ],
+              "References": [
+                {
+                  "url": "http://www.kb.cert.org/vuls/id/929656",
+                  "source": "cve@mitre.org",
+                  "tags": [
+                    "US Government Resource"
+                  ]
+                },
+                {
+                  "url": "http://www.securityfocus.com/bid/28999",
+                  "source": "cve@mitre.org",
+                  "tags": []
+                }
+              ]
+            },
+            "Dependency": {
+              "Name": "router",
+              "VersionInfo": {
+                "Key": "router@2.2.0",
+                "Requires": {
+                  "debug": "npm:^4.4.0",
+                  "depd": "npm:^2.0.0",
+                  "is-promise": "npm:^4.0.0",
+                  "parseurl": "npm:^1.3.3",
+                  "path-to-regexp": "npm:^8.0.0"
+                },
+                "Dependencies": {
+                  "debug": "4.4.0",
+                  "depd": "2.0.0",
+                  "is-promise": "4.0.0",
+                  "parseurl": "1.3.3",
+                  "path-to-regexp": "8.2.0"
+                },
+                "Optional": false,
+                "Bundled": false,
+                "Dev": true,
+                "Prod": false,
+                "Direct": false,
+                "Transitive": true,
+                "Licenses": null
+              },
+              "Semver": {
+                "Major": 2,
+                "Minor": 2,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "AffectedInfo": [
+              {
+                "Exact": null,
+                "Ranges": null,
+                "Universal": {
+                  "CPEInfo": {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:yamaha:router:*:*:*:*:*:*:*:*",
+                    "matchCriteriaId": "0B49AF70-C2DC-4987-8093-EA224E2C02BA",
+                    "versionEndIncluding": "",
+                    "versionEndExcluding": "",
+                    "versionStartIncluding": "",
+                    "versionStartExcluding": "",
+                    "criteriaDict": {
+                      "part": "a",
+                      "vendor": "yamaha",
+                      "product": "router",
+                      "version": "*",
+                      "update": "*",
+                      "edition": "*",
+                      "language": "*",
+                      "sw_edition": "*",
+                      "target_sw": "*",
+                      "target_hw": "*",
+                      "other": "*"
+                    }
+                  }
+                }
+              }
+            ],
+            "VulnerableEvidenceRange": {
+              "Vulnerable": {
+                "IntroducedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "FixedSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              },
+              "OpenEnd": false
+            },
+            "VulnerableEvidenceExact": {
+              "Vulnerable": {
+                "VersionString": "",
+                "VersionSemver": {
+                  "Major": 0,
+                  "Minor": 0,
+                  "Patch": 0,
+                  "PreReleaseTag": "",
+                  "MetaData": ""
+                },
+                "CPEInfo": {
+                  "vulnerable": false,
+                  "criteria": "",
+                  "matchCriteriaId": "",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "",
+                    "vendor": "",
+                    "product": "",
+                    "version": "",
+                    "update": "",
+                    "edition": "",
+                    "language": "",
+                    "sw_edition": "",
+                    "target_sw": "",
+                    "target_hw": "",
+                    "other": ""
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 0,
+                "Minor": 0,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceUniversal": {
+              "Vulnerable": {
+                "CPEInfo": {
+                  "vulnerable": true,
+                  "criteria": "cpe:2.3:a:yamaha:router:*:*:*:*:*:*:*:*",
+                  "matchCriteriaId": "0B49AF70-C2DC-4987-8093-EA224E2C02BA",
+                  "versionEndIncluding": "",
+                  "versionEndExcluding": "",
+                  "versionStartIncluding": "",
+                  "versionStartExcluding": "",
+                  "criteriaDict": {
+                    "part": "a",
+                    "vendor": "yamaha",
+                    "product": "router",
+                    "version": "*",
+                    "update": "*",
+                    "edition": "*",
+                    "language": "*",
+                    "sw_edition": "*",
+                    "target_sw": "*",
+                    "target_hw": "*",
+                    "other": "*"
+                  }
+                }
+              },
+              "Installed": {
+                "Major": 2,
+                "Minor": 2,
+                "Patch": 0,
+                "PreReleaseTag": "",
+                "MetaData": ""
+              }
+            },
+            "VulnerableEvidenceType": "VULNERABLE_EVIDENCE_UNIVERSAL",
+            "Vulnerable": true,
+            "ConflictFlag": "",
+            "Severity": 0,
+            "SeverityType": ""
+          },
+          "Severity": {
+            "SeverityClass": "HIGH",
+            "Severity": 7.1,
+            "SeverityType": "CVSS_V2",
+            "Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+            "Impact": 6.9,
+            "Exploitability": 8.6,
+            "ConfidentialityImpact": "NONE",
+            "IntegrityImpact": "NONE",
+            "AvailabilityImpact": "COMPLETE",
+            "ConfidentialityImpactNumerical": 0,
+            "IntegrityImpactNumerical": 0,
+            "AvailabilityImpactNumerical": 1
+          },
+          "Weaknesses": []
+        }
+      ]
+    }
+  },
+  "analysis_info": {
+    "status": "success",
+    "errors": null,
+    "analysis_start_time": "2025-05-16 09:55:05.59209671 +0200 CEST",
+    "analysis_end_time": "2025-05-16 09:55:08.212549089 +0200 CEST",
+    "analysis_delta_time": 2.620452847,
+    "version_seperator": "",
+    "import_path_seperator": "",
+    "default_workspace_name": "",
+    "self_managed_workspace_name": ""
+  }
+}

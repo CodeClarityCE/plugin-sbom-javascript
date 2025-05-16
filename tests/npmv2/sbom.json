@@ -44,10 +44,12 @@
             },
             "Dependencies": {
               "@babel/helper-validator-identifier": "7.16.7",
+              "chalk": "2.4.2",
               "js-tokens": "4.0.0"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -107,7 +109,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -117,7 +129,9 @@
             "Requires": {
               "regenerator-runtime": "^0.14.0"
             },
-            "Dependencies": {},
+            "Dependencies": {
+              "regenerator-runtime": "0.14.1"
+            },
             "Optional": false,
             "Bundled": false,
             "Dev": true,
@@ -135,10 +149,12 @@
               "regenerator-runtime": "^0.14.0"
             },
             "Dependencies": {
-              "core-js-pure": "3.36.0"
+              "core-js-pure": "3.36.0",
+              "regenerator-runtime": "0.14.1"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -170,7 +186,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -288,6 +314,18 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "5.0.1": {
+            "Key": "ansi-regex@5.0.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "ansi-styles": {
@@ -295,6 +333,38 @@
             "Key": "ansi-styles@2.2.1",
             "Requires": null,
             "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "3.2.1": {
+            "Key": "ansi-styles@3.2.1",
+            "Requires": {
+              "color-convert": "^1.9.0"
+            },
+            "Dependencies": {
+              "color-convert": "1.9.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "4.3.0": {
+            "Key": "ansi-styles@4.3.0",
+            "Requires": {
+              "color-convert": "^2.0.1"
+            },
+            "Dependencies": {
+              "color-convert": "2.0.1"
+            },
             "Optional": false,
             "Bundled": false,
             "Dev": true,
@@ -313,6 +383,18 @@
             "Dependencies": {
               "sprintf-js": "1.0.3"
             },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "2.0.1": {
+            "Key": "argparse@2.0.1",
+            "Requires": null,
+            "Dependencies": {},
             "Optional": false,
             "Bundled": false,
             "Dev": true,
@@ -390,6 +472,18 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "3.2.3": {
+            "Key": "async@3.2.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "babel-polyfill": {
@@ -422,10 +516,12 @@
               "regenerator-runtime": "^0.11.0"
             },
             "Dependencies": {
-              "core-js": "2.6.12"
+              "core-js": "2.6.12",
+              "regenerator-runtime": "0.11.1"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -443,7 +539,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -623,6 +729,44 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "2.4.2": {
+            "Key": "chalk@2.4.2",
+            "Requires": {
+              "ansi-styles": "^3.2.1",
+              "escape-string-regexp": "^1.0.5",
+              "supports-color": "^5.3.0"
+            },
+            "Dependencies": {
+              "ansi-styles": "3.2.1",
+              "escape-string-regexp": "1.0.5",
+              "supports-color": "5.5.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "4.1.2": {
+            "Key": "chalk@4.1.2",
+            "Requires": {
+              "ansi-styles": "^4.1.0",
+              "supports-color": "^7.1.0"
+            },
+            "Dependencies": {
+              "ansi-styles": "4.3.0",
+              "supports-color": "7.2.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "cliui": {
@@ -635,10 +779,12 @@
             },
             "Dependencies": {
               "string-width": "4.2.3",
+              "strip-ansi": "6.0.1",
               "wrap-ansi": "6.2.0"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -672,7 +818,37 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "8.0.1": {
+            "Key": "cliui@8.0.1",
+            "Requires": {
+              "string-width": "^4.2.0",
+              "strip-ansi": "^6.0.1",
+              "wrap-ansi": "^7.0.0"
+            },
+            "Dependencies": {
+              "string-width": "4.2.3",
+              "strip-ansi": "6.0.1",
+              "wrap-ansi": "7.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -687,10 +863,37 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "2.0.1": {
+            "Key": "color-convert@2.0.1",
+            "Requires": {
+              "color-name": "~1.1.4"
+            },
+            "Dependencies": {
+              "color-name": "1.1.4"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -701,10 +904,33 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "1.1.4": {
+            "Key": "color-name@1.1.4",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -789,11 +1015,13 @@
             },
             "Dependencies": {
               "import-fresh": "3.3.0",
+              "js-yaml": "4.1.0",
               "parse-json": "5.2.0",
               "path-type": "4.0.0"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -827,7 +1055,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -907,6 +1145,22 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "4.3.4": {
+            "Key": "debug@4.3.4",
+            "Requires": {
+              "ms": "2.1.2"
+            },
+            "Dependencies": {
+              "ms": "2.1.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "decamelize": {
@@ -930,10 +1184,21 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -1042,10 +1307,21 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -1257,9 +1533,12 @@
             "Requires": {
               "glob": "~5.0.0"
             },
-            "Dependencies": {},
+            "Dependencies": {
+              "glob": "5.0.15"
+            },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -1289,7 +1568,39 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "4.0.0": {
+            "Key": "findup-sync@4.0.0",
+            "Requires": {
+              "detect-file": "^1.0.0",
+              "is-glob": "^4.0.0",
+              "micromatch": "^4.0.2",
+              "resolve-dir": "^1.0.1"
+            },
+            "Dependencies": {
+              "detect-file": "1.0.0",
+              "is-glob": "4.0.3",
+              "micromatch": "4.0.5",
+              "resolve-dir": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -1462,6 +1773,30 @@
           }
         },
         "glob": {
+          "5.0.15": {
+            "Key": "glob@5.0.15",
+            "Requires": {
+              "inflight": "^1.0.4",
+              "inherits": "2",
+              "minimatch": "2 || 3",
+              "once": "^1.3.0",
+              "path-is-absolute": "^1.0.0"
+            },
+            "Dependencies": {
+              "inflight": "1.0.6",
+              "inherits": "2.0.4",
+              "minimatch": "3.0.8",
+              "once": "1.4.0",
+              "path-is-absolute": "1.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
           "7.1.7": {
             "Key": "glob@7.1.7",
             "Requires": {
@@ -1522,10 +1857,21 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -1543,10 +1889,12 @@
               "expand-tilde": "2.0.2",
               "homedir-polyfill": "1.0.3",
               "ini": "1.3.8",
-              "is-windows": "1.0.2"
+              "is-windows": "1.0.2",
+              "which": "1.3.1"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -1568,7 +1916,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -1668,10 +2026,12 @@
               "grunt-known-options": "2.0.0",
               "interpret": "1.1.0",
               "liftup": "3.0.1",
+              "nopt": "4.0.3",
               "v8flags": "3.2.0"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -1695,7 +2055,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -1789,10 +2159,12 @@
               "lodash": "~4.17.19"
             },
             "Dependencies": {
+              "chalk": "4.1.2",
               "lodash": "4.17.21"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -1889,7 +2261,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -1906,6 +2288,7 @@
               "which": "~2.0.2"
             },
             "Dependencies": {
+              "async": "3.2.3",
               "exit": "0.1.2",
               "getobject": "1.0.2",
               "hooker": "0.2.3",
@@ -1915,6 +2298,7 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -1932,7 +2316,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -1979,10 +2373,33 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "4.0.0": {
+            "Key": "has-flag@4.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -2034,9 +2451,12 @@
             "Requires": {
               "react-is": "^16.7.0"
             },
-            "Dependencies": {},
+            "Dependencies": {
+              "react-is": "16.13.1"
+            },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -2054,7 +2474,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -2251,10 +2681,21 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -2554,6 +2995,22 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "4.1.0": {
+            "Key": "js-yaml@4.1.0",
+            "Requires": {
+              "argparse": "^2.0.1"
+            },
+            "Dependencies": {
+              "argparse": "2.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "json-parse-even-better-errors": {
@@ -2613,6 +3070,7 @@
             },
             "Dependencies": {
               "extend": "3.0.2",
+              "findup-sync": "4.0.0",
               "fined": "1.2.0",
               "flagged-respawn": "1.0.1",
               "is-plain-object": "2.0.4",
@@ -2622,6 +3080,7 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -2649,7 +3108,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -2711,8 +3180,10 @@
             },
             "Dependencies": {
               "cosmiconfig": "8.3.6",
+              "debug": "4.3.4",
               "fast-glob": "3.3.2",
-              "lockfile-lint-api": "5.8.0"
+              "lockfile-lint-api": "5.8.0",
+              "yargs": "17.7.2"
             },
             "Optional": false,
             "Bundled": false,
@@ -2733,10 +3204,12 @@
             },
             "Dependencies": {
               "@yarnpkg/parsers": "3.0.0",
+              "debug": "4.3.4",
               "object-hash": "3.0.0"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -2971,7 +3444,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -3182,6 +3665,18 @@
           }
         },
         "ms": {
+          "2.1.2": {
+            "Key": "ms@2.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
           "2.1.3": {
             "Key": "ms@2.1.3",
             "Requires": null,
@@ -3221,6 +3716,24 @@
             },
             "Dependencies": {
               "abbrev": "1.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "4.0.3": {
+            "Key": "nopt@4.0.3",
+            "Requires": {
+              "abbrev": "1",
+              "osenv": "^0.1.4"
+            },
+            "Dependencies": {
+              "abbrev": "1.1.1",
+              "osenv": "0.1.5"
             },
             "Optional": false,
             "Bundled": false,
@@ -3378,10 +3891,21 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -3392,10 +3916,21 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -3412,10 +3947,21 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -3604,7 +4150,9 @@
               "otpauth": "9.1.4",
               "prop-types": "15.8.1",
               "qrcode": "1.5.0",
+              "react": "17.0.2",
               "react-color": "2.19.3",
+              "react-dom": "17.0.2",
               "react-i18next": "14.0.7",
               "react-list": "0.8.17",
               "react-router-dom": "5.3.1",
@@ -3616,6 +4164,7 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": true,
@@ -3680,6 +4229,15 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": true,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": false,
             "Licenses": null
           }
@@ -3828,10 +4386,12 @@
             },
             "Dependencies": {
               "loose-envify": "1.4.0",
-              "object-assign": "4.1.1"
+              "object-assign": "4.1.1",
+              "react-is": "16.13.1"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -3849,7 +4409,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -3949,6 +4519,24 @@
             "Direct": false,
             "Transitive": false,
             "Licenses": null
+          },
+          "17.0.2": {
+            "Key": "react@17.0.2",
+            "Requires": {
+              "loose-envify": "^1.1.0",
+              "object-assign": "^4.1.1"
+            },
+            "Dependencies": {
+              "loose-envify": "1.4.0",
+              "object-assign": "4.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "react-color": {
@@ -4003,6 +4591,26 @@
             "Direct": false,
             "Transitive": false,
             "Licenses": null
+          },
+          "17.0.2": {
+            "Key": "react-dom@17.0.2",
+            "Requires": {
+              "loose-envify": "^1.1.0",
+              "object-assign": "^4.1.1",
+              "scheduler": "^0.20.2"
+            },
+            "Dependencies": {
+              "loose-envify": "1.4.0",
+              "object-assign": "4.1.1",
+              "scheduler": "0.20.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "react-i18next": {
@@ -4016,6 +4624,20 @@
               "@babel/runtime": "7.24.0",
               "html-parse-stringify": "3.0.1"
             },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          }
+        },
+        "react-is": {
+          "16.13.1": {
+            "Key": "react-is@16.13.1",
+            "Requires": null,
+            "Dependencies": {},
             "Optional": false,
             "Bundled": false,
             "Dev": true,
@@ -4066,6 +4688,7 @@
               "mini-create-react-context": "0.4.1",
               "path-to-regexp": "1.8.0",
               "prop-types": "15.8.1",
+              "react-is": "16.13.1",
               "tiny-invariant": "1.2.0",
               "tiny-warning": "1.0.3"
             },
@@ -4101,6 +4724,7 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -4118,7 +4742,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -4194,6 +4828,30 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "0.11.1": {
+            "Key": "regenerator-runtime@0.11.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "0.14.1": {
+            "Key": "regenerator-runtime@0.14.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "require-directory": {
@@ -4259,10 +4917,21 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -4404,6 +5073,24 @@
             "Direct": false,
             "Transitive": false,
             "Licenses": null
+          },
+          "0.20.2": {
+            "Key": "scheduler@0.20.2",
+            "Requires": {
+              "loose-envify": "^1.1.0",
+              "object-assign": "^4.1.1"
+            },
+            "Dependencies": {
+              "loose-envify": "1.4.0",
+              "object-assign": "4.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "set-blocking": {
@@ -4454,6 +5141,18 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "1.1.2": {
+            "Key": "sprintf-js@1.1.2",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "string-template": {
@@ -4480,10 +5179,12 @@
             },
             "Dependencies": {
               "emoji-regex": "8.0.0",
-              "is-fullwidth-code-point": "3.0.0"
+              "is-fullwidth-code-point": "3.0.0",
+              "strip-ansi": "6.0.1"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -4517,7 +5218,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -4551,6 +5262,22 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "6.0.1": {
+            "Key": "strip-ansi@6.0.1",
+            "Requires": {
+              "ansi-regex": "^5.0.1"
+            },
+            "Dependencies": {
+              "ansi-regex": "5.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "supports-color": {
@@ -4558,6 +5285,38 @@
             "Key": "supports-color@2.0.0",
             "Requires": null,
             "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "5.5.0": {
+            "Key": "supports-color@5.5.0",
+            "Requires": {
+              "has-flag": "^3.0.0"
+            },
+            "Dependencies": {
+              "has-flag": "3.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "7.2.0": {
+            "Key": "supports-color@7.2.0",
+            "Requires": {
+              "has-flag": "^4.0.0"
+            },
+            "Dependencies": {
+              "has-flag": "4.0.0"
+            },
             "Optional": false,
             "Bundled": false,
             "Dev": true,
@@ -4719,10 +5478,12 @@
               "util-deprecate": "^1.0.2"
             },
             "Dependencies": {
+              "sprintf-js": "1.1.2",
               "util-deprecate": "1.0.2"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -4740,7 +5501,17 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -4917,6 +5688,22 @@
           }
         },
         "which": {
+          "1.3.1": {
+            "Key": "which@1.3.1",
+            "Requires": {
+              "isexe": "^2.0.0"
+            },
+            "Dependencies": {
+              "isexe": "2.0.0"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
           "2.0.2": {
             "Key": "which@2.0.2",
             "Requires": {
@@ -4957,10 +5744,13 @@
               "strip-ansi": "^6.0.0"
             },
             "Dependencies": {
-              "string-width": "4.2.3"
+              "ansi-styles": "4.3.0",
+              "string-width": "4.2.3",
+              "strip-ansi": "6.0.1"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
@@ -5040,7 +5830,37 @@
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+>>>>>>> fix-npm-resolver
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "7.0.0": {
+            "Key": "wrap-ansi@7.0.0",
+            "Requires": {
+              "ansi-styles": "^4.0.0",
+              "string-width": "^4.1.0",
+              "strip-ansi": "^6.0.0"
+            },
+            "Dependencies": {
+              "ansi-styles": "4.3.0",
+              "string-width": "4.2.3",
+              "strip-ansi": "6.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -5088,6 +5908,18 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "5.0.8": {
+            "Key": "y18n@5.0.8",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "yargs": {
@@ -5126,6 +5958,34 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "17.7.2": {
+            "Key": "yargs@17.7.2",
+            "Requires": {
+              "cliui": "^8.0.1",
+              "escalade": "^3.1.1",
+              "get-caller-file": "^2.0.5",
+              "require-directory": "^2.1.1",
+              "string-width": "^4.2.3",
+              "y18n": "^5.0.5",
+              "yargs-parser": "^21.1.1"
+            },
+            "Dependencies": {
+              "cliui": "8.0.1",
+              "escalade": "3.1.1",
+              "get-caller-file": "2.0.5",
+              "require-directory": "2.1.1",
+              "string-width": "4.2.3",
+              "y18n": "5.0.8",
+              "yargs-parser": "21.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "yargs-parser": {
@@ -5146,12 +6006,39 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "21.1.1": {
+            "Key": "yargs-parser@21.1.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         }
       },
       "start": {
         "dependencies": null,
         "dev_dependencies": [
+          {
+            "name": "jquery",
+            "version": "3.6.0",
+            "constraint": "^3.5.1"
+          },
+          {
+            "name": "lockfile-lint",
+            "version": "4.12.1",
+            "constraint": "^4.12.1"
+          },
+          {
+            "name": "openpgp",
+            "version": "5.2.1",
+            "constraint": "5.2.1"
+          },
           {
             "name": "passbolt-styleguide",
             "version": "4.9.2",
@@ -5176,21 +6063,6 @@
             "name": "grunt-contrib-watch",
             "version": "1.1.0",
             "constraint": "^1.1.0"
-          },
-          {
-            "name": "jquery",
-            "version": "3.6.0",
-            "constraint": "^3.5.1"
-          },
-          {
-            "name": "lockfile-lint",
-            "version": "4.12.1",
-            "constraint": "^4.12.1"
-          },
-          {
-            "name": "openpgp",
-            "version": "5.2.1",
-            "constraint": "5.2.1"
           }
         ]
       }
@@ -5202,9 +6074,21 @@
     "working_directory": "npmv2",
     "package_manager": "NPM",
     "time": {
+<<<<<<< HEAD
       "analysis_start_time": "2025-05-13 18:58:02.894748 +0200 CEST",
       "analysis_end_time": "2025-05-13 18:58:02.90099 +0200 CEST",
       "analysis_delta_time": 0.00624175
+=======
+<<<<<<< Updated upstream
+      "analysis_start_time": "2024-09-11 13:58:02.205712 +0200 CEST",
+      "analysis_end_time": "2024-09-11 13:58:02.221406 +0200 CEST",
+      "analysis_delta_time": 0.015693708
+=======
+      "analysis_start_time": "2025-05-16 10:44:52.63692645 +0200 CEST",
+      "analysis_end_time": "2025-05-16 10:44:52.655793975 +0200 CEST",
+      "analysis_delta_time": 0.018867616
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
     },
     "errors": [],
     "paths": {
