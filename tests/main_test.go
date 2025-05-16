@@ -9,15 +9,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestCreate(t *testing.T) {
-	out := plugin.Start("/Users/cedric/Documents/workspace/codeclarity-dev/api", uuid.UUID{})
-
-	// Assert the expected values
-	assert.NotNil(t, out)
-	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
-	assert.NotEmpty(t, out.WorkSpaces)
-}
-
 func TestCreateNPMv1(t *testing.T) {
 	out := plugin.Start("./npmv1", uuid.UUID{})
 
