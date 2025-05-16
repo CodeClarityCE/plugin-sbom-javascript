@@ -21,7 +21,8 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		if dependency_name == "" {
 			continue
 		}
-		dependency_name = strings.Replace(dependency_name, "node_modules/", "", 1)
+		splitted_dependency_name := strings.Split(dependency_name, "node_modules/")
+		dependency_name = splitted_dependency_name[len(splitted_dependency_name)-1]
 		resolvedFilePackage := types.Versions{
 			Requires:     dependency.Dependencies,
 			Dependencies: make(map[string]string),
