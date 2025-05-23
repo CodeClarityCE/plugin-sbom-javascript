@@ -4,7 +4,7 @@ go 1.24.3
 
 require (
 	github.com/CodeClarityCE/utility-amqp-helper v0.0.3-alpha
-	github.com/CodeClarityCE/utility-dbhelper v0.0.4-alpha
+	github.com/CodeClarityCE/utility-dbhelper v0.0.5-alpha
 	github.com/CodeClarityCE/utility-node-semver v0.0.3-alpha
 	github.com/CodeClarityCE/utility-types v0.0.6-alpha
 	github.com/google/uuid v1.6.0
@@ -28,8 +28,8 @@ require (
 	github.com/tmthrgd/go-hex v0.0.0-20190904060850-447a3041c3bc // indirect
 	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
-	go.opentelemetry.io/otel v1.35.0 // indirect
-	go.opentelemetry.io/otel/trace v1.35.0 // indirect
+	go.opentelemetry.io/otel v1.36.0 // indirect
+	go.opentelemetry.io/otel/trace v1.36.0 // indirect
 	golang.org/x/crypto v0.38.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect

@@ -8343,10 +8343,17 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
             "Prod": false,
             "Direct": false,
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           },
           "4.5.0": {
@@ -11038,7 +11045,7 @@
               "lodash.isplainobject": "4.0.6",
               "lodash.isstring": "4.0.1",
               "lodash.once": "4.1.1",
-              "ms": "2.1.2",
+              "ms": "2.1.3",
               "semver": "7.5.4"
             },
             "Optional": false,
@@ -16676,11 +16683,15 @@
       "start": {
         "dependencies": [
           {
+<<<<<<< HEAD
             "name": "chart.js",
             "version": "4.4.0",
             "constraint": "^4.3.0"
           },
           {
+=======
+<<<<<<< Updated upstream
+>>>>>>> fix-npm-resolver
             "name": "compare-versions",
             "version": "6.1.0",
             "constraint": "^6.0.0"
@@ -16691,6 +16702,8 @@
             "constraint": "^1.0.0-rc3"
           },
           {
+=======
+>>>>>>> Stashed changes
             "name": "tippy.js",
             "version": "6.3.7",
             "constraint": "^6.3.7"
@@ -16711,6 +16724,7 @@
             "constraint": "^3.1.0"
           },
           {
+<<<<<<< HEAD
             "name": "pako",
             "version": "2.1.0",
             "constraint": "^2.1.0"
@@ -16719,13 +16733,287 @@
             "name": "vue-chartjs",
             "version": "5.2.0",
             "constraint": "^5.2.0"
+=======
+            "name": "oh-vue-icons",
+            "version": "1.0.0-rc3",
+            "constraint": "^1.0.0-rc3"
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "name": "compare-versions",
+            "version": "6.1.0",
+            "constraint": "^6.0.0"
+          },
+          {
+            "name": "pako",
+            "version": "2.1.0",
+            "constraint": "^2.1.0"
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
           }
         ],
         "dev_dependencies": [
           {
+<<<<<<< HEAD
             "name": "webpack-cli",
             "version": "5.1.4",
             "constraint": "^5.1.4"
+=======
+<<<<<<< Updated upstream
+            "name": "eslint-config-prettier",
+            "version": "8.10.0",
+            "constraint": "^8.8.0"
+          },
+          {
+            "name": "regenerator-runtime",
+            "version": "0.13.11",
+            "constraint": "^0.13.11"
+=======
+            "name": "@typescript-eslint/eslint-plugin",
+            "version": "6.13.1",
+            "constraint": "^6.1.0"
+          },
+          {
+            "name": "@vue/babel-helper-vue-jsx-merge-props",
+            "version": "1.4.0",
+            "constraint": "^1.4.0"
+          },
+          {
+            "name": "vue-eslint-parser",
+            "version": "9.3.2",
+            "constraint": "^9.3.1"
+          },
+          {
+            "name": "@babel/core",
+            "version": "7.23.5",
+            "constraint": "^7.22.9"
+          },
+          {
+            "name": "@fortawesome/free-solid-svg-icons",
+            "version": "6.5.0",
+            "constraint": "^6.4.0"
+          },
+          {
+            "name": "d3",
+            "version": "7.8.5",
+            "constraint": "^7.8.5"
+          },
+          {
+            "name": "eslint",
+            "version": "8.54.0",
+            "constraint": "^8.45.0"
+          },
+          {
+            "name": "sass",
+            "version": "1.69.5",
+            "constraint": "^1.64.1"
+>>>>>>> Stashed changes
+          },
+          {
+            "name": "typescript",
+            "version": "5.3.2",
+            "constraint": "^5.1.6"
+          },
+          {
+            "name": "@fortawesome/free-regular-svg-icons",
+            "version": "6.5.0",
+            "constraint": "^6.4.0"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "@typescript-eslint/eslint-plugin",
+=======
+            "name": "eslint-plugin-prettier",
+            "version": "5.0.1",
+            "constraint": "^5.0.0"
+          },
+          {
+            "name": "regenerator-runtime",
+            "version": "0.13.11",
+            "constraint": "^0.13.11"
+          },
+          {
+            "name": "vue",
+            "version": "3.3.9",
+            "constraint": "^3.3.4"
+          },
+          {
+            "name": "webpack",
+            "version": "5.89.0",
+            "constraint": "^5.88.2"
+          },
+          {
+            "name": "core-js",
+            "version": "3.33.3",
+            "constraint": "^3.31.1"
+          },
+          {
+            "name": "eslint-config-prettier",
+            "version": "8.10.0",
+            "constraint": "^8.8.0"
+          },
+          {
+            "name": "fork-ts-checker-webpack-plugin",
+            "version": "7.3.0",
+            "constraint": "^7.0.0"
+          },
+          {
+            "name": "@vue/babel-preset-jsx",
+            "version": "1.4.0",
+            "constraint": "^1.4.0"
+          },
+          {
+            "name": "@fortawesome/free-regular-svg-icons",
+            "version": "6.5.0",
+            "constraint": "^6.4.0"
+          },
+          {
+            "name": "@symfony/stimulus-bridge",
+            "version": "3.2.2",
+            "constraint": "^3.2.2"
+          },
+          {
+            "name": "@symfony/webpack-encore",
+            "version": "4.5.0",
+            "constraint": "^4.4.0"
+          },
+          {
+            "name": "ts-loader",
+            "version": "9.5.1",
+            "constraint": "^9.4.4"
+          },
+          {
+            "name": "vue3-highlightjs",
+            "version": "1.0.5",
+            "constraint": "^1.0.5"
+          },
+          {
+            "name": "vue3-markdown-it",
+            "version": "1.0.10",
+            "constraint": "^1.0.10"
+          },
+          {
+            "name": "eslint-plugin-vue",
+            "version": "9.18.1",
+            "constraint": "^9.15.1"
+          },
+          {
+            "name": "vue-json-viewer",
+            "version": "3.0.4",
+            "constraint": "^3"
+          },
+          {
+            "name": "webpack-cli",
+            "version": "5.1.4",
+            "constraint": "^5.1.4"
+          },
+          {
+            "name": "webpack-notifier",
+            "version": "1.15.0",
+            "constraint": "^1.15.0"
+          },
+          {
+            "name": "@typescript-eslint/parser",
+>>>>>>> Stashed changes
+            "version": "6.13.1",
+            "constraint": "^6.1.0"
+          },
+          {
+            "name": "@babel/preset-env",
+            "version": "7.23.5",
+            "constraint": "^7.22.9"
+          },
+          {
+            "name": "@fortawesome/fontawesome-svg-core",
+            "version": "6.5.0",
+            "constraint": "^6.4.0"
+          },
+          {
+            "name": "@hotwired/stimulus",
+            "version": "3.2.2",
+            "constraint": "^3.2.1"
+          },
+          {
+            "name": "@types/eslint",
+            "version": "8.44.7",
+            "constraint": "^8"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "eslint-plugin-prettier",
+            "version": "5.0.1",
+            "constraint": "^5.0.0"
+          },
+          {
+            "name": "ts-loader",
+            "version": "9.5.1",
+            "constraint": "^9.4.4"
+          },
+          {
+            "name": "@hotwired/stimulus",
+            "version": "3.2.2",
+            "constraint": "^3.2.1"
+          },
+          {
+            "name": "@symfony/webpack-encore",
+            "version": "4.5.0",
+            "constraint": "^4.4.0"
+          },
+          {
+            "name": "vue",
+            "version": "3.3.9",
+            "constraint": "^3.3.4"
+          },
+          {
+            "name": "vue-json-viewer",
+            "version": "3.0.4",
+            "constraint": "^3"
+=======
+            "name": "sass-loader",
+            "version": "13.3.2",
+            "constraint": "^13.3.2"
+>>>>>>> Stashed changes
+          },
+          {
+            "name": "vue-loader",
+            "version": "17.3.1",
+            "constraint": "^17.2.2"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "webpack-notifier",
+            "version": "1.15.0",
+            "constraint": "^1.15.0"
+          },
+          {
+            "name": "@babel/preset-env",
+            "version": "7.23.5",
+            "constraint": "^7.22.9"
+          },
+          {
+            "name": "@fortawesome/free-solid-svg-icons",
+            "version": "6.5.0",
+            "constraint": "^6.4.0"
+          },
+          {
+=======
+>>>>>>> Stashed changes
+            "name": "@vue/compiler-sfc",
+            "version": "3.3.9",
+            "constraint": "^3.3.4"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "eslint",
+            "version": "8.54.0",
+            "constraint": "^8.45.0"
+          },
+          {
+            "name": "@vue/babel-preset-jsx",
+            "version": "1.4.0",
+            "constraint": "^1.4.0"
+>>>>>>> fix-npm-resolver
           },
           {
             "name": "eslint-plugin-vue",
@@ -16828,6 +17116,7 @@
             "constraint": "^6.4.0"
           },
           {
+<<<<<<< HEAD
             "name": "@vue/compiler-sfc",
             "version": "3.3.9",
             "constraint": "^3.3.4"
@@ -16906,6 +17195,16 @@
             "name": "webpack",
             "version": "5.89.0",
             "constraint": "^5.88.2"
+=======
+            "name": "webpack-cli",
+            "version": "5.1.4",
+            "constraint": "^5.1.4"
+=======
+            "name": "prettier",
+            "version": "3.1.0",
+            "constraint": "^3.0.0"
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
           }
         ]
       }
@@ -16917,9 +17216,21 @@
     "working_directory": "yarnv1",
     "package_manager": "YARN",
     "time": {
+<<<<<<< HEAD
       "analysis_start_time": "2025-05-13 18:58:02.910247 +0200 CEST",
       "analysis_end_time": "2025-05-13 18:58:02.923842 +0200 CEST",
       "analysis_delta_time": 0.013594917
+=======
+<<<<<<< Updated upstream
+      "analysis_start_time": "2024-09-11 14:15:30.138651 +0200 CEST",
+      "analysis_end_time": "2024-09-11 14:15:30.173441 +0200 CEST",
+      "analysis_delta_time": 0.034789625
+=======
+      "analysis_start_time": "2025-05-16 10:47:51.008701802 +0200 CEST",
+      "analysis_end_time": "2025-05-16 10:47:51.050781861 +0200 CEST",
+      "analysis_delta_time": 0.042080285
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
     },
     "errors": [],
     "paths": {

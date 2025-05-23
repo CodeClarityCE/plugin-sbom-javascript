@@ -1154,7 +1154,7 @@
             },
             "Dependencies": {
               "@eslint/object-schema": "2.1.6",
-              "debug": "4.4.0",
+              "debug": "4.3.7",
               "minimatch": "3.1.2"
             },
             "Optional": false,
@@ -1214,7 +1214,15 @@
             },
             "Dependencies": {
               "ajv": "6.12.6",
+<<<<<<< HEAD
               "debug": "4.3.7",
+=======
+<<<<<<< Updated upstream
+              "debug": "4.3.6",
+=======
+              "debug": "4.4.0",
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
               "espree": "10.3.0",
               "globals": "14.0.0",
               "ignore": "5.3.2",
@@ -1707,8 +1715,11 @@
             },
             "Dependencies": {
               "string-width": "5.1.2",
+              "string-width-cjs": "4.2.3",
               "strip-ansi": "7.1.0",
-              "wrap-ansi": "8.1.0"
+              "strip-ansi-cjs": "6.0.1",
+              "wrap-ansi": "8.1.0",
+              "wrap-ansi-cjs": "7.0.0"
             },
             "Optional": false,
             "Bundled": false,
@@ -1888,7 +1899,7 @@
             "Dependencies": {
               "@jest/fake-timers": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "jest-mock": "29.7.0"
             },
             "Optional": false,
@@ -1952,7 +1963,7 @@
             "Dependencies": {
               "@jest/types": "29.6.3",
               "@sinonjs/fake-timers": "10.3.0",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "jest-message-util": "29.7.0",
               "jest-mock": "29.7.0",
               "jest-util": "29.7.0"
@@ -2026,7 +2037,7 @@
               "@jest/transform": "29.7.0",
               "@jest/types": "29.6.3",
               "@jridgewell/trace-mapping": "0.3.25",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "chalk": "4.1.2",
               "collect-v8-coverage": "1.0.2",
               "exit": "0.1.2",
@@ -3738,7 +3749,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "18.19.80"
+              "@types/node": "22.13.10"
             },
             "Optional": false,
             "Bundled": false,
@@ -3852,7 +3863,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "18.19.80"
+              "@types/node": "22.13.10"
             },
             "Optional": false,
             "Bundled": false,
@@ -3890,7 +3901,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "18.19.80"
+              "@types/node": "22.13.10"
             },
             "Optional": false,
             "Bundled": false,
@@ -3922,7 +3933,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "18.19.80"
+              "@types/node": "22.13.10"
             },
             "Optional": false,
             "Bundled": false,
@@ -4186,13 +4197,22 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "18.19.80"
+              "@types/node": "22.13.10"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+            "Dev": false,
+<<<<<<< Updated upstream
+=======
+            "Prod": true,
+            "Direct": false,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": true,
             "Licenses": null
           },
@@ -4204,14 +4224,25 @@
             },
             "Dependencies": {
               "@types/ms": "2.1.0",
-              "@types/node": "18.19.80"
+              "@types/node": "22.13.10"
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": true,
             "Transitive": false,
+=======
+<<<<<<< Updated upstream
+            "Dev": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": true,
+>>>>>>> Stashed changes
+            "Transitive": true,
+>>>>>>> fix-npm-resolver
             "Licenses": null
           }
         },
@@ -4345,7 +4376,7 @@
               "form-data": "npm:^4.0.0"
             },
             "Dependencies": {
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "form-data": "4.0.2"
             },
             "Optional": false,
@@ -4364,7 +4395,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "18.19.80"
+              "@types/node": "22.13.10"
             },
             "Optional": false,
             "Bundled": false,
@@ -4550,7 +4581,7 @@
               "pg-types": "npm:^4.0.1"
             },
             "Dependencies": {
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "pg-protocol": "1.8.0",
               "pg-types": "4.0.2"
             },
@@ -4649,7 +4680,7 @@
             },
             "Dependencies": {
               "@types/http-errors": "2.0.4",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "@types/send": "0.17.4"
             },
             "Optional": false,
@@ -4687,7 +4718,7 @@
             "Dependencies": {
               "@types/cookiejar": "2.1.5",
               "@types/methods": "1.1.4",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "form-data": "4.0.2"
             },
             "Optional": false,
@@ -5620,7 +5651,7 @@
               "ajv": "npm:^8.0.0"
             },
             "Dependencies": {
-              "ajv": "8.17.1"
+              "ajv": "8.12.0"
             },
             "Optional": false,
             "Bundled": false,
@@ -5636,7 +5667,7 @@
               "ajv": "npm:^8.0.0"
             },
             "Dependencies": {
-              "ajv": "8.17.1"
+              "ajv": "8.12.0"
             },
             "Optional": false,
             "Bundled": false,
@@ -5758,10 +5789,20 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
+<<<<<<< HEAD
             "Prod": false,
             "Direct": false,
             "Transitive": false,
+=======
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+>>>>>>> Stashed changes
+            "Transitive": true,
+>>>>>>> fix-npm-resolver
             "Licenses": null
           },
           "6.1.0": {
@@ -6701,7 +6742,7 @@
             "Dependencies": {
               "@npmcli/fs": "4.0.0",
               "fs-minipass": "3.0.3",
-              "glob": "10.3.12",
+              "glob": "10.4.5",
               "lru-cache": "10.4.3",
               "minipass": "7.1.2",
               "minipass-collect": "2.0.1",
@@ -7057,9 +7098,18 @@
             "Optional": false,
             "Bundled": false,
             "Dev": false,
+<<<<<<< HEAD
             "Prod": true,
             "Direct": false,
             "Transitive": true,
+=======
+<<<<<<< Updated upstream
+=======
+            "Prod": false,
+            "Direct": false,
+>>>>>>> Stashed changes
+            "Transitive": false,
+>>>>>>> fix-npm-resolver
             "Licenses": null
           }
         },
@@ -8691,10 +8741,20 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
+<<<<<<< HEAD
             "Prod": false,
             "Direct": false,
             "Transitive": false,
+=======
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+>>>>>>> Stashed changes
+            "Transitive": true,
+>>>>>>> fix-npm-resolver
             "Licenses": null
           },
           "9.2.2": {
@@ -10837,9 +10897,18 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+            "Dev": false,
+<<<<<<< Updated upstream
+=======
+            "Prod": true,
+            "Direct": false,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": true,
             "Licenses": null
           },
@@ -10863,9 +10932,18 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
+<<<<<<< HEAD
             "Prod": true,
             "Direct": false,
+=======
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": true,
             "Licenses": null
           },
@@ -11473,7 +11551,7 @@
             },
             "Dependencies": {
               "agent-base": "7.1.3",
-              "debug": "4.4.0"
+              "debug": "4.3.7"
             },
             "Optional": false,
             "Bundled": false,
@@ -11739,7 +11817,7 @@
               "mute-stream": "0.0.8",
               "ora": "5.4.1",
               "run-async": "2.4.1",
-              "rxjs": "7.8.2",
+              "rxjs": "7.8.1",
               "through": "2.3.8"
             },
             "Optional": false,
@@ -11991,10 +12069,20 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
+<<<<<<< HEAD
             "Prod": false,
             "Direct": false,
             "Transitive": false,
+=======
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+>>>>>>> Stashed changes
+            "Transitive": true,
+>>>>>>> fix-npm-resolver
             "Licenses": null
           }
         },
@@ -12403,9 +12491,18 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+            "Dev": false,
+<<<<<<< Updated upstream
+=======
+            "Prod": true,
+            "Direct": false,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": true,
             "Licenses": null
           },
@@ -12421,9 +12518,18 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
+<<<<<<< HEAD
             "Prod": true,
             "Direct": false,
+=======
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": true,
             "Licenses": null
           },
@@ -12751,7 +12857,7 @@
               "@jest/environment": "29.7.0",
               "@jest/fake-timers": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "jest-mock": "29.7.0",
               "jest-util": "29.7.0"
             },
@@ -12798,7 +12904,7 @@
             "Dependencies": {
               "@jest/types": "29.6.3",
               "@types/graceful-fs": "4.1.9",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "anymatch": "3.1.3",
               "fb-watchman": "2.0.2",
               "fsevents": "2.3.3",
@@ -12906,7 +13012,7 @@
             },
             "Dependencies": {
               "@jest/types": "29.6.3",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "jest-util": "29.7.0"
             },
             "Optional": false,
@@ -13032,7 +13138,7 @@
               "@jest/test-result": "29.7.0",
               "@jest/transform": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "chalk": "4.1.2",
               "emittery": "0.13.1",
               "graceful-fs": "4.2.11",
@@ -13093,7 +13199,7 @@
               "@jest/test-result": "29.7.0",
               "@jest/transform": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "chalk": "4.1.2",
               "cjs-module-lexer": "1.4.3",
               "collect-v8-coverage": "1.0.2",
@@ -13187,7 +13293,7 @@
             },
             "Dependencies": {
               "@jest/types": "29.6.3",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "chalk": "4.1.2",
               "ci-info": "3.9.0",
               "graceful-fs": "4.2.11",
@@ -13246,7 +13352,7 @@
             "Dependencies": {
               "@jest/test-result": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "ansi-escapes": "4.3.2",
               "chalk": "4.1.2",
               "emittery": "0.13.1",
@@ -13271,7 +13377,7 @@
               "supports-color": "npm:^8.0.0"
             },
             "Dependencies": {
-              "@types/node": "18.19.80",
+              "@types/node": "22.13.10",
               "merge-stream": "2.0.0",
               "supports-color": "8.1.1"
             },
@@ -14765,9 +14871,18 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": false,
             "Direct": false,
+=======
+            "Dev": false,
+<<<<<<< Updated upstream
+=======
+            "Prod": true,
+            "Direct": false,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": true,
             "Licenses": null
           },
@@ -14837,9 +14952,18 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
+<<<<<<< HEAD
             "Prod": true,
             "Direct": false,
+=======
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": true,
             "Licenses": null
           },
@@ -15125,8 +15249,17 @@
             },
             "Dependencies": {
               "@babel/runtime": "7.26.10",
+<<<<<<< HEAD
               "chokidar": "3.6.0",
               "glob": "10.3.12",
+=======
+              "chokidar": "3.5.3",
+<<<<<<< Updated upstream
+              "glob": "10.4.5",
+=======
+              "glob": "10.3.12",
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
               "html-minifier": "4.0.0",
               "js-beautify": "1.15.4",
               "lodash": "4.17.21",
@@ -16134,7 +16267,7 @@
             "Dependencies": {
               "env-paths": "2.2.1",
               "exponential-backoff": "3.1.2",
-              "glob": "10.3.12",
+              "glob": "10.4.5",
               "graceful-fs": "4.2.11",
               "make-fetch-happen": "14.0.3",
               "nopt": "8.1.0",
@@ -16188,9 +16321,18 @@
             "Optional": false,
             "Bundled": false,
             "Dev": false,
+<<<<<<< HEAD
             "Prod": true,
             "Direct": true,
             "Transitive": true,
+=======
+<<<<<<< Updated upstream
+=======
+            "Prod": true,
+            "Direct": true,
+>>>>>>> Stashed changes
+            "Transitive": false,
+>>>>>>> fix-npm-resolver
             "Licenses": null
           },
           "6.9.16": {
@@ -16850,9 +16992,18 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
+<<<<<<< HEAD
             "Prod": true,
             "Direct": false,
+=======
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
             "Transitive": true,
             "Licenses": null
           }
@@ -17162,7 +17313,7 @@
             },
             "Dependencies": {
               "lru-cache": "10.4.3",
-              "minipass": "7.1.2"
+              "minipass": "5.0.0"
             },
             "Optional": false,
             "Bundled": false,
@@ -18936,7 +19087,7 @@
               "glob": "npm:^10.3.7"
             },
             "Dependencies": {
-              "glob": "10.3.12"
+              "glob": "10.4.5"
             },
             "Optional": false,
             "Bundled": false,
@@ -19046,10 +19197,20 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< HEAD
             "Dev": true,
             "Prod": true,
             "Direct": true,
+=======
+            "Dev": false,
+<<<<<<< Updated upstream
+>>>>>>> fix-npm-resolver
             "Transitive": true,
+=======
+            "Prod": true,
+            "Direct": true,
+            "Transitive": false,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -19279,7 +19440,7 @@
               "statuses": "npm:^2.0.1"
             },
             "Dependencies": {
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "destroy": "1.2.0",
               "encodeurl": "2.0.0",
               "escape-html": "1.0.3",
@@ -20074,10 +20235,17 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
             "Prod": false,
             "Direct": false,
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -20144,10 +20312,17 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
             "Prod": false,
             "Direct": false,
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -21988,10 +22163,17 @@
             },
             "Optional": false,
             "Bundled": false,
+<<<<<<< Updated upstream
             "Dev": false,
             "Prod": false,
             "Direct": false,
             "Transitive": false,
+=======
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+>>>>>>> Stashed changes
             "Licenses": null
           }
         },
@@ -22198,9 +22380,16 @@
       "start": {
         "dependencies": [
           {
+<<<<<<< HEAD
             "name": "fastify",
             "version": "5.2.1",
             "constraint": "5.2.1"
+=======
+<<<<<<< Updated upstream
+            "name": "amqplib",
+            "version": "0.10.5",
+            "constraint": "0.10.5"
+>>>>>>> fix-npm-resolver
           },
           {
             "name": "magic-bytes.js",
@@ -22263,9 +22452,143 @@
             "constraint": "2.1.3"
           },
           {
+<<<<<<< HEAD
             "name": "openai",
             "version": "4.87.3",
             "constraint": "4.87.3"
+=======
+            "name": "@nestjs/platform-fastify",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "@types/passport-oauth2",
+            "version": "1.4.17",
+            "constraint": "1.4.17"
+          },
+          {
+            "name": "lodash",
+            "version": "4.17.21",
+            "constraint": "4.17.21"
+=======
+            "name": "compare-versions",
+            "version": "6.1.1",
+            "constraint": "6.1.1"
+          },
+          {
+            "name": "octokit",
+            "version": "4.1.2",
+            "constraint": "4.1.2"
+>>>>>>> Stashed changes
+          },
+          {
+            "name": "@fastify/compress",
+            "version": "8.0.1",
+            "constraint": "8.0.1"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "@fastify/static",
+            "version": "8.1.1",
+            "constraint": "8.1.1"
+          },
+          {
+            "name": "@nestjs/jwt",
+            "version": "11.0.0",
+            "constraint": "11.0.0"
+          },
+          {
+            "name": "@nestjs/platform-express",
+=======
+            "name": "@nest-lab/fastify-multer",
+            "version": "1.3.0",
+            "constraint": "1.3.0"
+          },
+          {
+            "name": "@nestjs/platform-socket.io",
+>>>>>>> Stashed changes
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "axios",
+            "version": "1.8.3",
+            "constraint": "1.8.3"
+          },
+          {
+            "name": "octokit",
+            "version": "4.1.2",
+            "constraint": "4.1.2"
+          },
+          {
+            "name": "passport-jwt",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+          },
+          {
+            "name": "pg",
+            "version": "8.14.0",
+            "constraint": "8.14.0"
+          },
+          {
+            "name": "class-validator",
+            "version": "0.14.1",
+            "constraint": "0.14.1"
+          },
+          {
+            "name": "compare-versions",
+            "version": "6.1.1",
+            "constraint": "6.1.1"
+          },
+          {
+=======
+>>>>>>> Stashed changes
+            "name": "dotenv",
+            "version": "16.4.7",
+            "constraint": "16.4.7"
+          },
+          {
+            "name": "jsonwebtoken",
+            "version": "9.0.2",
+            "constraint": "9.0.2"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "rxjs",
+            "version": "7.8.2",
+            "constraint": "7.8.2"
+          },
+          {
+            "name": "tslib",
+            "version": "2.8.1",
+            "constraint": "2.8.1"
+          },
+          {
+            "name": "fastify",
+            "version": "5.2.1",
+            "constraint": "5.2.1"
+          },
+          {
+            "name": "magic-bytes.js",
+            "version": "1.10.0",
+            "constraint": "1.10.0"
+          },
+          {
+            "name": "node-fetch",
+            "version": "3.3.2",
+            "constraint": "3.3.2"
+=======
+            "name": "openai",
+            "version": "4.87.3",
+            "constraint": "4.87.3"
+          },
+          {
+            "name": "passport-jwt",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
           },
           {
             "name": "reflect-metadata",
@@ -22273,14 +22596,39 @@
             "constraint": "0.2.2"
           },
           {
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+            "name": "semver",
+            "version": "7.7.1",
+            "constraint": "7.7.1"
+          },
+          {
+>>>>>>> fix-npm-resolver
             "name": "typeorm",
             "version": "0.3.21",
             "constraint": "0.3.21"
           },
           {
+<<<<<<< HEAD
             "name": "@fastify/multipart",
             "version": "9.0.3",
             "constraint": "9.0.3"
+=======
+            "name": "uuid",
+            "version": "11.1.0",
+            "constraint": "11.1.0"
+=======
+            "name": "@nestjs/core",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "@nestjs/jwt",
+            "version": "11.0.0",
+            "constraint": "11.0.0"
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
           },
           {
             "name": "@nestjs-modules/mailer",
@@ -22288,12 +22636,17 @@
             "constraint": "2.0.2"
           },
           {
+<<<<<<< HEAD
             "name": "@nestjs/config",
             "version": "4.0.1",
             "constraint": "4.0.1"
           },
           {
             "name": "@nestjs/platform-express",
+=======
+<<<<<<< Updated upstream
+            "name": "@nestjs/websockets",
+>>>>>>> fix-npm-resolver
             "version": "11.0.11",
             "constraint": "11.0.11"
           },
@@ -22306,6 +22659,21 @@
             "name": "util",
             "version": "0.12.5",
             "constraint": "0.12.5"
+=======
+            "name": "class-validator",
+            "version": "0.14.1",
+            "constraint": "0.14.1"
+          },
+          {
+            "name": "pg",
+            "version": "8.14.0",
+            "constraint": "8.14.0"
+          },
+          {
+            "name": "rxjs",
+            "version": "7.8.2",
+            "constraint": "7.8.2"
+>>>>>>> Stashed changes
           },
           {
             "name": "uuid",
@@ -22313,9 +22681,42 @@
             "constraint": "11.1.0"
           },
           {
+<<<<<<< HEAD
             "name": "@nestjs/common",
+=======
+<<<<<<< Updated upstream
+=======
+            "name": "handlebars",
+            "version": "4.7.8",
+            "constraint": "4.7.8"
+          },
+          {
+            "name": "tslib",
+            "version": "2.8.1",
+            "constraint": "2.8.1"
+          },
+          {
+            "name": "@nestjs-modules/mailer",
+            "version": "2.0.2",
+            "constraint": "2.0.2"
+          },
+          {
+>>>>>>> Stashed changes
+            "name": "@nestjs/axios",
+            "version": "4.0.0",
+            "constraint": "4.0.0"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "@nestjs/platform-socket.io",
+>>>>>>> fix-npm-resolver
             "version": "11.0.11",
             "constraint": "11.0.11"
+=======
+            "name": "@nestjs/config",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+>>>>>>> Stashed changes
           },
           {
             "name": "@nestjs/typeorm",
@@ -22323,6 +22724,7 @@
             "constraint": "11.0.0"
           },
           {
+<<<<<<< HEAD
             "name": "passport-oauth2",
             "version": "1.8.0",
             "constraint": "1.8.0"
@@ -22431,6 +22833,106 @@
             "name": "@fastify/compress",
             "version": "8.0.1",
             "constraint": "8.0.1"
+=======
+<<<<<<< Updated upstream
+            "name": "socket.io",
+            "version": "4.8.1",
+            "constraint": "4.8.1"
+=======
+            "name": "ms",
+            "version": "2.1.3",
+            "constraint": "2.1.3"
+          },
+          {
+            "name": "nodemailer",
+            "version": "6.10.0",
+            "constraint": "6.10.0"
+          },
+          {
+            "name": "typeorm",
+            "version": "0.3.21",
+            "constraint": "0.3.21"
+          },
+          {
+            "name": "util",
+            "version": "0.12.5",
+            "constraint": "0.12.5"
+          },
+          {
+            "name": "@nestjs/common",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "@nestjs/platform-express",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "@nestjs/platform-fastify",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "fastify",
+            "version": "5.2.1",
+            "constraint": "5.2.1"
+          },
+          {
+            "name": "pako",
+            "version": "2.1.0",
+            "constraint": "2.1.0"
+          },
+          {
+            "name": "semver",
+            "version": "7.7.1",
+            "constraint": "7.7.1"
+          },
+          {
+            "name": "uuid",
+            "version": "11.1.0",
+            "constraint": "11.1.0"
+          },
+          {
+            "name": "@nestjs/passport",
+            "version": "11.0.5",
+            "constraint": "11.0.5"
+          },
+          {
+            "name": "@nestjs/websockets",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "amqplib",
+            "version": "0.10.5",
+            "constraint": "0.10.5"
+          },
+          {
+            "name": "magic-bytes.js",
+            "version": "1.10.0",
+            "constraint": "1.10.0"
+          },
+          {
+            "name": "moment",
+            "version": "2.30.1",
+            "constraint": "2.30.1"
+          },
+          {
+            "name": "passport",
+            "version": "0.7.0",
+            "constraint": "0.7.0"
+          },
+          {
+            "name": "socket.io",
+            "version": "4.8.1",
+            "constraint": "4.8.1"
+          },
+          {
+            "name": "@fastify/static",
+            "version": "8.1.1",
+            "constraint": "8.1.1"
+>>>>>>> fix-npm-resolver
           },
           {
             "name": "@types/passport-oauth2",
@@ -22438,23 +22940,125 @@
             "constraint": "1.4.17"
           },
           {
+<<<<<<< HEAD
             "name": "axios",
             "version": "1.8.3",
             "constraint": "1.8.3"
+=======
+            "name": "bcrypt",
+            "version": "5.1.1",
+            "constraint": "5.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "4.17.21",
+            "constraint": "4.17.21"
+          },
+          {
+            "name": "node-fetch",
+            "version": "3.3.2",
+            "constraint": "3.3.2"
+          },
+          {
+            "name": "passport-oauth2",
+            "version": "1.8.0",
+            "constraint": "1.8.0"
+          },
+          {
+            "name": "axios",
+            "version": "1.8.3",
+            "constraint": "1.8.3"
+          },
+          {
+            "name": "class-transformer",
+            "version": "0.5.1",
+            "constraint": "0.5.1"
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
           }
         ],
         "dev_dependencies": [
           {
+<<<<<<< HEAD
             "name": "@types/ms",
             "version": "2.1.0",
             "constraint": "2.1.0"
           },
           {
+=======
+<<<<<<< Updated upstream
+>>>>>>> fix-npm-resolver
             "name": "@types/pako",
             "version": "2.0.3",
             "constraint": "2.0.3"
           },
           {
+<<<<<<< HEAD
+=======
+            "name": "@types/passport-jwt",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+          },
+          {
+            "name": "@types/pg",
+            "version": "8.11.11",
+            "constraint": "8.11.11"
+          },
+          {
+            "name": "jest",
+            "version": "29.7.0",
+            "constraint": "29.7.0"
+          },
+          {
+            "name": "ts-node",
+            "version": "10.9.2",
+            "constraint": "10.9.2"
+          },
+          {
+            "name": "@nestjs/cli",
+            "version": "10.0.5",
+            "constraint": "10.0.5"
+          },
+          {
+=======
+>>>>>>> Stashed changes
+            "name": "@types/nodemailer",
+            "version": "6.4.17",
+            "constraint": "6.4.17"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "eslint-plugin-cypress",
+            "version": "4.2.0",
+            "constraint": "4.2.0"
+          },
+          {
+            "name": "prettier",
+            "version": "3.5.3",
+            "constraint": "3.5.3"
+          },
+          {
+            "name": "@types/webcrypto",
+            "version": "0.0.30",
+            "constraint": "0.0.30"
+=======
+            "name": "@types/passport-github2",
+            "version": "1.2.9",
+            "constraint": "1.2.9"
+          },
+          {
+            "name": "@types/uuid",
+            "version": "10.0.0",
+            "constraint": "10.0.0"
+>>>>>>> Stashed changes
+          },
+          {
+            "name": "eslint",
+            "version": "9.22.0",
+            "constraint": "9.22.0"
+          },
+          {
+>>>>>>> fix-npm-resolver
             "name": "@types/supertest",
             "version": "6.0.2",
             "constraint": "6.0.2"
@@ -22500,9 +23104,87 @@
             "constraint": "7.5.8"
           },
           {
+<<<<<<< HEAD
             "name": "@types/webcrypto",
             "version": "0.0.30",
             "constraint": "0.0.30"
+=======
+            "name": "@eslint/js",
+            "version": "9.22.0",
+            "constraint": "9.22.0"
+          },
+          {
+            "name": "@types/amqplib",
+            "version": "0.10.7",
+            "constraint": "0.10.7"
+          },
+          {
+            "name": "source-map-support",
+            "version": "0.5.21",
+            "constraint": "0.5.21"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "supertest",
+            "version": "7.0.0",
+            "constraint": "7.0.0"
+          },
+          {
+            "name": "tsconfig-paths",
+            "version": "4.2.0",
+            "constraint": "4.2.0"
+          },
+          {
+            "name": "typescript",
+            "version": "5.8.2",
+            "constraint": "5.8.2"
+          },
+          {
+            "name": "@types/jsonwebtoken",
+            "version": "9.0.9",
+            "constraint": "9.0.9"
+=======
+            "name": "ts-loader",
+            "version": "9.5.2",
+            "constraint": "9.5.2"
+          },
+          {
+            "name": "@types/amqplib",
+            "version": "0.10.7",
+            "constraint": "0.10.7"
+>>>>>>> Stashed changes
+          },
+          {
+            "name": "@types/jest",
+            "version": "29.5.14",
+            "constraint": "29.5.14"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "@types/uuid",
+            "version": "10.0.0",
+            "constraint": "10.0.0"
+=======
+            "name": "@types/node",
+            "version": "22.13.10",
+            "constraint": "22.13.10"
+          },
+          {
+            "name": "@types/semver",
+            "version": "7.5.8",
+            "constraint": "7.5.8"
+          },
+          {
+            "name": "eslint-plugin-cypress",
+            "version": "4.2.0",
+            "constraint": "4.2.0"
+>>>>>>> Stashed changes
+          },
+          {
+            "name": "eslint-config-prettier",
+            "version": "10.1.1",
+            "constraint": "10.1.1"
+>>>>>>> fix-npm-resolver
           },
           {
             "name": "globals",
@@ -22520,6 +23202,35 @@
             "constraint": "5.98.0"
           },
           {
+<<<<<<< HEAD
+=======
+            "name": "@types/ms",
+            "version": "2.1.0",
+            "constraint": "2.1.0"
+          },
+          {
+            "name": "@types/passport-github2",
+            "version": "1.2.9",
+            "constraint": "1.2.9"
+          },
+          {
+            "name": "ts-jest",
+            "version": "29.2.6",
+            "constraint": "29.2.6"
+          },
+          {
+            "name": "ts-loader",
+            "version": "9.5.2",
+            "constraint": "9.5.2"
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "@types/lodash",
+            "version": "4.17.16",
+            "constraint": "4.17.16"
+          },
+          {
+>>>>>>> fix-npm-resolver
             "name": "@nestjs/testing",
             "version": "11.0.11",
             "constraint": "11.0.11"
@@ -22530,19 +23241,139 @@
             "constraint": "13.8.0"
           },
           {
+<<<<<<< HEAD
+            "name": "@types/bcrypt",
+            "version": "5.0.2",
+            "constraint": "5.0.2"
+=======
+=======
+            "name": "@nestjs/schematics",
+            "version": "11.0.2",
+            "constraint": "11.0.2"
+          },
+          {
+            "name": "@types/jsonwebtoken",
+            "version": "9.0.9",
+            "constraint": "9.0.9"
+          },
+          {
+            "name": "@types/pako",
+            "version": "2.0.3",
+            "constraint": "2.0.3"
+          },
+          {
+            "name": "@types/passport-jwt",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+          },
+          {
+            "name": "@types/pg",
+            "version": "8.11.11",
+            "constraint": "8.11.11"
+          },
+          {
+            "name": "@types/webcrypto",
+            "version": "0.0.30",
+            "constraint": "0.0.30"
+          },
+          {
+            "name": "supertest",
+            "version": "7.0.0",
+            "constraint": "7.0.0"
+          },
+          {
+            "name": "typescript-eslint",
+            "version": "8.26.1",
+            "constraint": "8.26.1"
+          },
+          {
+            "name": "@eslint/js",
+            "version": "9.22.0",
+            "constraint": "9.22.0"
+          },
+          {
+            "name": "@nestjs/cli",
+            "version": "10.0.5",
+            "constraint": "10.0.5"
+          },
+          {
+>>>>>>> Stashed changes
+            "name": "@types/express",
+            "version": "5.0.0",
+            "constraint": "5.0.0"
+>>>>>>> fix-npm-resolver
+          },
+          {
+<<<<<<< Updated upstream
+            "name": "@types/node",
+            "version": "22.13.10",
+            "constraint": "22.13.10"
+=======
+            "name": "eslint-config-prettier",
+            "version": "10.1.1",
+            "constraint": "10.1.1"
+          },
+          {
+            "name": "ts-node",
+            "version": "10.9.2",
+            "constraint": "10.9.2"
+          },
+          {
+            "name": "@nestjs/testing",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "@octokit/types",
+            "version": "13.8.0",
+            "constraint": "13.8.0"
+          },
+          {
+            "name": "@types/lodash",
+            "version": "4.17.16",
+            "constraint": "4.17.16"
+          },
+          {
+            "name": "@types/supertest",
+            "version": "6.0.2",
+            "constraint": "6.0.2"
+          },
+          {
+            "name": "globals",
+            "version": "16.0.0",
+            "constraint": "16.0.0"
+          },
+          {
+            "name": "jest",
+            "version": "29.7.0",
+            "constraint": "29.7.0"
+          },
+          {
+            "name": "ts-jest",
+            "version": "29.2.6",
+            "constraint": "29.2.6"
+          },
+          {
+            "name": "tsconfig-paths",
+            "version": "4.2.0",
+            "constraint": "4.2.0"
+          },
+          {
             "name": "@types/bcrypt",
             "version": "5.0.2",
             "constraint": "5.0.2"
           },
           {
-            "name": "@types/node",
-            "version": "22.13.10",
-            "constraint": "22.13.10"
+            "name": "@types/ms",
+            "version": "2.1.0",
+            "constraint": "2.1.0"
+>>>>>>> Stashed changes
           },
           {
             "name": "@types/nodemailer-sendgrid",
             "version": "1.0.3",
             "constraint": "1.0.3"
+<<<<<<< HEAD
           },
           {
             "name": "eslint-plugin-cypress",
@@ -22578,6 +23409,10 @@
             "name": "tsconfig-paths",
             "version": "4.2.0",
             "constraint": "4.2.0"
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> fix-npm-resolver
           },
           {
             "name": "typescript",
@@ -22585,6 +23420,7 @@
             "constraint": "5.8.2"
           },
           {
+<<<<<<< HEAD
             "name": "@types/jsonwebtoken",
             "version": "9.0.9",
             "constraint": "9.0.9"
@@ -22638,6 +23474,17 @@
             "name": "ts-loader",
             "version": "9.5.2",
             "constraint": "9.5.2"
+=======
+            "name": "webpack",
+            "version": "5.98.0",
+            "constraint": "5.98.0"
+          },
+          {
+            "name": "@rushstack/eslint-patch",
+            "version": "1.11.0",
+            "constraint": "1.11.0"
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
           }
         ]
       }
@@ -22649,9 +23496,21 @@
     "working_directory": "yarnv4",
     "package_manager": "YARN",
     "time": {
+<<<<<<< HEAD
       "analysis_start_time": "2025-05-13 18:58:02.943727 +0200 CEST",
       "analysis_end_time": "2025-05-13 18:58:02.9676 +0200 CEST",
       "analysis_delta_time": 0.023872792
+=======
+<<<<<<< Updated upstream
+      "analysis_start_time": "2025-03-21 11:37:16.228276 +0100 CET",
+      "analysis_end_time": "2025-03-21 11:37:53.987675 +0100 CET",
+      "analysis_delta_time": 37.759484667
+=======
+      "analysis_start_time": "2025-05-16 10:49:19.689599612 +0200 CEST",
+      "analysis_end_time": "2025-05-16 10:49:19.721945255 +0200 CEST",
+      "analysis_delta_time": 0.03234569
+>>>>>>> Stashed changes
+>>>>>>> fix-npm-resolver
     },
     "errors": [],
     "paths": {
