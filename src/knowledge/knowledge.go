@@ -19,6 +19,7 @@ func UpdateKnowledge(dependencies map[string]map[string]types.Versions, analysis
 	sbom_message := types_amqp.SbomPackageFollowerMessage{
 		AnalysisId:    analysisId,
 		PackagesNames: dependencies_names,
+		Language:      "javascript",
 	}
 	data, _ := json.Marshal(sbom_message)
 	amqp_helper.Send("sbom_packageFollower", data)
