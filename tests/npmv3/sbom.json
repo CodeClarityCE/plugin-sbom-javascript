@@ -368,7 +368,8 @@
               "@babel/parser": "7.26.10",
               "@babel/template": "7.26.9",
               "@babel/types": "7.26.10",
-              "debug": "4.4.0"
+              "debug": "4.4.0",
+              "globals": "11.12.0"
             },
             "Optional": false,
             "Bundled": false,
@@ -376,20 +377,6 @@
             "Prod": false,
             "Direct": false,
             "Transitive": true,
-            "Licenses": null
-          }
-        },
-        "@babel/traverse/node_modules/globals": {
-          "11.12.0": {
-            "Key": "@babel/traverse/node_modules/globals@11.12.0",
-            "Requires": null,
-            "Dependencies": {},
-            "Optional": false,
-            "Bundled": false,
-            "Dev": true,
-            "Prod": false,
-            "Direct": false,
-            "Transitive": false,
             "Licenses": null
           }
         },
@@ -769,27 +756,15 @@
             "Requires": {
               "eslint-visitor-keys": "^3.4.3"
             },
-            "Dependencies": {},
+            "Dependencies": {
+              "eslint-visitor-keys": "3.4.3"
+            },
             "Optional": false,
             "Bundled": false,
             "Dev": true,
             "Prod": false,
             "Direct": false,
             "Transitive": true,
-            "Licenses": null
-          }
-        },
-        "@eslint-community/eslint-utils/node_modules/eslint-visitor-keys": {
-          "3.4.3": {
-            "Key": "@eslint-community/eslint-utils/node_modules/eslint-visitor-keys@3.4.3",
-            "Requires": null,
-            "Dependencies": {},
-            "Optional": false,
-            "Bundled": false,
-            "Dev": true,
-            "Prod": false,
-            "Direct": false,
-            "Transitive": false,
             "Licenses": null
           }
         },
@@ -879,6 +854,7 @@
               "ajv": "6.12.6",
               "debug": "4.4.0",
               "espree": "10.3.0",
+              "globals": "14.0.0",
               "ignore": "5.3.2",
               "import-fresh": "3.3.1",
               "js-yaml": "4.1.0",
@@ -891,20 +867,6 @@
             "Prod": false,
             "Direct": false,
             "Transitive": true,
-            "Licenses": null
-          }
-        },
-        "@eslint/eslintrc/node_modules/globals": {
-          "14.0.0": {
-            "Key": "@eslint/eslintrc/node_modules/globals@14.0.0",
-            "Requires": null,
-            "Dependencies": {},
-            "Optional": false,
-            "Bundled": false,
-            "Dev": true,
-            "Prod": false,
-            "Direct": false,
-            "Transitive": false,
             "Licenses": null
           }
         },
@@ -1108,7 +1070,8 @@
               "@humanwhocodes/retry": "^0.3.0"
             },
             "Dependencies": {
-              "@humanfs/core": "0.19.1"
+              "@humanfs/core": "0.19.1",
+              "@humanwhocodes/retry": "0.3.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -1116,20 +1079,6 @@
             "Prod": false,
             "Direct": false,
             "Transitive": true,
-            "Licenses": null
-          }
-        },
-        "@humanfs/node/node_modules/@humanwhocodes/retry": {
-          "0.3.1": {
-            "Key": "@humanfs/node/node_modules/@humanwhocodes/retry@0.3.1",
-            "Requires": null,
-            "Dependencies": {},
-            "Optional": false,
-            "Bundled": false,
-            "Dev": true,
-            "Prod": false,
-            "Direct": false,
-            "Transitive": false,
             "Licenses": null
           }
         },
@@ -1148,6 +1097,18 @@
           }
         },
         "@humanwhocodes/retry": {
+          "0.3.1": {
+            "Key": "@humanwhocodes/retry@0.3.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
           "0.4.2": {
             "Key": "@humanwhocodes/retry@0.4.2",
             "Requires": null,
@@ -2316,6 +2277,8 @@
               "debug": "4.4.0",
               "fast-glob": "3.3.3",
               "is-glob": "4.0.3",
+              "minimatch": "9.0.5",
+              "semver": "7.7.1",
               "ts-api-utils": "2.0.1"
             },
             "Optional": false,
@@ -2324,54 +2287,6 @@
             "Prod": false,
             "Direct": false,
             "Transitive": true,
-            "Licenses": null
-          }
-        },
-        "@typescript-eslint/typescript-estree/node_modules/brace-expansion": {
-          "2.0.1": {
-            "Key": "@typescript-eslint/typescript-estree/node_modules/brace-expansion@2.0.1",
-            "Requires": {
-              "balanced-match": "^1.0.0"
-            },
-            "Dependencies": {
-              "balanced-match": "1.0.2"
-            },
-            "Optional": false,
-            "Bundled": false,
-            "Dev": true,
-            "Prod": false,
-            "Direct": false,
-            "Transitive": false,
-            "Licenses": null
-          }
-        },
-        "@typescript-eslint/typescript-estree/node_modules/minimatch": {
-          "9.0.5": {
-            "Key": "@typescript-eslint/typescript-estree/node_modules/minimatch@9.0.5",
-            "Requires": {
-              "brace-expansion": "^2.0.1"
-            },
-            "Dependencies": {},
-            "Optional": false,
-            "Bundled": false,
-            "Dev": true,
-            "Prod": false,
-            "Direct": false,
-            "Transitive": false,
-            "Licenses": null
-          }
-        },
-        "@typescript-eslint/typescript-estree/node_modules/semver": {
-          "7.7.1": {
-            "Key": "@typescript-eslint/typescript-estree/node_modules/semver@7.7.1",
-            "Requires": null,
-            "Dependencies": {},
-            "Optional": false,
-            "Bundled": false,
-            "Dev": true,
-            "Prod": false,
-            "Direct": false,
-            "Transitive": false,
             "Licenses": null
           }
         },
@@ -2589,6 +2504,22 @@
             "Dependencies": {
               "balanced-match": "1.0.2",
               "concat-map": "0.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "2.0.1": {
+            "Key": "brace-expansion@2.0.1",
+            "Requires": {
+              "balanced-match": "^1.0.0"
+            },
+            "Dependencies": {
+              "balanced-match": "1.0.2"
             },
             "Optional": false,
             "Bundled": false,
@@ -3228,6 +3159,18 @@
           }
         },
         "eslint-visitor-keys": {
+          "3.4.3": {
+            "Key": "eslint-visitor-keys@3.4.3",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
           "4.2.0": {
             "Key": "eslint-visitor-keys@4.2.0",
             "Requires": null,
@@ -3354,6 +3297,7 @@
             "Dependencies": {
               "@nodelib/fs.stat": "2.0.5",
               "@nodelib/fs.walk": "1.2.8",
+              "glob-parent": "5.1.2",
               "merge2": "1.4.1",
               "micromatch": "4.0.8"
             },
@@ -3363,24 +3307,6 @@
             "Prod": false,
             "Direct": false,
             "Transitive": true,
-            "Licenses": null
-          }
-        },
-        "fast-glob/node_modules/glob-parent": {
-          "5.1.2": {
-            "Key": "fast-glob/node_modules/glob-parent@5.1.2",
-            "Requires": {
-              "is-glob": "^4.0.1"
-            },
-            "Dependencies": {
-              "is-glob": "4.0.3"
-            },
-            "Optional": false,
-            "Bundled": false,
-            "Dev": true,
-            "Prod": false,
-            "Direct": false,
-            "Transitive": false,
             "Licenses": null
           }
         },
@@ -3671,6 +3597,22 @@
           }
         },
         "glob-parent": {
+          "5.1.2": {
+            "Key": "glob-parent@5.1.2",
+            "Requires": {
+              "is-glob": "^4.0.1"
+            },
+            "Dependencies": {
+              "is-glob": "4.0.3"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
           "6.0.2": {
             "Key": "glob-parent@6.0.2",
             "Requires": {
@@ -3689,6 +3631,30 @@
           }
         },
         "globals": {
+          "11.12.0": {
+            "Key": "globals@11.12.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
+          "14.0.0": {
+            "Key": "globals@14.0.0",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          },
           "15.15.0": {
             "Key": "globals@15.15.0",
             "Requires": null,
@@ -4458,6 +4424,22 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "9.0.5": {
+            "Key": "minimatch@9.0.5",
+            "Requires": {
+              "brace-expansion": "^2.0.1"
+            },
+            "Dependencies": {
+              "brace-expansion": "2.0.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "ms": {
@@ -5000,6 +4982,18 @@
             "Direct": false,
             "Transitive": true,
             "Licenses": null
+          },
+          "7.7.1": {
+            "Key": "semver@7.7.1",
+            "Requires": null,
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": true,
+            "Prod": false,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
           }
         },
         "set-cookie-parser": {
@@ -5434,26 +5428,6 @@
       "start": {
         "dependencies": [
           {
-            "name": "jszip",
-            "version": "3.10.1",
-            "constraint": "^3.10.1"
-          },
-          {
-            "name": "react",
-            "version": "19.0.0",
-            "constraint": "^19.0.0"
-          },
-          {
-            "name": "tailwindcss",
-            "version": "4.0.14",
-            "constraint": "^4.0.14"
-          },
-          {
-            "name": "uuid",
-            "version": "11.1.0",
-            "constraint": "^11.1.0"
-          },
-          {
             "name": "@headlessui/react",
             "version": "2.2.0",
             "constraint": "^2.2.0"
@@ -5462,11 +5436,6 @@
             "name": "@heroicons/react",
             "version": "2.2.0",
             "constraint": "^2.2.0"
-          },
-          {
-            "name": "@tailwindcss/vite",
-            "version": "4.0.14",
-            "constraint": "^4.0.14"
           },
           {
             "name": "@tanstack/react-query",
@@ -5479,14 +5448,34 @@
             "constraint": "^1.8.4"
           },
           {
-            "name": "react-dom",
+            "name": "react-router-dom",
+            "version": "7.3.0",
+            "constraint": "^7.3.0"
+          },
+          {
+            "name": "@tailwindcss/vite",
+            "version": "4.0.14",
+            "constraint": "^4.0.14"
+          },
+          {
+            "name": "file-saver",
+            "version": "2.0.5",
+            "constraint": "^2.0.5"
+          },
+          {
+            "name": "jszip",
+            "version": "3.10.1",
+            "constraint": "^3.10.1"
+          },
+          {
+            "name": "react",
             "version": "19.0.0",
             "constraint": "^19.0.0"
           },
           {
-            "name": "react-router-dom",
-            "version": "7.3.0",
-            "constraint": "^7.3.0"
+            "name": "react-dom",
+            "version": "19.0.0",
+            "constraint": "^19.0.0"
           },
           {
             "name": "react-toastify",
@@ -5494,21 +5483,31 @@
             "constraint": "^11.0.5"
           },
           {
-            "name": "file-saver",
-            "version": "2.0.5",
-            "constraint": "^2.0.5"
+            "name": "tailwindcss",
+            "version": "4.0.14",
+            "constraint": "^4.0.14"
+          },
+          {
+            "name": "uuid",
+            "version": "11.1.0",
+            "constraint": "^11.1.0"
           }
         ],
         "dev_dependencies": [
           {
+            "name": "typescript-eslint",
+            "version": "8.26.1",
+            "constraint": "^8.24.1"
+          },
+          {
+            "name": "@eslint/js",
+            "version": "9.22.0",
+            "constraint": "^9.21.0"
+          },
+          {
             "name": "@types/file-saver",
             "version": "2.0.7",
             "constraint": "^2.0.7"
-          },
-          {
-            "name": "@types/react",
-            "version": "19.0.10",
-            "constraint": "^19.0.10"
           },
           {
             "name": "@types/react-dom",
@@ -5521,29 +5520,9 @@
             "constraint": "^4.3.4"
           },
           {
-            "name": "globals",
-            "version": "15.15.0",
-            "constraint": "^15.15.0"
-          },
-          {
-            "name": "typescript",
-            "version": "5.7.3",
-            "constraint": "~5.7.2"
-          },
-          {
-            "name": "typescript-eslint",
-            "version": "8.26.1",
-            "constraint": "^8.24.1"
-          },
-          {
             "name": "eslint",
             "version": "9.22.0",
             "constraint": "^9.21.0"
-          },
-          {
-            "name": "eslint-plugin-react-hooks",
-            "version": "5.2.0",
-            "constraint": "^5.1.0"
           },
           {
             "name": "eslint-plugin-react-refresh",
@@ -5556,9 +5535,24 @@
             "constraint": "^6.2.0"
           },
           {
-            "name": "@eslint/js",
-            "version": "9.22.0",
-            "constraint": "^9.21.0"
+            "name": "@types/react",
+            "version": "19.0.10",
+            "constraint": "^19.0.10"
+          },
+          {
+            "name": "eslint-plugin-react-hooks",
+            "version": "5.2.0",
+            "constraint": "^5.1.0"
+          },
+          {
+            "name": "globals",
+            "version": "15.15.0",
+            "constraint": "^15.15.0"
+          },
+          {
+            "name": "typescript",
+            "version": "5.7.3",
+            "constraint": "~5.7.2"
           }
         ]
       }
@@ -5570,9 +5564,9 @@
     "working_directory": "npmv3",
     "package_manager": "NPM",
     "time": {
-      "analysis_start_time": "2025-05-13 18:58:02.901697 +0200 CEST",
-      "analysis_end_time": "2025-05-13 18:58:02.909501 +0200 CEST",
-      "analysis_delta_time": 0.007803833
+      "analysis_start_time": "2025-08-17 10:40:24.554445 +0200 CEST",
+      "analysis_end_time": "2025-08-17 10:40:24.560448 +0200 CEST",
+      "analysis_delta_time": 0.006002584
     },
     "errors": [],
     "paths": {
