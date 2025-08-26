@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 
 	sbom "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js"
-	"github.com/CodeClarityCE/utility-types/boilerplates"
+	"github.com/CodeClarityCE/utility-boilerplates"
 	codeclarity "github.com/CodeClarityCE/utility-types/codeclarity_db"
 	"github.com/google/uuid"
 )

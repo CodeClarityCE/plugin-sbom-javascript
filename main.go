@@ -4,7 +4,7 @@ import (
 	"log"
 
 	js "github.com/CodeClarityCE/plugin-sbom-javascript/src"
-	"github.com/CodeClarityCE/utility-types/boilerplates"
+	"github.com/CodeClarityCE/utility-boilerplates"
 )
 
 // main is the entry point for the JavaScript SBOM plugin
