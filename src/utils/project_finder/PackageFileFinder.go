@@ -67,13 +67,15 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 			path := filepath.Join(directory, workspace, "package.json")
 			packageFileData, err := os.ReadFile(path)
 			if err != nil {
-				return project, err
+				// Skip missing workspace directories - they may not be present in uploaded projects
+				continue
 			}
 			// Parse the package file
 			var workspacePackageFile types.PackageFile
 			err = json.Unmarshal(packageFileData, &workspacePackageFile)
 			if err != nil {
-				return project, err
+				// Skip workspaces with invalid package.json
+				continue
 			}
 			// Add the workspace package file to the package manifest
 			project.WorkSpacesPackageFileData[workspace] = workspacePackageFile
