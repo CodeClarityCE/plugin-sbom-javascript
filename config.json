@@ -1,6 +1,6 @@
 {
     "name": "js-sbom",
-    "version": "v0.0.24-alpha",
+    "version": "v0.0.25-alpha",
     "image_name": "codeclarityce/plugin-js-sbom",
     "depends_on": [],
     "description": "A plugin to generate a software bill of materials for a JavaScript project",
