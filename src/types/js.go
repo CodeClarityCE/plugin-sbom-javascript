@@ -1,8 +1,34 @@
 package types
 
 import (
+	"encoding/json"
+
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 )
+
+// WorkspacesField accepts the npm/yarn `workspaces` key in either supported
+// shape: an array of path globs (`["packages/*"]`) or the object form
+// (`{"packages": ["packages/*"], "nohoist": [...]}`). The previous `[]string`
+// type failed to unmarshal the object form, rejecting whole monorepos.
+type WorkspacesField []string
+
+func (w *WorkspacesField) UnmarshalJSON(data []byte) error {
+	var arr []string
+	if err := json.Unmarshal(data, &arr); err == nil {
+		*w = arr
+		return nil
+	}
+	var obj struct {
+		Packages []string `json:"packages"`
+	}
+	if err := json.Unmarshal(data, &obj); err == nil {
+		*w = obj.Packages
+		return nil
+	}
+	// Unknown shape — treat as no workspaces rather than failing the whole parse.
+	*w = nil
+	return nil
+}
 
 type PackageFile struct {
 	Name                 string            `json:"name,omitempty"`
@@ -14,7 +40,7 @@ type PackageFile struct {
 	PeerDependencies     map[string]string `json:"peerDependencies,omitempty"`
 	BundleDependencies   []string          `json:"bundleDependencies,omitempty"`
 	BundledDependencies  []string          `json:"bundledDependencies,omitempty"`
-	WorkSpaces           []string          `json:"workspaces"`
+	WorkSpaces           WorkspacesField   `json:"workspaces"`
 }
 
 type ProjectInformation struct {

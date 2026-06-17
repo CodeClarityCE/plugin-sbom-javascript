@@ -77,25 +77,23 @@ func parseYarnV4(lockFileData []byte) (types.LockFileInformation, error) {
 }
 
 func getYARNLockFileVersion(lockFileData []byte) (types.YarnLockFileVersion, error) {
-	header_byte := make([]byte, 180)
-	copy(header_byte, lockFileData[:180])
-	header := string(header_byte)
+	content := string(lockFileData)
 
-	lines := strings.Split(header, "\n")
-	versionLine := lines[1][len(lines[1])-2:]
-	metaDataVersionLine := strings.TrimSpace(lines[4])
-	version := metaDataVersionLine[len(metaDataVersionLine)-1:]
-
-	switch {
-	case versionLine == "v1":
+	// Classic Yarn v1 lockfiles always carry this comment in the header.
+	if strings.Contains(content, "yarn lockfile v1") {
 		return types.YarnV1, nil
-	case version == "4":
-		return types.YarnV2, nil
-	case version == "6":
-		return types.YarnV3, nil
-	case version == "8":
-		return types.YarnV4, nil
-	default:
-		return types.YarnV1, errors.New("unsupported yarn lock file version")
 	}
+
+	// Yarn Berry (v2+) lockfiles are YAML and always start with a `__metadata:`
+	// block carrying a `version:` cache-key. That cache-key has churned across
+	// releases (4, 5, 6, 7, 8, ...) and does NOT map 1:1 to the Yarn major
+	// version, so keying off its exact value is fragile (the previous logic only
+	// recognised 4/6/8 and rejected everything else). The V2/V3/V4 parsers are
+	// identical apart from their generated type name, so route every Berry
+	// lockfile through the V4 path — detect Berry structurally, not by number.
+	if strings.Contains(content, "__metadata:") {
+		return types.YarnV4, nil
+	}
+
+	return types.YarnV1, errors.New("unsupported yarn lock file version")
 }
