@@ -1,0 +1,170 @@
+{
+  "workspaces": {
+    ".": {
+      "dependencies": {
+        "ajv": {
+          "6.10.2": {
+            "Key": "ajv@6.10.2",
+            "Requires": {
+              "fast-deep-equal": "2.0.1",
+              "fast-json-stable-stringify": "2.0.0",
+              "json-schema-traverse": "0.4.1",
+              "uri-js": "4.2.2"
+            },
+            "Dependencies": {
+              "fast-deep-equal": "2.0.1",
+              "fast-json-stable-stringify": "2.0.0",
+              "json-schema-traverse": "0.4.1",
+              "uri-js": "4.2.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Prod": true,
+            "Direct": true,
+            "Transitive": true,
+            "Licenses": null
+          }
+        },
+        "ajv-keywords": {
+          "3.4.1": {
+            "Key": "ajv-keywords@3.4.1",
+            "Requires": {
+              "ajv": "6.10.2"
+            },
+            "Dependencies": {
+              "ajv": "6.10.2"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Prod": true,
+            "Direct": true,
+            "Transitive": false,
+            "Licenses": null
+          }
+        },
+        "fast-deep-equal": {
+          "2.0.1": {
+            "Key": "fast-deep-equal@2.0.1",
+            "Requires": {},
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Prod": true,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          }
+        },
+        "fast-json-stable-stringify": {
+          "2.0.0": {
+            "Key": "fast-json-stable-stringify@2.0.0",
+            "Requires": {},
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Prod": true,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          }
+        },
+        "json-schema-traverse": {
+          "0.4.1": {
+            "Key": "json-schema-traverse@0.4.1",
+            "Requires": {},
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Prod": true,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          }
+        },
+        "punycode": {
+          "2.1.1": {
+            "Key": "punycode@2.1.1",
+            "Requires": {},
+            "Dependencies": {},
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Prod": true,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          }
+        },
+        "uri-js": {
+          "4.2.2": {
+            "Key": "uri-js@4.2.2",
+            "Requires": {
+              "punycode": "2.1.1"
+            },
+            "Dependencies": {
+              "punycode": "2.1.1"
+            },
+            "Optional": false,
+            "Bundled": false,
+            "Dev": false,
+            "Prod": true,
+            "Direct": false,
+            "Transitive": true,
+            "Licenses": null
+          }
+        }
+      },
+      "start": {
+        "dependencies": [
+          {
+            "name": "ajv",
+            "version": "6.10.2",
+            "constraint": "^6.10.2"
+          },
+          {
+            "name": "ajv-keywords",
+            "version": "3.4.1",
+            "constraint": "^3.4.1"
+          }
+        ],
+        "dev_dependencies": null
+      }
+    }
+  },
+  "analysis_info": {
+    "status": "success",
+    "project_name": "with-peer",
+    "working_directory": "pnpmv6",
+    "package_manager": "PNPM",
+    "time": {
+      "analysis_start_time": "2026-06-19 20:20:48.711179 +0200 CEST",
+      "analysis_end_time": "2026-06-19 20:20:48.711367 +0200 CEST",
+      "analysis_delta_time": 0.000188667
+    },
+    "errors": [],
+    "paths": {
+      "lock_file_path": "pnpmv6/pnpm-lock.yaml",
+      "package_file_path": "pnpmv6/package.json",
+      "work_space_package_file_paths": {
+        ".": "pnpmv6/package.json"
+      },
+      "relative_lock_file_path": "pnpmv6/pnpm-lock.yaml",
+      "relative_package_file_path": "pnpmv6/package.json"
+    },
+    "workspaces": {
+      "default_workspace_name": ".",
+      "self_managed_workspace_name": "..",
+      "work_spaces_used": false
+    },
+    "extra": {
+      "version_seperator": "@",
+      "import_path_seperator": " \u003e ",
+      "lock_file_version": 6
+    }
+  }
+}
