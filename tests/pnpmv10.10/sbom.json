@@ -5581,7 +5581,7 @@
               "@babel/core": "7.26.10",
               "@svgr/babel-preset": "8.1.0",
               "camelcase": "6.3.0",
-              "cosmiconfig": "6.0.0",
+              "cosmiconfig": "8.3.6",
               "snake-case": "3.0.4"
             },
             "Optional": false,
@@ -7030,8 +7030,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -7084,8 +7084,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -7102,10 +7102,10 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
+            "Dev": true,
             "Prod": false,
             "Direct": false,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           }
         },
@@ -10962,8 +10962,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -13718,8 +13718,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -17642,7 +17642,7 @@
               "webpack": "5.99.6"
             },
             "Dependencies": {
-              "cosmiconfig": "6.0.0",
+              "cosmiconfig": "8.3.6",
               "jiti": "1.21.7",
               "postcss": "8.5.3",
               "semver": "7.7.1",
@@ -18808,8 +18808,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -20259,7 +20259,7 @@
               "@types/json-schema": "7.0.15",
               "ajv": "8.17.1",
               "ajv-formats": "2.1.1",
-              "ajv-keywords": "3.5.2"
+              "ajv-keywords": "5.1.0"
             },
             "Optional": false,
             "Bundled": false,
@@ -22171,8 +22171,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -23020,21 +23020,6 @@
       "start": {
         "dependencies": [
           {
-            "name": "react-dom",
-            "version": "19.1.0",
-            "constraint": "^19.0.0"
-          },
-          {
-            "name": "@docusaurus/core",
-            "version": "3.7.0",
-            "constraint": "3.7.0"
-          },
-          {
-            "name": "@docusaurus/preset-classic",
-            "version": "3.7.0",
-            "constraint": "3.7.0"
-          },
-          {
             "name": "@mdx-js/react",
             "version": "3.1.0",
             "constraint": "^3.0.0"
@@ -23058,19 +23043,24 @@
             "name": "react",
             "version": "19.1.0",
             "constraint": "^19.0.0"
-          }
-        ],
-        "dev_dependencies": [
-          {
-            "name": "typescript",
-            "version": "5.6.3",
-            "constraint": "~5.6.2"
           },
           {
-            "name": "@docusaurus/module-type-aliases",
+            "name": "react-dom",
+            "version": "19.1.0",
+            "constraint": "^19.0.0"
+          },
+          {
+            "name": "@docusaurus/core",
             "version": "3.7.0",
             "constraint": "3.7.0"
           },
+          {
+            "name": "@docusaurus/preset-classic",
+            "version": "3.7.0",
+            "constraint": "3.7.0"
+          }
+        ],
+        "dev_dependencies": [
           {
             "name": "@docusaurus/tsconfig",
             "version": "3.7.0",
@@ -23078,6 +23068,16 @@
           },
           {
             "name": "@docusaurus/types",
+            "version": "3.7.0",
+            "constraint": "3.7.0"
+          },
+          {
+            "name": "typescript",
+            "version": "5.6.3",
+            "constraint": "~5.6.2"
+          },
+          {
+            "name": "@docusaurus/module-type-aliases",
             "version": "3.7.0",
             "constraint": "3.7.0"
           }
@@ -23091,9 +23091,9 @@
     "working_directory": "pnpmv10.10",
     "package_manager": "PNPM",
     "time": {
-      "analysis_start_time": "2026-09-08 19:20:32.884010386 +0000 UTC",
-      "analysis_end_time": "2026-09-08 19:20:32.922493302 +0000 UTC",
-      "analysis_delta_time": 0.038483125
+      "analysis_start_time": "2025-08-17 10:40:24.86905 +0200 CEST",
+      "analysis_end_time": "2025-08-17 10:40:24.89964 +0200 CEST",
+      "analysis_delta_time": 0.030590666
     },
     "errors": [],
     "paths": {
