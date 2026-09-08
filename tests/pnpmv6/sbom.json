@@ -142,9 +142,9 @@
     "working_directory": "pnpmv6",
     "package_manager": "PNPM",
     "time": {
-      "analysis_start_time": "2026-06-19 20:20:48.711179 +0200 CEST",
-      "analysis_end_time": "2026-06-19 20:20:48.711367 +0200 CEST",
-      "analysis_delta_time": 0.000188667
+      "analysis_start_time": "2026-09-08 19:20:32.882660969 +0000 UTC",
+      "analysis_end_time": "2026-09-08 19:20:32.883408594 +0000 UTC",
+      "analysis_delta_time": 0.000747708
     },
     "errors": [],
     "paths": {

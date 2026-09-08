@@ -5,7 +5,7 @@ import "time"
 type Results struct {
 	Sbom         []Dependency              `json:"sbom,omitempty"`
 	Tree         map[string]DependencyTree `json:"tree,omitempty"`
-	AnalysisInfo AnalysisInfo              `json:"analysis_info,omitempty"`
+	AnalysisInfo AnalysisInfo              `json:"analysis_info"`
 }
 
 type ImportPathsRep struct {
@@ -36,21 +36,21 @@ type Dependency struct {
 	ImportingTopLevelDependencies []string       `json:"importing_top_level_dependencies,omitempty"`
 	ImportPaths                   [][]string     `json:"import_paths,omitempty"`
 	ImportPathsStrings            []string       `json:"import_paths_strings,omitempty"`
-	ImportPathsRep                ImportPathsRep `json:"import_paths_rep,omitempty"`
+	ImportPathsRep                ImportPathsRep `json:"import_paths_rep"`
 	IsTopLevel                    bool           `json:"is_top_level,omitempty"`
 	DirectDependency              bool           `json:"direct_dependency,omitempty"`
 	TransitiveDependency          bool           `json:"transitive_dependency,omitempty"`
 }
 
 type AnalysisInfo struct {
-	Status            string        `json:"status"`
-	Errors            []interface{} `json:"errors"`
-	DirName           string        `json:"dir_name"`
-	PackageManager    string        `json:"package_manager"`
-	AnalysisStartTime string        `json:"analysis_start_time"`
-	AnalysisEndTime   string        `json:"analysis_end_time"`
-	AnalysisDeltaTime float64       `json:"analysis_delta_time"`
-	DependenciesFound bool          `json:"dependencies_found"`
+	Status            string  `json:"status"`
+	Errors            []any   `json:"errors"`
+	DirName           string  `json:"dir_name"`
+	PackageManager    string  `json:"package_manager"`
+	AnalysisStartTime string  `json:"analysis_start_time"`
+	AnalysisEndTime   string  `json:"analysis_end_time"`
+	AnalysisDeltaTime float64 `json:"analysis_delta_time"`
+	DependenciesFound bool    `json:"dependencies_found"`
 }
 
 type DependencyTree struct {

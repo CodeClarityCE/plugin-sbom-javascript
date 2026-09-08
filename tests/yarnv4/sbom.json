@@ -12,7 +12,7 @@
             },
             "Dependencies": {
               "buffer-more-ints": "1.0.0",
-              "debug": "4.4.0",
+              "debug": "4.3.7",
               "safe-buffer": "5.1.2"
             },
             "Optional": false,
@@ -292,7 +292,7 @@
               "@babel/traverse": "7.26.10",
               "@babel/types": "7.26.10",
               "convert-source-map": "2.0.0",
-              "debug": "4.4.0",
+              "debug": "4.3.7",
               "gensync": "1.0.0-beta.2",
               "json5": "2.2.3",
               "semver": "6.3.1"
@@ -858,7 +858,7 @@
               "@babel/parser": "7.26.10",
               "@babel/template": "7.26.9",
               "@babel/types": "7.26.10",
-              "debug": "4.3.7",
+              "debug": "4.4.0",
               "globals": "11.12.0"
             },
             "Optional": false,
@@ -1214,7 +1214,7 @@
             },
             "Dependencies": {
               "ajv": "6.12.6",
-              "debug": "4.4.0",
+              "debug": "4.3.7",
               "espree": "10.3.0",
               "globals": "14.0.0",
               "ignore": "5.3.2",
@@ -1303,7 +1303,7 @@
               "fast-uri": "npm:^3.0.0"
             },
             "Dependencies": {
-              "ajv": "8.12.0",
+              "ajv": "8.17.1",
               "ajv-formats": "3.0.1",
               "fast-uri": "3.0.6"
             },
@@ -1793,7 +1793,7 @@
             },
             "Dependencies": {
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "chalk": "4.1.2",
               "jest-message-util": "29.7.0",
               "jest-util": "29.7.0",
@@ -1891,7 +1891,7 @@
             "Dependencies": {
               "@jest/fake-timers": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "jest-mock": "29.7.0"
             },
             "Optional": false,
@@ -1955,7 +1955,7 @@
             "Dependencies": {
               "@jest/types": "29.6.3",
               "@sinonjs/fake-timers": "10.3.0",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "jest-message-util": "29.7.0",
               "jest-mock": "29.7.0",
               "jest-util": "29.7.0"
@@ -2029,7 +2029,7 @@
               "@jest/transform": "29.7.0",
               "@jest/types": "29.6.3",
               "@jridgewell/trace-mapping": "0.3.25",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "chalk": "4.1.2",
               "collect-v8-coverage": "1.0.2",
               "exit": "0.1.2",
@@ -2205,7 +2205,7 @@
               "@jest/schemas": "29.6.3",
               "@types/istanbul-lib-coverage": "2.0.6",
               "@types/istanbul-reports": "3.0.4",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "@types/yargs": "17.0.33",
               "chalk": "4.1.2"
             },
@@ -3855,7 +3855,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -3875,7 +3875,7 @@
             },
             "Dependencies": {
               "@types/connect": "3.4.38",
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -3893,7 +3893,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -3925,7 +3925,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -4052,7 +4052,7 @@
               "@types/send": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "@types/qs": "6.9.18",
               "@types/range-parser": "1.2.7",
               "@types/send": "0.17.4"
@@ -4189,12 +4189,12 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -4207,14 +4207,14 @@
             },
             "Dependencies": {
               "@types/ms": "2.1.0",
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
             "Dev": true,
             "Prod": false,
             "Direct": true,
-            "Transitive": true,
+            "Transitive": false,
             "Licenses": null
           }
         },
@@ -4348,7 +4348,7 @@
               "form-data": "npm:^4.0.0"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "form-data": "4.0.2"
             },
             "Optional": false,
@@ -4367,7 +4367,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -4403,7 +4403,7 @@
               "@types/node": "npm:*"
             },
             "Dependencies": {
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -4490,7 +4490,7 @@
               "@types/passport-strategy": "npm:*"
             },
             "Dependencies": {
-              "@types/jsonwebtoken": "9.0.9",
+              "@types/jsonwebtoken": "9.0.7",
               "@types/passport-strategy": "0.2.38"
             },
             "Optional": false,
@@ -4553,7 +4553,7 @@
               "pg-types": "npm:^4.0.1"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "pg-protocol": "1.8.0",
               "pg-types": "4.0.2"
             },
@@ -4631,7 +4631,7 @@
             },
             "Dependencies": {
               "@types/mime": "1.3.5",
-              "@types/node": "22.13.10"
+              "@types/node": "18.19.80"
             },
             "Optional": false,
             "Bundled": false,
@@ -4690,7 +4690,7 @@
             "Dependencies": {
               "@types/cookiejar": "2.1.5",
               "@types/methods": "1.1.4",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "form-data": "4.0.2"
             },
             "Optional": false,
@@ -4845,7 +4845,7 @@
               "@typescript-eslint/types": "8.26.1",
               "@typescript-eslint/typescript-estree": "8.26.1",
               "@typescript-eslint/visitor-keys": "8.26.1",
-              "debug": "4.3.7"
+              "debug": "4.3.6"
             },
             "Optional": false,
             "Bundled": false,
@@ -4930,7 +4930,7 @@
             "Dependencies": {
               "@typescript-eslint/types": "8.26.1",
               "@typescript-eslint/visitor-keys": "8.26.1",
-              "debug": "4.4.0",
+              "debug": "4.3.7",
               "fast-glob": "3.3.3",
               "is-glob": "4.0.3",
               "minimatch": "9.0.5",
@@ -5507,7 +5507,7 @@
               "debug": "npm:4"
             },
             "Dependencies": {
-              "debug": "4.4.0"
+              "debug": "4.3.7"
             },
             "Optional": false,
             "Bundled": false,
@@ -5623,7 +5623,7 @@
               "ajv": "npm:^8.0.0"
             },
             "Dependencies": {
-              "ajv": "8.12.0"
+              "ajv": "8.17.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -5639,7 +5639,7 @@
               "ajv": "npm:^8.0.0"
             },
             "Dependencies": {
-              "ajv": "8.12.0"
+              "ajv": "8.17.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -8592,7 +8592,7 @@
               "safe-buffer": "npm:^5.0.1"
             },
             "Dependencies": {
-              "safe-buffer": "5.1.2"
+              "safe-buffer": "5.2.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -9152,7 +9152,7 @@
               "ajv": "6.12.6",
               "chalk": "4.1.2",
               "cross-spawn": "7.0.6",
-              "debug": "4.4.0",
+              "debug": "4.3.7",
               "escape-string-regexp": "4.0.0",
               "eslint-scope": "8.3.0",
               "eslint-visitor-keys": "4.2.0",
@@ -9814,7 +9814,7 @@
             },
             "Dependencies": {
               "@fastify/merge-json-schemas": "0.2.1",
-              "ajv": "8.12.0",
+              "ajv": "8.17.1",
               "ajv-formats": "3.0.1",
               "fast-uri": "3.0.6",
               "json-schema-ref-resolver": "2.0.1",
@@ -10866,8 +10866,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -11438,7 +11438,7 @@
             },
             "Dependencies": {
               "agent-base": "7.1.3",
-              "debug": "4.4.0"
+              "debug": "4.3.7"
             },
             "Optional": false,
             "Bundled": false,
@@ -11458,7 +11458,7 @@
             },
             "Dependencies": {
               "agent-base": "6.0.2",
-              "debug": "4.4.0"
+              "debug": "4.3.7"
             },
             "Optional": false,
             "Bundled": false,
@@ -11476,7 +11476,7 @@
             },
             "Dependencies": {
               "agent-base": "7.1.3",
-              "debug": "4.4.0"
+              "debug": "4.3.7"
             },
             "Optional": false,
             "Bundled": false,
@@ -12346,7 +12346,7 @@
               "source-map": "npm:^0.6.1"
             },
             "Dependencies": {
-              "debug": "4.4.0",
+              "debug": "4.3.6",
               "istanbul-lib-coverage": "3.2.2",
               "source-map": "0.6.1"
             },
@@ -12424,8 +12424,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -12547,7 +12547,7 @@
               "@jest/expect": "29.7.0",
               "@jest/test-result": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "chalk": "4.1.2",
               "co": "4.6.0",
               "dedent": "1.5.3",
@@ -12801,7 +12801,7 @@
             "Dependencies": {
               "@jest/types": "29.6.3",
               "@types/graceful-fs": "4.1.9",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "anymatch": "3.1.3",
               "fb-watchman": "2.0.2",
               "fsevents": "2.3.3",
@@ -13096,7 +13096,7 @@
               "@jest/test-result": "29.7.0",
               "@jest/transform": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "chalk": "4.1.2",
               "cjs-module-lexer": "1.4.3",
               "collect-v8-coverage": "1.0.2",
@@ -13190,7 +13190,7 @@
             },
             "Dependencies": {
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "chalk": "4.1.2",
               "ci-info": "3.9.0",
               "graceful-fs": "4.2.11",
@@ -13249,7 +13249,7 @@
             "Dependencies": {
               "@jest/test-result": "29.7.0",
               "@jest/types": "29.6.3",
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "ansi-escapes": "4.3.2",
               "chalk": "4.1.2",
               "emittery": "0.13.1",
@@ -13274,7 +13274,7 @@
               "supports-color": "npm:^8.0.0"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "merge-stream": "2.0.0",
               "supports-color": "8.1.1"
             },
@@ -13295,7 +13295,7 @@
               "supports-color": "npm:^8.0.0"
             },
             "Dependencies": {
-              "@types/node": "22.13.10",
+              "@types/node": "18.19.80",
               "jest-util": "29.7.0",
               "merge-stream": "2.0.0",
               "supports-color": "8.1.1"
@@ -13712,7 +13712,7 @@
             },
             "Dependencies": {
               "jwa": "1.4.1",
-              "safe-buffer": "5.1.2"
+              "safe-buffer": "5.2.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -15129,7 +15129,7 @@
             "Dependencies": {
               "@babel/runtime": "7.26.10",
               "chokidar": "3.6.0",
-              "glob": "10.4.5",
+              "glob": "10.3.12",
               "html-minifier": "4.0.0",
               "js-beautify": "1.15.4",
               "lodash": "4.17.21",
@@ -16193,7 +16193,7 @@
             "Dev": false,
             "Prod": true,
             "Direct": true,
-            "Transitive": false,
+            "Transitive": true,
             "Licenses": null
           },
           "6.9.16": {
@@ -16853,8 +16853,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -17836,7 +17836,7 @@
               "fixpack": "4.0.0",
               "get-port": "5.1.1",
               "mailparser": "3.7.2",
-              "nodemailer": "6.9.16",
+              "nodemailer": "6.10.0",
               "open": "7.4.2",
               "p-event": "4.2.0",
               "p-wait-for": "3.2.0",
@@ -18560,7 +18560,7 @@
             },
             "Dependencies": {
               "inherits": "2.0.4",
-              "string_decoder": "1.3.0",
+              "string_decoder": "1.1.1",
               "util-deprecate": "1.0.2"
             },
             "Optional": false,
@@ -18939,7 +18939,7 @@
               "glob": "npm:^10.3.7"
             },
             "Dependencies": {
-              "glob": "10.4.5"
+              "glob": "10.3.12"
             },
             "Optional": false,
             "Bundled": false,
@@ -19063,8 +19063,8 @@
             "Dependencies": {},
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -19181,7 +19181,7 @@
             },
             "Dependencies": {
               "@types/json-schema": "7.0.15",
-              "ajv": "8.12.0",
+              "ajv": "8.17.1",
               "ajv-formats": "2.1.1",
               "ajv-keywords": "5.1.0"
             },
@@ -19282,7 +19282,7 @@
               "statuses": "npm:^2.0.1"
             },
             "Dependencies": {
-              "debug": "4.4.0",
+              "debug": "4.3.7",
               "destroy": "1.2.0",
               "encodeurl": "2.0.0",
               "escape-html": "1.0.3",
@@ -19425,7 +19425,7 @@
             },
             "Dependencies": {
               "inherits": "2.0.4",
-              "safe-buffer": "5.1.2"
+              "safe-buffer": "5.2.1"
             },
             "Optional": false,
             "Bundled": false,
@@ -19712,7 +19712,7 @@
               "accepts": "1.3.8",
               "base64id": "2.0.0",
               "cors": "2.8.5",
-              "debug": "4.3.7",
+              "debug": "4.3.6",
               "engine.io": "6.6.4",
               "socket.io-adapter": "2.5.5",
               "socket.io-parser": "4.2.4"
@@ -19734,7 +19734,7 @@
               "ws": "npm:~8.17.1"
             },
             "Dependencies": {
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "ws": "8.17.1"
             },
             "Optional": false,
@@ -20095,8 +20095,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": false,
-            "Prod": true,
+            "Dev": true,
+            "Prod": false,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -20111,8 +20111,8 @@
             },
             "Optional": false,
             "Bundled": false,
-            "Dev": true,
-            "Prod": false,
+            "Dev": false,
+            "Prod": true,
             "Direct": false,
             "Transitive": true,
             "Licenses": null
@@ -20251,7 +20251,7 @@
             "Dependencies": {
               "component-emitter": "1.3.1",
               "cookiejar": "2.1.4",
-              "debug": "4.3.6",
+              "debug": "4.3.7",
               "fast-safe-stringify": "2.1.1",
               "form-data": "4.0.2",
               "formidable": "3.5.2",
@@ -21006,7 +21006,7 @@
               "app-root-path": "3.1.0",
               "buffer": "6.0.3",
               "dayjs": "1.11.13",
-              "debug": "4.4.0",
+              "debug": "4.3.6",
               "dotenv": "16.4.7",
               "glob": "10.4.5",
               "sha.js": "2.4.11",
@@ -22201,49 +22201,9 @@
       "start": {
         "dependencies": [
           {
-            "name": "@nestjs-modules/mailer",
-            "version": "2.0.2",
-            "constraint": "2.0.2"
-          },
-          {
-            "name": "@nestjs/jwt",
-            "version": "11.0.0",
-            "constraint": "11.0.0"
-          },
-          {
-            "name": "@nestjs/platform-fastify",
+            "name": "@nestjs/common",
             "version": "11.0.11",
             "constraint": "11.0.11"
-          },
-          {
-            "name": "handlebars",
-            "version": "4.7.8",
-            "constraint": "4.7.8"
-          },
-          {
-            "name": "moment",
-            "version": "2.30.1",
-            "constraint": "2.30.1"
-          },
-          {
-            "name": "reflect-metadata",
-            "version": "0.2.2",
-            "constraint": "0.2.2"
-          },
-          {
-            "name": "rxjs",
-            "version": "7.8.2",
-            "constraint": "7.8.2"
-          },
-          {
-            "name": "typeorm",
-            "version": "0.3.21",
-            "constraint": "0.3.21"
-          },
-          {
-            "name": "fastify",
-            "version": "5.2.1",
-            "constraint": "5.2.1"
           },
           {
             "name": "@nestjs/config",
@@ -22251,9 +22211,24 @@
             "constraint": "4.0.1"
           },
           {
-            "name": "@nestjs/passport",
-            "version": "11.0.5",
-            "constraint": "11.0.5"
+            "name": "dotenv",
+            "version": "16.4.7",
+            "constraint": "16.4.7"
+          },
+          {
+            "name": "jsonwebtoken",
+            "version": "9.0.2",
+            "constraint": "9.0.2"
+          },
+          {
+            "name": "node-fetch",
+            "version": "3.3.2",
+            "constraint": "3.3.2"
+          },
+          {
+            "name": "util",
+            "version": "0.12.5",
+            "constraint": "0.12.5"
           },
           {
             "name": "@nestjs/platform-socket.io",
@@ -22261,44 +22236,34 @@
             "constraint": "11.0.11"
           },
           {
-            "name": "@nestjs/swagger",
-            "version": "11.0.6",
-            "constraint": "11.0.6"
-          },
-          {
             "name": "@nestjs/typeorm",
             "version": "11.0.0",
             "constraint": "11.0.0"
           },
           {
-            "name": "compare-versions",
-            "version": "6.1.1",
-            "constraint": "6.1.1"
+            "name": "pg",
+            "version": "8.14.0",
+            "constraint": "8.14.0"
           },
           {
-            "name": "dotenv",
-            "version": "16.4.7",
-            "constraint": "16.4.7"
+            "name": "semver",
+            "version": "7.7.1",
+            "constraint": "7.7.1"
           },
           {
-            "name": "class-validator",
-            "version": "0.14.1",
-            "constraint": "0.14.1"
+            "name": "@nestjs/swagger",
+            "version": "11.0.6",
+            "constraint": "11.0.6"
           },
           {
-            "name": "@nestjs/common",
-            "version": "11.0.11",
-            "constraint": "11.0.11"
+            "name": "axios",
+            "version": "1.8.3",
+            "constraint": "1.8.3"
           },
           {
-            "name": "@nestjs/platform-express",
-            "version": "11.0.11",
-            "constraint": "11.0.11"
-          },
-          {
-            "name": "class-transformer",
-            "version": "0.5.1",
-            "constraint": "0.5.1"
+            "name": "lodash",
+            "version": "4.17.21",
+            "constraint": "4.17.21"
           },
           {
             "name": "ms",
@@ -22306,14 +22271,14 @@
             "constraint": "2.1.3"
           },
           {
-            "name": "octokit",
-            "version": "4.1.2",
-            "constraint": "4.1.2"
+            "name": "handlebars",
+            "version": "4.7.8",
+            "constraint": "4.7.8"
           },
           {
-            "name": "pg",
-            "version": "8.14.0",
-            "constraint": "8.14.0"
+            "name": "@fastify/compress",
+            "version": "8.0.1",
+            "constraint": "8.0.1"
           },
           {
             "name": "@nest-lab/fastify-multer",
@@ -22326,79 +22291,9 @@
             "constraint": "11.0.11"
           },
           {
-            "name": "@types/passport-oauth2",
-            "version": "1.4.17",
-            "constraint": "1.4.17"
-          },
-          {
-            "name": "bcrypt",
-            "version": "5.1.1",
-            "constraint": "5.1.1"
-          },
-          {
-            "name": "jsonwebtoken",
-            "version": "9.0.2",
-            "constraint": "9.0.2"
-          },
-          {
-            "name": "magic-bytes.js",
-            "version": "1.10.0",
-            "constraint": "1.10.0"
-          },
-          {
-            "name": "passport-oauth2",
-            "version": "1.8.0",
-            "constraint": "1.8.0"
-          },
-          {
-            "name": "passport-jwt",
-            "version": "4.0.1",
-            "constraint": "4.0.1"
-          },
-          {
-            "name": "semver",
-            "version": "7.7.1",
-            "constraint": "7.7.1"
-          },
-          {
-            "name": "socket.io",
-            "version": "4.8.1",
-            "constraint": "4.8.1"
-          },
-          {
-            "name": "@nestjs/axios",
-            "version": "4.0.0",
-            "constraint": "4.0.0"
-          },
-          {
-            "name": "node-fetch",
-            "version": "3.3.2",
-            "constraint": "3.3.2"
-          },
-          {
-            "name": "openai",
-            "version": "4.87.3",
-            "constraint": "4.87.3"
-          },
-          {
-            "name": "passport",
-            "version": "0.7.0",
-            "constraint": "0.7.0"
-          },
-          {
-            "name": "@fastify/compress",
-            "version": "8.0.1",
-            "constraint": "8.0.1"
-          },
-          {
-            "name": "@fastify/multipart",
-            "version": "9.0.3",
-            "constraint": "9.0.3"
-          },
-          {
-            "name": "@fastify/static",
-            "version": "8.1.1",
-            "constraint": "8.1.1"
+            "name": "@nestjs/jwt",
+            "version": "11.0.0",
+            "constraint": "11.0.0"
           },
           {
             "name": "@nestjs/websockets",
@@ -22406,9 +22301,24 @@
             "constraint": "11.0.11"
           },
           {
-            "name": "axios",
-            "version": "1.8.3",
-            "constraint": "1.8.3"
+            "name": "amqplib",
+            "version": "0.10.5",
+            "constraint": "0.10.5"
+          },
+          {
+            "name": "tslib",
+            "version": "2.8.1",
+            "constraint": "2.8.1"
+          },
+          {
+            "name": "@nestjs/platform-express",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
+          },
+          {
+            "name": "@nestjs/platform-fastify",
+            "version": "11.0.11",
+            "constraint": "11.0.11"
           },
           {
             "name": "nodemailer",
@@ -22416,9 +22326,9 @@
             "constraint": "6.10.0"
           },
           {
-            "name": "util",
-            "version": "0.12.5",
-            "constraint": "0.12.5"
+            "name": "reflect-metadata",
+            "version": "0.2.2",
+            "constraint": "0.2.2"
           },
           {
             "name": "uuid",
@@ -22426,14 +22336,49 @@
             "constraint": "11.1.0"
           },
           {
-            "name": "amqplib",
-            "version": "0.10.5",
-            "constraint": "0.10.5"
+            "name": "@nestjs/passport",
+            "version": "11.0.5",
+            "constraint": "11.0.5"
           },
           {
-            "name": "lodash",
-            "version": "4.17.21",
-            "constraint": "4.17.21"
+            "name": "class-transformer",
+            "version": "0.5.1",
+            "constraint": "0.5.1"
+          },
+          {
+            "name": "class-validator",
+            "version": "0.14.1",
+            "constraint": "0.14.1"
+          },
+          {
+            "name": "openai",
+            "version": "4.87.3",
+            "constraint": "4.87.3"
+          },
+          {
+            "name": "typeorm",
+            "version": "0.3.21",
+            "constraint": "0.3.21"
+          },
+          {
+            "name": "@fastify/multipart",
+            "version": "9.0.3",
+            "constraint": "9.0.3"
+          },
+          {
+            "name": "@types/passport-oauth2",
+            "version": "1.4.17",
+            "constraint": "1.4.17"
+          },
+          {
+            "name": "compare-versions",
+            "version": "6.1.1",
+            "constraint": "6.1.1"
+          },
+          {
+            "name": "fastify",
+            "version": "5.2.1",
+            "constraint": "5.2.1"
           },
           {
             "name": "pako",
@@ -22441,21 +22386,136 @@
             "constraint": "2.1.0"
           },
           {
-            "name": "tslib",
-            "version": "2.8.1",
-            "constraint": "2.8.1"
+            "name": "passport-jwt",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+          },
+          {
+            "name": "rxjs",
+            "version": "7.8.2",
+            "constraint": "7.8.2"
+          },
+          {
+            "name": "@fastify/static",
+            "version": "8.1.1",
+            "constraint": "8.1.1"
+          },
+          {
+            "name": "bcrypt",
+            "version": "5.1.1",
+            "constraint": "5.1.1"
+          },
+          {
+            "name": "magic-bytes.js",
+            "version": "1.10.0",
+            "constraint": "1.10.0"
+          },
+          {
+            "name": "moment",
+            "version": "2.30.1",
+            "constraint": "2.30.1"
+          },
+          {
+            "name": "octokit",
+            "version": "4.1.2",
+            "constraint": "4.1.2"
+          },
+          {
+            "name": "passport",
+            "version": "0.7.0",
+            "constraint": "0.7.0"
+          },
+          {
+            "name": "passport-oauth2",
+            "version": "1.8.0",
+            "constraint": "1.8.0"
+          },
+          {
+            "name": "socket.io",
+            "version": "4.8.1",
+            "constraint": "4.8.1"
+          },
+          {
+            "name": "@nestjs-modules/mailer",
+            "version": "2.0.2",
+            "constraint": "2.0.2"
+          },
+          {
+            "name": "@nestjs/axios",
+            "version": "4.0.0",
+            "constraint": "4.0.0"
           }
         ],
         "dev_dependencies": [
           {
+            "name": "globals",
+            "version": "16.0.0",
+            "constraint": "16.0.0"
+          },
+          {
+            "name": "source-map-support",
+            "version": "0.5.21",
+            "constraint": "0.5.21"
+          },
+          {
+            "name": "@types/supertest",
+            "version": "6.0.2",
+            "constraint": "6.0.2"
+          },
+          {
+            "name": "ts-node",
+            "version": "10.9.2",
+            "constraint": "10.9.2"
+          },
+          {
+            "name": "tsconfig-paths",
+            "version": "4.2.0",
+            "constraint": "4.2.0"
+          },
+          {
+            "name": "eslint",
+            "version": "9.22.0",
+            "constraint": "9.22.0"
+          },
+          {
+            "name": "supertest",
+            "version": "7.0.0",
+            "constraint": "7.0.0"
+          },
+          {
+            "name": "@types/node",
+            "version": "22.13.10",
+            "constraint": "22.13.10"
+          },
+          {
+            "name": "@types/passport-github2",
+            "version": "1.2.9",
+            "constraint": "1.2.9"
+          },
+          {
+            "name": "eslint-config-prettier",
+            "version": "10.1.1",
+            "constraint": "10.1.1"
+          },
+          {
+            "name": "prettier",
+            "version": "3.5.3",
+            "constraint": "3.5.3"
+          },
+          {
+            "name": "ts-jest",
+            "version": "29.2.6",
+            "constraint": "29.2.6"
+          },
+          {
+            "name": "@rushstack/eslint-patch",
+            "version": "1.11.0",
+            "constraint": "1.11.0"
+          },
+          {
             "name": "@types/amqplib",
             "version": "0.10.7",
             "constraint": "0.10.7"
-          },
-          {
-            "name": "@types/bcrypt",
-            "version": "5.0.2",
-            "constraint": "5.0.2"
           },
           {
             "name": "@types/jest",
@@ -22463,14 +22523,14 @@
             "constraint": "29.5.14"
           },
           {
-            "name": "@types/nodemailer-sendgrid",
-            "version": "1.0.3",
-            "constraint": "1.0.3"
+            "name": "@types/ms",
+            "version": "2.1.0",
+            "constraint": "2.1.0"
           },
           {
-            "name": "@types/pako",
-            "version": "2.0.3",
-            "constraint": "2.0.3"
+            "name": "@types/pg",
+            "version": "8.11.11",
+            "constraint": "8.11.11"
           },
           {
             "name": "eslint-plugin-cypress",
@@ -22483,139 +22543,9 @@
             "constraint": "11.0.11"
           },
           {
-            "name": "@types/lodash",
-            "version": "4.17.16",
-            "constraint": "4.17.16"
-          },
-          {
-            "name": "@types/passport-github2",
-            "version": "1.2.9",
-            "constraint": "1.2.9"
-          },
-          {
-            "name": "ts-node",
-            "version": "10.9.2",
-            "constraint": "10.9.2"
-          },
-          {
-            "name": "@rushstack/eslint-patch",
-            "version": "1.11.0",
-            "constraint": "1.11.0"
-          },
-          {
-            "name": "@types/node",
-            "version": "22.13.10",
-            "constraint": "22.13.10"
-          },
-          {
-            "name": "source-map-support",
-            "version": "0.5.21",
-            "constraint": "0.5.21"
-          },
-          {
-            "name": "supertest",
-            "version": "7.0.0",
-            "constraint": "7.0.0"
-          },
-          {
-            "name": "ts-jest",
-            "version": "29.2.6",
-            "constraint": "29.2.6"
-          },
-          {
-            "name": "@types/ms",
-            "version": "2.1.0",
-            "constraint": "2.1.0"
-          },
-          {
-            "name": "@types/passport-jwt",
-            "version": "4.0.1",
-            "constraint": "4.0.1"
-          },
-          {
-            "name": "@types/pg",
-            "version": "8.11.11",
-            "constraint": "8.11.11"
-          },
-          {
-            "name": "ts-loader",
-            "version": "9.5.2",
-            "constraint": "9.5.2"
-          },
-          {
-            "name": "typescript-eslint",
-            "version": "8.26.1",
-            "constraint": "8.26.1"
-          },
-          {
-            "name": "@types/semver",
-            "version": "7.5.8",
-            "constraint": "7.5.8"
-          },
-          {
-            "name": "globals",
-            "version": "16.0.0",
-            "constraint": "16.0.0"
-          },
-          {
-            "name": "tsconfig-paths",
-            "version": "4.2.0",
-            "constraint": "4.2.0"
-          },
-          {
-            "name": "@nestjs/cli",
-            "version": "10.0.5",
-            "constraint": "10.0.5"
-          },
-          {
             "name": "@types/jsonwebtoken",
             "version": "9.0.9",
             "constraint": "9.0.9"
-          },
-          {
-            "name": "@types/nodemailer",
-            "version": "6.4.17",
-            "constraint": "6.4.17"
-          },
-          {
-            "name": "@types/supertest",
-            "version": "6.0.2",
-            "constraint": "6.0.2"
-          },
-          {
-            "name": "eslint-config-prettier",
-            "version": "10.1.1",
-            "constraint": "10.1.1"
-          },
-          {
-            "name": "jest",
-            "version": "29.7.0",
-            "constraint": "29.7.0"
-          },
-          {
-            "name": "@eslint/js",
-            "version": "9.22.0",
-            "constraint": "9.22.0"
-          },
-          {
-            "name": "@octokit/types",
-            "version": "13.8.0",
-            "constraint": "13.8.0"
-          },
-          {
-            "name": "prettier",
-            "version": "3.5.3",
-            "constraint": "3.5.3"
-          },
-          {
-            "name": "webpack",
-            "version": "5.98.0",
-            "constraint": "5.98.0"
-          },
-          {
-            "name": "@types/express",
-            "version": "5.0.0",
-            "constraint": "5.0.0"
           },
           {
             "name": "@types/uuid",
@@ -22623,14 +22553,49 @@
             "constraint": "10.0.0"
           },
           {
-            "name": "@types/webcrypto",
-            "version": "0.0.30",
-            "constraint": "0.0.30"
+            "name": "jest",
+            "version": "29.7.0",
+            "constraint": "29.7.0"
           },
           {
-            "name": "eslint",
-            "version": "9.22.0",
-            "constraint": "9.22.0"
+            "name": "webpack",
+            "version": "5.98.0",
+            "constraint": "5.98.0"
+          },
+          {
+            "name": "@nestjs/cli",
+            "version": "10.0.5",
+            "constraint": "10.0.5"
+          },
+          {
+            "name": "@types/bcrypt",
+            "version": "5.0.2",
+            "constraint": "5.0.2"
+          },
+          {
+            "name": "@types/express",
+            "version": "5.0.0",
+            "constraint": "5.0.0"
+          },
+          {
+            "name": "@types/lodash",
+            "version": "4.17.16",
+            "constraint": "4.17.16"
+          },
+          {
+            "name": "@types/nodemailer",
+            "version": "6.4.17",
+            "constraint": "6.4.17"
+          },
+          {
+            "name": "@types/pako",
+            "version": "2.0.3",
+            "constraint": "2.0.3"
+          },
+          {
+            "name": "ts-loader",
+            "version": "9.5.2",
+            "constraint": "9.5.2"
           },
           {
             "name": "typescript",
@@ -22638,9 +22603,44 @@
             "constraint": "5.8.2"
           },
           {
+            "name": "@types/nodemailer-sendgrid",
+            "version": "1.0.3",
+            "constraint": "1.0.3"
+          },
+          {
+            "name": "typescript-eslint",
+            "version": "8.26.1",
+            "constraint": "8.26.1"
+          },
+          {
+            "name": "@eslint/js",
+            "version": "9.22.0",
+            "constraint": "9.22.0"
+          },
+          {
             "name": "@nestjs/schematics",
             "version": "11.0.2",
             "constraint": "11.0.2"
+          },
+          {
+            "name": "@octokit/types",
+            "version": "13.8.0",
+            "constraint": "13.8.0"
+          },
+          {
+            "name": "@types/passport-jwt",
+            "version": "4.0.1",
+            "constraint": "4.0.1"
+          },
+          {
+            "name": "@types/semver",
+            "version": "7.5.8",
+            "constraint": "7.5.8"
+          },
+          {
+            "name": "@types/webcrypto",
+            "version": "0.0.30",
+            "constraint": "0.0.30"
           }
         ]
       }
@@ -22652,9 +22652,9 @@
     "working_directory": "yarnv4",
     "package_manager": "YARN",
     "time": {
-      "analysis_start_time": "2025-08-17 10:40:24.595627 +0200 CEST",
-      "analysis_end_time": "2025-08-17 10:40:24.617791 +0200 CEST",
-      "analysis_delta_time": 0.0221635
+      "analysis_start_time": "2026-09-08 19:20:32.466484052 +0000 UTC",
+      "analysis_end_time": "2026-09-08 19:20:32.495074469 +0000 UTC",
+      "analysis_delta_time": 0.028590584
     },
     "errors": [],
     "paths": {

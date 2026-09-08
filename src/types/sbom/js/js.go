@@ -96,8 +96,8 @@ type Time struct {
 	AnalysisDeltaTime float64 `json:"analysis_delta_time"`
 }
 
-func ConvertSbomToMap(sbom Output) map[string]interface{} {
-	sbomMap := make(map[string]interface{})
+func ConvertSbomToMap(sbom Output) map[string]any {
+	sbomMap := make(map[string]any)
 	sbomMap["workspaces"] = sbom.WorkSpaces
 	sbomMap["analysis_info"] = sbom.AnalysisInfo
 	return sbomMap

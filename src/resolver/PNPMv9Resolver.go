@@ -49,7 +49,7 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 
 func cleanName(key string) (string, string) {
 	dependency_name := strings.Replace(key, "node_modules/", "", 1)
-	dependency_name_version := strings.Split(dependency_name, "(")[0]
+	dependency_name_version, _, _ := strings.Cut(dependency_name, "(")
 	dependency_name_version_splitted := strings.Split(dependency_name_version, "@")
 	dependency_version := dependency_name_version_splitted[len(dependency_name_version_splitted)-1]
 	dependency_name = strings.Replace(dependency_name_version, "@"+dependency_version, "", -1)
