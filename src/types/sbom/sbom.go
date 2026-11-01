@@ -58,8 +58,8 @@ type DependencyTree struct {
 	Key  string `json:"key"`
 	// Version string
 
-	Data Dependency `json:"_"`
+	Data Dependency `json:"-"`
 
 	Children []DependencyTree `json:"dependencies"`
-	Parents  []DependencyTree `json:"_"`
+	Parents  []DependencyTree `json:"-"`
 }
