@@ -8,6 +8,8 @@ services:
         - PLUGINNAME=js-sbom
     image: codeclarityce/js-sbom-dev:latest
     restart: always
+    deploy:
+      replicas: 4
     volumes:
       - ../../backend:/codeclarity
       - ../../private:/private

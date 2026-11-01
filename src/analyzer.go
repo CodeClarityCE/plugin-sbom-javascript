@@ -2,6 +2,7 @@ package js
 
 import (
 	"log"
+	"maps"
 	"os"
 	"path/filepath"
 
@@ -82,9 +83,7 @@ func (j *JSSBOMAnalyzer) ConvertToMap(output boilerplates.SBOMOutput) map[string
 
 		// Convert map[string]interface{} to map[string]any
 		converted := make(map[string]any)
-		for k, v := range result {
-			converted[k] = v
-		}
+		maps.Copy(converted, result)
 		return converted
 	}
 	return map[string]any{}

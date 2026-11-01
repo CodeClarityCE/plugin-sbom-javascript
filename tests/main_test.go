@@ -97,6 +97,28 @@ func TestCreateYarnWorkspace(t *testing.T) {
 	writeJSON(out, "./yarn_workspace/sbom.json")
 }
 
+func TestCreatePNPMv5(t *testing.T) {
+	out := plugin.Start("./pnpmv5", uuid.UUID{})
+
+	// Assert the expected values
+	assert.NotNil(t, out)
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	assert.NotEmpty(t, out.WorkSpaces)
+
+	writeJSON(out, "./pnpmv5/sbom.json")
+}
+
+func TestCreatePNPMv6(t *testing.T) {
+	out := plugin.Start("./pnpmv6", uuid.UUID{})
+
+	// Assert the expected values
+	assert.NotNil(t, out)
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	assert.NotEmpty(t, out.WorkSpaces)
+
+	writeJSON(out, "./pnpmv6/sbom.json")
+}
+
 func TestCreatePNPMv10_10(t *testing.T) {
 	out := plugin.Start("./pnpmv10.10", uuid.UUID{})
 

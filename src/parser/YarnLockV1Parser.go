@@ -86,7 +86,7 @@ type _Tokenizer struct {
 	tokens      []_Token
 }
 
-func (t *_Tokenizer) buildToken(tt _TokenKind, value interface{}) {
+func (t *_Tokenizer) buildToken(tt _TokenKind, value any) {
 	tk := _Token{
 		line:  t.line,
 		col:   t.col,
@@ -264,8 +264,8 @@ func (p *_Parser) unexpected(msg string) {
 	}
 }
 
-func (p *_Parser) parse(indent int) interface{} {
-	obj := map[_TokenValue]interface{}{}
+func (p *_Parser) parse(indent int) any {
+	obj := map[_TokenValue]any{}
 	for {
 		propToken := p.token
 		if propToken.kind == _TokenNewLine {

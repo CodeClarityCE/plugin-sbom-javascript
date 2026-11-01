@@ -1,13 +1,11 @@
 package resolver
 
 import (
-	"log"
 	"strings"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	packageManager "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/schemas"
-	semver "github.com/CodeClarityCE/utility-node-semver"
 )
 
 func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, error) {
@@ -44,41 +42,14 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 		}
 	}
 
-	for _, dependency := range LockFileInformation.Dependencies {
-		for _, version := range dependency {
-			for requiredName, requiredConstraint := range version.Requires {
-				requiredConstraint = strings.Replace(requiredConstraint, "npm:", "", 1)
-				// If the version required is latest, we replace by a wildcard
-				if requiredConstraint == "latest" {
-					requiredConstraint = "*"
-				}
-				requiredConstraintSemver, err := semver.ParseConstraint(requiredConstraint)
-				if err != nil {
-					log.Println("Cannot parse constraint ", requiredConstraint)
-					requiredConstraintSemver, _ = semver.ParseConstraint("*")
-				}
-				if requiredDependency, dependencyAlreadyPresent := LockFileInformation.Dependencies[requiredName]; dependencyAlreadyPresent {
-					for requiredVersion := range requiredDependency {
-						requiredVersionSemver, err := semver.ParseSemver(requiredVersion)
-						if err != nil {
-							log.Println("Cannot parse semver ", requiredVersion)
-							continue
-						}
-						if semver.Satisfies(requiredVersionSemver, requiredConstraintSemver, false) {
-							version.Dependencies[requiredName] = requiredVersion
-						}
-					}
-				}
-			}
-		}
-	}
+	resolvePNPMTransitives(LockFileInformation)
 
 	return LockFileInformation, nil
 }
 
 func cleanName(key string) (string, string) {
 	dependency_name := strings.Replace(key, "node_modules/", "", 1)
-	dependency_name_version := strings.Split(dependency_name, "(")[0]
+	dependency_name_version, _, _ := strings.Cut(dependency_name, "(")
 	dependency_name_version_splitted := strings.Split(dependency_name_version, "@")
 	dependency_version := dependency_name_version_splitted[len(dependency_name_version_splitted)-1]
 	dependency_name = strings.Replace(dependency_name_version, "@"+dependency_version, "", -1)
