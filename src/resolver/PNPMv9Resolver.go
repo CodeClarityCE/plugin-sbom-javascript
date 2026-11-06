@@ -33,15 +33,19 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 		name, dependency_version := cleanName(dependency_name)
 
 		// Drop the peer suffix: "8.3.6(typescript@5.6.3)" becomes "8.3.6".
-		requires := make(map[string]string, len(dependency.Dependencies))
+		requires := make(map[string]string, len(dependency.Dependencies)+len(dependency.OptionalDependencies))
 		for depName, depVersion := range dependency.Dependencies {
+			requires[depName] = stripPeerSuffixV6(depVersion)
+		}
+		// Optional dependencies count as dependencies too.
+		for depName, depVersion := range dependency.OptionalDependencies {
 			requires[depName] = stripPeerSuffixV6(depVersion)
 		}
 
 		resolvedFilePackage := types.Versions{
 			Requires:     requires,
 			Dependencies: make(map[string]string),
-			Optional:     false,
+			Optional:     dependency.Optional,
 			Bundled:      false,
 			Dev:          false,
 			Scoped:       false,

@@ -300,3 +300,14 @@ func TestCreateNPMv3NpmAliasResolvesToRealPackage(t *testing.T) {
 func TestCreateNPMv1NpmAliasResolvesToRealPackage(t *testing.T) {
 	assertAliasResolvesToRealPackage(t, "./npmv1_npm_alias")
 }
+
+// pnpm v9 optional dependencies must be linked and flagged optional.
+func TestCreatePNPMv9OptionalDependencies(t *testing.T) {
+	out := plugin.Start("./pnpmv9_optional_dependencies", uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	deps := out.WorkSpaces["."].Dependencies
+	assert.Equal(t, map[string]string{"fsevents": "2.3.3"}, deps["a"]["1.0.0"].Dependencies)
+	assert.True(t, deps["fsevents"]["2.3.3"].Optional)
+	assert.True(t, deps["fsevents"]["2.3.3"].Transitive)
+}

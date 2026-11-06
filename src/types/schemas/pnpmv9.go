@@ -1,8 +1,11 @@
 package schemas
 
 type PNPMLockFileV9Dependency struct {
-	Dependencies     map[string]string `yaml:"dependencies,omitempty"`
-	PeerDependencies map[string]string `yaml:"peerDependencies"`
+	Dependencies map[string]string `yaml:"dependencies,omitempty"`
+	// Optional dependencies, and whether this package is optional (snapshots only).
+	OptionalDependencies map[string]string `yaml:"optionalDependencies,omitempty"`
+	Optional             bool              `yaml:"optional,omitempty"`
+	PeerDependencies     map[string]string `yaml:"peerDependencies"`
 	// TODO add PeerDependenciesMeta
 	// TODO add transitivePeerDependencies
 	Version string
