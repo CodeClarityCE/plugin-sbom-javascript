@@ -378,3 +378,14 @@ func TestCreateYarnv4FileDependencyIsDirect(t *testing.T) {
 	assert.True(t, deps["local"]["1.0.0"].Prod)
 	assert.True(t, deps["debug"]["4.3.4"].Transitive)
 }
+
+// npm 7+ installs peers, so they are linked. A missing optional peer is not.
+func TestCreateNPMv3InstalledPeerDependencyIsAnEdge(t *testing.T) {
+	out := plugin.Start("./npmv3_peer_dependencies", uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	deps := out.WorkSpaces["."].Dependencies
+	assert.Equal(t, map[string]string{"react": "16.14.0"}, deps["a"]["1.0.0"].Dependencies)
+	assert.True(t, deps["react"]["16.14.0"].Transitive)
+	assert.True(t, deps["react"]["16.14.0"].Dev)
+}

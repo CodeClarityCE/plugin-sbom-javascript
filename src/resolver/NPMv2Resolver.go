@@ -23,6 +23,8 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 	}
 	sort.Strings(paths)
 	installPath := map[string]map[string]string{}
+	// peers holds the peerDependencies of each package.
+	peers := map[string]map[string]map[string]string{}
 
 	for _, dependency_name := range paths {
 		dependency := lockFile.Packages[dependency_name]
@@ -47,6 +49,12 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		}
 		if _, seen := installPath[dependency_name][dependency.Version]; !seen {
 			installPath[dependency_name][dependency.Version] = path
+			if len(dependency.PeerDependencies) > 0 {
+				if peers[dependency_name] == nil {
+					peers[dependency_name] = map[string]map[string]string{}
+				}
+				peers[dependency_name][dependency.Version] = dependency.PeerDependencies
+			}
 		}
 		if dep, dependency_already_present := LockFileInformation.Dependencies[dependency_name]; dependency_already_present {
 			if _, versiondependency_already_present := dep[dependency.Version]; !versiondependency_already_present {
@@ -74,6 +82,25 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 				}
 				if realName, resolved, ok := resolveRequirement(LockFileInformation.Dependencies, requiredName, version.Requires[requiredName], nil); ok {
 					edges.set(requiredName, realName, resolved)
+				}
+			}
+			// npm 7+ installs peer dependencies, so link to them too.
+			// Only link peers npm actually installed.
+			for _, peerName := range sortedRequires(peers[name][versionKey]) {
+				if _, declared := version.Requires[peerName]; declared {
+					continue
+				}
+				path := npmInstallLookup(lockFile.Packages, from, peerName)
+				if path == "" {
+					continue
+				}
+				installed := lockFile.Packages[path]
+				realName := npmV2PackageName(peerName, installed)
+				if _, set := version.Dependencies[realName]; set {
+					continue
+				}
+				if _, inLockfile := LockFileInformation.Dependencies[realName][installed.Version]; inLockfile {
+					version.Dependencies[realName] = installed.Version
 				}
 			}
 		}
