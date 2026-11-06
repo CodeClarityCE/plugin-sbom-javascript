@@ -367,3 +367,14 @@ func TestCreateNPMv3OptionalDependencyIsAnEdge(t *testing.T) {
 func TestCreateNPMv1OptionalDependencyIsAnEdge(t *testing.T) {
 	assertOptionalDependencyIsAnEdge(t, "./npmv1_optional_dependencies")
 }
+
+// Yarn 2+ adds "::locator=..." to file: keys. The package must still be direct.
+func TestCreateYarnv4FileDependencyIsDirect(t *testing.T) {
+	out := plugin.Start("./yarnv4_file_dependency", uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	deps := out.WorkSpaces["."].Dependencies
+	assert.True(t, deps["local"]["1.0.0"].Direct)
+	assert.True(t, deps["local"]["1.0.0"].Prod)
+	assert.True(t, deps["debug"]["4.3.4"].Transitive)
+}

@@ -1,0 +1,25 @@
+__metadata:
+  version: 8
+  cacheKey: 10c0
+
+"debug@npm:^4.1.0":
+  version: 4.3.4
+  resolution: "debug@npm:4.3.4"
+  languageName: node
+  linkType: hard
+
+"local@file:local/::locator=root%40workspace%3A.":
+  version: 1.0.0
+  resolution: "local@file:local/#local/::hash=1b51bb&locator=root%40workspace%3A."
+  dependencies:
+    debug: "npm:^4.1.0"
+  languageName: node
+  linkType: hard
+
+"root@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "root@workspace:."
+  dependencies:
+    local: "file:local/"
+  languageName: unknown
+  linkType: soft

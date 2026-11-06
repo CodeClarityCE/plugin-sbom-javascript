@@ -32,6 +32,9 @@ func splitYarnSpecifier(specifier string) (string, string) {
 		return specifier, ""
 	}
 	name, constraint := specifier[:at], strings.Replace(specifier[at+1:], "npm:", "", 1)
+	// Yarn 2+ adds "::locator=..." after file:, link: and portal: ranges.
+	// package.json does not, so remove it.
+	constraint, _, _ = strings.Cut(constraint, "::")
 	if realName, aliasRange, isAlias := splitNpmAlias(constraint); isAlias {
 		return realName, aliasRange
 	}
