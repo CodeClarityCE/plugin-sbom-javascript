@@ -29,6 +29,8 @@ func ResolveNPMV1(lockFile schemas.NPMLockFileV1) (types.LockFileInformation, er
 
 	for _, path := range paths {
 		dependency := flattenedDependencies[path]
+		// Aliases store the real package in the version: "npm:string-width@4.2.3".
+		dependency.Name, dependency.Version = npmV1RealPackage(dependency.Name, dependency.Version)
 		if installPath[dependency.Name] == nil {
 			installPath[dependency.Name] = map[string]string{}
 		}
@@ -57,20 +59,18 @@ func ResolveNPMV1(lockFile schemas.NPMLockFileV1) (types.LockFileInformation, er
 	for name, dependency := range LockFileInformation.Dependencies {
 		for versionKey, version := range dependency {
 			from := installPath[name][versionKey]
-			for requiredName, requiredConstraint := range version.Requires {
-				requiredDependency, present := LockFileInformation.Dependencies[requiredName]
-				if !present {
-					continue
-				}
+			edges := newEdgeSetter(version.Dependencies)
+			for _, requiredName := range sortedRequires(version.Requires) {
+				// Use the copy Node would load. For an alias, link to the real package.
 				if installed, ok := flattenedDependencies[npmV1NestedLookup(flattenedDependencies, from, requiredName)]; ok {
-					if _, inLockfile := requiredDependency[installed.Version]; inLockfile {
-						version.Dependencies[requiredName] = installed.Version
+					realName, realVersion := npmV1RealPackage(requiredName, installed.Version)
+					if _, inLockfile := LockFileInformation.Dependencies[realName][realVersion]; inLockfile {
+						edges.set(requiredName, realName, realVersion)
 						continue
 					}
 				}
-				constraint := strings.Replace(requiredConstraint, "npm:", "", 1)
-				if best, ok := highestSatisfying(requiredDependency, constraint); ok {
-					version.Dependencies[requiredName] = best
+				if realName, resolved, ok := resolveRequirement(LockFileInformation.Dependencies, requiredName, version.Requires[requiredName], nil); ok {
+					edges.set(requiredName, realName, resolved)
 				}
 			}
 		}
@@ -114,4 +114,15 @@ func npmV1NestedLookup(flattened map[string]schemas.NPMLockFileV1Dependency, fro
 			dir = dir[:idx]
 		}
 	}
+}
+
+// npmV1RealPackage turns an alias version ("npm:string-width@4.2.3")
+// into the real name and version.
+func npmV1RealPackage(installedAs, version string) (string, string) {
+	if strings.HasPrefix(version, "npm:") {
+		if realName, realVersion, ok := splitNpmAlias(version); ok {
+			return realName, realVersion
+		}
+	}
+	return installedAs, version
 }

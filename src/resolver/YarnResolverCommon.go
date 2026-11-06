@@ -19,35 +19,37 @@ func yarnSpecifiers(entryKey string, version string, specifiers map[string]strin
 }
 
 func normaliseYarnSpecifier(specifier string) string {
-	// The separator is the last "@" that is not the scope marker at index 0.
-	at := strings.LastIndex(specifier, "@")
+	name, constraint := splitYarnSpecifier(specifier)
+	return name + "@" + constraint
+}
+
+// splitYarnSpecifier splits "name@range" into the real name and range.
+// Aliases are followed: "x-cjs@npm:x@^4.2.0" gives x and ^4.2.0.
+func splitYarnSpecifier(specifier string) (string, string) {
+	// Split on the first "@" that is not a scope prefix.
+	at := strings.Index(specifier[1:], "@") + 1
 	if at <= 0 {
-		return specifier
+		return specifier, ""
 	}
-	return specifier[:at] + "@" + strings.Replace(specifier[at+1:], "npm:", "", 1)
+	name, constraint := specifier[:at], strings.Replace(specifier[at+1:], "npm:", "", 1)
+	if realName, aliasRange, isAlias := splitNpmAlias(constraint); isAlias {
+		return realName, aliasRange
+	}
+	return name, constraint
+}
+
+// yarnEntryName returns an entry's real package name, following aliases.
+func yarnEntryName(entryKey string) string {
+	first, _, _ := strings.Cut(entryKey, ",")
+	name, _ := splitYarnSpecifier(strings.Trim(strings.TrimSpace(first), `"`))
+	return name
 }
 
 // resolveYarnTransitives links each package to the versions it depends on,
 // using the version the lockfile recorded for each range.
 func resolveYarnTransitives(lockFileInformation types.LockFileInformation, specifiers map[string]string) {
-	for _, dependency := range lockFileInformation.Dependencies {
-		for _, version := range dependency {
-			for requiredName, requiredConstraint := range version.Requires {
-				requiredConstraint = strings.Replace(requiredConstraint, "npm:", "", 1)
-				requiredDependency, present := lockFileInformation.Dependencies[requiredName]
-				if !present {
-					continue
-				}
-				if resolved, ok := specifiers[requiredName+"@"+requiredConstraint]; ok {
-					if _, inLockfile := requiredDependency[resolved]; inLockfile {
-						version.Dependencies[requiredName] = resolved
-						continue
-					}
-				}
-				if best, ok := highestSatisfying(requiredDependency, requiredConstraint); ok {
-					version.Dependencies[requiredName] = best
-				}
-			}
-		}
-	}
+	fillDependencies(lockFileInformation.Dependencies, func(name, constraint string) (string, bool) {
+		resolved, ok := specifiers[name+"@"+constraint]
+		return resolved, ok
+	})
 }

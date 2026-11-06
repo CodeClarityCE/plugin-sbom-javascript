@@ -1,8 +1,6 @@
 package resolver
 
 import (
-	"strings"
-
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	packageManager "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/schemas"
@@ -33,12 +31,7 @@ func ResolveYarnv4(lockFile schemas.YarnV4LockFile) (types.LockFileInformation, 
 			Scoped:       false,
 		}
 
-		dependency_name := dependency_id
-		if strings.HasPrefix(dependency_id, "@") {
-			dependency_name = "@" + strings.Split(dependency_id, "@")[1]
-		} else {
-			dependency_name = strings.Split(dependency_id, "@")[0]
-		}
+		dependency_name := yarnEntryName(dependency_id)
 
 		if dep, dependency_already_present := lockFileInformation.Dependencies[dependency_name]; dependency_already_present {
 			if _, versiondependency_already_present := dep[dependency.Version]; !versiondependency_already_present {

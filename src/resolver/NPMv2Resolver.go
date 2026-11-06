@@ -32,6 +32,8 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		path := dependency_name
 		splitted_dependency_name := strings.Split(dependency_name, "node_modules/")
 		dependency_name = splitted_dependency_name[len(splitted_dependency_name)-1]
+		// Aliases live at node_modules/<alias>, with the real package in "name".
+		dependency_name = npmV2PackageName(dependency_name, dependency)
 		resolvedFilePackage := types.Versions{
 			Requires:     dependency.Dependencies,
 			Dependencies: make(map[string]string),
@@ -60,20 +62,18 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 	for name, dependency := range LockFileInformation.Dependencies {
 		for versionKey, version := range dependency {
 			from := installPath[name][versionKey]
-			for requiredName, requiredConstraint := range version.Requires {
-				requiredDependency, present := LockFileInformation.Dependencies[requiredName]
-				if !present {
-					continue
-				}
+			edges := newEdgeSetter(version.Dependencies)
+			for _, requiredName := range sortedRequires(version.Requires) {
+				// Use the copy Node would load. For an alias, link to the real package.
 				if installed, ok := lockFile.Packages[npmInstallLookup(lockFile.Packages, from, requiredName)]; ok {
-					if _, inLockfile := requiredDependency[installed.Version]; inLockfile {
-						version.Dependencies[requiredName] = installed.Version
+					realName, realVersion := npmV2PackageName(requiredName, installed), installed.Version
+					if _, inLockfile := LockFileInformation.Dependencies[realName][realVersion]; inLockfile {
+						edges.set(requiredName, realName, realVersion)
 						continue
 					}
 				}
-				constraint := strings.Replace(requiredConstraint, "npm:", "", 1)
-				if best, ok := highestSatisfying(requiredDependency, constraint); ok {
-					version.Dependencies[requiredName] = best
+				if realName, resolved, ok := resolveRequirement(LockFileInformation.Dependencies, requiredName, version.Requires[requiredName], nil); ok {
+					edges.set(requiredName, realName, resolved)
 				}
 			}
 		}
@@ -105,4 +105,13 @@ func npmInstallLookup[T any](packages map[string]T, from, requiredName string) s
 			dir = strings.TrimSuffix(dir[:idx], "/")
 		}
 	}
+}
+
+// npmV2PackageName returns the entry's "name" field if set (aliases,
+// workspaces), otherwise the name from its path.
+func npmV2PackageName(installedAs string, entry schemas.NPMLockFileV2PackageData) string {
+	if entry.Name != "" {
+		return entry.Name
+	}
+	return installedAs
 }

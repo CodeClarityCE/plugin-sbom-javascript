@@ -258,3 +258,45 @@ func TestCreatePNPMv9WorkspaceFromPnpmWorkspaceYaml(t *testing.T) {
 	assert.False(t, out.WorkSpaces["."].Dependencies["y"]["1.0.0"].Direct)
 	assert.True(t, out.WorkSpaces["."].Dependencies["x"]["1.0.0"].Direct)
 }
+
+// An npm alias must show up as the real package, whatever the key order.
+func assertAliasResolvesToRealPackage(t *testing.T, dir string) {
+	t.Helper()
+	out := plugin.Start(dir, uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	deps := out.WorkSpaces["."].Dependencies
+	assert.Contains(t, deps, "string-width")
+	assert.NotContains(t, deps, "string-width-cjs")
+	assert.Equal(t, map[string]string{"string-width": "4.2.3"}, deps["a"]["1.0.0"].Dependencies)
+	assert.True(t, deps["string-width"]["4.2.3"].Transitive)
+}
+
+func TestCreateYarnv1NpmAliasResolvesToRealPackage(t *testing.T) {
+	assertAliasResolvesToRealPackage(t, "./yarnv1_npm_alias")
+}
+
+func TestCreateYarnv4NpmAliasResolvesToRealPackage(t *testing.T) {
+	assertAliasResolvesToRealPackage(t, "./yarnv4_npm_alias")
+}
+
+// pnpm records an aliased dependency as "alias: real-name@version".
+func TestCreatePNPMv9NpmAliasResolvesToRealPackage(t *testing.T) {
+	out := plugin.Start("./pnpmv9_npm_alias", uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	deps := out.WorkSpaces["."].Dependencies
+	assert.Equal(t, map[string]string{"@docusaurus/react-loadable": "6.0.0"}, deps["a"]["1.0.0"].Dependencies)
+	assert.True(t, deps["@docusaurus/react-loadable"]["6.0.0"].Transitive)
+	assert.True(t, deps["@docusaurus/react-loadable"]["6.0.0"].Prod)
+}
+
+// npm v2/v3 put an alias at node_modules/<alias>, with the real "name".
+func TestCreateNPMv3NpmAliasResolvesToRealPackage(t *testing.T) {
+	assertAliasResolvesToRealPackage(t, "./npmv3_npm_alias")
+}
+
+// npm v1 stores an alias's real package in "version".
+func TestCreateNPMv1NpmAliasResolvesToRealPackage(t *testing.T) {
+	assertAliasResolvesToRealPackage(t, "./npmv1_npm_alias")
+}
