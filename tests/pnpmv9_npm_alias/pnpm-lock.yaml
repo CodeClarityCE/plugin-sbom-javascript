@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      a:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  '@docusaurus/react-loadable@6.0.0':
+    resolution: {integrity: sha512-L}
+
+  a@1.0.0:
+    resolution: {integrity: sha512-A}
+
+snapshots:
+
+  '@docusaurus/react-loadable@6.0.0': {}
+
+  a@1.0.0:
+    dependencies:
+      react-loadable: '@docusaurus/react-loadable@6.0.0'

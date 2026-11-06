@@ -1,0 +1,59 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      x:
+        specifier: 1.0.0
+        version: 1.0.0
+      y:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  p@1.0.0:
+    resolution: {integrity: sha512-P}
+    peerDependencies:
+      typescript: '*'
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-T5}
+
+  typescript@7.0.2:
+    resolution: {integrity: sha512-T7}
+
+  x@1.0.0:
+    resolution: {integrity: sha512-X}
+
+  y@1.0.0:
+    resolution: {integrity: sha512-Y}
+
+snapshots:
+
+  p@1.0.0(typescript@5.9.3):
+    dependencies:
+      typescript: 5.9.3
+
+  p@1.0.0(typescript@7.0.2):
+    dependencies:
+      typescript: 7.0.2
+
+  typescript@5.9.3: {}
+
+  typescript@7.0.2: {}
+
+  x@1.0.0:
+    dependencies:
+      p: 1.0.0(typescript@5.9.3)
+      typescript: 5.9.3
+
+  y@1.0.0:
+    dependencies:
+      p: 1.0.0(typescript@7.0.2)
+      typescript: 7.0.2

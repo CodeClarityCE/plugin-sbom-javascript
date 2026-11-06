@@ -1,13 +1,12 @@
 package resolver
 
 import (
-	"log"
+	"sort"
 	"strings"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	packageManager "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/schemas"
-	semver "github.com/CodeClarityCE/utility-node-semver"
 )
 
 func ResolveNPMV1(lockFile schemas.NPMLockFileV1) (types.LockFileInformation, error) {
@@ -20,7 +19,24 @@ func ResolveNPMV1(lockFile schemas.NPMLockFileV1) (types.LockFileInformation, er
 
 	flattenNPMV1LockFile(lockFile.Dependencies, flattenedDependencies, "")
 
-	for _, dependency := range flattenedDependencies {
+	// Sort paths so the same lockfile always gives the same result.
+	paths := make([]string, 0, len(flattenedDependencies))
+	for path := range flattenedDependencies {
+		paths = append(paths, path)
+	}
+	sort.Strings(paths)
+	installPath := map[string]map[string]string{}
+
+	for _, path := range paths {
+		dependency := flattenedDependencies[path]
+		// Aliases store the real package in the version: "npm:string-width@4.2.3".
+		dependency.Name, dependency.Version = npmV1RealPackage(dependency.Name, dependency.Version)
+		if installPath[dependency.Name] == nil {
+			installPath[dependency.Name] = map[string]string{}
+		}
+		if _, seen := installPath[dependency.Name][dependency.Version]; !seen {
+			installPath[dependency.Name][dependency.Version] = path
+		}
 		resolvedFilePackage := types.Versions{
 			Requires:     dependency.Requires,
 			Dependencies: make(map[string]string),
@@ -40,33 +56,34 @@ func ResolveNPMV1(lockFile schemas.NPMLockFileV1) (types.LockFileInformation, er
 		}
 	}
 
-	for _, dependency := range LockFileInformation.Dependencies {
-		for _, version := range dependency {
-			for requiredName, requiredConstraint := range version.Requires {
-				requiredConstraint = strings.Replace(requiredConstraint, "npm:", "", 1)
-				// If the version required is latest, we replace by a wildcard
-				if requiredConstraint == "latest" {
-					requiredConstraint = "*"
-				}
-				requiredConstraintSemver, err := semver.ParseConstraint(requiredConstraint)
-				if err != nil {
-					log.Println("Cannot parse constraint ", requiredConstraint)
-					requiredConstraintSemver, _ = semver.ParseConstraint("*")
-				}
-				if requiredDependency, dependencyAlreadyPresent := LockFileInformation.Dependencies[requiredName]; dependencyAlreadyPresent {
-					for requiredVersion := range requiredDependency {
-						requiredVersionSemver, err := semver.ParseSemver(requiredVersion)
-						if err != nil {
-							log.Println("Cannot parse semver ", requiredVersion)
-							continue
-						}
-						if semver.Satisfies(requiredVersionSemver, requiredConstraintSemver, false) {
-							version.Dependencies[requiredName] = requiredVersion
-						}
+	for name, dependency := range LockFileInformation.Dependencies {
+		for versionKey, version := range dependency {
+			from := installPath[name][versionKey]
+			edges := newEdgeSetter(version.Dependencies)
+			for _, requiredName := range sortedRequires(version.Requires) {
+				// Use the copy Node would load. For an alias, link to the real package.
+				if installed, ok := flattenedDependencies[npmV1NestedLookup(flattenedDependencies, from, requiredName)]; ok {
+					realName, realVersion := npmV1RealPackage(requiredName, installed.Version)
+					if _, inLockfile := LockFileInformation.Dependencies[realName][realVersion]; inLockfile {
+						edges.set(requiredName, realName, realVersion)
+						continue
 					}
+				}
+				if realName, resolved, ok := resolveRequirement(LockFileInformation.Dependencies, requiredName, version.Requires[requiredName], nil); ok {
+					edges.set(requiredName, realName, resolved)
 				}
 			}
 		}
+	}
+
+	// Lockfile v1 has no workspaces, so use the top-level entry.
+	LockFileInformation.ResolveDirect = func(_ string, name, _ string) (string, string, bool) {
+		entry, ok := flattenedDependencies[name]
+		if !ok {
+			return "", "", false
+		}
+		realName, version := npmV1RealPackage(name, entry.Version)
+		return realName, version, true
 	}
 
 	return LockFileInformation, nil
@@ -84,4 +101,38 @@ func flattenNPMV1LockFile(dependencies map[string]schemas.NPMLockFileV1Dependenc
 			flattenNPMV1LockFile(dep.Dependencies, flattenedDependencies, key)
 		}
 	}
+}
+
+// npmV1NestedLookup finds the closest copy of requiredName above from.
+// Keys look like "parent|child". It returns "" if there is none.
+func npmV1NestedLookup(flattened map[string]schemas.NPMLockFileV1Dependency, from, requiredName string) string {
+	dir := from
+	for {
+		candidate := requiredName
+		if dir != "" {
+			candidate = dir + "|" + requiredName
+		}
+		if _, ok := flattened[candidate]; ok {
+			return candidate
+		}
+		if dir == "" {
+			return ""
+		}
+		if idx := strings.LastIndex(dir, "|"); idx < 0 {
+			dir = ""
+		} else {
+			dir = dir[:idx]
+		}
+	}
+}
+
+// npmV1RealPackage turns an alias version ("npm:string-width@4.2.3")
+// into the real name and version.
+func npmV1RealPackage(installedAs, version string) (string, string) {
+	if strings.HasPrefix(version, "npm:") {
+		if realName, realVersion, ok := splitNpmAlias(version); ok {
+			return realName, realVersion
+		}
+	}
+	return installedAs, version
 }

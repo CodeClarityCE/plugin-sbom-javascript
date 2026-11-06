@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      a:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  a@1.0.0:
+    resolution: {integrity: sha512-A}
+
+  fsevents@2.3.3:
+    resolution: {integrity: sha512-F}
+    os: [darwin]
+
+snapshots:
+
+  a@1.0.0:
+    optionalDependencies:
+      fsevents: 2.3.3
+
+  fsevents@2.3.3:
+    optional: true

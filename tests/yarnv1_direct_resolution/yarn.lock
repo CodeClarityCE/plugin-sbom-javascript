@@ -1,0 +1,13 @@
+# yarn lockfile v1
+
+
+b@1.0.0:
+  version "1.0.0"
+  dependencies:
+    debug "4.1.0"
+
+debug@4.1.0:
+  version "4.1.0"
+
+debug@^4.1.0:
+  version "4.3.4"

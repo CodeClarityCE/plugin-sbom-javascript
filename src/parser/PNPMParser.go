@@ -1,7 +1,9 @@
 package parser
 
 import (
+	"bytes"
 	"errors"
+	"io"
 	"strconv"
 	"strings"
 
@@ -10,6 +12,11 @@ import (
 )
 
 func parsePNPM(lockFileData []byte) (types.LockFileInformation, error) {
+	lockFileData, err := projectLockfileDocument(lockFileData)
+	if err != nil {
+		return types.LockFileInformation{}, err
+	}
+
 	// Read lockfile version
 	lockFileVersion, err := getPNPMLockfileVersion(lockFileData)
 	if err != nil {
@@ -29,6 +36,62 @@ func parsePNPM(lockFileData []byte) (types.LockFileInformation, error) {
 	default:
 		return types.LockFileInformation{}, errors.New("unsupported pnpm lock file version")
 	}
+}
+
+// envLockfileImporterKeys are the only keys found in pnpm's env lockfile.
+// pnpm 11+ writes it as an extra YAML document before the project lockfile.
+var envLockfileImporterKeys = map[string]bool{
+	"configDependencies":         true,
+	"packageManagerDependencies": true,
+}
+
+// projectLockfileDocument returns the project part of pnpm-lock.yaml,
+// skipping pnpm's env lockfile if there is one.
+func projectLockfileDocument(lockFileData []byte) ([]byte, error) {
+	decoder := yaml.NewDecoder(bytes.NewReader(lockFileData))
+	var documents []*yaml.Node
+	for {
+		var document yaml.Node
+		err := decoder.Decode(&document)
+		if errors.Is(err, io.EOF) {
+			break
+		}
+		if err != nil {
+			return nil, err
+		}
+		documents = append(documents, &document)
+	}
+	if len(documents) <= 1 {
+		return lockFileData, nil
+	}
+
+	for _, document := range documents {
+		var excerpt struct {
+			Importers map[string]map[string]yaml.Node `yaml:"importers"`
+		}
+		if err := document.Decode(&excerpt); err != nil {
+			return nil, err
+		}
+		if isEnvLockfile(excerpt.Importers) {
+			continue
+		}
+		return yaml.Marshal(document)
+	}
+	return lockFileData, nil
+}
+
+func isEnvLockfile(importers map[string]map[string]yaml.Node) bool {
+	if len(importers) == 0 {
+		return false
+	}
+	for _, importer := range importers {
+		for key := range importer {
+			if !envLockfileImporterKeys[key] {
+				return false
+			}
+		}
+	}
+	return true
 }
 
 func getPNPMLockfileVersion(lockFileData []byte) (types.NPMLockFileVersion, error) {
