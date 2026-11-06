@@ -53,3 +53,12 @@ func resolveYarnTransitives(lockFileInformation types.LockFileInformation, speci
 		return resolved, ok
 	})
 }
+
+// yarnResolveDirect finds a declared dependency's version by its "name@range".
+func yarnResolveDirect(specifiers map[string]string) func(string, string, string) (string, string, bool) {
+	return func(_ string, name, constraint string) (string, string, bool) {
+		realName, realRange := splitYarnSpecifier(name + "@" + constraint)
+		version, ok := specifiers[realName+"@"+realRange]
+		return realName, version, ok
+	}
+}

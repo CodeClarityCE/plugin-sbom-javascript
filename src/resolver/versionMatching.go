@@ -134,3 +134,8 @@ func (e edgeSetter) set(requiredName, realName, version string) {
 	e.dependencies[realName] = version
 	e.fromAlias[realName] = isAlias
 }
+
+// HighestSatisfying is highestSatisfying for callers outside the package.
+func HighestSatisfying(versions map[string]types.Versions, constraint string) (string, bool) {
+	return highestSatisfying(versions, constraint)
+}

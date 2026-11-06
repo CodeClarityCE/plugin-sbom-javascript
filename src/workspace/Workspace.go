@@ -5,6 +5,7 @@ import (
 	"sort"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/properties"
+	"github.com/CodeClarityCE/plugin-sbom-javascript/src/resolver"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	sbomTypes "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js"
 	semver "github.com/CodeClarityCE/utility-node-semver"
@@ -14,7 +15,7 @@ func Build(lockFile types.LockFileInformation, projectInformation types.ProjectI
 	packageFile := projectInformation.PackageFileData
 	results := map[string]sbomTypes.WorkSpace{}
 
-	results[properties.DEFAULT_WORKSPACE_CHARACTER] = buildWorkspace(lockFile, packageFile)
+	results[properties.DEFAULT_WORKSPACE_CHARACTER] = buildWorkspace(lockFile, packageFile, properties.DEFAULT_WORKSPACE_CHARACTER)
 
 	// If no workspaces then return
 	if len(packageFile.WorkSpaces) == 0 {
@@ -24,12 +25,12 @@ func Build(lockFile types.LockFileInformation, projectInformation types.ProjectI
 	// Build graph for each workspace
 	for name := range projectInformation.WorkSpacesPackageFileData {
 		workspacePackageFile := projectInformation.WorkSpacesPackageFileData[name]
-		results[name] = buildWorkspace(lockFile, workspacePackageFile)
+		results[name] = buildWorkspace(lockFile, workspacePackageFile, name)
 	}
 	return results
 }
 
-func buildWorkspace(lockFile types.LockFileInformation, packageFile types.PackageFile) sbomTypes.WorkSpace {
+func buildWorkspace(lockFile types.LockFileInformation, packageFile types.PackageFile, workspacePath string) sbomTypes.WorkSpace {
 	// Init workspace structure
 	workspace := sbomTypes.WorkSpace{
 		Dependencies: make(map[string]map[string]sbomTypes.Versions),
@@ -61,76 +62,8 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 		}
 	}
 
-	// Iterate over the devDependencies in the packageFile
-	for name, constraint := range packageFile.DevDependencies {
-		// Check if the dependency exists in the lockFile
-		if versions, exists := lockFile.Dependencies[name]; exists {
-			// Iterate over the versions of the dependency
-			for version := range versions {
-				// Parse the constraint and handle any errors
-				parsedConstraint, err := semver.ParseConstraint(constraint)
-				if err != nil {
-					log.Println("Error parsing constraint", err)
-					continue
-				}
-
-				// Parse the version and handle any errors
-				parsedVersion, err := semver.ParseSemver(version)
-				if err != nil {
-					log.Println("Error parsing version", err)
-					continue
-				}
-
-				// Check if the parsed version satisfies the parsed constraint
-				if semver.Satisfies(parsedVersion, parsedConstraint, false) {
-					// Create a WorkSpaceDependency with the name, version, and constraint
-					startDep := sbomTypes.WorkSpaceDependency{
-						Name:       name,
-						Version:    version,
-						Constraint: constraint,
-					}
-
-					// Append the startDep to the DevDependencies in the workSpace
-					workspace.Start.DevDependencies = append(workspace.Start.DevDependencies, startDep)
-				}
-			}
-		}
-	}
-
-	for name, constraint := range packageFile.Dependencies {
-		// Check if the dependency exists in the lockFile
-		if versions, exists := lockFile.Dependencies[name]; exists {
-			// Iterate over the versions of the dependency
-			for version := range versions {
-				// Parse the constraint and handle any errors
-				parsedConstraint, err := semver.ParseConstraint(constraint)
-				if err != nil {
-					log.Println("Error parsing constraint", err)
-					continue
-				}
-
-				// Parse the version and handle any errors
-				parsedVersion, err := semver.ParseSemver(version)
-				if err != nil {
-					log.Println("Error parsing version", err)
-					continue
-				}
-
-				// Check if the parsed version satisfies the parsed constraint
-				if semver.Satisfies(parsedVersion, parsedConstraint, false) {
-					// Create a WorkSpaceDependency with the name, version, and constraint
-					startDep := sbomTypes.WorkSpaceDependency{
-						Name:       name,
-						Version:    version,
-						Constraint: constraint,
-					}
-
-					// Append the startDep to the Dependencies in the workSpace
-					workspace.Start.Dependencies = append(workspace.Start.Dependencies, startDep)
-				}
-			}
-		}
-	}
+	workspace.Start.DevDependencies = startDependencies(lockFile, workspacePath, packageFile.DevDependencies)
+	workspace.Start.Dependencies = startDependencies(lockFile, workspacePath, packageFile.Dependencies)
 
 	// Sort so the same lockfile always gives the same SBOM.
 	sortStartDependencies(workspace.Start.Dependencies)
@@ -139,6 +72,34 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 	workspace = tagDevDependencies(workspace)
 
 	return workspace
+}
+
+// startDependencies returns the installed version of each declared dependency.
+// If the lockfile does not record it, it uses the highest matching version.
+func startDependencies(lockFile types.LockFileInformation, workspacePath string, declared map[string]string) []sbomTypes.WorkSpaceDependency {
+	var starts []sbomTypes.WorkSpaceDependency
+	for name, constraint := range declared {
+		if lockFile.ResolveDirect != nil {
+			if realName, version, ok := lockFile.ResolveDirect(workspacePath, name, constraint); ok {
+				if _, inLockfile := lockFile.Dependencies[realName][version]; inLockfile {
+					starts = append(starts, sbomTypes.WorkSpaceDependency{Name: realName, Version: version, Constraint: constraint})
+					continue
+				}
+			}
+		}
+		versions, exists := lockFile.Dependencies[name]
+		if !exists {
+			continue
+		}
+		if _, err := semver.ParseConstraint(constraint); err != nil {
+			log.Println("Error parsing constraint", err)
+			continue
+		}
+		if version, ok := resolver.HighestSatisfying(versions, constraint); ok {
+			starts = append(starts, sbomTypes.WorkSpaceDependency{Name: name, Version: version, Constraint: constraint})
+		}
+	}
+	return starts
 }
 
 func sortStartDependencies(deps []sbomTypes.WorkSpaceDependency) {

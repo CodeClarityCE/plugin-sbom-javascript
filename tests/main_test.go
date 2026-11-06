@@ -311,3 +311,35 @@ func TestCreatePNPMv9OptionalDependencies(t *testing.T) {
 	assert.True(t, deps["fsevents"]["2.3.3"].Optional)
 	assert.True(t, deps["fsevents"]["2.3.3"].Transitive)
 }
+
+// Only the installed version is direct. debug@4.1.0, pinned by b,
+// also matches the range but must stay transitive.
+func assertDirectDependencyUsesLockfileResolution(t *testing.T, dir string) {
+	t.Helper()
+	out := plugin.Start(dir, uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	var debugStarts []string
+	for _, d := range out.WorkSpaces["."].Start.Dependencies {
+		if d.Name == "debug" {
+			debugStarts = append(debugStarts, d.Version)
+		}
+	}
+	assert.Equal(t, []string{"4.3.4"}, debugStarts)
+	deps := out.WorkSpaces["."].Dependencies
+	assert.True(t, deps["debug"]["4.3.4"].Direct)
+	assert.False(t, deps["debug"]["4.1.0"].Direct)
+	assert.True(t, deps["debug"]["4.1.0"].Transitive)
+}
+
+func TestCreateYarnv1DirectDependencyUsesLockfileResolution(t *testing.T) {
+	assertDirectDependencyUsesLockfileResolution(t, "./yarnv1_direct_resolution")
+}
+
+func TestCreateNPMv3DirectDependencyUsesLockfileResolution(t *testing.T) {
+	assertDirectDependencyUsesLockfileResolution(t, "./npmv3_direct_resolution")
+}
+
+func TestCreatePNPMv9DirectDependencyUsesLockfileResolution(t *testing.T) {
+	assertDirectDependencyUsesLockfileResolution(t, "./pnpmv9_direct_resolution")
+}

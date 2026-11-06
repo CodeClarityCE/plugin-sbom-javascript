@@ -76,6 +76,16 @@ func ResolveNPMV1(lockFile schemas.NPMLockFileV1) (types.LockFileInformation, er
 		}
 	}
 
+	// Lockfile v1 has no workspaces, so use the top-level entry.
+	LockFileInformation.ResolveDirect = func(_ string, name, _ string) (string, string, bool) {
+		entry, ok := flattenedDependencies[name]
+		if !ok {
+			return "", "", false
+		}
+		realName, version := npmV1RealPackage(name, entry.Version)
+		return realName, version, true
+	}
+
 	return LockFileInformation, nil
 }
 

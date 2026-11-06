@@ -79,6 +79,20 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		}
 	}
 
+	// A workspace uses the closest node_modules copy, like any package.
+	LockFileInformation.ResolveDirect = func(workspacePath, name, _ string) (string, string, bool) {
+		from := workspacePath
+		if from == "." {
+			from = ""
+		}
+		path := npmInstallLookup(lockFile.Packages, from, name)
+		if path == "" {
+			return "", "", false
+		}
+		entry := lockFile.Packages[path]
+		return npmV2PackageName(name, entry), entry.Version, true
+	}
+
 	return LockFileInformation, nil
 }
 

@@ -45,6 +45,7 @@ func ResolveYarnv3(lockFile schemas.YarnV3LockFile) (types.LockFileInformation, 
 	}
 
 	resolveYarnTransitives(lockFileInformation, specifiers)
+	lockFileInformation.ResolveDirect = yarnResolveDirect(specifiers)
 
 	return lockFileInformation, nil
 }

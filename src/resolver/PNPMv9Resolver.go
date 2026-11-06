@@ -63,6 +63,21 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 	}
 
 	resolvePNPMTransitives(LockFileInformation)
+	LockFileInformation.ResolveDirect = func(workspacePath, name, _ string) (string, string, bool) {
+		importer := lockFile.Importers[workspacePath]
+		for _, declared := range []map[string]schemas.PNPMLockFileV9ImporterDependency{importer.Dependencies, importer.DevDependencies, importer.OptionalDependencies} {
+			entry, ok := declared[name]
+			if !ok {
+				continue
+			}
+			version := stripPeerSuffixV6(entry.Version)
+			if realName, realVersion, isAlias := splitNpmAlias(version); isAlias {
+				return realName, realVersion, true
+			}
+			return name, version, true
+		}
+		return "", "", false
+	}
 
 	return LockFileInformation, nil
 }
