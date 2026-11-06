@@ -170,3 +170,33 @@ func TestCreateTest(t *testing.T) {
 // 	assert.Equal(b, analysis.SUCCESS, out.AnalysisInfo.Status)
 // 	assert.NotEmpty(b, out.WorkSpaces)
 // }
+
+// A pnpm version like "8.3.6(typescript@5.6.3)" must resolve to 8.3.6 on every run.
+func TestCreatePNPMv9PeerSuffixResolvesPinnedVersion(t *testing.T) {
+	for i := 0; i < 50; i++ {
+		out := plugin.Start("./pnpmv9_peer_suffix", uuid.UUID{})
+
+		assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+		deps := out.WorkSpaces["."].Dependencies
+		if !assert.Equal(t, "8.3.6", deps["a"]["1.0.0"].Dependencies["cosmiconfig"], "run %d", i) {
+			return
+		}
+		assert.Equal(t, "6.0.0", deps["b"]["1.0.0"].Dependencies["cosmiconfig"], "run %d", i)
+		assert.True(t, deps["cosmiconfig"]["8.3.6"].Transitive, "run %d", i)
+	}
+}
+
+// Start lists must be sorted so the same input gives the same SBOM.
+func TestCreatePNPMv9StartListIsSorted(t *testing.T) {
+	for i := 0; i < 50; i++ {
+		out := plugin.Start("./pnpmv9_peer_suffix", uuid.UUID{})
+
+		var names []string
+		for _, dep := range out.WorkSpaces["."].Start.Dependencies {
+			names = append(names, dep.Name+"@"+dep.Version)
+		}
+		if !assert.Equal(t, []string{"a@1.0.0", "b@1.0.0", "typescript@5.6.3"}, names, "run %d", i) {
+			return
+		}
+	}
+}

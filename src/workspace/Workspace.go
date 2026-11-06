@@ -2,6 +2,7 @@ package workspace
 
 import (
 	"log"
+	"sort"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/properties"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
@@ -131,9 +132,22 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 		}
 	}
 
+	// Sort so the same lockfile always gives the same SBOM.
+	sortStartDependencies(workspace.Start.Dependencies)
+	sortStartDependencies(workspace.Start.DevDependencies)
+
 	workspace = tagDevDependencies(workspace)
 
 	return workspace
+}
+
+func sortStartDependencies(deps []sbomTypes.WorkSpaceDependency) {
+	sort.Slice(deps, func(i, j int) bool {
+		if deps[i].Name != deps[j].Name {
+			return deps[i].Name < deps[j].Name
+		}
+		return deps[i].Version < deps[j].Version
+	})
 }
 
 func tagDevDependencies(workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
