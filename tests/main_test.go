@@ -130,6 +130,20 @@ func TestCreatePNPMv10_10(t *testing.T) {
 	writeJSON(out, "./pnpmv10.10/sbom.json")
 }
 
+// pnpm 11+ adds an env lockfile document before the project lockfile.
+// The SBOM must list the project's dependencies, not pnpm itself.
+func TestCreatePNPMv12EnvLockfile(t *testing.T) {
+	out := plugin.Start("./pnpmv12_env_lockfile", uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	deps := out.WorkSpaces["."].Dependencies
+	assert.Contains(t, deps, "dotenv")
+	assert.Contains(t, deps, "debug")
+	assert.NotContains(t, deps, "pnpm")
+	assert.True(t, deps["dotenv"]["16.6.1"].Direct)
+	assert.True(t, deps["debug"]["4.4.3"].Direct)
+}
+
 // You can adapt this test to your needs
 func TestCreateTest(t *testing.T) {
 	out := plugin.Start("./test", uuid.UUID{})

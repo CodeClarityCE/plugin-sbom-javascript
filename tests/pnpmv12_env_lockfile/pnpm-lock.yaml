@@ -1,0 +1,54 @@
+---
+lockfileVersion: '9.0'
+
+importers:
+
+  .:
+    configDependencies: {}
+    packageManagerDependencies:
+      pnpm:
+        specifier: 12.15.0
+        version: 12.15.0
+
+packages:
+
+  pnpm@12.15.0:
+    resolution: {integrity: sha512-AAAA}
+    hasBin: true
+
+snapshots:
+
+  pnpm@12.15.0: {}
+
+---
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dotenv:
+        specifier: 16.6.1
+        version: 16.6.1
+    devDependencies:
+      debug:
+        specifier: 4.4.3
+        version: 4.4.3
+
+packages:
+
+  debug@4.4.3:
+    resolution: {integrity: sha512-BBBB}
+
+  dotenv@16.6.1:
+    resolution: {integrity: sha512-CCCC}
+
+snapshots:
+
+  debug@4.4.3: {}
+
+  dotenv@16.6.1: {}
