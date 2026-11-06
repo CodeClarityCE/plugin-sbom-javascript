@@ -244,3 +244,17 @@ func TestCreatePNPMv9PeerVariantsPickStableSnapshot(t *testing.T) {
 		}
 	}
 }
+
+// pnpm workspaces come from pnpm-workspace.yaml, and "!" patterns exclude.
+func TestCreatePNPMv9WorkspaceFromPnpmWorkspaceYaml(t *testing.T) {
+	out := plugin.Start("./pnpmv9_workspace", uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	if assert.Contains(t, out.WorkSpaces, "packages/app") {
+		assert.True(t, out.WorkSpaces["packages/app"].Dependencies["y"]["1.0.0"].Direct)
+		assert.True(t, out.WorkSpaces["packages/app"].Dependencies["y"]["1.0.0"].Prod)
+	}
+	assert.NotContains(t, out.WorkSpaces, "packages/ignored")
+	assert.False(t, out.WorkSpaces["."].Dependencies["y"]["1.0.0"].Direct)
+	assert.True(t, out.WorkSpaces["."].Dependencies["x"]["1.0.0"].Direct)
+}
