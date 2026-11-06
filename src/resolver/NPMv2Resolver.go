@@ -1,13 +1,12 @@
 package resolver
 
 import (
-	"log"
+	"sort"
 	"strings"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	packageManager "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/schemas"
-	semver "github.com/CodeClarityCE/utility-node-semver"
 )
 
 func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, error) {
@@ -17,10 +16,20 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		LockFileVersion: 2,
 	}
 
-	for dependency_name, dependency := range lockFile.Packages {
+	// Sort paths so the same lockfile always gives the same result.
+	paths := make([]string, 0, len(lockFile.Packages))
+	for path := range lockFile.Packages {
+		paths = append(paths, path)
+	}
+	sort.Strings(paths)
+	installPath := map[string]map[string]string{}
+
+	for _, dependency_name := range paths {
+		dependency := lockFile.Packages[dependency_name]
 		if dependency_name == "" {
 			continue
 		}
+		path := dependency_name
 		splitted_dependency_name := strings.Split(dependency_name, "node_modules/")
 		dependency_name = splitted_dependency_name[len(splitted_dependency_name)-1]
 		resolvedFilePackage := types.Versions{
@@ -30,6 +39,12 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 			Bundled:      dependency.InBundle,
 			Dev:          dependency.Dev,
 			Scoped:       false,
+		}
+		if installPath[dependency_name] == nil {
+			installPath[dependency_name] = map[string]string{}
+		}
+		if _, seen := installPath[dependency_name][dependency.Version]; !seen {
+			installPath[dependency_name][dependency.Version] = path
 		}
 		if dep, dependency_already_present := LockFileInformation.Dependencies[dependency_name]; dependency_already_present {
 			if _, versiondependency_already_present := dep[dependency.Version]; !versiondependency_already_present {
@@ -42,34 +57,52 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		}
 	}
 
-	for _, dependency := range LockFileInformation.Dependencies {
-		for _, version := range dependency {
+	for name, dependency := range LockFileInformation.Dependencies {
+		for versionKey, version := range dependency {
+			from := installPath[name][versionKey]
 			for requiredName, requiredConstraint := range version.Requires {
-				requiredConstraint = strings.Replace(requiredConstraint, "npm:", "", 1)
-				// If the version required is latest, we replace by a wildcard
-				if requiredConstraint == "latest" {
-					requiredConstraint = "*"
+				requiredDependency, present := LockFileInformation.Dependencies[requiredName]
+				if !present {
+					continue
 				}
-				requiredConstraintSemver, err := semver.ParseConstraint(requiredConstraint)
-				if err != nil {
-					log.Println("Cannot parse constraint ", requiredConstraint)
-					requiredConstraintSemver, _ = semver.ParseConstraint("*")
-				}
-				if requiredDependency, dependencyAlreadyPresent := LockFileInformation.Dependencies[requiredName]; dependencyAlreadyPresent {
-					for requiredVersion := range requiredDependency {
-						requiredVersionSemver, err := semver.ParseSemver(requiredVersion)
-						if err != nil {
-							log.Println("Cannot parse semver ", requiredVersion)
-							continue
-						}
-						if semver.Satisfies(requiredVersionSemver, requiredConstraintSemver, false) {
-							version.Dependencies[requiredName] = requiredVersion
-						}
+				if installed, ok := lockFile.Packages[npmInstallLookup(lockFile.Packages, from, requiredName)]; ok {
+					if _, inLockfile := requiredDependency[installed.Version]; inLockfile {
+						version.Dependencies[requiredName] = installed.Version
+						continue
 					}
+				}
+				constraint := strings.Replace(requiredConstraint, "npm:", "", 1)
+				if best, ok := highestSatisfying(requiredDependency, constraint); ok {
+					version.Dependencies[requiredName] = best
 				}
 			}
 		}
 	}
 
 	return LockFileInformation, nil
+}
+
+// npmInstallLookup returns the path Node would load requiredName from,
+// starting at from and walking up. It returns "" if there is none.
+func npmInstallLookup[T any](packages map[string]T, from, requiredName string) string {
+	dir := from
+	for {
+		candidate := "node_modules/" + requiredName
+		if dir != "" {
+			candidate = dir + "/" + candidate
+		}
+		if _, ok := packages[candidate]; ok {
+			return candidate
+		}
+		if dir == "" {
+			return ""
+		}
+		// Go up one node_modules level.
+		idx := strings.LastIndex(dir, "node_modules/")
+		if idx <= 0 {
+			dir = ""
+		} else {
+			dir = strings.TrimSuffix(dir[:idx], "/")
+		}
+	}
 }

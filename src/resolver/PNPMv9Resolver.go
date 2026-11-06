@@ -1,6 +1,7 @@
 package resolver
 
 import (
+	"sort"
 	"strings"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
@@ -15,7 +16,16 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 		LockFileVersion: 9,
 	}
 
-	for dependency_name, dependency := range lockFile.Snapshots {
+	// pnpm keeps one snapshot per peer variant, e.g. p@1.0.0(typescript@5.9.3).
+	// They share one entry and the first one wins, so sort the keys.
+	snapshotKeys := make([]string, 0, len(lockFile.Snapshots))
+	for key := range lockFile.Snapshots {
+		snapshotKeys = append(snapshotKeys, key)
+	}
+	sort.Strings(snapshotKeys)
+
+	for _, dependency_name := range snapshotKeys {
+		dependency := lockFile.Snapshots[dependency_name]
 		if dependency_name == "" {
 			continue
 		}

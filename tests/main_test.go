@@ -200,3 +200,47 @@ func TestCreatePNPMv9StartListIsSorted(t *testing.T) {
 		}
 	}
 }
+
+// When a range matches several versions, use the one the lockfile recorded.
+func assertOverlappingRangesResolved(t *testing.T, dir string) {
+	t.Helper()
+	for i := 0; i < 50; i++ {
+		out := plugin.Start(dir, uuid.UUID{})
+
+		assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+		deps := out.WorkSpaces["."].Dependencies
+		if !assert.Equal(t, "4.3.4", deps["a"]["1.0.0"].Dependencies["debug"], "run %d", i) {
+			return
+		}
+		assert.Equal(t, "4.1.0", deps["b"]["1.0.0"].Dependencies["debug"], "run %d", i)
+	}
+}
+
+func TestCreateYarnv1OverlappingRangesUseLockfileResolution(t *testing.T) {
+	assertOverlappingRangesResolved(t, "./yarnv1_overlapping_ranges")
+}
+
+func TestCreateYarnv4OverlappingRangesUseLockfileResolution(t *testing.T) {
+	assertOverlappingRangesResolved(t, "./yarnv4_overlapping_ranges")
+}
+
+// "a" must use the debug nested under it, not the top-level one.
+func TestCreateNPMv3NestedResolutionUsesInstallPath(t *testing.T) {
+	assertOverlappingRangesResolved(t, "./npmv3_nested_resolution")
+}
+
+func TestCreateNPMv1NestedResolutionUsesInstallPath(t *testing.T) {
+	assertOverlappingRangesResolved(t, "./npmv1_nested_resolution")
+}
+
+// With two peer variants of p@1.0.0, the first one sorted must win every run.
+func TestCreatePNPMv9PeerVariantsPickStableSnapshot(t *testing.T) {
+	for i := 0; i < 50; i++ {
+		out := plugin.Start("./pnpmv9_peer_variants", uuid.UUID{})
+
+		deps := out.WorkSpaces["."].Dependencies
+		if !assert.Equal(t, "5.9.3", deps["p"]["1.0.0"].Dependencies["typescript"], "run %d", i) {
+			return
+		}
+	}
+}

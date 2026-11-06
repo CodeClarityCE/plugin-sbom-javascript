@@ -1,13 +1,11 @@
 package resolver
 
 import (
-	"log"
 	"strings"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	packageManager "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types/schemas"
-	semver "github.com/CodeClarityCE/utility-node-semver"
 )
 
 // ResolveYarnDependencies resolves the dependencies in a Yarn lock file and returns a resolved lock file.
@@ -23,7 +21,9 @@ func ResolveYarnv2(lockFile schemas.YarnV2LockFile) (types.LockFileInformation, 
 		PackageManager:  packageManager.YARN,
 	}
 
+	specifiers := make(map[string]string)
 	for dependency_id, dependency := range lockFile {
+		yarnSpecifiers(dependency_id, dependency.Version, specifiers)
 		resolvedFilePackage := types.Versions{
 			Requires:     dependency.Dependencies,
 			Dependencies: make(map[string]string),
@@ -51,34 +51,7 @@ func ResolveYarnv2(lockFile schemas.YarnV2LockFile) (types.LockFileInformation, 
 		}
 	}
 
-	for _, dependency := range lockFileInformation.Dependencies {
-		for _, version := range dependency {
-			for requiredName, requiredConstraint := range version.Requires {
-				requiredConstraint = strings.Replace(requiredConstraint, "npm:", "", 1)
-				// If the version required is latest, we replace by a wildcard
-				if requiredConstraint == "latest" {
-					requiredConstraint = "*"
-				}
-				requiredConstraintSemver, err := semver.ParseConstraint(requiredConstraint)
-				if err != nil {
-					log.Println("Cannot parse constraint ", requiredConstraint)
-					requiredConstraintSemver, _ = semver.ParseConstraint("*")
-				}
-				if requiredDependency, dependencyAlreadyPresent := lockFileInformation.Dependencies[requiredName]; dependencyAlreadyPresent {
-					for requiredVersion := range requiredDependency {
-						requiredVersionSemver, err := semver.ParseSemver(requiredVersion)
-						if err != nil {
-							log.Println("Cannot parse semver ", requiredVersion)
-							continue
-						}
-						if semver.Satisfies(requiredVersionSemver, requiredConstraintSemver, false) {
-							version.Dependencies[requiredName] = requiredVersion
-						}
-					}
-				}
-			}
-		}
-	}
+	resolveYarnTransitives(lockFileInformation, specifiers)
 
 	return lockFileInformation, nil
 }
