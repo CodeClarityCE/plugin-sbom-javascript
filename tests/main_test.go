@@ -343,3 +343,27 @@ func TestCreateNPMv3DirectDependencyUsesLockfileResolution(t *testing.T) {
 func TestCreatePNPMv9DirectDependencyUsesLockfileResolution(t *testing.T) {
 	assertDirectDependencyUsesLockfileResolution(t, "./pnpmv9_direct_resolution")
 }
+
+// Optional dependencies such as fsevents must be linked like any other.
+func assertOptionalDependencyIsAnEdge(t *testing.T, dir string) {
+	t.Helper()
+	out := plugin.Start(dir, uuid.UUID{})
+
+	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
+	deps := out.WorkSpaces["."].Dependencies
+	assert.Equal(t, map[string]string{"fsevents": "2.3.3"}, deps["a"]["1.0.0"].Dependencies)
+	assert.True(t, deps["fsevents"]["2.3.3"].Transitive)
+	assert.True(t, deps["fsevents"]["2.3.3"].Prod)
+}
+
+func TestCreateYarnv1OptionalDependencyIsAnEdge(t *testing.T) {
+	assertOptionalDependencyIsAnEdge(t, "./yarnv1_optional_dependencies")
+}
+
+func TestCreateNPMv3OptionalDependencyIsAnEdge(t *testing.T) {
+	assertOptionalDependencyIsAnEdge(t, "./npmv3_optional_dependencies")
+}
+
+func TestCreateNPMv1OptionalDependencyIsAnEdge(t *testing.T) {
+	assertOptionalDependencyIsAnEdge(t, "./npmv1_optional_dependencies")
+}

@@ -139,3 +139,15 @@ func (e edgeSetter) set(requiredName, realName, version string) {
 func HighestSatisfying(versions map[string]types.Versions, constraint string) (string, bool) {
 	return highestSatisfying(versions, constraint)
 }
+
+// mergeRequires combines dependencies and optional dependencies in a new map.
+func mergeRequires(dependencies, optionalDependencies map[string]string) map[string]string {
+	requires := make(map[string]string, len(dependencies)+len(optionalDependencies))
+	for name, constraint := range dependencies {
+		requires[name] = constraint
+	}
+	for name, constraint := range optionalDependencies {
+		requires[name] = constraint
+	}
+	return requires
+}

@@ -35,7 +35,7 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		// Aliases live at node_modules/<alias>, with the real package in "name".
 		dependency_name = npmV2PackageName(dependency_name, dependency)
 		resolvedFilePackage := types.Versions{
-			Requires:     dependency.Dependencies,
+			Requires:     mergeRequires(dependency.Dependencies, dependency.OptionalDependencies),
 			Dependencies: make(map[string]string),
 			Optional:     dependency.Optional,
 			Bundled:      dependency.InBundle,

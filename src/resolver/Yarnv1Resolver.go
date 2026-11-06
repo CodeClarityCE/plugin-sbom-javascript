@@ -23,7 +23,7 @@ func ResolveYarnv1(lockFile schemas.YarnV1LockFile) (types.LockFileInformation, 
 	for dependency_id, dependency := range lockFile {
 		yarnSpecifiers(dependency_id, dependency.Version, specifiers)
 		resolvedFilePackage := types.Versions{
-			Requires:     dependency.Dependencies,
+			Requires:     mergeRequires(dependency.Dependencies, dependency.OptionalDependencies),
 			Dependencies: make(map[string]string),
 			Optional:     false,
 			Bundled:      false,
