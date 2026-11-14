@@ -2,10 +2,15 @@ package project_finder
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
+	"io/fs"
 	"os"
+	"path"
 	"path/filepath"
 	"strings"
+
+	"gopkg.in/yaml.v3"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
 	packageManager "github.com/CodeClarityCE/plugin-sbom-javascript/src/types/sbom/js/packageManager"
@@ -34,6 +39,17 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 	err = json.Unmarshal(packageFileData, &packageFile)
 	if err != nil {
 		return project, err
+	}
+
+	// pnpm lists workspaces in pnpm-workspace.yaml, not package.json.
+	var excluded []string
+	if project.PackageManager == packageManager.PNPM && len(packageFile.WorkSpaces) == 0 {
+		included, negated, err := readPnpmWorkspacePatterns(directory)
+		if err != nil {
+			return project, err
+		}
+		packageFile.WorkSpaces = included
+		excluded = negated
 	}
 
 	project.PackageFileData = packageFile
@@ -82,8 +98,56 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 		}
 	}
 
-	return project, nil
+	for name := range project.WorkSpacesPackageFileData {
+		if matchesAnyWorkspacePattern(name, excluded) {
+			delete(project.WorkSpacesPackageFileData, name)
+		}
+	}
 
+	return project, nil
+}
+
+// readPnpmWorkspacePatterns reads the package patterns in pnpm-workspace.yaml.
+// Patterns starting with "!" are returned separately, as exclusions.
+func readPnpmWorkspacePatterns(directory string) (included []string, excluded []string, err error) {
+	data, err := os.ReadFile(filepath.Join(directory, "pnpm-workspace.yaml"))
+	if errors.Is(err, fs.ErrNotExist) {
+		return nil, nil, nil
+	}
+	if err != nil {
+		return nil, nil, err
+	}
+	var manifest struct {
+		Packages []string `yaml:"packages"`
+	}
+	if err := yaml.Unmarshal(data, &manifest); err != nil {
+		return nil, nil, fmt.Errorf("parsing pnpm-workspace.yaml: %w", err)
+	}
+	for _, pattern := range manifest.Packages {
+		if negated, ok := strings.CutPrefix(pattern, "!"); ok {
+			excluded = append(excluded, strings.TrimPrefix(negated, "./"))
+		} else {
+			included = append(included, pattern)
+		}
+	}
+	return included, excluded, nil
+}
+
+// matchesAnyWorkspacePattern reports whether name matches any pattern.
+// A trailing "/**" also matches everything below the directory.
+func matchesAnyWorkspacePattern(name string, patterns []string) bool {
+	for _, pattern := range patterns {
+		if prefix, ok := strings.CutSuffix(pattern, "/**"); ok {
+			if name == prefix || strings.HasPrefix(name, prefix+"/") {
+				return true
+			}
+			continue
+		}
+		if matched, _ := path.Match(pattern, name); matched {
+			return true
+		}
+	}
+	return false
 }
 
 func findProjects(directory string) map[string]types.ProjectInformation {

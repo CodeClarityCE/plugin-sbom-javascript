@@ -1,6 +1,7 @@
 package resolver
 
 import (
+	"sort"
 	"strings"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
@@ -19,7 +20,16 @@ func ResolvePNPMV6(lockFile schemas.PNPMLockFileV6) (types.LockFileInformation, 
 		LockFileVersion: 6,
 	}
 
-	for key, pkg := range lockFile.Packages {
+	// Peer variants of a package share one entry and the first one wins,
+	// so sort the keys to always pick the same one.
+	keys := make([]string, 0, len(lockFile.Packages))
+	for key := range lockFile.Packages {
+		keys = append(keys, key)
+	}
+	sort.Strings(keys)
+
+	for _, key := range keys {
+		pkg := lockFile.Packages[key]
 		if key == "" {
 			continue
 		}

@@ -67,4 +67,7 @@ type LockFileInformation struct {
 	PackageManager  packageManager.PACKAGE_MANAGER
 	LockFileVersion int
 	Dependencies    map[string]map[string]Versions
+	// ResolveDirect returns the version the lockfile installed for a dependency
+	// declared by a workspace ("." is the root). ok is false if it is not recorded.
+	ResolveDirect func(workspacePath, name, constraint string) (realName, version string, ok bool)
 }

@@ -1,6 +1,7 @@
 package resolver
 
 import (
+	"sort"
 	"strings"
 
 	"github.com/CodeClarityCE/plugin-sbom-javascript/src/types"
@@ -15,17 +16,36 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 		LockFileVersion: 9,
 	}
 
-	for dependency_name, dependency := range lockFile.Snapshots {
+	// pnpm keeps one snapshot per peer variant, e.g. p@1.0.0(typescript@5.9.3).
+	// They share one entry and the first one wins, so sort the keys.
+	snapshotKeys := make([]string, 0, len(lockFile.Snapshots))
+	for key := range lockFile.Snapshots {
+		snapshotKeys = append(snapshotKeys, key)
+	}
+	sort.Strings(snapshotKeys)
+
+	for _, dependency_name := range snapshotKeys {
+		dependency := lockFile.Snapshots[dependency_name]
 		if dependency_name == "" {
 			continue
 		}
 
 		name, dependency_version := cleanName(dependency_name)
 
+		// Drop the peer suffix: "8.3.6(typescript@5.6.3)" becomes "8.3.6".
+		requires := make(map[string]string, len(dependency.Dependencies)+len(dependency.OptionalDependencies))
+		for depName, depVersion := range dependency.Dependencies {
+			requires[depName] = stripPeerSuffixV6(depVersion)
+		}
+		// Optional dependencies count as dependencies too.
+		for depName, depVersion := range dependency.OptionalDependencies {
+			requires[depName] = stripPeerSuffixV6(depVersion)
+		}
+
 		resolvedFilePackage := types.Versions{
-			Requires:     dependency.Dependencies, // TODO clean this
+			Requires:     requires,
 			Dependencies: make(map[string]string),
-			Optional:     false,
+			Optional:     dependency.Optional,
 			Bundled:      false,
 			Dev:          false,
 			Scoped:       false,
@@ -43,6 +63,21 @@ func ResolvePNPMV9(lockFile schemas.PNPMLockFileV9) (types.LockFileInformation, 
 	}
 
 	resolvePNPMTransitives(LockFileInformation)
+	LockFileInformation.ResolveDirect = func(workspacePath, name, _ string) (string, string, bool) {
+		importer := lockFile.Importers[workspacePath]
+		for _, declared := range []map[string]schemas.PNPMLockFileV9ImporterDependency{importer.Dependencies, importer.DevDependencies, importer.OptionalDependencies} {
+			entry, ok := declared[name]
+			if !ok {
+				continue
+			}
+			version := stripPeerSuffixV6(entry.Version)
+			if realName, realVersion, isAlias := splitNpmAlias(version); isAlias {
+				return realName, realVersion, true
+			}
+			return name, version, true
+		}
+		return "", "", false
+	}
 
 	return LockFileInformation, nil
 }

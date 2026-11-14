@@ -1,0 +1,10 @@
+# yarn lockfile v1
+
+
+a@1.0.0:
+  version "1.0.0"
+  optionalDependencies:
+    fsevents "~2.3.2"
+
+fsevents@~2.3.2:
+  version "2.3.3"
