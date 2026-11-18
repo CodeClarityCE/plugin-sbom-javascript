@@ -1,0 +1,12 @@
+# Advisory text in the vulnerability test fixtures, not credentials.
+26b5b5ed718ce034559d0e1293625ecee1dc4ca3:tests/npmv1/vulns.json:aws-access-token:99525
+26b5b5ed718ce034559d0e1293625ecee1dc4ca3:tests/npmv1/vulns.json:aws-access-token:99949
+26b5b5ed718ce034559d0e1293625ecee1dc4ca3:tests/npmv1/vulns.json:generic-api-key:88453
+tests/npmv1/vulns.json:aws-access-token:99525
+tests/npmv1/vulns.json:aws-access-token:99949
+tests/npmv1/vulns.json:generic-api-key:88453
+tests/npmv1/vulns.json:generic-api-key:99949
+26b5b5ed718ce034559d0e1293625ecee1dc4ca3:tests/yarnv2/vulns.json:aws-access-token:19738
+26b5b5ed718ce034559d0e1293625ecee1dc4ca3:tests/yarnv2/vulns.json:generic-api-key:13172
+tests/yarnv2/vulns.json:aws-access-token:19738
+tests/yarnv2/vulns.json:generic-api-key:13172
