@@ -163,7 +163,7 @@ func TestCreateTest(t *testing.T) {
 // 		log.Printf("%v", err)
 // 	}
 
-// 	out := js.Start(restoreFixture(t, "vulnerable"), db)
+// 	out := js.Start("./vulnerable", db)
 
 // 	// Assert the expected values
 // 	assert.NotNil(b, out)
