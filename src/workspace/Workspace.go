@@ -70,6 +70,9 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 	sortStartDependencies(workspace.Start.DevDependencies)
 
 	workspace = tagDevDependencies(workspace)
+	if lockFile.DevFlags {
+		workspace = applyLockfileDevFlags(lockFile, workspace)
+	}
 
 	return workspace
 }
@@ -112,60 +115,52 @@ func sortStartDependencies(deps []sbomTypes.WorkSpaceDependency) {
 }
 
 func tagDevDependencies(workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
-
-	// Iterate over the devDependencies in the packageFile
-	for _, startDevDependency := range workspace.Start.DevDependencies {
-		dependencyInformation := workspace.Dependencies[startDevDependency.Name][startDevDependency.Version]
-		dependencyInformation.Dev = true
-		dependencyInformation.Direct = true
-		workspace.Dependencies[startDevDependency.Name][startDevDependency.Version] = dependencyInformation
-		workspace = recursivelytagDev(dependencyInformation, workspace)
+	// Each traversal has its own visited set, so a package reached by both is tagged both.
+	devSeen := map[string]bool{}
+	for _, start := range workspace.Start.DevDependencies {
+		workspace = tagDirect(workspace, start, func(v *sbomTypes.Versions) { v.Dev = true }, devSeen)
 	}
-
-	// Iterate over the dependencies in the packageFile
-	for _, startDependency := range workspace.Start.Dependencies {
-		dependencyInformation := workspace.Dependencies[startDependency.Name][startDependency.Version]
-		dependencyInformation.Prod = true
-		dependencyInformation.Direct = true
-		workspace.Dependencies[startDependency.Name][startDependency.Version] = dependencyInformation
-		workspace = recursivelytagProd(dependencyInformation, workspace)
-	}
-
-	return workspace
-}
-
-func recursivelytagDev(currentDependency sbomTypes.Versions, workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
-	for childName, childVersion := range currentDependency.Dependencies {
-		child := workspace.Dependencies[childName][childVersion]
-
-		// If child has already been analyzed (loop)
-		// then do not recurse
-		if child.Transitive == true {
-			continue
-		}
-
-		child.Dev = true
-		child.Transitive = true
-		workspace.Dependencies[childName][childVersion] = child
-		workspace = recursivelytagDev(child, workspace)
+	prodSeen := map[string]bool{}
+	for _, start := range workspace.Start.Dependencies {
+		workspace = tagDirect(workspace, start, func(v *sbomTypes.Versions) { v.Prod = true }, prodSeen)
 	}
 	return workspace
 }
 
-func recursivelytagProd(currentDependency sbomTypes.Versions, workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
-	for childName, childVersion := range currentDependency.Dependencies {
-		child := workspace.Dependencies[childName][childVersion]
-
-		// If child has already been analyzed (loop)
-		// then do not recurse
-		if child.Transitive == true {
-			continue
+// applyLockfileDevFlags trusts the lockfile when it marks a package dev-only.
+func applyLockfileDevFlags(lockFile types.LockFileInformation, workspace sbomTypes.WorkSpace) sbomTypes.WorkSpace {
+	for name, versions := range lockFile.Dependencies {
+		for version, info := range versions {
+			if pkg, ok := workspace.Dependencies[name][version]; ok && info.Dev && pkg.Prod {
+				pkg.Prod = false
+				workspace.Dependencies[name][version] = pkg
+			}
 		}
+	}
+	return workspace
+}
 
-		child.Prod = true
+func tagDirect(workspace sbomTypes.WorkSpace, start sbomTypes.WorkSpaceDependency, tag func(*sbomTypes.Versions), seen map[string]bool) sbomTypes.WorkSpace {
+	info := workspace.Dependencies[start.Name][start.Version]
+	tag(&info)
+	info.Direct = true
+	workspace.Dependencies[start.Name][start.Version] = info
+	return tagReachable(workspace, start.Name, start.Version, tag, seen)
+}
+
+// tagReachable tags every package below name@version, visiting each one once.
+func tagReachable(workspace sbomTypes.WorkSpace, name, version string, tag func(*sbomTypes.Versions), seen map[string]bool) sbomTypes.WorkSpace {
+	key := name + properties.VERSION_SEPERATOR + version
+	if seen[key] {
+		return workspace
+	}
+	seen[key] = true
+	for childName, childVersion := range workspace.Dependencies[name][version].Dependencies {
+		child := workspace.Dependencies[childName][childVersion]
+		tag(&child)
 		child.Transitive = true
 		workspace.Dependencies[childName][childVersion] = child
-		workspace = recursivelytagProd(child, workspace)
+		workspace = tagReachable(workspace, childName, childVersion, tag, seen)
 	}
 	return workspace
 }

@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "dependencies": {
+    "app": "1.0.0"
+  },
+  "devDependencies": {
+    "tool": "1.0.0"
+  }
+}
