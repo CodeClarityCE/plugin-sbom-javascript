@@ -14,6 +14,7 @@ func ResolveNPMV2(lockFile schemas.NPMLockFileV2) (types.LockFileInformation, er
 		Dependencies:    map[string]map[string]types.Versions{},
 		PackageManager:  packageManager.NPM,
 		LockFileVersion: 2,
+		DevFlags:        true,
 	}
 
 	// Sort paths so the same lockfile always gives the same result.
