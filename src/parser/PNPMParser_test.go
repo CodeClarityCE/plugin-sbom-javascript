@@ -10,7 +10,7 @@ import (
 // acceptance criterion: older lockfiles resolve a non-empty dependency tree.
 
 func TestParsePNPMV5Fixture(t *testing.T) {
-	data, err := os.ReadFile("../../tests/pnpmv5/pnpm-lock.yaml")
+	data, err := os.ReadFile("../../tests/pnpmv5/pnpm-lock.yaml.fixture")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -35,7 +35,7 @@ func TestParsePNPMV5Fixture(t *testing.T) {
 }
 
 func TestParsePNPMV6Fixture(t *testing.T) {
-	data, err := os.ReadFile("../../tests/pnpmv6/pnpm-lock.yaml")
+	data, err := os.ReadFile("../../tests/pnpmv6/pnpm-lock.yaml.fixture")
 	if err != nil {
 		t.Fatal(err)
 	}

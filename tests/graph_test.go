@@ -25,7 +25,7 @@ var knownUnreachable = map[string]bool{
 func TestGraphChecks(t *testing.T) {
 	for _, fixture := range fixtureDirs(t) {
 		t.Run(fixture, func(t *testing.T) {
-			first := plugin.Start("./"+fixture, uuid.UUID{})
+			first := plugin.Start(restoreFixture(t, fixture), uuid.UUID{})
 			checkDeterministic(t, fixture, first)
 			for wsName, ws := range first.WorkSpaces {
 				checkEdges(t, wsName, ws)
@@ -41,7 +41,7 @@ func TestGraphChecks(t *testing.T) {
 	}
 }
 
-// fixtureDirs lists the test folders that hold a lockfile.
+// fixtureDirs lists the test folders that hold a stored lockfile.
 func fixtureDirs(t *testing.T) []string {
 	entries, err := os.ReadDir(".")
 	if err != nil {
@@ -50,7 +50,7 @@ func fixtureDirs(t *testing.T) []string {
 	var dirs []string
 	for _, e := range entries {
 		for _, lock := range []string{"package-lock.json", "yarn.lock", "pnpm-lock.yaml"} {
-			if _, err := os.Stat(filepath.Join(e.Name(), lock)); e.IsDir() && err == nil {
+			if _, err := os.Stat(filepath.Join(e.Name(), lock+fixtureSuffix)); e.IsDir() && err == nil {
 				dirs = append(dirs, e.Name())
 				break
 			}
