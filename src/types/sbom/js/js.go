@@ -40,6 +40,11 @@ type Versions struct {
 	Direct       bool
 	Transitive   bool
 	Licenses     []string
+	// Import paths: each path runs from a top-level dependency ("name@version") down to this version.
+	IsTopLevel                    bool       `json:"is_top_level"`
+	ImportingTopLevelDependencies []string   `json:"importing_top_level_dependencies"`
+	ImportPaths                   [][]string `json:"import_paths"`
+	DevImportPaths                [][]string `json:"dev_import_paths"`
 }
 
 type Start struct {
