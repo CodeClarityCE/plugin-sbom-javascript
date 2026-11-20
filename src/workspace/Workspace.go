@@ -73,6 +73,7 @@ func buildWorkspace(lockFile types.LockFileInformation, packageFile types.Packag
 	if lockFile.DevFlags {
 		workspace = applyLockfileDevFlags(lockFile, workspace)
 	}
+	workspace = fillImportPaths(workspace)
 
 	return workspace
 }
