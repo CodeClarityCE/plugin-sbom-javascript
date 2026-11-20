@@ -10,7 +10,7 @@ import (
 )
 
 func TestCreateNPMv1(t *testing.T) {
-	out := plugin.Start("./npmv1", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "npmv1"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -21,7 +21,7 @@ func TestCreateNPMv1(t *testing.T) {
 }
 
 func TestCreateNPMv2(t *testing.T) {
-	out := plugin.Start("./npmv2", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "npmv2"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -32,7 +32,7 @@ func TestCreateNPMv2(t *testing.T) {
 }
 
 func TestCreateNPMv3(t *testing.T) {
-	out := plugin.Start("./npmv3", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "npmv3"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -43,7 +43,7 @@ func TestCreateNPMv3(t *testing.T) {
 }
 
 func TestCreateYarnv1(t *testing.T) {
-	out := plugin.Start("./yarnv1", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "yarnv1"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -54,7 +54,7 @@ func TestCreateYarnv1(t *testing.T) {
 }
 
 func TestCreateYarnv2(t *testing.T) {
-	out := plugin.Start("./yarnv2", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "yarnv2"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -65,7 +65,7 @@ func TestCreateYarnv2(t *testing.T) {
 }
 
 func TestCreateYarnv3(t *testing.T) {
-	out := plugin.Start("./yarnv3", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "yarnv3"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -76,7 +76,7 @@ func TestCreateYarnv3(t *testing.T) {
 }
 
 func TestCreateYarnv4(t *testing.T) {
-	out := plugin.Start("./yarnv4", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "yarnv4"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -87,7 +87,7 @@ func TestCreateYarnv4(t *testing.T) {
 }
 
 func TestCreateYarnWorkspace(t *testing.T) {
-	out := plugin.Start("./yarn_workspace", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "yarn_workspace"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -98,7 +98,7 @@ func TestCreateYarnWorkspace(t *testing.T) {
 }
 
 func TestCreatePNPMv5(t *testing.T) {
-	out := plugin.Start("./pnpmv5", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "pnpmv5"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -109,7 +109,7 @@ func TestCreatePNPMv5(t *testing.T) {
 }
 
 func TestCreatePNPMv6(t *testing.T) {
-	out := plugin.Start("./pnpmv6", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "pnpmv6"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -120,7 +120,7 @@ func TestCreatePNPMv6(t *testing.T) {
 }
 
 func TestCreatePNPMv10_10(t *testing.T) {
-	out := plugin.Start("./pnpmv10.10", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "pnpmv10.10"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -133,7 +133,7 @@ func TestCreatePNPMv10_10(t *testing.T) {
 // pnpm 11+ adds an env lockfile document before the project lockfile.
 // The SBOM must list the project's dependencies, not pnpm itself.
 func TestCreatePNPMv12EnvLockfile(t *testing.T) {
-	out := plugin.Start("./pnpmv12_env_lockfile", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "pnpmv12_env_lockfile"), uuid.UUID{})
 
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	deps := out.WorkSpaces["."].Dependencies
@@ -146,7 +146,7 @@ func TestCreatePNPMv12EnvLockfile(t *testing.T) {
 
 // You can adapt this test to your needs
 func TestCreateTest(t *testing.T) {
-	out := plugin.Start("./test", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "test"), uuid.UUID{})
 
 	// Assert the expected values
 	assert.NotNil(t, out)
@@ -174,7 +174,7 @@ func TestCreateTest(t *testing.T) {
 // A pnpm version like "8.3.6(typescript@5.6.3)" must resolve to 8.3.6 on every run.
 func TestCreatePNPMv9PeerSuffixResolvesPinnedVersion(t *testing.T) {
 	for i := 0; i < 50; i++ {
-		out := plugin.Start("./pnpmv9_peer_suffix", uuid.UUID{})
+		out := plugin.Start(restoreFixture(t, "pnpmv9_peer_suffix"), uuid.UUID{})
 
 		assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 		deps := out.WorkSpaces["."].Dependencies
@@ -189,7 +189,7 @@ func TestCreatePNPMv9PeerSuffixResolvesPinnedVersion(t *testing.T) {
 // Start lists must be sorted so the same input gives the same SBOM.
 func TestCreatePNPMv9StartListIsSorted(t *testing.T) {
 	for i := 0; i < 50; i++ {
-		out := plugin.Start("./pnpmv9_peer_suffix", uuid.UUID{})
+		out := plugin.Start(restoreFixture(t, "pnpmv9_peer_suffix"), uuid.UUID{})
 
 		var names []string
 		for _, dep := range out.WorkSpaces["."].Start.Dependencies {
@@ -217,26 +217,26 @@ func assertOverlappingRangesResolved(t *testing.T, dir string) {
 }
 
 func TestCreateYarnv1OverlappingRangesUseLockfileResolution(t *testing.T) {
-	assertOverlappingRangesResolved(t, "./yarnv1_overlapping_ranges")
+	assertOverlappingRangesResolved(t, restoreFixture(t, "yarnv1_overlapping_ranges"))
 }
 
 func TestCreateYarnv4OverlappingRangesUseLockfileResolution(t *testing.T) {
-	assertOverlappingRangesResolved(t, "./yarnv4_overlapping_ranges")
+	assertOverlappingRangesResolved(t, restoreFixture(t, "yarnv4_overlapping_ranges"))
 }
 
 // "a" must use the debug nested under it, not the top-level one.
 func TestCreateNPMv3NestedResolutionUsesInstallPath(t *testing.T) {
-	assertOverlappingRangesResolved(t, "./npmv3_nested_resolution")
+	assertOverlappingRangesResolved(t, restoreFixture(t, "npmv3_nested_resolution"))
 }
 
 func TestCreateNPMv1NestedResolutionUsesInstallPath(t *testing.T) {
-	assertOverlappingRangesResolved(t, "./npmv1_nested_resolution")
+	assertOverlappingRangesResolved(t, restoreFixture(t, "npmv1_nested_resolution"))
 }
 
 // With two peer variants of p@1.0.0, the first one sorted must win every run.
 func TestCreatePNPMv9PeerVariantsPickStableSnapshot(t *testing.T) {
 	for i := 0; i < 50; i++ {
-		out := plugin.Start("./pnpmv9_peer_variants", uuid.UUID{})
+		out := plugin.Start(restoreFixture(t, "pnpmv9_peer_variants"), uuid.UUID{})
 
 		deps := out.WorkSpaces["."].Dependencies
 		if !assert.Equal(t, "5.9.3", deps["p"]["1.0.0"].Dependencies["typescript"], "run %d", i) {
@@ -247,7 +247,7 @@ func TestCreatePNPMv9PeerVariantsPickStableSnapshot(t *testing.T) {
 
 // pnpm workspaces come from pnpm-workspace.yaml, and "!" patterns exclude.
 func TestCreatePNPMv9WorkspaceFromPnpmWorkspaceYaml(t *testing.T) {
-	out := plugin.Start("./pnpmv9_workspace", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "pnpmv9_workspace"), uuid.UUID{})
 
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	if assert.Contains(t, out.WorkSpaces, "packages/app") {
@@ -273,16 +273,16 @@ func assertAliasResolvesToRealPackage(t *testing.T, dir string) {
 }
 
 func TestCreateYarnv1NpmAliasResolvesToRealPackage(t *testing.T) {
-	assertAliasResolvesToRealPackage(t, "./yarnv1_npm_alias")
+	assertAliasResolvesToRealPackage(t, restoreFixture(t, "yarnv1_npm_alias"))
 }
 
 func TestCreateYarnv4NpmAliasResolvesToRealPackage(t *testing.T) {
-	assertAliasResolvesToRealPackage(t, "./yarnv4_npm_alias")
+	assertAliasResolvesToRealPackage(t, restoreFixture(t, "yarnv4_npm_alias"))
 }
 
 // pnpm records an aliased dependency as "alias: real-name@version".
 func TestCreatePNPMv9NpmAliasResolvesToRealPackage(t *testing.T) {
-	out := plugin.Start("./pnpmv9_npm_alias", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "pnpmv9_npm_alias"), uuid.UUID{})
 
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	deps := out.WorkSpaces["."].Dependencies
@@ -293,17 +293,17 @@ func TestCreatePNPMv9NpmAliasResolvesToRealPackage(t *testing.T) {
 
 // npm v2/v3 put an alias at node_modules/<alias>, with the real "name".
 func TestCreateNPMv3NpmAliasResolvesToRealPackage(t *testing.T) {
-	assertAliasResolvesToRealPackage(t, "./npmv3_npm_alias")
+	assertAliasResolvesToRealPackage(t, restoreFixture(t, "npmv3_npm_alias"))
 }
 
 // npm v1 stores an alias's real package in "version".
 func TestCreateNPMv1NpmAliasResolvesToRealPackage(t *testing.T) {
-	assertAliasResolvesToRealPackage(t, "./npmv1_npm_alias")
+	assertAliasResolvesToRealPackage(t, restoreFixture(t, "npmv1_npm_alias"))
 }
 
 // pnpm v9 optional dependencies must be linked and flagged optional.
 func TestCreatePNPMv9OptionalDependencies(t *testing.T) {
-	out := plugin.Start("./pnpmv9_optional_dependencies", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "pnpmv9_optional_dependencies"), uuid.UUID{})
 
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	deps := out.WorkSpaces["."].Dependencies
@@ -333,15 +333,15 @@ func assertDirectDependencyUsesLockfileResolution(t *testing.T, dir string) {
 }
 
 func TestCreateYarnv1DirectDependencyUsesLockfileResolution(t *testing.T) {
-	assertDirectDependencyUsesLockfileResolution(t, "./yarnv1_direct_resolution")
+	assertDirectDependencyUsesLockfileResolution(t, restoreFixture(t, "yarnv1_direct_resolution"))
 }
 
 func TestCreateNPMv3DirectDependencyUsesLockfileResolution(t *testing.T) {
-	assertDirectDependencyUsesLockfileResolution(t, "./npmv3_direct_resolution")
+	assertDirectDependencyUsesLockfileResolution(t, restoreFixture(t, "npmv3_direct_resolution"))
 }
 
 func TestCreatePNPMv9DirectDependencyUsesLockfileResolution(t *testing.T) {
-	assertDirectDependencyUsesLockfileResolution(t, "./pnpmv9_direct_resolution")
+	assertDirectDependencyUsesLockfileResolution(t, restoreFixture(t, "pnpmv9_direct_resolution"))
 }
 
 // Optional dependencies such as fsevents must be linked like any other.
@@ -357,20 +357,20 @@ func assertOptionalDependencyIsAnEdge(t *testing.T, dir string) {
 }
 
 func TestCreateYarnv1OptionalDependencyIsAnEdge(t *testing.T) {
-	assertOptionalDependencyIsAnEdge(t, "./yarnv1_optional_dependencies")
+	assertOptionalDependencyIsAnEdge(t, restoreFixture(t, "yarnv1_optional_dependencies"))
 }
 
 func TestCreateNPMv3OptionalDependencyIsAnEdge(t *testing.T) {
-	assertOptionalDependencyIsAnEdge(t, "./npmv3_optional_dependencies")
+	assertOptionalDependencyIsAnEdge(t, restoreFixture(t, "npmv3_optional_dependencies"))
 }
 
 func TestCreateNPMv1OptionalDependencyIsAnEdge(t *testing.T) {
-	assertOptionalDependencyIsAnEdge(t, "./npmv1_optional_dependencies")
+	assertOptionalDependencyIsAnEdge(t, restoreFixture(t, "npmv1_optional_dependencies"))
 }
 
 // Yarn 2+ adds "::locator=..." to file: keys. The package must still be direct.
 func TestCreateYarnv4FileDependencyIsDirect(t *testing.T) {
-	out := plugin.Start("./yarnv4_file_dependency", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "yarnv4_file_dependency"), uuid.UUID{})
 
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	deps := out.WorkSpaces["."].Dependencies
@@ -381,7 +381,7 @@ func TestCreateYarnv4FileDependencyIsDirect(t *testing.T) {
 
 // npm 7+ installs peers, so they are linked. A missing optional peer is not.
 func TestCreateNPMv3InstalledPeerDependencyIsAnEdge(t *testing.T) {
-	out := plugin.Start("./npmv3_peer_dependencies", uuid.UUID{})
+	out := plugin.Start(restoreFixture(t, "npmv3_peer_dependencies"), uuid.UUID{})
 
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	deps := out.WorkSpaces["."].Dependencies
