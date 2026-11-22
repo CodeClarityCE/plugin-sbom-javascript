@@ -22,7 +22,7 @@ func addFixtureSeeds(f *testing.F, glob string) {
 	}
 	seeds := 0
 	for _, path := range paths {
-		data, err := os.ReadFile(path)
+		data, err := os.ReadFile(path) //nolint:gosec // G304: seed paths come from the repo's own testdata
 		if err != nil {
 			f.Fatal(err)
 		}
