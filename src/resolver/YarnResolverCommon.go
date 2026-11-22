@@ -26,6 +26,9 @@ func normaliseYarnSpecifier(specifier string) string {
 // splitYarnSpecifier splits "name@range" into the real name and range.
 // Aliases are followed: "x-cjs@npm:x@^4.2.0" gives x and ^4.2.0.
 func splitYarnSpecifier(specifier string) (string, string) {
+	if specifier == "" {
+		return "", ""
+	}
 	// Split on the first "@" that is not a scope prefix.
 	at := strings.Index(specifier[1:], "@") + 1
 	if at <= 0 {

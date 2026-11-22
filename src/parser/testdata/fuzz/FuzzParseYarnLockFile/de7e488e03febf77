@@ -1,0 +1,2 @@
+go test fuzz v1
+[]byte("__metadata:\n  0000000: 0\n  00000000: 00000\n\"\":")
