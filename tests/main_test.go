@@ -17,7 +17,7 @@ func TestCreateNPMv1(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./npmv1/sbom.json")
+	writeJSON(t, out, "./npmv1/sbom.json")
 }
 
 func TestCreateNPMv2(t *testing.T) {
@@ -28,7 +28,7 @@ func TestCreateNPMv2(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./npmv2/sbom.json")
+	writeJSON(t, out, "./npmv2/sbom.json")
 }
 
 func TestCreateNPMv3(t *testing.T) {
@@ -39,7 +39,7 @@ func TestCreateNPMv3(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./npmv3/sbom.json")
+	writeJSON(t, out, "./npmv3/sbom.json")
 }
 
 func TestCreateYarnv1(t *testing.T) {
@@ -50,7 +50,7 @@ func TestCreateYarnv1(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./yarnv1/sbom.json")
+	writeJSON(t, out, "./yarnv1/sbom.json")
 }
 
 func TestCreateYarnv2(t *testing.T) {
@@ -61,7 +61,7 @@ func TestCreateYarnv2(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./yarnv2/sbom.json")
+	writeJSON(t, out, "./yarnv2/sbom.json")
 }
 
 func TestCreateYarnv3(t *testing.T) {
@@ -72,7 +72,7 @@ func TestCreateYarnv3(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./yarnv3/sbom.json")
+	writeJSON(t, out, "./yarnv3/sbom.json")
 }
 
 func TestCreateYarnv4(t *testing.T) {
@@ -83,7 +83,7 @@ func TestCreateYarnv4(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./yarnv4/sbom.json")
+	writeJSON(t, out, "./yarnv4/sbom.json")
 }
 
 func TestCreateYarnWorkspace(t *testing.T) {
@@ -94,7 +94,7 @@ func TestCreateYarnWorkspace(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./yarn_workspace/sbom.json")
+	writeJSON(t, out, "./yarn_workspace/sbom.json")
 }
 
 func TestCreatePNPMv5(t *testing.T) {
@@ -105,7 +105,7 @@ func TestCreatePNPMv5(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./pnpmv5/sbom.json")
+	writeJSON(t, out, "./pnpmv5/sbom.json")
 }
 
 func TestCreatePNPMv6(t *testing.T) {
@@ -116,7 +116,7 @@ func TestCreatePNPMv6(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./pnpmv6/sbom.json")
+	writeJSON(t, out, "./pnpmv6/sbom.json")
 }
 
 func TestCreatePNPMv10_10(t *testing.T) {
@@ -127,7 +127,7 @@ func TestCreatePNPMv10_10(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./pnpmv10.10/sbom.json")
+	writeJSON(t, out, "./pnpmv10.10/sbom.json")
 }
 
 // pnpm 11+ adds an env lockfile document before the project lockfile.
@@ -153,7 +153,7 @@ func TestCreateTest(t *testing.T) {
 	assert.Equal(t, codeclarity.SUCCESS, out.AnalysisInfo.Status)
 	assert.NotEmpty(t, out.WorkSpaces)
 
-	writeJSON(out, "./test/sbom.json")
+	writeJSON(t, out, "./test/sbom.json")
 }
 
 // func BenchmarkCreate(b *testing.B) {
