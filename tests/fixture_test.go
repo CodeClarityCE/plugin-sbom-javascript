@@ -34,24 +34,20 @@ var sourceDir = func() string {
 func restoreFixture(t *testing.T, name string) string {
 	t.Helper()
 	tmp := t.TempDir()
-	src := filepath.Join(sourceDir, name)
-	err := filepath.WalkDir(src, func(path string, d fs.DirEntry, err error) error {
+	src := os.DirFS(filepath.Join(sourceDir, name))
+	err := fs.WalkDir(src, ".", func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}
-		rel, err := filepath.Rel(src, path)
-		if err != nil {
-			return err
-		}
-		dst := filepath.Join(tmp, name, strings.TrimSuffix(rel, fixtureSuffix))
+		dst := filepath.Join(tmp, name, strings.TrimSuffix(filepath.FromSlash(path), fixtureSuffix))
 		if d.IsDir() {
-			return os.MkdirAll(dst, 0o755)
+			return os.MkdirAll(dst, 0o750)
 		}
-		data, err := os.ReadFile(path)
+		data, err := fs.ReadFile(src, path)
 		if err != nil {
 			return err
 		}
-		return os.WriteFile(dst, data, 0o644)
+		return os.WriteFile(dst, data, 0o600)
 	})
 	if err != nil {
 		t.Fatal(err)

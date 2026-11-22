@@ -5,6 +5,7 @@ import (
 	"flag"
 	"os"
 	"path/filepath"
+	"testing"
 )
 
 // Run `go test ./tests/ -update` to rewrite the fixture sbom.json files.
@@ -12,10 +13,16 @@ import (
 var update = flag.Bool("update", false, "rewrite the fixture sbom.json files")
 
 // writeJSON writes under the source tests folder, not the test's tempdir.
-func writeJSON(data any, path string) error {
+func writeJSON(t *testing.T, data any, path string) {
+	t.Helper()
 	jsonData, err := json.MarshalIndent(data, "", "  ")
-	if err != nil || !*update {
-		return err
+	if err != nil {
+		t.Fatal(err)
 	}
-	return os.WriteFile(filepath.Join(sourceDir, path), jsonData, 0644)
+	if !*update {
+		return
+	}
+	if err := os.WriteFile(filepath.Join(sourceDir, path), jsonData, 0o600); err != nil {
+		t.Fatal(err)
+	}
 }

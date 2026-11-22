@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"io/fs"
+	"log"
 	"os"
 	"path"
 	"path/filepath"
@@ -30,6 +31,13 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 		return project, fmt.Errorf("no lock file found")
 	}
 
+	// Workspace paths come from the project's own files, so reads stay inside the project.
+	projectRoot, err := os.OpenRoot(directory)
+	if err != nil {
+		return project, err
+	}
+	defer projectRoot.Close()
+
 	// Parse the package file
 	packageFileData, err := os.ReadFile(project.PackageFile)
 	if err != nil {
@@ -44,7 +52,7 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 	// pnpm lists workspaces in pnpm-workspace.yaml, not package.json.
 	var excluded []string
 	if project.PackageManager == packageManager.PNPM && len(packageFile.WorkSpaces) == 0 {
-		included, negated, err := readPnpmWorkspacePatterns(directory)
+		included, negated, err := readPnpmWorkspacePatterns(projectRoot)
 		if err != nil {
 			return project, err
 		}
@@ -62,8 +70,11 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 			root := filepath.Join(directory, strings.ReplaceAll(workspace, "*", ""))
 			for workspace_found := range all_projects {
 				if strings.Contains(workspace_found, root) {
-					path := filepath.Join(workspace_found, "package.json")
-					packageFileData, err := os.ReadFile(path)
+					relative, err := filepath.Rel(directory, workspace_found)
+					if err != nil {
+						return project, err
+					}
+					packageFileData, err := projectRoot.ReadFile(filepath.Join(relative, "package.json"))
 					if err != nil {
 						return project, err
 					}
@@ -80,10 +91,9 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 			}
 
 		} else {
-			path := filepath.Join(directory, workspace, "package.json")
-			packageFileData, err := os.ReadFile(path)
+			packageFileData, err := projectRoot.ReadFile(filepath.Join(workspace, "package.json"))
 			if err != nil {
-				// Skip missing workspace directories - they may not be present in uploaded projects
+				// Skip missing workspace directories and ones outside the project
 				continue
 			}
 			// Parse the package file
@@ -109,8 +119,8 @@ func ReadPackageFiles(directory string) (projectInformation types.ProjectInforma
 
 // readPnpmWorkspacePatterns reads the package patterns in pnpm-workspace.yaml.
 // Patterns starting with "!" are returned separately, as exclusions.
-func readPnpmWorkspacePatterns(directory string) (included []string, excluded []string, err error) {
-	data, err := os.ReadFile(filepath.Join(directory, "pnpm-workspace.yaml"))
+func readPnpmWorkspacePatterns(root *os.Root) (included []string, excluded []string, err error) {
+	data, err := root.ReadFile("pnpm-workspace.yaml")
 	if errors.Is(err, fs.ErrNotExist) {
 		return nil, nil, nil
 	}
@@ -155,7 +165,7 @@ func findProjects(directory string) map[string]types.ProjectInformation {
 	lockfiles := []string{"yarn.lock", "package-lock.json", "pnpm-lock.yaml"}
 	all_projects := make(map[string]types.ProjectInformation)
 
-	filepath.WalkDir(directory, func(path string, d os.DirEntry, err error) error {
+	err := filepath.WalkDir(directory, func(path string, d os.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}
@@ -206,5 +216,9 @@ func findProjects(directory string) map[string]types.ProjectInformation {
 
 		return nil
 	})
+	if err != nil {
+		// Keep what was found before the walk stopped.
+		log.Printf("Stopped searching %s for projects: %v", directory, err)
+	}
 	return all_projects
 }
