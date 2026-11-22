@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"io/fs"
 	"os"
 	"path/filepath"
 	"sort"
@@ -182,7 +183,7 @@ func checkDevProd(t *testing.T, wsName string, ws sbom.WorkSpace) {
 
 // checkNPMDevFlags checks the labels agree with an npm v2+ lockfile's dev flags.
 func checkNPMDevFlags(t *testing.T, fixture string, ws sbom.WorkSpace) {
-	data, err := os.ReadFile(filepath.Join(fixture, "package-lock.json"))
+	data, err := fs.ReadFile(os.DirFS(fixture), "package-lock.json")
 	if err != nil {
 		return
 	}
