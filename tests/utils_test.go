@@ -8,7 +8,6 @@ import (
 )
 
 // Run `go test ./tests/ -update` to rewrite the fixture sbom.json files.
-// js-patching's tests read them.
 var update = flag.Bool("update", false, "rewrite the fixture sbom.json files")
 
 // writeJSON writes under the source tests folder, not the test's tempdir.
