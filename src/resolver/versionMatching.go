@@ -142,7 +142,7 @@ func HighestSatisfying(versions map[string]types.Versions, constraint string) (s
 
 // mergeRequires combines dependencies and optional dependencies in a new map.
 func mergeRequires(dependencies, optionalDependencies map[string]string) map[string]string {
-	requires := make(map[string]string, len(dependencies)+len(optionalDependencies))
+	requires := make(map[string]string, len(dependencies))
 	for name, constraint := range dependencies {
 		requires[name] = constraint
 	}
